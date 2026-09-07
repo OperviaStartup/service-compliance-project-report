@@ -1,0 +1,31 @@
+![][image1]  
+Universidad Peruana de Ciencias Aplicadas  
+Carrera de Ingeniería de Software
+
+**1ACC0238**  
+**Aplicaciones para Dispositivos Móviles**  
+NRC  
+**13986**  
+**Informe del Trabajo Final**  
+Docente  
+**Salazar Ruiz, Kevin Edgar**
+
+Equipo  
+**Opervia**  
+Proyecto  
+**Service Compliance**
+
+**Integrantes**
+
+| Código | Apellidos y Nombres |
+| :---- | :---- |
+| U202414054 | Arias Tasayco, Jean Pool Alexander |
+| U20------- | Ayasta Martel, Zayd Jaffar |
+| U20------- | Aguirre Eneque, Joan Elías |
+| U20------- | Huaman Cuba, Johan Giovani  |
+| U20------- | Navarro Correa, César Augusto  |
+
+**Período 202620**  
+**Julio 2026**
+
+[image1]: <data:image/png;base64,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>
