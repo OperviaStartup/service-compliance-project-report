@@ -14,8 +14,6 @@
 
 Su producto principal, **Service Compliance**, está diseñado para el dominio de los servicios de limpieza tercerizada en Perú. La solución relaciona las condiciones establecidas en un contrato de servicio con obligaciones operativas concretas, ejecuciones realizadas en campo, evidencias y resultados de cumplimiento.
 
-El producto se desarrolla sobre la base directa del repositorio existente `attendance-system`, cuya estructura y componentes serán adaptados al dominio de cumplimiento de servicios tercerizados. La evolución del producto incorporará la gestión de obligaciones contractuales, el registro de ejecuciones, la captura de evidencias, la supervisión de incidencias y la consulta de información de cumplimiento.
-
 Service Compliance no es un gestor genérico de tareas. Cada obligación operativa tiene como origen una condición del servicio contratado y se relaciona con una frecuencia, una ventana horaria, una ubicación, un responsable, un estándar de ejecución y, cuando corresponda, un nivel de evidencia.
 
 La cadena principal de la solución es:
@@ -89,11 +87,9 @@ Desarrollar una solución móvil para gestionar y evidenciar el cumplimiento de 
 | Dominio | Servicios de limpieza tercerizada. |
 | Mercado inicial | Empresas y operaciones ubicadas en Perú. |
 | Segmentos objetivo | Operarios de campo y supervisores. |
-| Producto base | Repositorio `attendance-system`. |
 | Aplicación principal | Aplicación móvil para operación y supervisión. |
 | Componentes complementarios | Servicios RESTful y Landing Page. |
 | Proceso central | Obligación contractual, ejecución, evidencia y cumplimiento. |
-| Desarrollo | Ciclo académico del curso 1ACC0238. |
 | Exclusiones iniciales | Control de plagas, seguridad, jardinería, mantenimiento y otros verticales de facility management. |
 
 <a id="122-lean-ux-process"></a>
