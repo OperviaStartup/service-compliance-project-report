@@ -185,7 +185,37 @@ Representa la interacción y el flujo de información entre los diferentes Bound
 2.5.1.3. Bounded Context Canvases
 
 <a id="252-context-mapping"></a>
+Para cada uno de los Bounded Contexts candidatos identificados, se elaboró un Bounded Context Canvas siguiendo un proceso iterativo de Context Overview Definition, Business Rules Distillation & Ubiquitous Language Capture, Capability Analysis, Dependencies Capture y Design Critique. Los contextos se abordaron en orden de importancia, priorizando el core domain de la solución.
 
+**Authentication:**
+
+Gestiona la identificación, verificación y autorización de operarios y supervisores dentro del sistema.
+
+<img src="resources/10-chapter-01/.png">
+
+**Contract & Obligation Management:**
+
+Gestiona el registro de contratos de servicio y la traducción de sus condiciones en obligaciones operativas.
+
+<img src="resources/10-chapter-01/.png">
+
+**Field Execution & Evidence:**
+
+Core domain de la solución. Gestiona la ejecución de obligaciones en campo y la captura de evidencia, incluyendo soporte offline.
+
+<img src="resources/10-chapter-01/.png">
+
+**Incident & Corrective Action:**
+
+Gestiona la evaluación de SLA, detección de incumplimientos y el ciclo de vida de incidencias y acciones correctivas.
+
+<img src="resources/10-chapter-01/.png">
+
+**Compliance Reporting:**
+
+Consolida información de los demás contextos para la generación de reportes de cumplimiento y notificaciones.
+
+<img src="resources/10-chapter-01/.png">
 2.5.2. Context Mapping
 
 <a id="253-software-architecture"></a>
