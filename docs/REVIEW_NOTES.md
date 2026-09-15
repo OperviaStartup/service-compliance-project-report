@@ -1,6 +1,6 @@
 # Review Notes — Service Compliance AV1
 
-**Estado de la revisión:** 15 de septiembre de 2026.  
+**Estado de la revisión:** 15 de septiembre de 2026.
 **Alcance revisado:** `docs/PROJECT_CONTEXT.md`, `report/10-chapter-01.md`,
 `report/11-chapter-02.md` y los recursos de `report/resources/10-chapter-01/`.
 
