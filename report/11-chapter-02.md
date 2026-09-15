@@ -210,6 +210,118 @@ posibles mecanismos o restricciones técnicas.
 | Corrective Action | Acción acordada para responder a una no conformidad o reclamo. | **Candidate — Pending validation** |
 | Compliance Report | Comunicación consolidada sobre el estado de cumplimiento para un destinatario y periodo. | **Candidate — Pending validation** |
 
+## 2.4. Requirements specification preliminar
+
+Los siguientes requisitos son candidatos de aprendizaje derivados de la
+hipótesis y el needfinding preliminar. No conforman un backlog comprometido y
+no autorizan decidir una interfaz, tecnología o mecanismo de evidencia.
+
+| ID | Necesidad candidata | Capacidad candidata | Trazabilidad | Estado |
+|---|---|---|---|---|
+| R-01 | Relacionar lo acordado con el trabajo operativo. | Representar condiciones y obligaciones de servicio. | Eventos 1–3; H-01 y H-04. | **Candidate — Pending validation** |
+| R-02 | Comunicar y registrar el resultado de una ejecución. | Registrar una ejecución, impedimento o resultado informado. | Eventos 4–5; tarea de ejecución. | **Candidate — Pending validation** |
+| R-03 | Sustentar una afirmación sobre ejecución cuando corresponda. | Asociar evidencia definida por el acuerdo o proceso. | Evento 6; evidencia aceptable por investigar. | **Candidate — Pending validation** |
+| R-04 | Determinar y explicar cumplimiento. | Evaluar una ejecución frente a un criterio aplicable. | Evento 7; H-01. | **Candidate — Pending validation** |
+| R-05 | Gestionar una desviación o reclamo. | Registrar una no conformidad y dar seguimiento a una respuesta. | Eventos 8–9; journey preliminar. | **Candidate — Pending validation** |
+| R-06 | Comunicar estado a una parte interesada. | Consolidar un reporte para destinatario y periodo definidos. | Evento 10; tarea de consolidación. | **Candidate — Pending validation** |
+
+Las decisiones sobre fotografía, ubicación, código, sensor, uso sin conexión,
+alerta o integración externa se registrarán como requisitos solo si la
+investigación, una regla contractual o una restricción académica las sustenta.
+
+## 2.5. Strategic-Level Domain-Driven Design preliminar
+
+### 2.5.1. Candidate Context Discovery
+
+Los límites siguientes progresan desde los eventos candidatos y el lenguaje
+ubiquo de 2.3. No son una arquitectura aprobada. El equipo debe confirmar los
+conceptos, responsables y reglas con evidencia del dominio antes de fijarlos.
+
+| Candidate Bounded Context | Eventos que motivan el límite | Responsabilidad propuesta | Razón del límite | Estado |
+|---|---|---|---|---|
+| Contract Interpretation & Obligation Definition | Condición acordada; obligación definida; obligación comunicada. | Interpretar condiciones y definir obligaciones operables. | El lenguaje contractual puede cambiar a una cadencia distinta del registro de ejecución. | **Candidate — Pending validation** |
+| Service Execution | Ejecución iniciada; resultado informado; evidencia presentada. | Registrar lo ocurrido durante la prestación y la información asociada. | La ejecución representa hechos operativos, no la decisión final de cumplimiento. | **Candidate — Pending validation** |
+| Compliance Assessment | Cumplimiento evaluado; no conformidad identificada. | Aplicar criterios de evaluación y explicar el resultado. | Separar “lo que ocurrió” de “cómo se juzga” permite que los criterios evolucionen sin redefinir la ejecución. | **Candidate — Pending validation** |
+| Corrective Case Management | Acción correctiva acordada. | Coordinar respuesta, responsables, seguimiento y cierre de un caso. | Un caso puede incluir investigación y seguimiento no reducibles a una evaluación puntual. | **Candidate — Pending validation** |
+| Compliance Reporting | Reporte de cumplimiento emitido. | Preparar una vista o comunicación para un destinatario y periodo. | La lectura consolidada tiene necesidades de consulta distintas de los flujos operativos. | **Candidate — Pending validation** |
+
+**Identity and access.** La autenticación y autorización se considerarán una
+capacidad genérica o de soporte hasta que el equipo encuentre reglas de negocio
+que justifiquen un Bounded Context propio. No se incluye como contexto del
+núcleo por inercia.
+
+### 2.5.2. Preliminary Domain Storytelling
+
+Estas historias son guiones conceptuales para revisión humana. No son
+diagramas finales ni incluyen API, base de datos, aplicación móvil o sistema
+como actores del dominio.
+
+1. **Definir una obligación.** Un responsable contractual interpreta una
+   condición del *Service Contract*, define una *Service Obligation* y la
+   comunica a un supervisor u operario.
+2. **Ejecutar e informar.** Un operario ejecuta una *Service Obligation*,
+   informa un *Execution Result* y entrega la *Evidence* que aplique al caso.
+3. **Evaluar y corregir.** Un supervisor revisa la *Evidence* y el
+   *Execution Result*, realiza una *Compliance Evaluation* y, si identifica una
+   *Non-compliance*, acuerda una *Corrective Action* con el responsable
+   correspondiente.
+4. **Explicar el estado.** Un responsable de operaciones consolida
+   obligaciones, evaluaciones y casos en un *Compliance Report* para una
+   organización cliente o prestadora.
+
+Cada historia debe revisarse con participantes reales para confirmar actores,
+objetos, secuencia y excepciones antes de traducirse a Mermaid, PlantUML u
+otro formato reproducible.
+
+### 2.5.3. Bounded Context Canvases preliminares
+
+| Contexto candidato | Valor / capacidad | Reglas candidatas | Dependencias candidatas |
+|---|---|---|---|
+| Contract Interpretation & Obligation Definition | Hacer operable una condición de servicio. | Una obligación conserva referencia a la condición interpretada; una condición puede requerir intervención humana. | Información contractual y responsables autorizados. |
+| Service Execution | Registrar resultados e información de ejecución. | Una ejecución puede informar un impedimento; evidencia no equivale automáticamente a conformidad. | Obligación comunicada; criterio de evidencia cuando aplique. |
+| Compliance Assessment | Emitir una evaluación explicable. | La evaluación compara resultado y criterio aplicable; una no conformidad no implica automáticamente culpabilidad. | Ejecución, evidencia y criterio de evaluación. |
+| Corrective Case Management | Dar seguimiento a una respuesta ante un caso. | Una acción correctiva tiene responsable y estado; cerrar un caso exige criterio acordado. | No conformidad, participantes y resultado de seguimiento. |
+| Compliance Reporting | Comunicar un estado consolidado. | El reporte identifica periodo, destinatario y alcance; no reinterpreta hechos operativos. | Datos publicados o acordados por los contextos anteriores. |
+
+Todas las celdas de esta tabla son **Candidate — Preliminary — Pending
+validation**. La aprobación conceptual del equipo es el prerrequisito para
+generar Bounded Context Canvases visuales.
+
+### 2.5.4. Context Mapping candidato
+
+El mapa definitivo queda pendiente. Como hipótesis inicial de relaciones:
+
+| Upstream candidato | Downstream candidato | Patrón posible | Justificación a validar |
+|---|---|---|---|
+| Contract Interpretation & Obligation Definition | Service Execution | Customer/Supplier con Published Language | La ejecución necesita comprender una obligación, pero el contrato no debe exponer su modelo interno completo. |
+| Service Execution | Compliance Assessment | Customer/Supplier con Published Language | La evaluación consume hechos y evidencia sin controlar cómo se capturaron. |
+| Compliance Assessment | Corrective Case Management | Customer/Supplier | Un caso podría originarse a partir de una no conformidad, si el proceso real así lo confirma. |
+| Contextos operativos | Compliance Reporting | Published Language o read model acordado | El reporte debe recibir información estable y apta para su destinatario. |
+| Sistemas externos | Cualquier contexto | ACL o Conformist según control del modelo | Debe decidirse por integración concreta, no por anticipación. |
+
+No se modelará Open Host Service como un Bounded Context. Solo se usará OHS si
+el equipo aprueba un servicio publicado independiente con un contrato estable
+para varios consumidores.
+
+### 2.5.5. C4 y Deployment: decisiones pendientes
+
+Los diagramas C4 se producirán después de aprobar los conceptos de 2.5.1 a
+2.5.4 y los requisitos que los justifiquen.
+
+- **C4 Context:** representará personas, organizaciones y sistemas externos
+  confirmados, no hipótesis tratadas como integraciones existentes.
+- **C4 Container:** separará backend, almacenamiento y cada producto cliente.
+  Si el alcance académico exige una app Android nativa y otra cross-platform,
+  se documentarán como containers/productos distintos, con tecnologías y
+  responsabilidades separadas.
+- **Deployment:** describirá nodos, infraestructura y servicios externos solo
+  cuando estos hayan sido escogidos. Railway, Firebase, Spring Boot, MySQL,
+  Kotlin y Flutter no se asumen en esta versión.
+
+El equipo humano revisará el contenido conceptual de cada diagrama. Una vez
+aprobado, el equipo puede generar Mermaid, PlantUML o Structurizr DSL
+reproducible a partir de esas decisiones.
+
 ## Fuentes del análisis competitivo
 
 1. [Apicbase, F&B Management System](https://get.apicbase.com/), consulta:
