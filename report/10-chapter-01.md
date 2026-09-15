@@ -40,18 +40,15 @@ La solución será implementada como una experiencia integrada compuesta por una
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-La startup Opervia estará conformada por los integrantes responsables del análisis, diseño, desarrollo, validación y documentación de Service Compliance. La información se organizará con el formato requerido para el informe:
+La startup Opervia está conformada por los integrantes responsables del análisis, diseño, desarrollo, validación y documentación de Service Compliance:
 
-| N.° | Apellidos y nombres | Código | Carrera | Rol en Opervia | Conocimientos y aporte al proyecto |
-|---:|---|---|---|---|---|
-| 1 | Por completar | Por completar | Por completar | Por completar | Por completar |
-| 2 | Por completar | Por completar | Por completar | Por completar | Por completar |
-| 3 | Por completar | Por completar | Por completar | Por completar | Por completar |
-| 4 | Por completar | Por completar | Por completar | Por completar | Por completar |
+| N.° | Apellidos y nombres                | Código        | Carrera                | Imagen                                                 | Conocimientos y aporte al proyecto                                                                                                                                                                                                                                                                                                                                                                    |
+| --: | ---------------------------------- | ------------- | ---------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   1 | Arias Tasayco, Jean Pool Alexander | U202414054    | Ingeniería de Software | ![Participante Jean](resources/10-chapter-01/jean.jpg) | Cuenta con conocimientos en desarrollo de software, programación, bases de datos, diseño de APIs REST y control de versiones con Git/GitHub. Aporta al proyecto en el análisis de requisitos, definición de la arquitectura de la solución, modelado del dominio, desarrollo del backend y aplicaciones móviles, así como en la integración y validación de las funcionalidades de Service Compliance. |
+|   2 | Por completar                      | Por completar | Ingeniería de Software | Por completar                                          | Por completar                                                                                                                                                                                                                                                                                                                                                                                         |
+|   3 | Por completar                      | Por completar | Ingeniería de Software | Por completar                                          | Por completar                                                                                                                                                                                                                                                                                                                                                                                         |
+|   4 | Por completar                      | Por completar | Ingeniería de Software | Por completar                                          | Por completar                                                                                                                                                                                                                                                                                                                                                                                         |
 
-Los perfiles deberán complementarse con la fotografía de cada participante, sus nombres y apellidos, código de estudiante, carrera profesional y un resumen de sus conocimientos técnicos y habilidades aplicables al proyecto.
-
-<a id="12-solution-profile"></a>
 
 ## 1.2. Solution Profile
 
@@ -110,10 +107,6 @@ Desarrollar una solución móvil para gestionar y evidenciar el cumplimiento de 
 <a id="122-lean-ux-process"></a>
 
 ### 1.2.2. Lean UX Process
-
-El proceso Lean UX organiza las decisiones iniciales de Opervia en Problem Statement, Assumptions, Hypothesis Statements y Lean UX Canvas. Estos artefactos permiten relacionar el dominio, los segmentos objetivo, la problemática, la estrategia del producto y los resultados esperados.
-
-La investigación UX se aplicará para sustentar la priorización de funcionalidades y ajustar la experiencia de uso de Service Compliance dentro del alcance definido para limpieza tercerizada.
 
 <a id="1221-lean-ux-problem-statements"></a>
 
@@ -200,8 +193,6 @@ La investigación UX se aplicará para sustentar la priorización de funcionalid
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-La rúbrica solicita un Hypothesis Statement por cada Feature Assumption. Se utiliza el formato: **We believe we will achieve [business outcome] if [personas] attain [benefit] with [feature].**
-
 | ID | Hypothesis Statement |
 |---|---|
 | HS-01 | We believe we will achieve better visibility of service execution if field operators attain a clear view of their assigned obligations, locations and time windows with a mobile list of contract-originated service obligations. |
@@ -213,8 +204,10 @@ La rúbrica solicita un Hypothesis Statement por cada Feature Assumption. Se uti
 | HS-07 | We believe we will achieve more reliable field registration if operators working with limited connectivity attain the ability to record executions without an active connection with local storage and later synchronization. |
 
 <a id="1224-lean-ux-canvas"></a>
-
+	
 #### 1.2.2.4. Lean UX Canvas
+
+![Lean UX Canvas](resources/10-chapter-01/LeanUXCanvas.jpg)
 
 | Lean UX Canvas | Definition for Service Compliance |
 |---|---|
@@ -237,6 +230,15 @@ La rúbrica solicita un Hypothesis Statement por cada Feature Assumption. Se uti
 
 Service Compliance se dirige inicialmente a dos segmentos objetivo directamente involucrados en la ejecución y control de servicios de limpieza tercerizada: **operarios de campo** y **supervisores**.
 
+#### Información estadística de sustento del sector
+
+| Indicador | Dato | Sustento para el segmento | Fuente |
+|---|---|---|---|
+| Tamaño del mercado de servicios de limpieza en Perú | ≈ USD 2,55 mil millones (2025); CAGR proyectado de 8,5 % (2026-2035) | Demanda creciente de servicios tercerizados que amplía la cantidad de contratos, sedes, obligaciones y personal de campo. | Expert Market Research, *Peru Cleaning Services Market* (2025) |
+| Empresas formales en limpieza de edificios (CIIU 8121) | ≈ 4.785 empresas registradas | Base relevante de potenciales clientes con operaciones de limpieza tercerizada en el país. | Directorio de empresas (DatosPerú) |
+| Concentración de la demanda | Lima Metropolitana concentra la mayor parte del volumen nacional | Justifica el foco inicial del proyecto en operaciones ubicadas en Lima Metropolitana. | Expert Market Research, *Peru Cleaning Services Market* (2025) |
+| Informalidad del empleo en el Perú | 71,1 % de la PEA ocupada (2023); 73,4 % de la mano de obra informal es femenina | Contexto de operarios con menor formalización, alta rotación y fricción potencial ante el registro digital. | INEI, *Producción y Empleo Informal en el Perú* (2023) |
+
 <a id="131-operarios-de-campo"></a>
 
 ### 1.3.1. Operarios de campo
@@ -253,6 +255,18 @@ Los operarios de campo ejecutan físicamente las actividades de limpieza en las 
 | Beneficio esperado | Registrar el servicio de forma rápida, clara y trazable. |
 | Problemas que aborda la solución | Registros dispersos, falta de claridad, duplicidad de comunicación y pérdida de evidencia. |
 
+##### Características demográficas del segmento
+
+| Característica | Perfil esperado |
+|---|---|
+| Edad | Entre 25 y 55 años, con mayor concentración estimada entre 30 y 50 años. |
+| Género | Predominio femenino, en línea con el perfil de la fuerza de trabajo del sector. |
+| Nivel educativo | Secundaria completa o técnica básica; baja exposición previa a herramientas de gestión digital. |
+| Residencia | Distritos aledaños a la sede o zona donde se presta el servicio (foco inicial en Lima Metropolitana). |
+| Situación laboral | Dependiente de una empresa proveedora; alta rotación y proporción relevante de informalidad. |
+| Dispositivos | Teléfono móvil de gama media o baja; conectividad móvil limitada durante la jornada. |
+| Experiencia | Aplicación de protocolos e insumos de limpieza; registro habitual en papel o aplicaciones de mensajería. |
+
 <a id="132-supervisores"></a>
 
 ### 1.3.2. Supervisores
@@ -268,6 +282,18 @@ Los supervisores coordinan, controlan y verifican la ejecución de los servicios
 | Dispositivo principal | Aplicación móvil y servicios digitales de supervisión. |
 | Beneficio esperado | Obtener visibilidad centralizada y actuar antes de un reclamo. |
 | Problemas que aborda la solución | Consolidación manual, detección tardía, información fragmentada y falta de historial. |
+
+##### Características demográficas del segmento
+
+| Característica | Perfil esperado |
+|---|---|
+| Edad | Entre 28 y 50 años, con trayectoria previa en operaciones o servicios tercerizados. |
+| Género | Distribución mixta, con presencia femenina relevante por el contexto del sector. |
+| Nivel educativo | Superior técnica o universitaria (administración, gestión u operaciones). |
+| Residencia | Lima Metropolitana; se desplaza entre las sedes que tiene a su cargo. |
+| Situación laboral | Dependiente de la empresa proveedora; rol intermedio entre la operación y la gerencia. |
+| Dispositivos | Teléfono móvil y laptop; uso de Excel, WhatsApp y herramientas básicas de reporte. |
+| Experiencia | Coordinación de personal, control de horarios, verificación de calidad y atención de reclamos. |
 
 <a id="133-organizaciones-relacionadas"></a>
 
@@ -286,14 +312,12 @@ La aplicación se concentra inicialmente en los usuarios operativos, porque son 
 
 ### 1.3.4. Plan de investigación UX
 
-De acuerdo con el enunciado del curso, se realizarán entre tres y cinco entrevistas por segmento objetivo:
+Se realizarán entre tres y cinco entrevistas por segmento objetivo:
 
 | Segmento | Cantidad requerida | Propósito |
 |---|---:|---|
 | Operarios de campo | 3 a 5 entrevistas | Identificar tareas, herramientas, dificultades, evidencia utilizada y condiciones de operación. |
 | Supervisores | 3 a 5 entrevistas | Identificar actividades de coordinación, monitoreo, gestión de incidencias y elaboración de reportes. |
-
-Las entrevistas permitirán sustentar la elaboración posterior de User Personas, User Task Matrix, User Journey Maps, Empathy Maps, Needfinding y requisitos. Los resultados se incorporarán en las secciones correspondientes del informe y se relacionarán con las decisiones de diseño y priorización del Product Backlog.
 
 <div style="page-break-before: always;"></div>
 
