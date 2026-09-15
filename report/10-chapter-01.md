@@ -22,19 +22,11 @@ La cadena principal de la solución es:
 
 > **Service Contract → Service Obligation → Execution → Evidence → SLA Evaluation → Non-compliance → Corrective Action → Compliance Report**
 
-El alcance funcional de Service Compliance comprende:
+Service Compliance no se plantea como un gestor genérico de tareas: una actividad operativa solo tendría sentido en el producto si se relaciona con una condición u obligación de un servicio contratado.
 
-- gestión de obligaciones de servicios de limpieza tercerizada;
-- consulta de obligaciones asignadas;
-- registro móvil de ejecuciones;
-- captura de evidencias;
-- registro y seguimiento de incidencias;
-- supervisión de obligaciones pendientes o vencidas;
-- gestión de acciones correctivas;
-- consulta de indicadores y reportes de cumplimiento;
-- almacenamiento local y sincronización con servicios RESTful.
+Misión provisional. Facilitar la trazabilidad de compromisos de servicio y su cumplimiento operativo para organizaciones de servicios tercerizados, siempre que la investigación confirme que esa trazabilidad responde a una necesidad prioritaria.
 
-La solución será implementada como una experiencia integrada compuesta por una aplicación móvil, servicios RESTful y un Landing Page. Su diseño seguirá un enfoque de Domain-Driven Design y cumplirá con los requerimientos tecnológicos establecidos para el curso 1ACC0238.
+Visión provisional. Convertirse en una alternativa digital confiable para consultar y explicar el estado de cumplimiento de servicios tercerizados, sin presuponer todavía su modelo comercial, alcance funcional ni mercado final.
 
 <a id="112-perfiles-de-integrantes-del-equipo"></a>
 
