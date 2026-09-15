@@ -81,14 +81,106 @@ Capítulo II: Requirements Development and Software Solution Design
 2.5.1. EventStorming
 
 <a id="2511-candidate-context-discovery"></a>
+Con el objetivo de comprender a profundidad el dominio de la aplicación Service Compliance, se llevó a cabo una sesión de EventStorming de aproximadamente 2 horas. Esta sesión permitió identificar los eventos clave dentro del sistema, así como actores, comandos, agregados y posibles hotspots (dudas o riesgos del dominio). El enfoque se centró en capturar la mayor cantidad de conocimiento del dominio desde una perspectiva colaborativa, permitiendo así una primera aproximación al modelo general del negocio.
+
+La herramienta utilizada para la sesión fue Miro, que facilitó la colaboración en tiempo real y la organización visual de los eventos. La sesión se dividió en las siguientes etapas:
+
+- **Unstructured Exploration** (exploración sin estructura)
+- **Timelines** (flujo del negocio)
+- **Pain Points** (puntos de fricción)
+
+Se identificaron eventos relacionados con el ciclo de vida completo de una obligación de servicio, desde el registro del contrato hasta la generación del reporte de cumplimiento, incluyendo actividades complementarias como la captura de evidencia en campo, la detección de incumplimientos y la gestión de incidencias.
+
+
+#### Step 1: Unstructured Exploration
+
+Lluvia de ideas con eventos importantes dentro del dominio de Service Compliance, organizados por área funcional para facilitar su posterior análisis: Cuenta/Sesión, Contrato/Obligación, Ejecución/Evidencia, Cumplimiento/SLA, Incidencia/Acción Correctiva, y Reportes/Notificaciones.
+
+[CAPTURA AQUÍ — Step 1]
+
+#### Step 2: Timelines
+
+Organización de los eventos identificados en el Step 1 en flujos funcionales secuenciales, incluyendo escenarios alternativos como el registro de evidencia sin conexión y la bifurcación entre obligaciones cumplidas a tiempo y obligaciones vencidas que derivan en incidencias.
+
+[CAPTURA AQUÍ — Step 2]
+
+#### Step 3: Pain Points
+
+Identificación de puntos conflictivos o dolorosos en la experiencia de los usuarios (operarios y supervisores), incluyendo problemas de conectividad al capturar evidencia, ambigüedad en la interpretación del plazo del SLA, y riesgos de duplicidad de registros al sincronizar ejecuciones offline.
+
+[CAPTURA AQUÍ — Step 3]
+
 
 2.5.1.1. Candidate Context Discovery
 
 <a id="2512-domain-message-flows-modeling"></a>
+A partir del EventStorming general, se realizó una segunda sesión enfocada en identificar los Candidate Bounded Contexts, aplicando las técnicas de start-with-value y look-for-pivotal-events sobre los eventos, actores y agregados identificados previamente.
+
+**Authentication:**
+
+Gestiona la información y operaciones relacionadas con el registro, inicio de sesión y perfil de los usuarios del sistema (operarios y supervisores).
+
+[CAPTURA AQUÍ — Authentication]
+
+**Contract & Obligation Management:**
+
+Gestiona la información y operaciones relacionadas con los contratos de servicio y las obligaciones operativas derivadas de ellos, incluyendo su registro y asignación a los operarios de campo.
+
+[CAPTURA AQUÍ — Contract & Obligation Management]
+
+**Field Execution & Evidence:**
+
+Gestiona la ejecución de obligaciones en campo y la captura de evidencia asociada (foto, código QR, ubicación), incluyendo el soporte de registro sin conexión y su posterior sincronización. Constituye el core domain de la solución.
+
+[CAPTURA AQUÍ — Field Execution & Evidence]
+
+**Incident & Corrective Action:**
+
+Gestiona la evaluación del cumplimiento de SLA, la detección de incumplimientos, y el ciclo de vida de las incidencias generadas junto con sus acciones correctivas asignadas por el supervisor.
+
+[CAPTURA AQUÍ — Incident & Corrective Action]
+
+**Compliance Reporting:**
+
+Gestiona la consolidación de información proveniente de los demás contextos para la generación de reportes de cumplimiento e indicadores, así como el envío de notificaciones automáticas de vencimiento.
+
+[CAPTURA AQUÍ — Compliance Reporting]
 
 2.5.1.2. Domain Message Flows Modeling
 
 <a id="2513-bounded-context-canvases"></a>
+Con el fin de visualizar cómo colaboran los Bounded Contexts identificados para resolver los casos de uso principales del negocio, se aplicó la técnica de Domain Storytelling. A continuación, se presentan los flujos modelados:
+
+**Authentication:**
+
+Representa el flujo de registro e inicio de sesión del usuario en el sistema.
+
+[CAPTURA AQUÍ — Domain Story: Authentication]
+
+**Field Execution & Evidence:**
+
+Representa el flujo mediante el cual un operario consulta su obligación asignada, ejecuta el servicio y registra la evidencia correspondiente, incluyendo el escenario de registro sin conexión.
+
+[CAPTURA AQUÍ — Domain Story: Field Execution & Evidence]
+
+**Incident & Corrective Action:**
+
+Representa el flujo mediante el cual el sistema evalúa automáticamente el cumplimiento del SLA, genera una incidencia ante un incumplimiento, y el supervisor revisa y asigna una acción correctiva.
+
+[CAPTURA AQUÍ — Domain Story: Incident & Corrective Action]
+
+**Compliance Reporting:**
+
+Representa el flujo mediante el cual el supervisor solicita un reporte de cumplimiento, el cual es generado consolidando información proveniente de los contextos de Field Execution & Evidence e Incident & Corrective Action.
+
+[CAPTURA AQUÍ — Domain Story: Compliance Reporting]
+
+**Flujo General:**
+
+Representa la interacción y el flujo de información entre los diferentes Bounded Contexts del sistema, evidenciando cómo Authentication habilita el acceso, Contract & Obligation Management origina las obligaciones, Field Execution & Evidence las ejecuta y captura evidencia, Incident & Corrective Action gestiona las excepciones, y Compliance Reporting consolida la información de los demás contextos para la generación de reportes.
+
+[CAPTURA AQUÍ — Flujo General]
+
 
 2.5.1.3. Bounded Context Canvases
 
