@@ -96,7 +96,7 @@ Se identificaron eventos relacionados con el ciclo de vida completo de una oblig
 
 Lluvia de ideas con eventos importantes dentro del dominio de Service Compliance, organizados por área funcional para facilitar su posterior análisis: Cuenta/Sesión, Contrato/Obligación, Ejecución/Evidencia, Cumplimiento/SLA, Incidencia/Acción Correctiva, y Reportes/Notificaciones.
 
-[CAPTURA AQUÍ — Step 1]
+<img src="resources/10-chapter-01/step1.png">
 
 #### Step 2: Timelines
 
