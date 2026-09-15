@@ -220,23 +220,49 @@ Consolida información de los demás contextos para la generación de reportes d
 2.5.2. Context Mapping
 
 <a id="253-software-architecture"></a>
+A partir de los Bounded Context Canvases elaborados, el equipo desarrolló un Context Map para visualizar las relaciones estructurales entre los contextos identificados, aplicando los patrones de relación establecidos en Domain-Driven Design.
 
+Durante el proceso se discutieron alternativas de diseño, entre ellas: mover la evaluación de SLA desde Field Execution & Evidence hacia Incident & Corrective Action (descartado por generar dependencia circular, dado que el SLA se evalúa sobre datos que ya posee Field Execution), la creación de un shared service entre Field Execution e Incident para reducir duplicación (descartado por el momento, dado el alcance del proyecto), y el consumo directo de Compliance Reporting hacia cada context individual sin un Open Host Service intermedio (descartado por generar alto acoplamiento ante cambios internos de cada context).
+
+Como resultado de esta discusión, se estableció el siguiente Context Map:
+
+- **Authentication → Contract & Obligation Management** (Customer/Supplier): Contract & Obligation depende de la identidad y rol validados por Authentication.
+- **Authentication → Field Execution & Evidence** (Customer/Supplier): el operario debe estar autenticado antes de ejecutar una obligación.
+- **Contract & Obligation Management → Field Execution & Evidence** (Customer/Supplier): la obligación debe existir antes de poder ser ejecutada.
+- **Field Execution & Evidence ↔ Incident & Corrective Action** (Partnership): ambos contextos evolucionan de forma coordinada, dado que un cambio en el registro de evidencia impacta directamente en la detección de incumplimientos.
+- **Field Execution & Evidence e Incident & Corrective Action → Open Host Service → Compliance Reporting**: Compliance Reporting consume información consolidada de ambos contextos mediante un lenguaje publicado y estable, evitando el acoplamiento directo.
+
+<img src="resources/10-chapter-01/ContextMapping.png">
 2.5.3. Software Architecture
 
 <a id="2531-software-architecture-context-level-diagrams"></a>
+Aplicando el C4 Model, el equipo elaboró la representación de la arquitectura de software de la solución, utilizando Structurizr como herramienta de Diagram-as-Code (Structurizr DSL).
 
-2.5.3.1. Software Architecture Context Level Diagrams
+#### 2.5.3.1. Software Architecture Context Level Diagrams
 
-<a id="2532-software-architecture-container-level-diagrams"></a>
+El Context Diagram muestra el sistema Service Compliance como una caja central, rodeado de sus usuarios (Operario de campo y Supervisor) y los sistemas externos con los que interactúa (Servicio de Notificaciones y Servicio de Almacenamiento).
+
+El Operario de campo utiliza el sistema para consultar sus obligaciones asignadas, ejecutar el servicio y registrar evidencia. El Supervisor lo utiliza para supervisar el cumplimiento, gestionar incidencias y consultar reportes. El sistema se apoya en un servicio externo de notificaciones push para alertar sobre obligaciones próximas a vencer, y en un servicio externo de almacenamiento en la nube para conservar las evidencias fotográficas capturadas en campo.
+
+<img src="resources/10-chapter-01/ContextDiagram1.png">
 
 2.5.3.2. Software Architecture Container Level Diagrams
 
 <a id="2533-software-architecture-deployment-diagrams"></a>
+El Container Diagram muestra los elementos de alto nivel de la arquitectura de software de Service Compliance y cómo se distribuyen las responsabilidades entre ellos. La solución está compuesta por un Landing Page (sitio web estático que presenta el modelo de negocio), una Mobile App (utilizada por operarios y supervisores para interactuar con el sistema), una API REST (que centraliza la lógica de negocio de los cinco Bounded Contexts identificados: Authentication, Contract & Obligation Management, Field Execution & Evidence, Incident & Corrective Action y Compliance Reporting), y una Base de Datos que almacena la información del dominio.
+
+La Mobile App se comunica con la API REST mediante peticiones HTTPS/JSON, mientras que la API REST se comunica con dos servicios externos: un servicio de notificaciones para alertar sobre obligaciones próximas a vencer, y un servicio de almacenamiento en la nube para conservar las evidencias fotográficas capturadas por los operarios.
+
+<img src="resources/10-chapter-01/ContextDiagram2.png">
 
 2.5.3.3. Software Architecture Deployment Diagrams
 
 <a id="26-tactical-level-domain-driven-design"></a>
+#### 2.5.3.3. Software Architecture Deployment Diagrams
 
+El Deployment Diagram muestra la distribución física de los componentes del sistema Service Compliance sobre la infraestructura de hardware. La Mobile App se ejecuta en el dispositivo móvil del operario o supervisor. El Landing Page se despliega como sitio estático en un servicio de hosting (GitHub Pages / Vercel). La API REST y la Base de Datos se despliegan en un proveedor de servicios en la nube (Railway), permitiendo su acceso público según lo requerido por el enunciado del curso. Adicionalmente, el sistema se apoya en Firebase para los servicios externos de notificaciones y almacenamiento de evidencias.
+
+<img src="resources/10-chapter-01/ContextDiagram3.png">
 2.6. Tactical-Level Domain-Driven Design
 
 <a id="26x-bounded-context"></a>
