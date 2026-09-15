@@ -102,13 +102,13 @@ Lluvia de ideas con eventos importantes dentro del dominio de Service Compliance
 
 Organización de los eventos identificados en el Step 1 en flujos funcionales secuenciales, incluyendo escenarios alternativos como el registro de evidencia sin conexión y la bifurcación entre obligaciones cumplidas a tiempo y obligaciones vencidas que derivan en incidencias.
 
-[CAPTURA AQUÍ — Step 2]
+<img src="resources/10-chapter-01/step2.png">
 
 #### Step 3: Pain Points
 
 Identificación de puntos conflictivos o dolorosos en la experiencia de los usuarios (operarios y supervisores), incluyendo problemas de conectividad al capturar evidencia, ambigüedad en la interpretación del plazo del SLA, y riesgos de duplicidad de registros al sincronizar ejecuciones offline.
 
-[CAPTURA AQUÍ — Step 3]
+<img src="resources/10-chapter-01/step3.png">
 
 
 2.5.1.1. Candidate Context Discovery
@@ -120,31 +120,31 @@ A partir del EventStorming general, se realizó una segunda sesión enfocada en 
 
 Gestiona la información y operaciones relacionadas con el registro, inicio de sesión y perfil de los usuarios del sistema (operarios y supervisores).
 
-[CAPTURA AQUÍ — Authentication]
+<img src="resources/10-chapter-01/Authentication.png">  Authentication
 
 **Contract & Obligation Management:**
 
 Gestiona la información y operaciones relacionadas con los contratos de servicio y las obligaciones operativas derivadas de ellos, incluyendo su registro y asignación a los operarios de campo.
 
-[CAPTURA AQUÍ — Contract & Obligation Management]
+<img src="resources/10-chapter-01/contract.png">
 
 **Field Execution & Evidence:**
 
 Gestiona la ejecución de obligaciones en campo y la captura de evidencia asociada (foto, código QR, ubicación), incluyendo el soporte de registro sin conexión y su posterior sincronización. Constituye el core domain de la solución.
 
-[CAPTURA AQUÍ — Field Execution & Evidence]
+<img src="resources/10-chapter-01/fieldExecution.png">
 
 **Incident & Corrective Action:**
 
 Gestiona la evaluación del cumplimiento de SLA, la detección de incumplimientos, y el ciclo de vida de las incidencias generadas junto con sus acciones correctivas asignadas por el supervisor.
 
-[CAPTURA AQUÍ — Incident & Corrective Action]
+<img src="resources/10-chapter-01/incidentCorrective.png">
 
 **Compliance Reporting:**
 
 Gestiona la consolidación de información proveniente de los demás contextos para la generación de reportes de cumplimiento e indicadores, así como el envío de notificaciones automáticas de vencimiento.
 
-[CAPTURA AQUÍ — Compliance Reporting]
+<img src="resources/10-chapter-01/CompilanceReporting.png">
 
 2.5.1.2. Domain Message Flows Modeling
 
@@ -155,31 +155,31 @@ Con el fin de visualizar cómo colaboran los Bounded Contexts identificados para
 
 Representa el flujo de registro e inicio de sesión del usuario en el sistema.
 
-[CAPTURA AQUÍ — Domain Story: Authentication]
+<img src="resources/10-chapter-01/FlujoAutenticacion.png">
 
 **Field Execution & Evidence:**
 
 Representa el flujo mediante el cual un operario consulta su obligación asignada, ejecuta el servicio y registra la evidencia correspondiente, incluyendo el escenario de registro sin conexión.
 
-[CAPTURA AQUÍ — Domain Story: Field Execution & Evidence]
+<img src="resources/10-chapter-01/FlujoEjecucionObligacion.png">
 
 **Incident & Corrective Action:**
 
 Representa el flujo mediante el cual el sistema evalúa automáticamente el cumplimiento del SLA, genera una incidencia ante un incumplimiento, y el supervisor revisa y asigna una acción correctiva.
 
-[CAPTURA AQUÍ — Domain Story: Incident & Corrective Action]
+<img src="resources/10-chapter-01/DeteccionIncumplimiento.png">
 
 **Compliance Reporting:**
 
 Representa el flujo mediante el cual el supervisor solicita un reporte de cumplimiento, el cual es generado consolidando información proveniente de los contextos de Field Execution & Evidence e Incident & Corrective Action.
 
-[CAPTURA AQUÍ — Domain Story: Compliance Reporting]
+<img src="resources/10-chapter-01/GeneracionReporte.png">
 
 **Flujo General:**
 
 Representa la interacción y el flujo de información entre los diferentes Bounded Contexts del sistema, evidenciando cómo Authentication habilita el acceso, Contract & Obligation Management origina las obligaciones, Field Execution & Evidence las ejecuta y captura evidencia, Incident & Corrective Action gestiona las excepciones, y Compliance Reporting consolida la información de los demás contextos para la generación de reportes.
 
-[CAPTURA AQUÍ — Flujo General]
+<img src="resources/10-chapter-01/FlujoGeneral.png">
 
 
 2.5.1.3. Bounded Context Canvases
