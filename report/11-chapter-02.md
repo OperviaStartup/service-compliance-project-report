@@ -116,12 +116,6 @@ Identificación de puntos conflictivos o dolorosos en la experiencia de los usua
 <a id="2512-domain-message-flows-modeling"></a>
 A partir del EventStorming general, se realizó una segunda sesión enfocada en identificar los Candidate Bounded Contexts, aplicando las técnicas de start-with-value y look-for-pivotal-events sobre los eventos, actores y agregados identificados previamente.
 
-**Authentication:**
-
-Gestiona la información y operaciones relacionadas con el registro, inicio de sesión y perfil de los usuarios del sistema (operarios y supervisores).
-
-<img src="resources/10-chapter-01/Authentication.png">  Authentication
-
 **Contract & Obligation Management:**
 
 Gestiona la información y operaciones relacionadas con los contratos de servicio y las obligaciones operativas derivadas de ellos, incluyendo su registro y asignación a los operarios de campo.
@@ -150,12 +144,6 @@ Gestiona la consolidación de información proveniente de los demás contextos p
 
 <a id="2513-bounded-context-canvases"></a>
 Con el fin de visualizar cómo colaboran los Bounded Contexts identificados para resolver los casos de uso principales del negocio, se aplicó la técnica de Domain Storytelling. A continuación, se presentan los flujos modelados:
-
-**Authentication:**
-
-Representa el flujo de registro e inicio de sesión del usuario en el sistema.
-
-<img src="resources/10-chapter-01/FlujoAutenticacion.png">
 
 **Field Execution & Evidence:**
 
@@ -186,12 +174,6 @@ Representa la interacción y el flujo de información entre los diferentes Bound
 
 <a id="252-context-mapping"></a>
 Para cada uno de los Bounded Contexts candidatos identificados, se elaboró un Bounded Context Canvas siguiendo un proceso iterativo de Context Overview Definition, Business Rules Distillation & Ubiquitous Language Capture, Capability Analysis, Dependencies Capture y Design Critique. Los contextos se abordaron en orden de importancia, priorizando el core domain de la solución.
-
-**Authentication:**
-
-Gestiona la identificación, verificación y autorización de operarios y supervisores dentro del sistema.
-
-<img src="resources/10-chapter-01/bc1.png">
 
 **Contract & Obligation Management:**
 
