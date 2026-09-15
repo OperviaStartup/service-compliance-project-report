@@ -30,7 +30,6 @@ El equipo de Opervia reúne conocimientos de análisis de requisitos, desarrollo
 |---:|---|---|---|---|---|
 | 1 | Arias Tasayco, Jean Pool Alexander | U202414054 | Ingeniería de Software | ![Participante Jean](resources/10-chapter-01/jean.jpg) | Cuenta con conocimientos en desarrollo de software, programación, bases de datos, diseño de APIs REST y control de versiones con Git/GitHub. Aporta al proyecto en el análisis de requisitos, definición de la arquitectura de la solución, modelado del dominio, desarrollo del backend y aplicaciones móviles, así como en la integración y validación de las funcionalidades de Service Compliance. |
 
-<!-- HUMAN-PENDING: añadir aquí una fila por cada integrante restante, incluyendo fotografía autorizada, código, carrera y un párrafo breve de conocimientos y aportes. -->
 
 ## 1.2. Solution Profile
 
@@ -70,7 +69,7 @@ El equipo emplea Lean UX para convertir la problemática inicial en supuestos ex
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-Para el proyecto se define un único **Problem Statement**, siguiendo el template de *Brand New Initiative* indicado en el enunciado del trabajo.
+##### Problem Statement
 
 > **The current state of the domain we are working in** —los servicios de limpieza tercerizada B2B— requiere coordinar compromisos de servicio con actividades ejecutadas físicamente en instalaciones de clientes, involucrando principalmente a supervisores/coordinadores y operarios de la empresa prestadora.
 >
