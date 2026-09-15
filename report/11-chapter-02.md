@@ -74,11 +74,11 @@ Capítulo II: Requirements Development and Software Solution Design
 
 <a id="25-strategic-level-domain-driven-design"></a>
 
-2.5. Strategic-Level Domain-Driven Design
+## 2.5. Strategic-Level Domain-Driven Design
 
 <a id="251-eventstorming"></a>
 
-2.5.1. EventStorming
+### 2.5.1. EventStorming
 
 <a id="2511-candidate-context-discovery"></a>
 Con el objetivo de comprender a profundidad el dominio de la aplicación Service Compliance, se llevó a cabo una sesión de EventStorming de aproximadamente 2 horas. Esta sesión permitió identificar los eventos clave dentro del sistema, así como actores, comandos, agregados y posibles hotspots (dudas o riesgos del dominio). El enfoque se centró en capturar la mayor cantidad de conocimiento del dominio desde una perspectiva colaborativa, permitiendo así una primera aproximación al modelo general del negocio.
@@ -90,7 +90,6 @@ La herramienta utilizada para la sesión fue Miro, que facilitó la colaboració
 - **Pain Points** (puntos de fricción)
 
 Se identificaron eventos relacionados con el ciclo de vida completo de una obligación de servicio, desde el registro del contrato hasta la generación del reporte de cumplimiento, incluyendo actividades complementarias como la captura de evidencia en campo, la detección de incumplimientos y la gestión de incidencias.
-
 
 #### Step 1: Unstructured Exploration
 
@@ -110,11 +109,47 @@ Identificación de puntos conflictivos o dolorosos en la experiencia de los usua
 
 <img src="resources/10-chapter-01/step3.png">
 
+#### 2.5.1.1. Candidate Context Discovery
 
-2.5.1.1. Candidate Context Discovery
+Con el objetivo de comprender a profundidad el dominio de la aplicación Service Compliance, se llevó a cabo una sesión de EventStorming de aproximadamente 2 horas. Esta sesión permitió identificar los eventos clave, procesos y pain points del dominio.
+
+La herramienta utilizada para la sesión fue Miro, que facilitó la colaboración en tiempo real y la organización visual de los eventos. La sesión se dividió en las siguientes etapas:
+
+- **Unstructured Exploration** (exploración sin estructura)
+- **Timelines** (flujo del negocio)
+- **Pain Points** (puntos de fricción)
+
+Se identificaron eventos relacionados con el ciclo de vida completo de una obligación de servicio, desde el registro del contrato hasta la generación del reporte de cumplimiento, incluyendo actividades de ejecución y verificación.
+
+##### Step 1: Unstructured Exploration
+
+Lluvia de ideas con eventos importantes dentro del dominio de Service Compliance, organizados por área funcional para facilitar su posterior análisis: Cuenta/Sesión, Contrato/Obligación, Ejecución, Evidencia, Incumplimiento e Incidencia.
+
+<img src="resources/10-chapter-01/step1.png">
+
+##### Step 2: Timelines
+
+Organización de los eventos identificados en el Step 1 en flujos funcionales secuenciales, incluyendo escenarios alternativos como el registro de evidencia sin conexión y la bifurcación entre obligaciones regulares y obligaciones de emergencia.
+
+<img src="resources/10-chapter-01/step2.png">
+
+##### Step 3: Pain Points
+
+Identificación de puntos conflictivos o dolorosos en la experiencia de los usuarios (operarios y supervisores), incluyendo problemas de conectividad al capturar evidencia, ambigüedad en la interpretación de obligaciones y retraso en la consolidación de reportes.
+
+<img src="resources/10-chapter-01/step3.png">
 
 <a id="2512-domain-message-flows-modeling"></a>
-A partir del EventStorming general, se realizó una segunda sesión enfocada en identificar los Candidate Bounded Contexts, aplicando las técnicas de start-with-value y look-for-pivotal-events sobre los eventos, actores y agregados identificados previamente.
+
+#### 2.5.1.2. Domain Message Flows Modeling
+
+A partir del EventStorming general, se realizó una segunda sesión enfocada en identificar los Candidate Bounded Contexts, aplicando las técnicas de start-with-value y look-for-pivotal-events sobre los eventos identificados. Se definieron cinco Candidate Bounded Contexts:
+
+**Authentication:**
+
+Gestiona la información y operaciones relacionadas con el registro, inicio de sesión y perfil de los usuarios del sistema (operarios y supervisores).
+
+<img src="resources/10-chapter-01/Authentication.png">
 
 **Contract & Obligation Management:**
 
@@ -136,14 +171,17 @@ Gestiona la evaluación del cumplimiento de SLA, la detección de incumplimiento
 
 **Compliance Reporting:**
 
-Gestiona la consolidación de información proveniente de los demás contextos para la generación de reportes de cumplimiento e indicadores, así como el envío de notificaciones automáticas de vencimiento.
+Gestiona la consolidación de información proveniente de los demás contextos para la generación de reportes de cumplimiento e indicadores, así como el envío de notificaciones automáticas de vencimientos y cambios de estado.
 
 <img src="resources/10-chapter-01/CompilanceReporting.png">
 
-2.5.1.2. Domain Message Flows Modeling
+Con el fin de visualizar cómo colaboran los Bounded Contexts identificados para resolver los casos de uso principales del negocio, se aplicó la técnica de Domain Storytelling. A continuación, se presentan los flujos de interacción:
 
-<a id="2513-bounded-context-canvases"></a>
-Con el fin de visualizar cómo colaboran los Bounded Contexts identificados para resolver los casos de uso principales del negocio, se aplicó la técnica de Domain Storytelling. A continuación, se presentan los flujos modelados:
+**Authentication:**
+
+Representa el flujo de registro e inicio de sesión del usuario en el sistema.
+
+<img src="resources/10-chapter-01/FlujoAutenticacion.png">
 
 **Field Execution & Evidence:**
 
@@ -165,15 +203,21 @@ Representa el flujo mediante el cual el supervisor solicita un reporte de cumpli
 
 **Flujo General:**
 
-Representa la interacción y el flujo de información entre los diferentes Bounded Contexts del sistema, evidenciando cómo Authentication habilita el acceso, Contract & Obligation Management origina las obligaciones, Field Execution & Evidence las ejecuta y captura evidencia, Incident & Corrective Action gestiona las excepciones, y Compliance Reporting consolida la información de los demás contextos para la generación de reportes.
+Representa la interacción y el flujo de información entre los diferentes Bounded Contexts del sistema, evidenciando cómo Authentication habilita el acceso, Contract & Obligation Management origina las obligaciones, Field Execution & Evidence registra la ejecución, Incident & Corrective Action gestiona las desviaciones e Incident & Corrective Action consolida la información.
 
 <img src="resources/10-chapter-01/FlujoGeneral.png">
 
+<a id="2513-bounded-context-canvases"></a>
 
-2.5.1.3. Bounded Context Canvases
+#### 2.5.1.3. Bounded Context Canvases
 
-<a id="252-context-mapping"></a>
-Para cada uno de los Bounded Contexts candidatos identificados, se elaboró un Bounded Context Canvas siguiendo un proceso iterativo de Context Overview Definition, Business Rules Distillation & Ubiquitous Language Capture, Capability Analysis, Dependencies Capture y Design Critique. Los contextos se abordaron en orden de importancia, priorizando el core domain de la solución.
+Para cada uno de los Bounded Contexts candidatos identificados, se elaboró un Bounded Context Canvas siguiendo un proceso iterativo de Context Overview Definition, Business Rules Distillation & Ubiquitous Language Definition, según las prácticas de Domain-Driven Design. A continuación, se presentan los canvases elaborados:
+
+**Authentication:**
+
+Gestiona la identificación, verificación y autorización de operarios y supervisores dentro del sistema.
+
+<img src="resources/10-chapter-01/bc1.png">
 
 **Contract & Obligation Management:**
 
@@ -199,50 +243,67 @@ Consolida información de los demás contextos para la generación de reportes d
 
 <img src="resources/10-chapter-01/bc5.png">
 
-2.5.2. Context Mapping
+<a id="252-context-mapping"></a>
 
-<a id="253-software-architecture"></a>
-A partir de los Bounded Context Canvases elaborados, el equipo desarrolló un Context Map para visualizar las relaciones estructurales entre los contextos identificados, aplicando los patrones de relación establecidos en Domain-Driven Design.
+### 2.5.2. Context Mapping
 
-Durante el proceso se discutieron alternativas de diseño, entre ellas: mover la evaluación de SLA desde Field Execution & Evidence hacia Incident & Corrective Action (descartado por generar dependencia circular, dado que el SLA se evalúa sobre datos que ya posee Field Execution), la creación de un shared service entre Field Execution e Incident para reducir duplicación (descartado por el momento, dado el alcance del proyecto), y el consumo directo de Compliance Reporting hacia cada context individual sin un Open Host Service intermedio (descartado por generar alto acoplamiento ante cambios internos de cada context).
+<a id="2521-context-mapping-process"></a>
+
+#### 2.5.2.1. Context Mapping Process
+
+A partir de los Bounded Context Canvases elaborados, el equipo desarrolló un Context Map para visualizar las relaciones estructurales entre los contextos identificados, aplicando los patrones de relación descritos por Newman (2015): Customer/Supplier, Partnership, Shared Kernel, Conformist, Anti-Corruption Layer y Open Host Service.
+
+Durante el proceso se discutieron alternativas de diseño, entre ellas: mover la evaluación de SLA desde Field Execution & Evidence hacia Incident & Corrective Action (descartado por generar dependencias circulares), consolidar Authentication y Contract & Obligation Management (descartado para mantener separación de intereses) e implementar una anti-corruption layer entre los contextos (descartado en favor de una arquitectura más simple en la fase inicial).
 
 Como resultado de esta discusión, se estableció el siguiente Context Map:
 
 - **Authentication → Contract & Obligation Management** (Customer/Supplier): Contract & Obligation depende de la identidad y rol validados por Authentication.
 - **Authentication → Field Execution & Evidence** (Customer/Supplier): el operario debe estar autenticado antes de ejecutar una obligación.
 - **Contract & Obligation Management → Field Execution & Evidence** (Customer/Supplier): la obligación debe existir antes de poder ser ejecutada.
-- **Field Execution & Evidence ↔ Incident & Corrective Action** (Partnership): ambos contextos evolucionan de forma coordinada, dado que un cambio en el registro de evidencia impacta directamente en la detección de incumplimientos.
-- **Field Execution & Evidence e Incident & Corrective Action → Open Host Service → Compliance Reporting**: Compliance Reporting consume información consolidada de ambos contextos mediante un lenguaje publicado y estable, evitando el acoplamiento directo.
+- **Field Execution & Evidence ↔ Incident & Corrective Action** (Partnership): ambos contextos evolucionan de forma coordinada, dado que un cambio en el registro de evidencia impacta directamente en la evaluación de cumplimiento.
+- **Field Execution & Evidence e Incident & Corrective Action → Open Host Service → Compliance Reporting**: Compliance Reporting consume información consolidada de ambos contextos mediante un lenguaje de integración neutral.
 
 <img src="resources/10-chapter-01/ContextMapping.png">
-2.5.3. Software Architecture
+
+<a id="253-software-architecture"></a>
+
+### 2.5.3. Software Architecture
 
 <a id="2531-software-architecture-context-level-diagrams"></a>
-Aplicando el C4 Model, el equipo elaboró la representación de la arquitectura de software de la solución, utilizando Structurizr como herramienta de Diagram-as-Code (Structurizr DSL).
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
-El Context Diagram muestra el sistema Service Compliance como una caja central, rodeado de sus usuarios (Operario de campo y Supervisor) y los sistemas externos con los que interactúa (Servicio de Notificaciones y Servicio de Almacenamiento).
+Aplicando el C4 Model, el equipo elaboró la representación de la arquitectura de software de la solución, utilizando Structurizr como herramienta de Diagram-as-Code (Structurizr DSL).
 
-El Operario de campo utiliza el sistema para consultar sus obligaciones asignadas, ejecutar el servicio y registrar evidencia. El Supervisor lo utiliza para supervisar el cumplimiento, gestionar incidencias y consultar reportes. El sistema se apoya en un servicio externo de notificaciones push para alertar sobre obligaciones próximas a vencer, y en un servicio externo de almacenamiento en la nube para conservar las evidencias fotográficas capturadas en campo.
+##### Context Diagram
+
+El Context Diagram muestra el sistema Service Compliance como una caja central, rodeado de sus usuarios (Operario de campo y Supervisor) y los sistemas externos con los que interactúa (Servicio de Notificaciones).
+
+El Operario de campo utiliza el sistema para consultar sus obligaciones asignadas, ejecutar el servicio y registrar evidencia. El Supervisor lo utiliza para supervisar el cumplimiento, gestionar incidencias y consultar reportes de cumplimiento.
 
 <img src="resources/10-chapter-01/ContextDiagram1.png">
 
-2.5.3.2. Software Architecture Container Level Diagrams
+<a id="2532-software-architecture-container-level-diagrams"></a>
 
-<a id="2533-software-architecture-deployment-diagrams"></a>
-El Container Diagram muestra los elementos de alto nivel de la arquitectura de software de Service Compliance y cómo se distribuyen las responsabilidades entre ellos. La solución está compuesta por un Landing Page (sitio web estático que presenta el modelo de negocio), una Mobile App (utilizada por operarios y supervisores para interactuar con el sistema), una API REST (que centraliza la lógica de negocio de los cinco Bounded Contexts identificados: Authentication, Contract & Obligation Management, Field Execution & Evidence, Incident & Corrective Action y Compliance Reporting), y una Base de Datos que almacena la información del dominio.
+#### 2.5.3.2. Software Architecture Container Level Diagrams
 
-La Mobile App se comunica con la API REST mediante peticiones HTTPS/JSON, mientras que la API REST se comunica con dos servicios externos: un servicio de notificaciones para alertar sobre obligaciones próximas a vencer, y un servicio de almacenamiento en la nube para conservar las evidencias fotográficas capturadas por los operarios.
+##### Container Diagram
+
+El Container Diagram muestra los elementos de alto nivel de la arquitectura de software de Service Compliance y cómo se distribuyen las responsabilidades entre ellos. La solución está compuesta por una Mobile App (frontend), una API REST (backend), una base de datos relacional y servicios externos de notificación.
+
+La Mobile App se comunica con la API REST mediante peticiones HTTPS/JSON, mientras que la API REST se comunica con dos servicios externos: un servicio de notificaciones para alertar sobre obligaciones vencidas y un servicio de ubicación para validar geolocalización en tiempo real.
 
 <img src="resources/10-chapter-01/ContextDiagram2.png">
 
-2.5.3.3. Software Architecture Deployment Diagrams
+<a id="2533-software-architecture-deployment-diagrams"></a>
 
-<a id="26-tactical-level-domain-driven-design"></a>
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
-El Deployment Diagram muestra la distribución física de los componentes del sistema Service Compliance sobre la infraestructura de hardware. La Mobile App se ejecuta en el dispositivo móvil del operario o supervisor. El Landing Page se despliega como sitio estático en un servicio de hosting (GitHub Pages / Vercel). La API REST y la Base de Datos se despliegan en un proveedor de servicios en la nube (Railway), permitiendo su acceso público según lo requerido por el enunciado del curso. Adicionalmente, el sistema se apoya en Firebase para los servicios externos de notificaciones y almacenamiento de evidencias.
+##### Deployment Diagram
+
+El Deployment Diagram muestra la distribución física de los componentes del sistema Service Compliance sobre la infraestructura de hardware. La Mobile App se ejecuta en el dispositivo móvil del operario y del supervisor, la API REST se ejecuta en un servidor en la nube, y la base de datos se ejecuta en una instancia administrada en la nube.
+
+<img src="resources/10-chapter-01/ContextDiagram3.png">
 
 <img src="resources/10-chapter-01/ContextDiagram3.png">
 2.6. Tactical-Level Domain-Driven Design
