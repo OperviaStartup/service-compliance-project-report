@@ -191,31 +191,32 @@ Para cada uno de los Bounded Contexts candidatos identificados, se elaboró un B
 
 Gestiona la identificación, verificación y autorización de operarios y supervisores dentro del sistema.
 
-<img src="resources/10-chapter-01/.png">
+<img src="resources/10-chapter-01/bc1.png">
 
 **Contract & Obligation Management:**
 
 Gestiona el registro de contratos de servicio y la traducción de sus condiciones en obligaciones operativas.
 
-<img src="resources/10-chapter-01/.png">
+<img src="resources/10-chapter-01/bc2.png">
 
 **Field Execution & Evidence:**
 
 Core domain de la solución. Gestiona la ejecución de obligaciones en campo y la captura de evidencia, incluyendo soporte offline.
 
-<img src="resources/10-chapter-01/.png">
+<img src="resources/10-chapter-01/bc3.png">
 
 **Incident & Corrective Action:**
 
 Gestiona la evaluación de SLA, detección de incumplimientos y el ciclo de vida de incidencias y acciones correctivas.
 
-<img src="resources/10-chapter-01/.png">
+<img src="resources/10-chapter-01/bc4.png">
 
 **Compliance Reporting:**
 
 Consolida información de los demás contextos para la generación de reportes de cumplimiento y notificaciones.
 
-<img src="resources/10-chapter-01/.png">
+<img src="resources/10-chapter-01/bc5.png">
+
 2.5.2. Context Mapping
 
 <a id="253-software-architecture"></a>
