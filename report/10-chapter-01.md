@@ -1,312 +1,314 @@
-<a id="capitulo-i-presentacion"></a>
-
 # Capítulo I: Presentación
-
-<a id="11-startup-profile"></a>
 
 ## 1.1. Startup Profile
 
-<a id="111-descripcion-de-la-startup"></a>
-
 ### 1.1.1. Descripción de la Startup
 
-**Opervia** es una startup de software orientada al desarrollo de soluciones digitales para la gestión operativa, verificación y evidencia del cumplimiento de servicios tercerizados ejecutados en instalaciones físicas de empresas clientes.
+**Opervia** es una startup académica orientada al diseño de soluciones digitales para la gestión y trazabilidad del cumplimiento de servicios tercerizados. El proyecto toma como dominio inicial los **servicios de limpieza tercerizada B2B en el Perú**, donde una empresa prestadora ejecuta actividades en instalaciones de una organización cliente y debe coordinar personas, condiciones de servicio, supervisión y resultados.
 
-Su producto principal, **Service Compliance**, está diseñado para el dominio de los servicios de limpieza tercerizada en Perú. La solución relaciona las condiciones establecidas en un contrato de servicio con obligaciones operativas concretas, ejecuciones realizadas en campo, evidencias y resultados de cumplimiento.
+El Instituto Nacional de Estadística e Informática (INEI) clasifica la **limpieza general de edificios** en la clase CIIU 8121, que comprende la limpieza general no especializada de oficinas, fábricas, comercios, instituciones y otros establecimientos. En enero de 2026, el INEI reportó además que este rubro creció por la ampliación de contratos de limpieza integral en centros comerciales, hospitales, plantas industriales y almacenes, lo que evidencia la presencia de este tipo de servicio en distintos entornos organizacionales (INEI, 2026a; INEI, s. f.).
 
-Service Compliance no es un gestor genérico de tareas. Cada obligación operativa tiene como origen una condición del servicio contratado y se relaciona con una frecuencia, una ventana horaria, una ubicación, un responsable, un estándar de ejecución y, cuando corresponda, un nivel de evidencia.
+A partir de este dominio, Opervia propone **Service Compliance**, un producto cuyo propósito es mantener una relación trazable entre aquello que debe cumplirse dentro de un servicio y aquello que realmente ocurre durante su ejecución. Su modelo conceptual inicial se resume en la siguiente cadena:
 
-La cadena principal de la solución es:
+> **Service Contract → Service Obligation → Execution → Evidence → Compliance Evaluation → Non-compliance → Corrective Action → Compliance Report**
 
-> **Service Contract → Service Obligation → Execution → Evidence → SLA Evaluation → Non-compliance → Corrective Action → Compliance Report**
+La cadena representa el modelo de solución que el equipo busca validar y desarrollar. No presupone que todo contrato pueda transformarse automáticamente en obligaciones operativas ni que todas las actividades requieran el mismo mecanismo de evidencia. Estas reglas dependen del servicio, del acuerdo entre las organizaciones y del resultado de la investigación con los segmentos objetivo.
 
-Service Compliance no se plantea como un gestor genérico de tareas: una actividad operativa solo tendría sentido en el producto si se relaciona con una condición u obligación de un servicio contratado.
+Service Compliance no se plantea como un gestor genérico de tareas. Su propuesta consiste en que una actividad operativa conserve el contexto del compromiso de servicio que la origina, el resultado de su ejecución y los elementos necesarios para explicar posteriormente su estado de cumplimiento.
 
-Misión provisional. Facilitar la trazabilidad de compromisos de servicio y su cumplimiento operativo para organizaciones de servicios tercerizados, siempre que la investigación confirme que esa trazabilidad responde a una necesidad prioritaria.
+**Misión.** Facilitar que los equipos responsables de servicios tercerizados relacionen de forma clara los compromisos operativos, su ejecución y la evidencia necesaria para comprender el estado de cumplimiento del servicio.
 
-Visión provisional. Convertirse en una alternativa digital confiable para consultar y explicar el estado de cumplimiento de servicios tercerizados, sin presuponer todavía su modelo comercial, alcance funcional ni mercado final.
+**Visión.** Convertir a Opervia en una alternativa digital especializada para la gestión del cumplimiento de servicios tercerizados, iniciando en limpieza y extendiendo el modelo únicamente cuando las necesidades y reglas del dominio hayan sido validadas.
 
-<a id="112-perfiles-de-integrantes-del-equipo"></a>
+**Propuesta de valor inicial.** Permitir a supervisores y operarios de servicios de limpieza trabajar sobre una misma referencia operativa, registrar lo ocurrido en campo y conservar una trazabilidad que facilite la supervisión, la atención de desviaciones y la explicación del cumplimiento.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-La startup Opervia está conformada por los integrantes responsables del análisis, diseño, desarrollo, validación y documentación de Service Compliance:
+El equipo de Opervia reúne conocimientos de análisis de requisitos, desarrollo de software, modelado de dominio, arquitectura e integración de aplicaciones. La composición del equipo se presenta a continuación.
 
-| N.° | Apellidos y nombres                | Código        | Carrera                | Imagen                                                 | Conocimientos y aporte al proyecto                                                                                                                                                                                                                                                                                                                                                                    |
-| --: | ---------------------------------- | ------------- | ---------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   1 | Arias Tasayco, Jean Pool Alexander | U202414054    | Ingeniería de Software | ![Participante Jean](resources/10-chapter-01/jean.jpg) | Cuenta con conocimientos en desarrollo de software, programación, bases de datos, diseño de APIs REST y control de versiones con Git/GitHub. Aporta al proyecto en el análisis de requisitos, definición de la arquitectura de la solución, modelado del dominio, desarrollo del backend y aplicaciones móviles, así como en la integración y validación de las funcionalidades de Service Compliance. |
-|   2 | Por completar                      | Por completar | Ingeniería de Software | Por completar                                          | Por completar                                                                                                                                                                                                                                                                                                                                                                                         |
-|   3 | Por completar                      | Por completar | Ingeniería de Software | Por completar                                          | Por completar                                                                                                                                                                                                                                                                                                                                                                                         |
-|   4 | Por completar                      | Por completar | Ingeniería de Software | Por completar                                          | Por completar                                                                                                                                                                                                                                                                                                                                                                                         |
+| N.° | Integrante | Código | Carrera | Fotografía | Principales conocimientos y aportes |
+|---:|---|---|---|---|---|
+| 1 | Arias Tasayco, Jean Pool Alexander | U202414054 | Ingeniería de Software | ![Participante Jean](resources/10-chapter-01/jean.jpg) | Cuenta con conocimientos en desarrollo de software, programación, bases de datos, diseño de APIs REST y control de versiones con Git/GitHub. Aporta al proyecto en el análisis de requisitos, definición de la arquitectura de la solución, modelado del dominio, desarrollo del backend y aplicaciones móviles, así como en la integración y validación de las funcionalidades de Service Compliance. |
 
 
 ## 1.2. Solution Profile
 
-<a id="121-antecedentes-y-problematica"></a>
-
 ### 1.2.1. Antecedentes y problemática
 
-Las empresas proveedoras de servicios tercerizados deben ejecutar actividades físicas conforme a condiciones establecidas en contratos comerciales. En el caso de la limpieza tercerizada, estas condiciones pueden incluir frecuencias de atención, horarios, ubicaciones, estándares de calidad, inspecciones y tiempos máximos para resolver incidencias.
+La prestación de servicios de limpieza en edificios forma parte de las actividades de servicios administrativos y de apoyo. El INEI define la clase CIIU 8121 como la limpieza general de oficinas, fábricas, comercios, instituciones y otros establecimientos. Esta actividad puede desarrollarse dentro de múltiples tipos de instalaciones y bajo contratos de servicio entre organizaciones (INEI, s. f.).
 
-La operación requiere coordinación entre los operarios que ejecutan el servicio y los supervisores que controlan su cumplimiento. El operario debe conocer las obligaciones que debe ejecutar y registrar la información correspondiente. El supervisor debe revisar el avance, identificar desviaciones y gestionar las acciones correctivas necesarias.
+El contexto laboral también evidencia la relevancia de las ocupaciones vinculadas al dominio. La Encuesta de Demanda Ocupacional del Ministerio de Trabajo y Promoción del Empleo (MTPE) ubicó a los **limpiadores y asistentes de oficinas, hoteles y otros establecimientos** entre las ocupaciones con mayor demanda de puestos permanentes para 2023. Para el conjunto de nuevos puestos permanentes analizados por la encuesta, 72,5 % requería experiencia laboral, 99,1 % al menos una habilidad digital y 45,5 % como mínimo secundaria completa (MTPE, 2023a). Estas cifras describen el contexto de contratación formal estudiado por la EDO y no deben interpretarse como características exclusivas de todos los trabajadores de limpieza.
 
-La problemática abordada por Service Compliance es la falta de trazabilidad integrada entre las condiciones contractuales, las obligaciones operativas, la ejecución realizada en campo y la evidencia del cumplimiento. Cuando esta información se gestiona mediante registros manuales o canales separados, se dificulta conocer oportunamente el estado real del servicio, consolidar evidencias y responder ante incumplimientos o reclamos.
+En Lima Metropolitana, la misma Encuesta de Demanda Ocupacional proyectó para 2023 una demanda de **2 530 trabajadores** para la ocupación de limpiadores y asistentes de oficinas, hoteles y otros establecimientos dentro de los puestos cuyo nivel educativo mínimo requerido era secundaria completa (MTPE, 2023b). Asimismo, el Informe Trimestral del Mercado Laboral del MTPE reportó para el primer trimestre de 2024 un promedio de **49 653 trabajadores formales privados** en esta ocupación; entre los registros con característica identificada, 55 % correspondía a mujeres y 37 % a hombres, 64 % a adultos de 30 a 59 años y 20 % a jóvenes de 15 a 29 años. El mismo informe clasificó al 98 % como trabajadores no calificados según su metodología ocupacional (MTPE, 2024).
 
-Los principales problemas que resuelve la propuesta son:
+El problema abordado por Opervia no es la actividad de limpieza en sí misma, sino la **trazabilidad del cumplimiento de un servicio tercerizado**. En una relación B2B, una organización cliente espera que determinadas condiciones de servicio se cumplan, mientras que la organización prestadora debe convertir esas condiciones en trabajo operativo, coordinar personas, supervisar resultados y atender desviaciones. El proyecto parte de la hipótesis de que, cuando la información relacionada con el servicio queda distribuida entre contratos, cronogramas, instrucciones, mensajes, registros de campo y reportes, puede resultar costoso reconstruir qué debía ocurrir, qué ocurrió realmente y qué evidencia existe para sustentar una evaluación de cumplimiento.
 
-1. dificultad para relacionar una actividad de campo con la obligación contractual que la origina;
-2. limitada visibilidad sobre obligaciones pendientes, vencidas o incumplidas;
-3. dispersión de evidencias en distintos medios de comunicación;
-4. retraso en la identificación y atención de incidencias;
-5. esfuerzo elevado para consolidar reportes de cumplimiento;
-6. dificultad para demostrar objetivamente la ejecución del servicio;
-7. ausencia de un historial integrado de ejecuciones, evidencias e incidencias.
-
-En respuesta a esta problemática, Service Compliance centraliza el ciclo operativo de cumplimiento mediante una solución móvil conectada con servicios RESTful. El sistema permite registrar la ejecución de obligaciones, asociar evidencias, identificar incumplimientos y realizar seguimiento a las acciones correctivas.
+La problemática se analiza mediante la técnica **5W+2H** para delimitar el dominio sin convertir assumptions en resultados empíricos.
 
 #### Análisis 5W+2H
 
-| Elemento | Aplicación al proyecto |
+| Dimensión | Análisis para Service Compliance |
 |---|---|
-| **Who** | Operarios y supervisores que participan en la ejecución y control de servicios de limpieza tercerizada. |
-| **What** | Gestión, ejecución, verificación y seguimiento de obligaciones contractuales de limpieza. |
-| **Where** | Instalaciones físicas de las empresas clientes donde se ejecuta el servicio. |
-| **When** | Durante las frecuencias, turnos y ventanas horarias definidas para cada obligación. |
-| **Why** | Para mejorar la trazabilidad del servicio, detectar incumplimientos y facilitar la gestión de evidencias y acciones correctivas. |
-| **How** | Mediante una aplicación móvil integrada con servicios RESTful, almacenamiento local, mecanismos de evidencia y módulos de supervisión. |
-| **How much** | Mediante indicadores de cumplimiento, tiempo de supervisión, incidencias y consolidación de evidencias definidos durante el proceso de investigación y validación. |
+| **What — ¿Qué ocurre?** | Puede existir una pérdida de trazabilidad entre las condiciones acordadas para un servicio, las obligaciones operativas derivadas de ellas, la ejecución en campo, la evidencia disponible y la evaluación posterior de cumplimiento. |
+| **Who — ¿Quiénes intervienen?** | Intervienen principalmente la organización prestadora, sus supervisores/coordinadores y operarios; también participan responsables de la organización cliente, responsables contractuales y decisores del servicio según el tipo de contrato. |
+| **Where — ¿Dónde ocurre?** | En instalaciones donde una organización presta servicios de limpieza a otra: oficinas, comercios, instituciones, centros de salud, plantas, almacenes u otros establecimientos. El estudio inicial del equipo se concentra en Lima Metropolitana. |
+| **When — ¿Cuándo se vuelve crítico?** | Al convertir condiciones del servicio en instrucciones operativas, durante la ejecución, al verificar resultados, cuando aparece una desviación u observación, al responder un reclamo y al consolidar información de cumplimiento. |
+| **Why — ¿Por qué importa?** | Una trazabilidad insuficiente puede aumentar el esfuerzo de supervisión, dificultar la explicación del servicio y generar discrepancias acerca de qué se esperaba, qué se realizó y cómo se determinó el cumplimiento. |
+| **How — ¿Cómo puede manifestarse?** | Mediante información distribuida en diferentes canales, instrucciones ambiguas, ausencia de una referencia común, evidencia insuficiente, seguimiento tardío de excepciones o consolidación manual de reportes. |
+| **How Much — ¿Cuánto impacta?** | Aún no se dispone de una línea base propia que cuantifique el tiempo, costo o frecuencia del problema en las organizaciones objetivo. El impacto se medirá durante la investigación mediante variables como tiempo de consolidación, número de fuentes consultadas para reconstruir un caso, frecuencia de desviaciones y tiempo de respuesta ante consultas. |
 
-#### Objetivo de la solución
+**Objetivo de la solución.** Diseñar una experiencia digital que permita relacionar las condiciones relevantes de un servicio con obligaciones operativas, registrar su ejecución y evidencia, evaluar su estado de cumplimiento y conservar el seguimiento de desviaciones sin perder el historial original.
 
-Desarrollar una solución móvil para gestionar y evidenciar el cumplimiento de obligaciones de servicios de limpieza tercerizada, permitiendo a los operarios registrar sus ejecuciones y a los supervisores controlar incidencias, obligaciones vencidas, acciones correctivas y reportes de cumplimiento.
+**Alcance inicial.** El proyecto se concentra en servicios de limpieza tercerizada B2B en Perú, con investigación y validación inicial en Lima Metropolitana. El core del producto comprende la trazabilidad desde la obligación hasta el resultado de cumplimiento.
 
-#### Delimitación del alcance
-
-| Criterio | Alcance definido |
-|---|---|
-| Dominio | Servicios de limpieza tercerizada. |
-| Mercado inicial | Empresas y operaciones ubicadas en Perú. |
-| Segmentos objetivo | Operarios de campo y supervisores. |
-| Aplicación principal | Aplicación móvil para operación y supervisión. |
-| Componentes complementarios | Servicios RESTful y Landing Page. |
-| Proceso central | Obligación contractual, ejecución, evidencia y cumplimiento. |
-| Exclusiones iniciales | Control de plagas, seguridad, jardinería, mantenimiento y otros verticales de facility management. |
-
-<a id="122-lean-ux-process"></a>
+**Restricciones y delimitación.** No forman parte del alcance inicial la nómina, control general de recursos humanos, contabilidad, planificación financiera ni la administración genérica de proyectos. Tecnologías como QR, NFC, GPS, fotografías o notificaciones se consideran mecanismos candidatos de implementación y solo deben incorporarse cuando exista una necesidad funcional, una regla del servicio o un requisito académico que las justifique. La solución sí deberá cumplir las restricciones tecnológicas establecidas por el curso para las experiencias móviles.
 
 ### 1.2.2. Lean UX Process
 
-<a id="1221-lean-ux-problem-statements"></a>
+El equipo emplea Lean UX para convertir la problemática inicial en supuestos explícitos, resultados de negocio esperados y soluciones candidatas que posteriormente serán contrastadas mediante UX Research. El propósito no es presentar los assumptions como hechos, sino hacer visible aquello que el equipo considera necesario aprender y medir.
 
 #### 1.2.2.1. Lean UX Problem Statements
 
 ##### Problem Statement
 
-> The current state of the outsourced cleaning services domain has focused mainly on executing and supervising physical service activities according to contractual conditions such as frequency, schedule, location and service standards.
+> **The current state of the domain we are working in** —los servicios de limpieza tercerizada B2B— requiere coordinar compromisos de servicio con actividades ejecutadas físicamente en instalaciones de clientes, involucrando principalmente a supervisores/coordinadores y operarios de la empresa prestadora.
 >
-> What existing operational practices fail to address is the integrated traceability between contractual obligations, field execution, evidence collection, compliance evaluation and corrective actions.
+> **What existing products/services and current practices may fail to address is** una trazabilidad simple y consultable que conecte la condición acordada, la obligación operativa, la ejecución realizada, la evidencia disponible y la respuesta frente a una desviación, evitando que el estado del servicio tenga que reconstruirse desde múltiples fuentes.
 >
-> Our product, Service Compliance, will address this gap by transforming service contract conditions into operational obligations and providing a mobile-first workflow for execution registration, evidence capture, incident management and compliance supervision. Our initial focus will be outsourced cleaning services in Peru, with field operators and supervisors as the target user segments.
+> **Our product/service will address this gap by** relacionar cada obligación relevante con su ejecución, evidencia, evaluación de cumplimiento y seguimiento de excepciones, manteniendo un historial consultable para la supervisión.
 >
-> We’ll know we are successful when operators can register their assigned obligations efficiently, supervisors can identify pending or overdue obligations, and the organization can consult reliable execution evidence and compliance information.
+> **Our initial focus will be** supervisores/coordinadores de servicios de limpieza tercerizada y operarios de campo de empresas prestadoras que atienden instalaciones de clientes.
+>
+> **We’ll know we are successful when we see** una reducción del tiempo necesario para determinar y explicar el estado de una obligación, una mayor proporción de ejecuciones con el registro requerido completo, menor detección tardía de desviaciones y una experiencia de registro que los operarios puedan completar sin interferir significativamente con su trabajo principal.
 
-##### Componentes del Problem Statement
-
-| Componente | Definición para Service Compliance |
-|---|---|
-| Domain | Servicios de limpieza tercerizada ejecutados en instalaciones físicas. |
-| Customer segments | Operarios de campo y supervisores. |
-| Pain points | Falta de trazabilidad, evidencias dispersas, detección tardía de incumplimientos y consolidación manual de información. |
-| Market gap | Ausencia de un flujo integrado entre contrato, obligación, ejecución, evidencia y cumplimiento. |
-| Product strategy | Solución móvil conectada a servicios RESTful para registrar, verificar y supervisar obligaciones de servicio. |
-| Initial segment | Operarios y supervisores de empresas que ejecutan servicios de limpieza tercerizada en Perú. |
-| Success behaviors | Registro oportuno de ejecuciones, consulta de obligaciones, detección de vencimientos y uso de evidencias para supervisión. |
-
-<a id="1222-lean-ux-assumptions"></a>
+La oportunidad que Opervia busca explorar consiste en especializar el producto en **cumplimiento verificable de servicios**, diferenciándolo de herramientas cuya unidad principal es una tarea aislada. La magnitud de esta oportunidad y la disposición a pagar deberán contrastarse mediante investigación competitiva y entrevistas.
 
 #### 1.2.2.2. Lean UX Assumptions
 
+Los assumptions se organizan en los cinco tipos requeridos para el proyecto: **Business Assumptions, Business Outcome Assumptions, User Assumptions, User Outcome and Benefit Assumptions y Feature Assumptions**.
+
 ##### Business Assumptions
 
-| ID | Assumption |
+| ID | Business Assumption |
 |---|---|
-| BA-01 | Las empresas que prestan servicios de limpieza tercerizada necesitan controlar y demostrar el cumplimiento de sus servicios. |
-| BA-02 | La reducción de incumplimientos, reclamos, penalidades y tiempo de supervisión representa valor económico para la organización. |
-| BA-03 | Service Compliance se orienta a un modelo B2B con pago recurrente por parte de una empresa proveedora o cliente. |
-| BA-04 | La propuesta de valor se concentra en la trazabilidad del servicio y no en la simple creación de tareas. |
+| BA-01 | Creemos que empresas proveedoras de servicios de limpieza tercerizada pueden percibir valor económico en mejorar la trazabilidad del cumplimiento frente a sus clientes. |
+| BA-02 | Creemos que el comprador o decisor de Service Compliance puede ser un responsable de operaciones, administración o dirección de la empresa prestadora, distinto del usuario que ejecuta o supervisa el servicio. |
+| BA-03 | Creemos que existe una oportunidad de diferenciación si Service Compliance relaciona explícitamente obligaciones de servicio, ejecución, evidencia, desviaciones y estado de cumplimiento, en lugar de gestionar tareas aisladas. |
+| BA-04 | Creemos que comenzar con el vertical de limpieza permitirá modelar reglas, lenguaje y flujos suficientemente concretos antes de evaluar otros servicios tercerizados. |
 
 ##### Business Outcome Assumptions
 
-| ID | Assumption |
-|---|---|
-| BOA-01 | La solución reduce el tiempo dedicado por los supervisores a consolidar información operativa. |
-| BOA-02 | La solución permite detectar obligaciones vencidas antes de que generen reclamos. |
-| BOA-03 | La solución mejora la disponibilidad de evidencia para resolver disputas sobre la ejecución. |
-| BOA-04 | La solución incrementa la trazabilidad histórica de los servicios ejecutados. |
-| BOA-05 | La solución facilita la identificación de sedes, turnos u obligaciones con incumplimientos recurrentes. |
+| ID | Business Outcome Assumption | Indicador propuesto |
+|---|---|---|
+| BO-01 | Creemos que Service Compliance puede reducir el esfuerzo necesario para reconstruir y explicar el estado de cumplimiento de un servicio. | Tiempo medio para reconstruir un caso o responder una consulta. |
+| BO-02 | Creemos que Service Compliance puede aumentar la proporción de obligaciones cuya ejecución y evidencia requerida son trazables. | Porcentaje de obligaciones cerradas con registro y evidencia exigida completos. |
+| BO-03 | Creemos que Service Compliance puede ayudar a identificar desviaciones antes de que sean descubiertas únicamente por el cliente o al cierre del periodo. | Porcentaje de desviaciones detectadas antes de reclamo o cierre. |
+| BO-04 | Creemos que Service Compliance puede reducir el trabajo manual de consolidación para supervisión y reporting. | Cantidad de fuentes consultadas y tiempo utilizado para consolidar información. |
+
+Los valores objetivo de estos indicadores se establecerán después de obtener una línea base mediante investigación. Se evita fijar porcentajes arbitrarios antes de medir el proceso actual.
 
 ##### User Assumptions
 
-| ID | Assumption |
+| ID | User Assumption |
 |---|---|
-| UA-01 | El operario de campo ejecuta actividades físicas de limpieza en las instalaciones del cliente. |
-| UA-02 | El supervisor coordina, monitorea o revisa la ejecución del servicio. |
-| UA-03 | El operario necesita conocer la obligación, ubicación y ventana horaria de cada ejecución. |
-| UA-04 | El supervisor necesita identificar desviaciones y gestionar acciones correctivas. |
-| UA-05 | Los usuarios utilizan dispositivos móviles como parte de sus actividades operativas o de supervisión. |
+| UA-01 | Creemos que los supervisores/coordinadores necesitan conocer qué obligaciones están pendientes, realizadas, observadas, exceptuadas o vencidas dentro del servicio que supervisan. |
+| UA-02 | Creemos que los operarios necesitan instrucciones comprensibles sobre qué actividad realizar, dónde, en qué momento y qué registro se espera como resultado. |
+| UA-03 | Creemos que los supervisores combinan observación directa, comunicación con el personal y registros operativos para controlar el servicio. |
+| UA-04 | Creemos que los operarios presentan distintos niveles de familiaridad digital y que un flujo de registro complejo puede generar fricción o registros incompletos. |
 
 ##### User Outcome and Benefit Assumptions
 
-| ID | Assumption |
+| ID | User Outcome and Benefit Assumption |
 |---|---|
-| UBA-01 | El operario busca completar el registro de una ejecución con poca fricción. |
-| UBA-02 | El operario necesita registrar únicamente la información necesaria para demostrar el servicio. |
-| UBA-03 | El supervisor busca detectar tempranamente obligaciones vencidas o incumplidas. |
-| UBA-04 | El supervisor necesita consultar información consolidada sobre el estado de las obligaciones. |
-| UBA-05 | Los usuarios valoran reducir la duplicidad de registros y la comunicación dispersa. |
+| UO-01 | Los supervisores quieren identificar rápidamente qué requiere su atención sin reconstruir el estado desde varias fuentes. |
+| UO-02 | Los supervisores quieren consultar el historial de una obligación cuando existe una observación, desviación o reclamo. |
+| UO-03 | Los operarios quieren comprender con claridad qué deben ejecutar y registrar el resultado con la menor carga adicional posible. |
+| UO-04 | Los operarios quieren comunicar impedimentos y excepciones para que una ejecución incompleta no sea interpretada sin contexto. |
+| UO-05 | Los responsables de la empresa prestadora quieren disponer de información consistente para explicar al cliente qué ocurrió y qué acciones se tomaron. |
 
 ##### Feature Assumptions
 
-| ID | Assumption |
+| ID | Feature Assumption |
 |---|---|
-| FA-01 | La aplicación muestra al operario sus obligaciones pendientes, ubicación y ventana horaria. |
-| FA-02 | La aplicación permite registrar una ejecución desde el lugar donde se realiza el servicio. |
-| FA-03 | La aplicación permite capturar evidencia mediante timestamp, ubicación, QR, NFC o fotografía, según el nivel requerido. |
-| FA-04 | El sistema muestra alertas e indicadores para que el supervisor identifique obligaciones pendientes o vencidas. |
-| FA-05 | El sistema permite registrar incidencias y acciones correctivas conservando el historial original. |
-| FA-06 | El sistema ofrece reportes de cumplimiento agrupados por contrato, sede, turno, ubicación u obligación. |
-| FA-07 | La aplicación utiliza almacenamiento local y sincronización posterior para operar con conectividad limitada. |
-
-<a id="1223-lean-ux-hypothesis-statements"></a>
+| FA-01 | Creemos que representar obligaciones de servicio asociadas a una ubicación, frecuencia o ventana y criterio de aceptación ayudará a supervisores y operarios a compartir una referencia operativa común. |
+| FA-02 | Creemos que registrar la ejecución desde una experiencia móvil y vincularla directamente con su obligación y evidencia reducirá la pérdida de contexto entre campo y supervisión. |
+| FA-03 | Creemos que registrar desviaciones, excepciones y acciones correctivas sin reemplazar el historial original permitirá explicar posteriormente qué ocurrió y cómo se respondió. |
+| FA-04 | Creemos que una vista de estado de cumplimiento y reportes trazables por servicio, ubicación y periodo reducirá el trabajo manual de consolidación de los supervisores. |
+| FA-05 | Creemos que permitir almacenamiento local temporal y sincronización posterior reducirá la pérdida de registros en entornos donde la conectividad resulte insuficiente, si esta condición se confirma durante la investigación. |
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-| ID | Hypothesis Statement |
-|---|---|
-| HS-01 | We believe we will achieve better visibility of service execution if field operators attain a clear view of their assigned obligations, locations and time windows with a mobile list of contract-originated service obligations. |
-| HS-02 | We believe we will achieve more complete execution traceability if field operators attain the ability to register an execution immediately after completing the obligation with a mobile execution flow that requires only the necessary information. |
-| HS-03 | We believe we will achieve stronger evidence of service execution if operators and supervisors attain evidence associated with a specific obligation and location with configurable timestamps, location, QR, NFC or photographs. |
-| HS-04 | We believe we will achieve earlier detection of operational deviations if supervisors attain visibility of pending, overdue or potentially non-compliant obligations with alerts and compliance indicators. |
-| HS-05 | We believe we will achieve more controlled resolution of service deviations if supervisors attain the ability to register incidents, assign responsibility and track corrective actions with an incident workflow that preserves the original execution history. |
-| HS-06 | We believe we will achieve better decision-making based on service history if supervisors attain summarized compliance information with reports grouped by contract, site, shift, location or obligation type. |
-| HS-07 | We believe we will achieve more reliable field registration if operators working with limited connectivity attain the ability to record executions without an active connection with local storage and later synchronization. |
+Se formula un Hypothesis Statement por cada **Feature Assumption**, siguiendo el template indicado para el proyecto:
 
-<a id="1224-lean-ux-canvas"></a>
-	
+> **We believe we will achieve [business outcome] if [these personas] attain [this benefit/user outcome] with [this feature or solution].**
+
+##### HS-01 — Obligaciones de servicio
+
+> **We believe we will achieve** una reducción del esfuerzo necesario para coordinar y explicar el estado del servicio (**BO-01**)  
+> **if** supervisores/coordinadores y operarios (**UA-01, UA-02**)  
+> **attain** una referencia compartida sobre qué debe realizarse, dónde, cuándo y bajo qué criterio (**UO-01, UO-03**)  
+> **with** obligaciones de servicio estructuradas y vinculadas al servicio contratado (**FA-01**).
+
+##### HS-02 — Ejecución y evidencia
+
+> **We believe we will achieve** una mayor proporción de obligaciones con ejecución y evidencia trazables (**BO-02**)  
+> **if** operarios y supervisores (**UA-02, UA-04**)  
+> **attain** una forma rápida y comprensible de registrar el resultado sin reconstruir posteriormente su contexto (**UO-03**)  
+> **with** un registro móvil de ejecución directamente vinculado a la obligación y a la evidencia requerida (**FA-02**).
+
+##### HS-03 — Desviaciones y acciones correctivas
+
+> **We believe we will achieve** una detección y respuesta más temprana ante desviaciones relevantes (**BO-03**)  
+> **if** supervisores y operarios (**UA-01, UA-02**)  
+> **attain** la capacidad de comunicar una excepción, conocer su estado y conservar qué acción se realizó (**UO-01, UO-04**)  
+> **with** un flujo de desviaciones, excepciones y acciones correctivas que conserve el historial original (**FA-03**).
+
+##### HS-04 — Estado de cumplimiento y reporting
+
+> **We believe we will achieve** una reducción del trabajo manual de consolidación y explicación del cumplimiento (**BO-01, BO-04**)  
+> **if** supervisores/coordinadores (**UA-01, UA-03**)  
+> **attain** acceso directo al estado e historial de las obligaciones relevantes (**UO-01, UO-02, UO-05**)  
+> **with** una vista de cumplimiento y reportes trazables por servicio, ubicación y periodo (**FA-04**).
+
+##### HS-05 — Continuidad ante conectividad limitada
+
+> **We believe we will achieve** una mayor proporción de registros de ejecución completos (**BO-02**)  
+> **if** los operarios de campo (**UA-02, UA-04**)  
+> **attain** la capacidad de registrar una ejecución aun cuando la conectividad inmediata sea insuficiente (**UO-03**)  
+> **with** almacenamiento local temporal y sincronización posterior controlada (**FA-05**).
+
 #### 1.2.2.4. Lean UX Canvas
 
-![Lean UX Canvas](resources/10-chapter-01/LeanUXCanvas.jpg)
+El Lean UX Canvas sintetiza los elementos definidos previamente y establece qué debe aprender primero el equipo antes de consolidar las decisiones del producto.
 
-| Lean UX Canvas | Definition for Service Compliance |
-|---|---|
-| **Business problem** | Las obligaciones de limpieza tercerizada requieren ejecución y supervisión conforme a condiciones contractuales, pero la información de cumplimiento puede gestionarse de forma dispersa. |
-| **Business outcome** | Mejorar la trazabilidad del servicio, reducir retrasos en la detección de incumplimientos y disminuir el esfuerzo de consolidación de evidencias. |
-| **Users and customers** | Usuarios: operarios de campo y supervisores. Clientes organizacionales: empresas proveedoras y empresas cliente. |
-| **User benefits** | El operario consulta y registra sus obligaciones. El supervisor controla desviaciones, evidencias y acciones correctivas. |
-| **Solution ideas** | Aplicación móvil de operación, registro de evidencia, alertas, incidencias, sincronización y reportes de cumplimiento. |
-| **Feature assumptions** | Lista de obligaciones, registro móvil, evidencias, alertas, acciones correctivas, reportes y operación con conectividad limitada. |
-| **Business assumptions** | Existe una necesidad empresarial de controlar y demostrar el cumplimiento de servicios tercerizados. |
-| **Risks** | Variación de condiciones contractuales, resistencia al registro móvil, conectividad limitada y diferencias en los niveles de evidencia requeridos. |
-| **What must be true** | Las obligaciones deben poder expresarse como condiciones medibles y los usuarios deben completar el flujo de registro dentro del proceso operativo. |
-| **Research questions** | ¿Cómo se traducen los contratos en actividades? ¿Cómo se demuestra la ejecución? ¿Qué evidencia se acepta? ¿Cómo se gestionan los incumplimientos? |
-| **Initial experiments** | Entrevistas semiestructuradas, observación del proceso actual, prototipo de registro de obligaciones y prueba de alternativas de evidencia. |
-| **Success indicators** | Registro oportuno, reducción del tiempo de supervisión, consulta de obligaciones vencidas, disponibilidad de evidencias y seguimiento de acciones correctivas. |
+<table>
+<tr>
+<td><strong>1. Business Problem</strong><br><br>Las empresas proveedoras de limpieza tercerizada deben transformar compromisos de servicio en trabajo ejecutado en instalaciones del cliente. Cuando contrato, instrucciones, ejecución, evidencia y seguimiento quedan separados, explicar el estado de cumplimiento puede exigir reconstruir información desde múltiples fuentes.</td>
+<td><strong>2. Business Outcomes</strong><br><br>Reducir esfuerzo de reconstrucción y consolidación; aumentar obligaciones con ejecución y evidencia trazables; detectar desviaciones antes de reclamos tardíos; reducir trabajo manual de reporting.</td>
+</tr>
+<tr>
+<td><strong>3. Users / Customer Segments</strong><br><br><strong>Segmento 1:</strong> supervisores y coordinadores de servicios de limpieza tercerizada.<br><strong>Segmento 2:</strong> operarios de limpieza tercerizada.<br><br>Stakeholders relacionados: responsables de operaciones de la prestadora, responsables contractuales y responsables de facilities/servicios generales del cliente.</td>
+<td><strong>4. User Outcomes & Benefits</strong><br><br>Supervisores: detectar qué requiere atención, consultar historial y responder observaciones.<br>Operarios: entender qué hacer, registrar resultados con baja fricción y comunicar excepciones.<br>Prestadora: disponer de información consistente para explicar el servicio.</td>
+</tr>
+<tr>
+<td><strong>5. Solutions</strong><br><br>Obligaciones de servicio; registro móvil de ejecución; evidencia configurable; gestión de desviaciones y acciones correctivas; estado de cumplimiento; reporting trazable; almacenamiento local y sincronización cuando corresponda. QR, NFC, GPS y fotografías son mecanismos candidatos, no requisitos universales.</td>
+<td><strong>6. Hypotheses</strong><br><br>HS-01: obligaciones compartidas.<br>HS-02: ejecución y evidencia.<br>HS-03: desviaciones y acciones correctivas.<br>HS-04: cumplimiento y reporting.<br>HS-05: continuidad ante conectividad limitada.</td>
+</tr>
+<tr>
+<td><strong>7. Most important thing to learn first</strong><br><br>Determinar si la falta de trazabilidad entre lo acordado y lo ejecutado constituye un problema prioritario para supervisores y operarios, qué información se considera suficiente para evaluar cumplimiento y qué actor decide o paga por una solución.</td>
+<td><strong>8. Least amount of work to learn it</strong><br><br>Entrevistar entre 3 y 5 representantes por segmento, analizar competidores, revisar ejemplos anonimizados de contratos/registros cuando sea posible y contrastar un prototipo de baja fidelidad del flujo obligación → ejecución → evidencia → desviación.</td>
+</tr>
+</table>
 
-<a id="13-segmentos-objetivo"></a>
+<sub>*Figura 1. Lean UX Canvas de Service Compliance.*</sub>
+
+<!-- HUMAN-OPTIONAL: si el docente exige el template visual específico usado en clase, recrear estos mismos ocho bloques en la herramienta indicada y sustituir o complementar la tabla con una captura exportada. No cambiar el contenido sin revisar la trazabilidad con assumptions e hypotheses. -->
 
 ## 1.3. Segmentos objetivo
 
-Service Compliance se dirige inicialmente a dos segmentos objetivo directamente involucrados en la ejecución y control de servicios de limpieza tercerizada: **operarios de campo** y **supervisores**.
+El proyecto prioriza **dos segmentos objetivo humanos** porque ambos participan directamente en la experiencia operativa y presentan necesidades suficientemente diferentes para requerir investigación y diseño propios. Se evita convertir cada stakeholder del negocio en un segmento adicional, ya que posteriormente el proyecto debe realizar entre 3 y 5 entrevistas por segmento.
 
-#### Información estadística de sustento del sector
+La empresa prestadora, la organización cliente, el comprador, el responsable contractual y el responsable de facilities continúan siendo actores relevantes del dominio, pero no constituyen segmentos objetivo independientes en esta primera iteración.
 
-| Indicador | Dato | Sustento para el segmento | Fuente |
-|---|---|---|---|
-| Tamaño del mercado de servicios de limpieza en Perú | ≈ USD 2,55 mil millones (2025); CAGR proyectado de 8,5 % (2026-2035) | Demanda creciente de servicios tercerizados que amplía la cantidad de contratos, sedes, obligaciones y personal de campo. | Expert Market Research, *Peru Cleaning Services Market* (2025) |
-| Empresas formales en limpieza de edificios (CIIU 8121) | ≈ 4.785 empresas registradas | Base relevante de potenciales clientes con operaciones de limpieza tercerizada en el país. | Directorio de empresas (DatosPerú) |
-| Concentración de la demanda | Lima Metropolitana concentra la mayor parte del volumen nacional | Justifica el foco inicial del proyecto en operaciones ubicadas en Lima Metropolitana. | Expert Market Research, *Peru Cleaning Services Market* (2025) |
-| Informalidad del empleo en el Perú | 71,1 % de la PEA ocupada (2023); 73,4 % de la mano de obra informal es femenina | Contexto de operarios con menor formalización, alta rotación y fricción potencial ante el registro digital. | INEI, *Producción y Empleo Informal en el Perú* (2023) |
+| Actor relacionado | Participación esperada | Clasificación inicial |
+|---|---|---|
+| Jefe de operaciones / administrador de la empresa prestadora | Puede aprobar presupuesto, políticas y despliegue del producto. | Comprador o decisor potencial. |
+| Responsable de facilities / servicios generales de la organización cliente | Recibe el servicio y puede formular observaciones o revisar cumplimiento. | Stakeholder/beneficiario. |
+| Responsable contractual | Interpreta condiciones del acuerdo y sus modificaciones. | Actor de dominio. |
+| Supervisor / coordinador | Coordina, verifica y da seguimiento al servicio. | **Segmento objetivo 1.** |
+| Operario de limpieza | Ejecuta las actividades del servicio en campo. | **Segmento objetivo 2.** |
 
-<a id="131-operarios-de-campo"></a>
+### 1.3.1. Supervisores y coordinadores de servicios de limpieza tercerizada
 
-### 1.3.1. Operarios de campo
+#### Descripción del segmento
 
-Los operarios de campo ejecutan físicamente las actividades de limpieza en las instalaciones de la empresa cliente. Constituyen el usuario móvil principal de Service Compliance.
+Este segmento está compuesto por personas que organizan, coordinan y supervisan la ejecución de actividades de limpieza dentro de oficinas, hoteles y otros establecimientos. El **Clasificador Nacional de Ocupaciones 2015** reconoce específicamente la ocupación **3131 — Supervisores de mantenimiento y limpieza en oficinas, hoteles y otros establecimientos**, y señala entre sus tareas supervisar a limpiadores y demás personal de limpieza, controlar suministros y velar por el correcto desempeño de las funciones asignadas (INEI, 2015).
 
-| Aspecto | Descripción del segmento |
+Dentro de Service Compliance, este segmento representa al usuario que necesita comprender el estado operativo del servicio, detectar excepciones, revisar evidencia y responder ante observaciones. El supervisor no se asume automáticamente como comprador ni como administrador contractual; esas responsabilidades pueden recaer en otros cargos de la organización.
+
+#### Características demográficas, laborales y tecnológicas
+
+| Variable | Caracterización del segmento |
 |---|---|
-| Actividad principal | Ejecutar obligaciones de limpieza en ubicaciones y horarios definidos. |
-| Objetivo | Cumplir las obligaciones asignadas y registrar la evidencia correspondiente. |
-| Tareas principales | Consultar obligaciones, desplazarse, ejecutar el servicio, registrar la ejecución, adjuntar evidencia y reportar incidencias. |
-| Necesidad de información | Obligación, ubicación, frecuencia, ventana horaria, estándar y evidencia requerida. |
-| Dispositivo principal | Teléfono móvil utilizado durante la operación de campo. |
-| Beneficio esperado | Registrar el servicio de forma rápida, clara y trazable. |
-| Problemas que aborda la solución | Registros dispersos, falta de claridad, duplicidad de comunicación y pérdida de evidencia. |
+| **Edad** | Personas adultas en edad laboral. No se fija un rango específico porque las fuentes oficiales revisadas no ofrecen una distribución reciente y desagregada para la ocupación CNO 3131. La edad se registrará como variable objetiva durante entrevistas. |
+| **Género** | Participación abierta a hombres y mujeres. No se atribuye una proporción específica al segmento sin estadística ocupacional directa. |
+| **Ubicación inicial** | Lima Metropolitana, como alcance de investigación del equipo. |
+| **Rol laboral** | Supervisión, coordinación y control del trabajo de limpieza y del personal asignado; el CNO 2015 reconoce formalmente esta ocupación como 3131. |
+| **Experiencia** | Se priorizarán personas con experiencia reciente supervisando limpieza tercerizada. Como contexto del mercado formal, la EDO 2023 indicó que 72,5 % de los nuevos puestos permanentes estudiados requería experiencia, sin atribuir ese porcentaje exclusivamente a supervisores de limpieza (MTPE, 2023a). |
+| **Formación** | Puede variar según la empresa y complejidad del servicio. El proyecto no presupone un nivel educativo único para la ocupación. |
+| **Entorno tecnológico** | Se espera contacto habitual con teléfono móvil y herramientas de comunicación/registro. La EDO 2023 encontró que 99,1 % de la demanda de nuevos puestos permanentes estudiada solicitaba al menos una habilidad digital; el dato sirve como contexto general y será contrastado para este segmento (MTPE, 2023a). |
+| **Contexto de trabajo** | Trabajo presencial o distribuido entre instalaciones, coordinación con operarios y comunicación con responsables internos o del cliente. |
 
-##### Características demográficas del segmento
+#### Necesidades y comportamientos a validar
 
-| Característica | Perfil esperado |
+- Identificar qué obligaciones requieren atención durante el turno o periodo.
+- Conocer qué actividades fueron realizadas, observadas, exceptuadas o quedaron pendientes.
+- Revisar el contexto y evidencia de una ejecución sin recorrer múltiples canales.
+- Registrar y dar seguimiento a desviaciones o excepciones.
+- Responder observaciones del cliente con información trazable.
+- Reducir trabajo manual de consolidación y reporting.
+
+#### Fricciones y riesgos del segmento
+
+- La herramienta puede añadir más trabajo del que elimina si exige registro duplicado.
+- El supervisor puede no ser quien interpreta formalmente el contrato.
+- La organización puede mantener hojas de cálculo o mensajería como herramientas suficientes para determinados contratos.
+- La evidencia exigida por la prestadora puede diferir de la que acepta el cliente.
+- Los mecanismos de GPS, fotografías, QR o NFC pueden estar restringidos por políticas del lugar de servicio.
+
+### 1.3.2. Operarios de limpieza tercerizada
+
+#### Descripción del segmento
+
+Este segmento comprende a las personas que ejecutan directamente las actividades de limpieza en las instalaciones donde se presta el servicio. El **Clasificador Nacional de Ocupaciones 2015** identifica la ocupación **9112 — Limpiadores y asistentes de oficinas, hoteles y otros establecimientos**, cuyas tareas comprenden barrer o aspirar, lavar y lustrar pisos y muebles, limpiar servicios higiénicos y mantener ordenados diferentes tipos de establecimientos (INEI, 2015).
+
+El operario constituye el principal actor de campo. Para Service Compliance, su experiencia es crítica porque cualquier registro digital debe adaptarse al ritmo del trabajo físico y no convertirse en una carga administrativa que dificulte la ejecución del servicio.
+
+#### Características demográficas, laborales y tecnológicas
+
+El MTPE aporta información estadística específica para esta ocupación. En el primer trimestre de 2024, el empleo formal privado registró un promedio de **49 653 trabajadores** en la categoría de limpiadores y asistentes de oficinas, hoteles y otros establecimientos. El informe reportó 55 % de mujeres y 37 % de hombres; 64 % correspondía a adultos de 30 a 59 años y 20 % a jóvenes de 15 a 29 años. La suma no alcanza 100 % en algunas variables porque el propio informe excluye registros sin característica determinada. Además, 98 % fue clasificado como no calificado según la metodología ocupacional utilizada (MTPE, 2024).
+
+| Variable | Caracterización del segmento |
 |---|---|
-| Edad | Entre 25 y 55 años, con mayor concentración estimada entre 30 y 50 años. |
-| Género | Predominio femenino, en línea con el perfil de la fuerza de trabajo del sector. |
-| Nivel educativo | Secundaria completa o técnica básica; baja exposición previa a herramientas de gestión digital. |
-| Residencia | Distritos aledaños a la sede o zona donde se presta el servicio (foco inicial en Lima Metropolitana). |
-| Situación laboral | Dependiente de una empresa proveedora; alta rotación y proporción relevante de informalidad. |
-| Dispositivos | Teléfono móvil de gama media o baja; conectividad móvil limitada durante la jornada. |
-| Experiencia | Aplicación de protocolos e insumos de limpieza; registro habitual en papel o aplicaciones de mensajería. |
+| **Edad** | Predominio de adultos de 30 a 59 años (64 % en el empleo formal privado reportado para 2024 T1); 20 % correspondía a jóvenes de 15 a 29 años (MTPE, 2024). |
+| **Género** | En el registro formal privado analizado por el MTPE, 55 % correspondía a mujeres y 37 % a hombres; existe un porcentaje no determinado en la fuente (MTPE, 2024). |
+| **Ubicación inicial** | Lima Metropolitana. Para 2023, la EDO proyectó 2 530 nuevos puestos de esta ocupación que requerían como mínimo secundaria completa en Lima Metropolitana (MTPE, 2023b). |
+| **Nivel educativo / calificación** | El informe laboral de 2024 clasificó a 98 % de los trabajadores de esta ocupación como no calificados bajo su metodología. La EDO 2023 muestra además demanda relevante para personas con secundaria completa. |
+| **Experiencia laboral** | Variable según empresa e instalación. El reclutamiento de entrevistas priorizará personas con experiencia reciente en limpieza institucional, comercial, industrial u oficinas. |
+| **Capacidad digital** | No se presupone homogénea. El producto deberá minimizar escritura, pasos y navegación innecesaria y validar el nivel real de familiaridad con aplicaciones móviles. |
+| **Entorno de trabajo** | Trabajo físico y presencial, desplazamiento entre zonas, turnos y posible uso de guantes u otros implementos. El registro digital debe integrarse al flujo de trabajo en lugar de interrumpirlo. |
 
-<a id="132-supervisores"></a>
+#### Necesidades y comportamientos a validar
 
-### 1.3.2. Supervisores
+- Recibir instrucciones claras acerca de qué actividad realizar, dónde y cuándo.
+- Comprender qué evidencia o confirmación se solicita para una obligación concreta.
+- Registrar el resultado con pocos pasos y sin duplicar información.
+- Comunicar impedimentos, incidencias o excepciones con contexto suficiente.
+- Conocer si el registro de una actividad quedó correctamente guardado o sincronizado.
+- Poder continuar el registro ante conectividad insuficiente si esa situación se confirma como frecuente.
 
-Los supervisores coordinan, controlan y verifican la ejecución de los servicios de limpieza tercerizada. Constituyen el segmento encargado del monitoreo operativo.
+#### Fricciones y riesgos del segmento
 
-| Aspecto | Descripción del segmento |
-|---|---|
-| Actividad principal | Coordinar y verificar el cumplimiento de las obligaciones de servicio. |
-| Objetivo | Detectar desviaciones y gestionar acciones correctivas oportunamente. |
-| Tareas principales | Revisar obligaciones, identificar vencimientos, verificar evidencias, gestionar incidencias y consultar reportes. |
-| Necesidad de información | Estado de ejecución, evidencias, incidencias, responsables, fechas y acciones correctivas. |
-| Dispositivo principal | Aplicación móvil y servicios digitales de supervisión. |
-| Beneficio esperado | Obtener visibilidad centralizada y actuar antes de un reclamo. |
-| Problemas que aborda la solución | Consolidación manual, detección tardía, información fragmentada y falta de historial. |
+- Registrar cada actividad puede generar una carga desproporcionada frente al valor aportado.
+- El trabajador puede no disponer siempre de datos móviles o de un dispositivo asignado por la empresa.
+- El uso de fotografía o geolocalización puede ser sensible o estar prohibido en algunas instalaciones.
+- QR o NFC pueden fallar si el punto físico se deteriora, se retira o no corresponde a la actividad que se pretende verificar.
+- La definición de “evidencia suficiente” puede depender más del acuerdo de servicio que de la preferencia del operario.
 
-##### Características demográficas del segmento
+La investigación del Capítulo II deberá incluir **entre 3 y 5 participantes por cada segmento**, manteniendo separadas las características observadas en entrevistas de las assumptions definidas en este capítulo. Los resultados obtenidos servirán para construir User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping y para confirmar, modificar o rechazar las hipótesis de Lean UX.
 
-| Característica | Perfil esperado |
-|---|---|
-| Edad | Entre 28 y 50 años, con trayectoria previa en operaciones o servicios tercerizados. |
-| Género | Distribución mixta, con presencia femenina relevante por el contexto del sector. |
-| Nivel educativo | Superior técnica o universitaria (administración, gestión u operaciones). |
-| Residencia | Lima Metropolitana; se desplaza entre las sedes que tiene a su cargo. |
-| Situación laboral | Dependiente de la empresa proveedora; rol intermedio entre la operación y la gerencia. |
-| Dispositivos | Teléfono móvil y laptop; uso de Excel, WhatsApp y herramientas básicas de reporte. |
-| Experiencia | Coordinación de personal, control de horarios, verificación de calidad y atención de reclamos. |
+## Referencias
 
-<a id="133-organizaciones-relacionadas"></a>
+Instituto Nacional de Estadística e Informática. (2015). *Clasificador Nacional de Ocupaciones 2015*. https://cdn.www.gob.pe/uploads/document/file/4123438/Clasificador%20Nacional%20de%20Ocupaciones%202015.pdf
 
-### 1.3.3. Organizaciones relacionadas
+Instituto Nacional de Estadística e Informática. (2026a, 20 de marzo). *Sector Servicios Prestados a Empresas aumentó 3,68 % en enero 2026*. Plataforma del Estado Peruano. https://www.gob.pe/es/institucion/inei/noticias/1368667-sector-servicios-prestados-a-empresas-aumento-3-68-en-enero-2026
 
-Los segmentos objetivo forman parte de dos organizaciones principales:
+Instituto Nacional de Estadística e Informática. (s. f.). *Clasificación Industrial Internacional Uniforme, Revisión 4: Clase 8121, Limpieza general de edificios*. https://proyectos.inei.gob.pe/CIIU/frm_lista_notas.asp?wc_cod=8121
 
-| Organización | Relación con Service Compliance |
-|---|---|
-| **Empresa proveedora** | Ejecuta y supervisa el servicio tercerizado. Puede adquirir la solución para controlar operaciones, evidencias e indicadores. |
-| **Empresa cliente** | Contrata o recibe el servicio y establece las condiciones que deben cumplirse. Puede utilizar reportes y evidencias para verificar el servicio. |
+Ministerio de Trabajo y Promoción del Empleo. (2023a, 17 de febrero). *Empresas privadas requerirán más de 348 mil puestos laborales el 2023*. Plataforma del Estado Peruano. https://www.gob.pe/institucion/mtpe/noticias/701438-empresas-privadas-requeriran-mas-de-348-mil-puestos-laborales-el-2023
 
-La aplicación se concentra inicialmente en los usuarios operativos, porque son quienes ejecutan, registran y controlan directamente el servicio. La información producida por estos usuarios se utilizará para generar reportes destinados a responsables de operaciones y representantes de las organizaciones relacionadas.
+Ministerio de Trabajo y Promoción del Empleo. (2023b). *Demanda de ocupaciones en Lima Metropolitana 2023: Encuesta de Demanda Ocupacional*. https://cdn.www.gob.pe/uploads/document/file/4921861/Informe%20EDO%20al%202023%20_%20Lima%20Metro.pdf
 
-<a id="134-plan-de-investigacion-ux"></a>
+Ministerio de Trabajo y Promoción del Empleo. (2024). *Informe trimestral del mercado laboral: primer trimestre de 2024*. https://cdn.www.gob.pe/uploads/document/file/6653196/5783668-ite-2024-t1.pdf
 
-### 1.3.4. Plan de investigación UX
-
-Se realizarán entre tres y cinco entrevistas por segmento objetivo:
-
-| Segmento | Cantidad requerida | Propósito |
-|---|---:|---|
-| Operarios de campo | 3 a 5 entrevistas | Identificar tareas, herramientas, dificultades, evidencia utilizada y condiciones de operación. |
-| Supervisores | 3 a 5 entrevistas | Identificar actividades de coordinación, monitoreo, gestión de incidencias y elaboración de reportes. |
-
-<div style="page-break-before: always;"></div>
-
-<a id="capitulo-ii-requirements-development-and-software-solution-design"></a>
+<!-- HUMAN-PENDING: antes de exportar el PDF final, aplicar formato APA 7 completo a esta bibliografía (incluida sangría francesa) y confirmar que cada enlace siga accesible. -->
