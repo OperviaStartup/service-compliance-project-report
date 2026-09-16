@@ -24,6 +24,43 @@ El análisis competitivo permite conocer como se resuelve actualmente el control
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
+Las estrategias preliminares de Opervia se basan en diferenciar Service Compliance por la trazabilidad del cumplimiento, facilitar la participación del proveedor y mantener un alcance inicial enfocado en la limpieza tercerizada en Lima Metropolitana.
+
+1. **Diferenciarnos mediante la trazabilidad del cumplimiento**
+
+   Mientras eGenya y OrangeQC destacan el registro y la inspección de actividades, Service Compliance relacionará el contrato con la obligación, la evidencia, la revisión del supervisor y la acción correctiva.
+
+   - Modelar el flujo **servicio contratado → obligación → ejecución → evidencia → evaluación → acción correctiva**.
+   - Definir criterios de aceptación y evidencias requeridas para cada obligación.
+   - Generar reportes que diferencien lo reportado por el proveedor de lo validado por el supervisor.
+
+2. **Enfocarnos en un nicho local y específico**
+
+   Frente a plataformas más amplias como ServiceChannel, Opervia comenzará con servicios de limpieza tercerizada B2B y validará el producto en organizaciones e instalaciones de Lima.
+
+   - Realizar pilotos con una organización contratante, su proveedor y un conjunto reducido de obligaciones.
+   - Adaptar el lenguaje, los roles y los criterios de supervisión al contexto peruano.
+   - Mantener una propuesta SaaS accesible para organizaciones pequeñas y medianas.
+
+3. **Facilitar la adopción entre contratante y proveedor**
+
+   El producto debe ser útil para el supervisor que verifica el servicio y sencillo para el operario que registra la evidencia. La participación de ambos segmentos será necesaria para obtener información confiable.
+
+   - Definir permisos diferenciados para supervisores, operarios y responsables de cada organización.
+   - Diseñar un registro móvil breve y guiado para el personal de campo.
+   - Permitir que el supervisor revise evidencias, registre observaciones y solicite acciones correctivas.
+
+4. **Implementar una solución gradual y orientada a resultados**
+
+   Opervia no competirá inicialmente por cantidad de módulos. Se concentrará en el cumplimiento del servicio y ampliará la solución solo cuando la investigación confirme nuevas necesidades.
+
+   - Priorizar obligaciones, evidencias, evaluaciones, no conformidades y acciones correctivas.
+   - Mantener fuera del alcance inicial la nómina, contabilidad, planificación financiera y recursos humanos.
+   - Medir el tiempo de consolidación, la proporción de obligaciones con evidencia completa y la detección temprana de desviaciones.
+
+Estas estrategias aprovechan el enfoque especializado de Opervia y responden a la amplitud funcional de los competidores. Su efectividad deberá validarse mediante entrevistas y pilotos con supervisores y operarios.
+
+
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
