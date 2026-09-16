@@ -4,6 +4,10 @@
 
 ### 2.1.1. Análisis competitivo
 
+El análisis competitivo permite conocer como se resuelve actualmente el control de servicios tercerizados y qué espacio puede ocupar Service Compliance. Se seleccionaron **eGenya**, **OrangeQC** y **ServiceChannel** por que atienden necesidades relacionadas con la supervisión de servicios en instalaciones, la ejecución de actividades por personal propio o tercerizado, las inspecciones, la gestión de incidencias y el seguimiento del desempeño de proveedores. La comparación se concentra en la relación entre obligación, ejecución, evidencia, evaluación de cumplimiento y acción correctiva.
+
+#### Competitive Analysis Landscape
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 ## 2.2. Entrevistas
