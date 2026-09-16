@@ -75,20 +75,20 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 - **Entrevista #1**
 
-![Evidencia de la entrevista](ULR_DE_LA_IMAGEN)
+![Evidencia de la entrevista](URL_DE_LA_IMAGEN)
 
 | **Campo** | **Detalle** |
 | :---- | :------ |
-| **Entrevistador** | [Tu nombre / Nombre del miembro del equipo] |
-| **Entrevistado** | [Nombre del operario/Supervisor] |
-|  **Edad**| [XX] años |
-| **Ubicación** | [Distrito y/o sede de trabajo] |
-| **Tiempo Duración** | [XX] minutos |
-| **Enlace** | [Enlace de la grabación] |
+| **Entrevistador** | Carlos Franco Blancas Chávez |
+| **Entrevistado** | José Ramírez |
+| **Edad** | 32 años |
+| **Ubicación** | San Juan de Lurigancho (reside) / edificio de oficinas (sede de trabajo) |
+| **Tiempo Duración** | 12:50 minutos |
+| **Enlace** | https://youtu.be/BublVzjOtw0 |
 
 **Resumen:**
 
-> *Escribe aquí un resumen conciso de los hallazgos más importantes. Enfócate en sus dolores principales (pain points), cómo manejan actualmente las evidencias, problemas de conectividad o cualquier descubrimiento que valide o refute las hipótesis (Lean UX Assumptions) de Service Compliance.*
+> José Ramírez tiene 6 años trabajando en servicios de limpieza y actualmente se desempeña como jefe de operarios, liderando y coordinando a varios miembros de su equipo. Su principal pain point es la coordinación de horarios y asignación de zonas: toda la comunicación se maneja por WhatsApp mediante mensajes informales, lo que provoca que la información se cruce y dos operarios terminen asignados a la misma zona mientras otra queda sin cubrir, generando confusión y pérdida de tiempo. La evidencia de ejecución también se gestiona íntegramente por WhatsApp: el operario notifica por texto que terminó una tarea y adjunta una foto del espacio limpiado como respaldo, un proceso que José no percibe como tedioso porque ya está habituado a la herramienta, pero que carece de trazabilidad estructurada (no queda asociado a una obligación específica, solo a un mensaje de chat). Ante incidentes fuera de su alcance (ej. una ventana rota), existe un canal de escalamiento definido hacia el encargado de seguridad y riesgos. La conectividad a internet es generalmente buena en los pisos de trabajo, con la excepción del sótano, donde la señal es más débil. Cuando se le preguntó por una "herramienta mágica" para demostrar su desempeño sin supervisión constante, José propuso espontáneamente una aplicación móvil o web donde el personal de limpieza pueda registrar sus tareas diarias/semanales, marcarlas como completadas y subir evidencia, todo centralizado y consultable — validando directamente el Problem Statement y las Feature Assumptions de Service Compliance (FA-01, FA-02, FA-03) sin que se le haya sugerido la idea previamente.
 
 - **Entrevista #2**
 
@@ -128,20 +128,21 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 - **Entrevista #1**
 
-![Evidencia de la entrevista](ULR_DE_LA_IMAGEN)
+![Evidencia de la entrevista](URL_DE_LA_IMAGEN)
 
 | **Campo** | **Detalle** |
 | :---- | :------ |
-| **Entrevistador** | [Tu nombre / Nombre del miembro del equipo] |
-| **Entrevistado** | [Nombre del operario/Supervisor] |
-|  **Edad**| [XX] años |
-| **Ubicación** | [Distrito y/o sede de trabajo] |
-| **Tiempo Duración** | [XX] minutos |
-| **Enlace** | [Enlace de la grabación] |
+| **Entrevistador** | Carlos Franco Blancas Chávez |
+| **Entrevistado** | Ivonne Beatriz Ibañez Torres |
+| **Edad** | 36 años |
+| **Ubicación** | San Martín de Porres (reside) / supervisa 4 sedes |
+| **Tiempo Duración** | 8:51 minutos |
+| **Enlace** | https://youtu.be/9wKQs6Vbq0o |
 
 **Resumen:**
 
-> *Escribe aquí un resumen conciso de los hallazgos más importantes. Enfócate en sus dolores principales (pain points), cómo manejan actualmente las evidencias, problemas de conectividad o cualquier descubrimiento que valide o refute las hipótesis (Lean UX Assumptions) de Service Compliance.*
+> Ivonne tiene 8 años en el rubro de limpieza tercerizada, habiendo ascendido de operaria a encargada de grupo y finalmente a supervisora. Actualmente coordina 4 sedes y aproximadamente 35 personas. Su principal pain point es la dependencia total de WhatsApp como canal de comunicación: debe esperar respuestas de sus encargados, no recibe alertas automáticas cuando una obligación está próxima a vencer o incumplida, y se entera de los incumplimientos recién cuando el cliente reclama directamente (en el último caso mencionado, tardó entre 30-40 minutos solo en entender la situación después de contactar al encargado). La recopilación de evidencia es completamente manual: las fotos e informes llegan por WhatsApp organizados por grupos de sede, y ella debe revisar cada uno, identificar qué corresponde a cada actividad, y traspasar parte de la información a Excel — un proceso que le toma entre 4 y 5 horas semanales, variando según la cantidad de incidentes. Confirma explícitamente que no tiene la información centralizada: generar un reporte simple de "qué sede tuvo más problemas el mes pasado" le tomaría varias horas porque tendría que revisar manualmente cada reporte de sede y compararlos. Usa principalmente celular (por movilidad entre sedes) y laptop para Excel; sus herramientas habituales son WhatsApp, Excel, Google Drive y Google Calendar. Esta entrevista valida fuertemente varias Business Outcome Assumptions de Service Compliance (BOA-01: reducción de tiempo de consolidación; BOA-02: detección de vencimientos antes de reclamos; BOA-05: identificación de sedes con incumplimientos recurrentes) y expone con datos concretos (4-5 horas/semana, 30-40 min de reacción) el costo actual del proceso manual.
+
 
 - **Entrevista #2**
 
