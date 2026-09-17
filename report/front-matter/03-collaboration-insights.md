@@ -28,10 +28,6 @@ A continuación se presentan capturas de los analíticos de colaboración y de *
 
 <img src="../resources/front-matter/commits-general.png">
 
-#### Red de colaboración (Network graph)
-
-<img src="../resources/front-matter/network-graph.png">
-
 ### Distribución de la colaboración por integrante
 
 | Integrante                         | Sección principal entregada                                                                     | Tipo de aporte                    |

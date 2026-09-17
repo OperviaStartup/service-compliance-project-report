@@ -156,42 +156,5 @@ Las subsecciones de mayor profundidad se mantienen en la estructura del document
 
 [2.6.5. Bounded Context: Compliance Reporting](#265-bounded-context-compliance-reporting)
 
-Capítulo III: Solution UI/UX Design
-
-3.1. Product design
-
-3.1.1. Style Guidelines
-
-3.1.2. Information Architecture
-
-3.1.3. Landing Page UI Design
-
-3.1.4. Mobile Applications UX/UI Design
-
-Capítulo IV: Product Implementation & Validation
-
-4. Product Implementation & Validation
-
-4.1. Software Configuration Management
-
-4.1.1. Software Development Environment Configuration
-
-4.1.2. Source Code Management
-
-4.1.3. Source Code Style Guide & Conventions
-
-4.1.4. Software Deployment Configuration
-
-4.2. Landing Page & Mobile Application Implementation
-
-4.2.1. Sprint n
-
-4.3. Validation Interviews
-
-4.3.1. Diseño de Entrevistas
-
-4.3.2. Registro de Entrevistas
-
-4.3.3. Evaluaciones según heurísticas
 
 <div style="page-break-before: always;"></div>
