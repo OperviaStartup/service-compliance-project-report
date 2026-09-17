@@ -161,16 +161,16 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 - **Entrevista #2**
 
-![Evidencia de la entrevista](ULR_DE_LA_IMAGEN)
+<img src="resources/11-chapter-02/Entrevista2.png">
 
-| **Campo** | **Detalle** |
-| :---- | :------ |
-| **Entrevistador** | [Tu nombre / Nombre del miembro del equipo] |
-| **Entrevistado** | [Nombre del operario/Supervisor] |
-|  **Edad**| [XX] años |
-| **Ubicación** | [Distrito y/o sede de trabajo] |
-| **Tiempo Duración** | [XX] minutos |
-| **Enlace** | [Enlace de la grabación] |
+| **Campo**           | **Detalle**              |
+| :------------------ | :----------------------- |
+| **Entrevistador**   | Jean Arias               |
+| **Entrevistado**    | Andy Ascayall            |
+| **Edad**            | 20 años                  |
+| **Ubicación**       | San Martin de Porres     |
+| **Tiempo Duración** | 7:58 minutos             |
+| **Enlace**          | [Enlace de la grabación] |
 
 **Resumen:**
 
