@@ -161,7 +161,7 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 - **Entrevista #2**
 
-![Evidencia de la entrevista](ULR_DE_LA_IMAGEN)
+<img src="/report/resources/11-chapter-02/evidencia-entrevista-segmento1-juan.jpeg">
 
 | **Campo**           | **Detalle**              |
 | :------------------ | :----------------------- |
