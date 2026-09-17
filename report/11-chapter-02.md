@@ -68,12 +68,7 @@ Las estrategias preliminares de Opervia se basan en diferenciar Service Complian
 
 Estas estrategias aprovechan el enfoque especializado de Opervia y responden a la amplitud funcional de los competidores. Su efectividad deberá validarse mediante entrevistas y pilotos con supervisores y operarios.
 
-
-<a id="22-entrevistas"></a>
-
 ## 2.2. Entrevistas
-
-<a id="221-diseno-de-entrevistas"></a>
 
 ### 2.2.1. Diseño de entrevistas
 
@@ -136,8 +131,6 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 - Cuéntame de alguna vez que sentiste que perdiste el control de la operación porque te faltaba información a tiempo.
 - Cuando detectas una falla en el servicio, ¿cómo le haces seguimiento a esa incidencia hasta que se solucione?
 
-<a id="222-registro-de-entrevistas"></a>
-
 ### 2.2.2. Registro de entrevistas
 
 **Segmento 1: Operarios de Campo**
@@ -157,7 +150,7 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 **Resumen:**
 
- José Ramírez tiene 6 años trabajando en servicios de limpieza y actualmente se desempeña como jefe de operarios, liderando y coordinando a varios miembros de su equipo. Su principal pain point es la coordinación de horarios y asignación de zonas: toda la comunicación se maneja por WhatsApp mediante mensajes informales, lo que provoca que la información se cruce y dos operarios terminen asignados a la misma zona mientras otra queda sin cubrir, generando confusión y pérdida de tiempo. La evidencia de ejecución también se gestiona íntegramente por WhatsApp: el operario notifica por texto que terminó una tarea y adjunta una foto del espacio limpiado como respaldo, un proceso que José no percibe como tedioso porque ya está habituado a la herramienta, pero que carece de trazabilidad estructurada (no queda asociado a una obligación específica, solo a un mensaje de chat). Ante incidentes fuera de su alcance (ej. una ventana rota), existe un canal de escalamiento definido hacia el encargado de seguridad y riesgos. La conectividad a internet es generalmente buena en los pisos de trabajo, con la excepción del sótano, donde la señal es más débil. Cuando se le preguntó por una "herramienta mágica" para demostrar su desempeño sin supervisión constante, José propuso espontáneamente una aplicación móvil o web donde el personal de limpieza pueda registrar sus tareas diarias/semanales, marcarlas como completadas y subir evidencia, todo centralizado y consultable , validando directamente el Problem Statement y las Feature Assumptions de Service Compliance (FA-01, FA-02, FA-03) sin que se le haya sugerido la idea previamente.
+> José Ramírez tiene 6 años trabajando en servicios de limpieza y actualmente se desempeña como jefe de operarios, liderando y coordinando a varios miembros de su equipo. Su principal pain point es la coordinación de horarios y asignación de zonas: toda la comunicación se maneja por WhatsApp mediante mensajes informales, lo que provoca que la información se cruce y dos operarios terminen asignados a la misma zona mientras otra queda sin cubrir, generando confusión y pérdida de tiempo. La evidencia de ejecución también se gestiona íntegramente por WhatsApp: el operario notifica por texto que terminó una tarea y adjunta una foto del espacio limpiado como respaldo, un proceso que José no percibe como tedioso porque ya está habituado a la herramienta, pero que carece de trazabilidad estructurada (no queda asociado a una obligación específica, solo a un mensaje de chat). Ante incidentes fuera de su alcance (ej. una ventana rota), existe un canal de escalamiento definido hacia el encargado de seguridad y riesgos. La conectividad a internet es generalmente buena en los pisos de trabajo, con la excepción del sótano, donde la señal es más débil. Cuando se le preguntó por una "herramienta mágica" para demostrar su desempeño sin supervisión constante, José propuso espontáneamente una aplicación móvil o web donde el personal de limpieza pueda registrar sus tareas diarias/semanales, marcarlas como completadas y subir evidencia, todo centralizado y consultable , validando directamente el Problem Statement y las Feature Assumptions de Service Compliance (FA-01, FA-02, FA-03) sin que se le haya sugerido la idea previamente.
 
 - **Entrevista #2**
 
@@ -174,7 +167,7 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 **Resumen:**
 
-Juan Antonio Sánchez Cuadrado tiene un año y medio de experiencia en servicios de limpieza. Sus principales dificultades son la falta de claridad sobre las prioridades, los cambios de tareas comunicados por WhatsApp o verbalmente y la ausencia de un responsable claramente asignado cuando falta un compañero, lo que genera retrasos y pérdida de tiempo. Actualmente, las evidencias se registran de manera selectiva: para áreas importantes u observadas, toma fotografías y las envía a un grupo de WhatsApp. Estas imágenes se mezclan con las de otros trabajadores, pueden perder la referencia del lugar y no siempre reflejan la hora real de ejecución. Ante daños o espacios ocupados, registra la situación mediante una fotografía o avisa al supervisor para justificar la imposibilidad de realizar la tarea. También reporta problemas de conectividad en zonas cerradas, almacenes, sótanos y estacionamientos, donde los mensajes pueden quedar pendientes de envío. El entrevistado propone una herramienta sencilla que muestre sus tareas, permita marcarlas como realizadas, solicite evidencias solo cuando corresponda, registre rápidamente los motivos de una excepción y funcione sin conexión para sincronizar después. Estos hallazgos validan principalmente las hipótesis UA-01, UA-02, UA-04, FA-01, FA-02, FA-03 y FA-05 de Service Compliance.
+> Juan Antonio Sánchez Cuadrado tiene un año y medio de experiencia en servicios de limpieza. Sus principales dificultades son la falta de claridad sobre las prioridades, los cambios de tareas comunicados por WhatsApp o verbalmente y la ausencia de un responsable claramente asignado cuando falta un compañero, lo que genera retrasos y pérdida de tiempo. Actualmente, las evidencias se registran de manera selectiva: para áreas importantes u observadas, toma fotografías y las envía a un grupo de WhatsApp. Estas imágenes se mezclan con las de otros trabajadores, pueden perder la referencia del lugar y no siempre reflejan la hora real de ejecución. Ante daños o espacios ocupados, registra la situación mediante una fotografía o avisa al supervisor para justificar la imposibilidad de realizar la tarea. También reporta problemas de conectividad en zonas cerradas, almacenes, sótanos y estacionamientos, donde los mensajes pueden quedar pendientes de envío. El entrevistado propone una herramienta sencilla que muestre sus tareas, permita marcarlas como realizadas, solicite evidencias solo cuando corresponda, registre rápidamente los motivos de una excepción y funcione sin conexión para sincronizar después. Estos hallazgos validan principalmente las hipótesis UA-01, UA-02, UA-04, FA-01, FA-02, FA-03 y FA-05 de Service Compliance.
 
 - **Entrevista #3**
 
@@ -209,7 +202,7 @@ Juan Antonio Sánchez Cuadrado tiene un año y medio de experiencia en servicios
 | **Enlace** | https://youtu.be/9wKQs6Vbq0o |
 
 **Resumen:**
- Ivonne tiene 8 años en el rubro de limpieza tercerizada, habiendo ascendido de operaria a encargada de grupo y finalmente a supervisora. Actualmente coordina 4 sedes y aproximadamente 35 personas. Su principal pain point es la dependencia total de WhatsApp como canal de comunicación: debe esperar respuestas de sus encargados, no recibe alertas automáticas cuando una obligación está próxima a vencer o incumplida, y se entera de los incumplimientos recién cuando el cliente reclama directamente (en el último caso mencionado, tardó entre 30-40 minutos solo en entender la situación después de contactar al encargado). La recopilación de evidencia es completamente manual: las fotos e informes llegan por WhatsApp organizados por grupos de sede, y ella debe revisar cada uno, identificar qué corresponde a cada actividad, y traspasar parte de la información a Excel un proceso que le toma entre 4 y 5 horas semanales, variando según la cantidad de incidentes. Confirma explícitamente que no tiene la información centralizada: generar un reporte simple de "qué sede tuvo más problemas el mes pasado" le tomaría varias horas porque tendría que revisar manualmente cada reporte de sede y compararlos. Usa principalmente celular (por movilidad entre sedes) y laptop para Excel; sus herramientas habituales son WhatsApp, Excel, Google Drive y Google Calendar. Esta entrevista valida fuertemente varias Business Outcome Assumptions de Service Compliance (BOA-01: reducción de tiempo de consolidación; BOA-02: detección de vencimientos antes de reclamos; BOA-05: identificación de sedes con incumplimientos recurrentes) y expone con datos concretos (4-5 horas/semana, 30-40 min de reacción) el costo actual del proceso manual.
+> Ivonne tiene 8 años en el rubro de limpieza tercerizada, habiendo ascendido de operaria a encargada de grupo y finalmente a supervisora. Actualmente coordina 4 sedes y aproximadamente 35 personas. Su principal pain point es la dependencia total de WhatsApp como canal de comunicación: debe esperar respuestas de sus encargados, no recibe alertas automáticas cuando una obligación está próxima a vencer o incumplida, y se entera de los incumplimientos recién cuando el cliente reclama directamente (en el último caso mencionado, tardó entre 30-40 minutos solo en entender la situación después de contactar al encargado). La recopilación de evidencia es completamente manual: las fotos e informes llegan por WhatsApp organizados por grupos de sede, y ella debe revisar cada uno, identificar qué corresponde a cada actividad, y traspasar parte de la información a Excel un proceso que le toma entre 4 y 5 horas semanales, variando según la cantidad de incidentes. Confirma explícitamente que no tiene la información centralizada: generar un reporte simple de "qué sede tuvo más problemas el mes pasado" le tomaría varias horas porque tendría que revisar manualmente cada reporte de sede y compararlos. Usa principalmente celular (por movilidad entre sedes) y laptop para Excel; sus herramientas habituales son WhatsApp, Excel, Google Drive y Google Calendar. Esta entrevista valida fuertemente varias Business Outcome Assumptions de Service Compliance (BOA-01: reducción de tiempo de consolidación; BOA-02: detección de vencimientos antes de reclamos; BOA-05: identificación de sedes con incumplimientos recurrentes) y expone con datos concretos (4-5 horas/semana, 30-40 min de reacción) el costo actual del proceso manual.
 
 
 - **Entrevista #2**
@@ -227,7 +220,7 @@ Juan Antonio Sánchez Cuadrado tiene un año y medio de experiencia en servicios
 
 **Resumen:**
 
-Andy tiene 20 años, trabaja como supervisor de limpieza en una empresa de servicios tercerizados y lleva 7 años en el rubro (empezó como operario de limpieza), con aproximadamente 4 años como supervisor y 2 años en su sede actual. Su estilo de trabajo es organizado, responsable y observador; su principal fortaleza es detectar rápido cuándo algo no está funcionando (falta de personal, zonas no atendidas o reclamos que deben resolverse antes de escalar). Su día comienza a las 7 am marcando asistencia, revisando el reporte de novedades del turno anterior, verificando la asistencia del personal y cubriendo puestos vacantes con personal volante; luego realiza rondas de inspección en oficinas y áreas comunes, atiende incidencias con el cliente y cierra el día actualizando sus reportes. Sus principales frustraciones son la alta rotación y el ausentismo no avisado del personal, que lo obligan a reorganizar rutas y cartas de trabajo a última hora, y que el cliente reporte incidencias en zonas que ya habían sido verificadas y dadas por aprobadas. La validación de terminación es completamente manual: los operarios avisan verbalmente o dejan una carta firmada que él debe validar recorriendo físicamente zona por zona y archivando los papeles a mano. Las evidencias se envían únicamente por WhatsApp, proceso tedioso porque se mezclan los chats personales con los del trabajo y las imágenes se acumulan sin orden, dificultando buscar evidencias pasadas cuando existe un reclamo formal. Esta entrevista verifica directamente varias Lean UX Assumptions del Capítulo I: valida **UA-01** y **FA-04** (necesita conocer el estado operativo de cada zona en tiempo real y reducir la consolidación manual), **BO-03** (identificar desviaciones antes de que el cliente las reporte, en zonas ya aprobadas), **BO-04 y BO-01** (reducir el trabajo manual de consolidación y el esfuerzo para reconstruir el estado de cumplimiento, pues hoy archiva papeles y busca evidencias en WhatsApp) y **FA-02** (un registro vinculado a la obligación y su evidencia, en lugar de fotos sueltas en un chat); su "herramienta mágica" espontánea fue un panel de control inteligente y automatizado que muestre en tiempo real al cliente y a su jefe el estado operativo de cada zona mediante validaciones rápidas, eliminando llamadas constantes y solicitudes de fotos, lo que confirma el modelo de Service Compliance sin que se le haya sugerido previamente.
+> Andy tiene 20 años, trabaja como supervisor de limpieza en una empresa de servicios tercerizados y lleva 7 años en el rubro (empezó como operario de limpieza), con aproximadamente 4 años como supervisor y 2 años en su sede actual. Su estilo de trabajo es organizado, responsable y observador; su principal fortaleza es detectar rápido cuándo algo no está funcionando (falta de personal, zonas no atendidas o reclamos que deben resolverse antes de escalar). Su día comienza a las 7 am marcando asistencia, revisando el reporte de novedades del turno anterior, verificando la asistencia del personal y cubriendo puestos vacantes con personal volante; luego realiza rondas de inspección en oficinas y áreas comunes, atiende incidencias con el cliente y cierra el día actualizando sus reportes. Sus principales frustraciones son la alta rotación y el ausentismo no avisado del personal, que lo obligan a reorganizar rutas y cartas de trabajo a última hora, y que el cliente reporte incidencias en zonas que ya habían sido verificadas y dadas por aprobadas. La validación de terminación es completamente manual: los operarios avisan verbalmente o dejan una carta firmada que él debe validar recorriendo físicamente zona por zona y archivando los papeles a mano. Las evidencias se envían únicamente por WhatsApp, proceso tedioso porque se mezclan los chats personales con los del trabajo y las imágenes se acumulan sin orden, dificultando buscar evidencias pasadas cuando existe un reclamo formal. Esta entrevista verifica directamente varias Lean UX Assumptions del Capítulo I: valida **UA-01** y **FA-04** (necesita conocer el estado operativo de cada zona en tiempo real y reducir la consolidación manual), **BO-03** (identificar desviaciones antes de que el cliente las reporte, en zonas ya aprobadas), **BO-04 y BO-01** (reducir el trabajo manual de consolidación y el esfuerzo para reconstruir el estado de cumplimiento, pues hoy archiva papeles y busca evidencias en WhatsApp) y **FA-02** (un registro vinculado a la obligación y su evidencia, en lugar de fotos sueltas en un chat); su "herramienta mágica" espontánea fue un panel de control inteligente y automatizado que muestre en tiempo real al cliente y a su jefe el estado operativo de cada zona mediante validaciones rápidas, eliminando llamadas constantes y solicitudes de fotos, lo que confirma el modelo de Service Compliance sin que se le haya sugerido previamente.
 
 - **Entrevista #3**
 
@@ -247,83 +240,111 @@ Andy tiene 20 años, trabaja como supervisor de limpieza en una empresa de servi
 > *Escribe aquí un resumen conciso de los hallazgos más importantes. Enfócate en sus dolores principales (pain points), cómo manejan actualmente las evidencias, problemas de conectividad o cualquier descubrimiento que valide o refute las hipótesis (Lean UX Assumptions) de Service Compliance.*
 
 
-<a id="223-analisis-de-entrevistas"></a>
-
 ### 2.2.3. Análisis de entrevistas
 
 El análisis de las entrevistas realizadas permite identificar patrones claros en los dos segmentos objetivo de **Service Compliance**: Operarios de Campo y Supervisores. A partir de las entrevistas, se evidencian tanto comportamientos comunes como diferencias en la adopción tecnológica, sustentados en la frecuencia de respuestas observadas.
 
-#### Segmento 1: Operarios de Campo
+#### **Segmento 1: Operarios de Campo**
+
+El análisis de este segmento se basa en las entrevistas realizadas a José Ramírez (Jefe de Operarios/Operario) y Juan Antonio Sánchez Cuadrado, quienes representan a los usuarios encargados de la ejecución directa de las tareas de limpieza y reporte de evidencias.
+
+| Característica | Atributo / Patrón Identificado | Frecuencia | Porcentaje | Entrevistados |
+|:---|---|---|---|---|
+| **Objetiva (Demográfica)** | Género Masculino | 2/2 | 100% | José, Juan Antonio |
+| **Objetiva (Operativa)** | Uso exclusivo de WhatsApp para evidencias | 2/2 | 100% | José, Juan Antonio |
+| **Objetiva (Técnica)** | Pérdida de conectividad en zonas cerradas (sótanos/almacenes) | 2/2 | 100% | José, Juan Antonio |
+| **Subjetiva (Frustración)** | Confusión por tareas asignadas verbalmente o mensajes cruzados | 2/2 | 100% | José, Juan Antonio |
+| **Subjetiva (Expectativa)** | Preferencia por una app sencilla offline/online para marcar tareas | 2/2 | 100% | José, Juan Antonio |
+| **Subjetiva (Motivación)** | Deseo de superación y liderazgo dentro del rubro | 1/2 | 50% | José |
+
+***Sustento de Características Objetivas***
+
+La dependencia absoluta de canales informales es el rasgo operativo más fuerte del segmento. El 100% de los entrevistados (José y Juan Antonio) reporta utilizar WhatsApp como herramienta principal para enviar fotografías que evidencian su trabajo. Asimismo, ambos confirman de manera unánime (100%) que la infraestructura física de su lugar de trabajo limita sus herramientas actuales: la señal de internet o datos móviles se pierde en áreas como sótanos, almacenes y estacionamientos, lo que retrasa el envío de sus evidencias y justifica plenamente la hipótesis técnica de Service Compliance sobre la necesidad de funcionamiento offline y sincronización posterior (FA-07).
+
+***Sustento de Características Subjetivas***
+
+El 100% de la muestra operativa experimenta altos niveles de frustración por la desorganización de la información. Juan Antonio menciona que los cambios comunicados verbalmente o por WhatsApp le generan falta de claridad sobre las prioridades, mientras que José recalca que la información "se escapa o se cruza", provocando que dos operarios intenten limpiar el mismo espacio. Como respuesta a esto, la expectativa tecnológica del segmento es unánime (100%): ambos proponen espontáneamente una aplicación móvil enfocada únicamente en mostrar un listado de tareas, permitir la marcación de cumplimiento y capturar evidencias solo cuando corresponde, sin depender de chats grupales.
 
 #### Segmento 2: Supervisores
 
-<a id="23-needfinding"></a>
+Este segmento se estructura a partir de las entrevistas a Ivonne Beatriz Iváñez Torres y Andy, quienes asumen roles de coordinación, validación de calidad y gestión directa con los clientes finales.
+
+| Característica | Atributo / Patrón Identificado | Frecuencia | Porcentaje | Entrevistados |
+|---|---|---|---|---|
+| **Objetiva (Biografía)** | Ascenso al rol de supervisión tras iniciar como operarios de limpieza | 2/2 | 100% | Ivonne, Andy |
+| **Objetiva (Operativa)** | Consolidación manual de evidencias (WhatsApp, Excel, Papel) | 2/2 | 100% | Ivonne, Andy |
+| **Subjetiva (Habilidad)** | Autopercepción de perfil organizado y enfocado en resolver problemas | 2/2 | 100% | Ivonne, Andy |
+| **Subjetiva (Frustración)** | Gestión reactiva: El cliente reporta el reclamo antes de que el supervisor lo detecte | 2/2 | 100% | Ivonne, Andy |
+| **Subjetiva (Frustración)** | Sobrecarga operativa por ausentismo repentino o rotación de personal | 2/2 | 100% | Ivonne, Andy |
+| **Subjetiva (Expectativa)** | Necesidad de un panel de control/visibilidad automatizada en tiempo real | 2/2 | 100% | Ivonne, Andy |
+
+
+***Sustento de Características Objetivas***
+
+Existe un patrón biográfico idéntico (100% de coincidencia): tanto Ivonne (8 años de experiencia) como Andy (7 años de experiencia) iniciaron sus carreras como operarios de limpieza antes de ser ascendidos. Operativamente, el 100% de los supervisores gasta una cantidad crítica de horas en tareas de bajo valor agregado, como la consolidación manual de información. Ivonne invierte entre 4 y 5 horas semanales trasladando datos de WhatsApp a Excel, y Andy debe validar físicamente firmas en papel y buscar fotos mezcladas en chats personales, comprobando las suposiciones BO-01 y BO-04 del producto.
+
+***Sustento de Características Subjetivas***
+
+Desde el aspecto psicológico, el 100% de los supervisores se autodefine con un perfil organizado y orientado a la resolución rápida de problemas, competencias vitales para su entorno. Sus frustraciones son idénticas y validan el Problem Statement central del proyecto: el 100% sufre de "gestión reactiva" (se enteran de las fallas cuando el cliente ya se quejó, incluso en zonas que Andy ya había dado por aprobadas) y ambos lidian constantemente con el ausentismo no avisado, lo que les obliga a cambiar rutas a última hora. Para solucionar esto, el 100% visualiza como herramienta ideal una solución centralizada (dashboard automatizado) que brinde visibilidad en tiempo real a clientes y jefes, eliminando la consolidación manual y la cacería de evidencias en chats.
 
 ## 2.3. Needfinding
 
-Los siguientes artefactos se derivan de escenarios provisionales, no de
-entrevistas. Su finalidad es preparar la investigación y hacer visibles las
-decisiones que todavía no deben fijarse.
-
-<a id="231-user-personas"></a>
-
 ### 2.3.1. User Personas
 
-| Persona candidata | Objetivo posible | Incertidumbres críticas | Estado |
-|---|---|---|---|
-| Operario de campo | Completar una actividad de servicio e informar resultados o impedimentos. | Instrucciones recibidas, autonomía, acceso a dispositivo y conectividad. | **Candidate — Preliminary — Pending validation** |
-| Supervisor de servicio | Coordinar, revisar y responder ante desvíos. | Alcance de supervisión, criterios de aceptación y carga de consolidación. | **Candidate — Preliminary — Pending validation** |
-| Responsable contractual o de operaciones | Interpretar condiciones, acordar cambios y explicar el estado del servicio. | Si este rol existe, quién lo asume y si decide la compra. | **Candidate — Preliminary — Pending validation** |
-| Representante de la organización cliente | Recibir el servicio, revisar resultados o plantear reclamos. | Participación real en aceptación, evidencia y reportes. | **Candidate — Preliminary — Pending validation** |
+Los siguientes User Personas sintetizan los patrones más representativos identificados en el análisis de entrevistas y complementados con el contraste frente a la propuesta de valor observada en la competencia. Cada ficha resume características demográficas, contexto operativo, objetivos, frustraciones, motivaciones y nivel de relación con herramientas digitales, con el fin de representar de manera concreta a los dos segmentos objetivo priorizados por Service Compliance
 
-Estas no son personas reales ni incluyen datos demográficos. Se revisarán o
-descartarán luego de entrevistas.
+- **Segmento objetivo 1: Operarios de Campo**
+
+<img src="resources/11-chapter-02/user-persona-1.png">
+
+- **Segmento objetivo 2: Supervisores**
+
+<img src="resources/11-chapter-02/user-persona-2.png">
 
 <a id="232-user-task-matrix"></a>
 
 ### 2.3.2. User Task Matrix
 
-Las tareas describen actividades que pueden existir sin Service Compliance. No
-son historias de usuario ni funcionalidades propuestas.
+En la siguiente matriz se comparan las tareas princiaples que realizan los dos User Personas considerados en el presente proyecto. Para cada tarea se indica la frecuencia e importancia relativa según cada segmento, buscando evidenciar coincidencias, diferencias operativas y prioridades antes de la existencia de la solución propuesta.
 
-| Actor candidato | Tarea actual candidata | Resultado buscado | Estado |
-|---|---|---|---|
-| Responsable contractual | Interpretar una condición de servicio y comunicar lo esperado. | Que el servicio pueda ejecutarse conforme a lo acordado. | **Preliminary — Pending validation** |
-| Supervisor | Distribuir o coordinar trabajo para una ubicación y periodo. | Que una persona sepa qué atender. | **Preliminary — Pending validation** |
-| Operario | Ejecutar una actividad de limpieza según una instrucción recibida. | Completar el servicio o comunicar un impedimento. | **Preliminary — Pending validation** |
-| Operario o supervisor | Registrar, conservar o comunicar un resultado de ejecución. | Poder informar lo ocurrido. | **Preliminary — Pending validation** |
-| Supervisor | Comparar lo esperado con lo reportado y resolver una excepción. | Determinar si requiere atención adicional. | **Preliminary — Pending validation** |
-| Organización cliente o prestadora | Plantear, atender o cerrar un reclamo. | Recuperar el nivel de servicio acordado o explicar una decisión. | **Preliminary — Pending validation** |
-| Responsable de operaciones | Consolidar información de servicio para una revisión o reporte. | Comunicar estado y pendientes a la parte interesada. | **Preliminary — Pending validation** |
-
-<a id="233-user-journey-mapping"></a>
+| Actor candidato | Operario de Campo Frecuencia | Operadores de Campo Importancia | Supervisores Frecuencia | Supervisores Importancia |
+|---|---|---|---|---|
+| Registrar asistencia al turno | Alta | Alta | Baja | Baja |
+| Definir y asignar rotación de turnos/áreas | Baja | Baja | Media | Media |
+| Consultar las áreas que le toca limpiar | Media | Media | Baja | Baja |
+| Ejecutar la limpieza física de las instalaciones | Alta | Alta | Baja | Baja |
+| Notificar finalización de limpieza (enviar foto) | Alta | Alta | Baja | Baja |
+| Reportar incidencias en el área | Media | Alta | Media | Media |
+| Buscar reemplazos por ausentismo de personal | Baja | Baja | Media | Media |
+| Recopilar y organizar evidencias dispersas | Baja | Baja | Media | Media |
+| Atender quejas o reclamos directos del cliente | Baja | Baja | Media | Media |
+| Elaborar reportes de cumplimiento (consolidación) | Baja | Baja | Media | Media |
 
 ### 2.3.3. User Journey Mapping
 
-| Etapa candidata | Acciones posibles | Riesgos o preguntas por validar |
-|---|---|---|
-| Acordar servicio | Se negocian condiciones, ubicaciones, frecuencias y estándares. | ¿Las condiciones están suficientemente estructuradas para orientar el trabajo? |
-| Traducir a operación | Alguien interpreta el acuerdo y comunica una actividad o turno. | ¿Se pierden detalles o se generan instrucciones informales? |
-| Ejecutar | El operario realiza el servicio o enfrenta una excepción. | ¿Qué impide completar el trabajo y cómo se comunica? |
-| Evidenciar o informar | Se usa un formato, mensaje, firma, foto u otro medio. | ¿Qué es aceptado, suficiente y proporcional? |
-| Supervisar y evaluar | Se revisa lo reportado, se inspecciona o se responde a un reclamo. | ¿Qué criterio define conformidad o no conformidad? |
-| Corregir y reportar | Se coordina una respuesta y se consolida información. | ¿Cómo se registra una corrección y quién recibe el reporte? |
+En esta sección se presentan los User Journey Maps en su versión As-Is para cada segmento objetivo. Estos mapas resumen el recorrido actual de los usuarios en la gestión de sus tareas más relevantes, desde la identificación de una necesidad hasta la resolución manual de sus actividades, permitiendo visualizar pasos, fricciones, puntos de dolor y oportunidades de mejora antes de la intervención de Service Compliance.
 
-<sub>*Tabla 2. Journey As-Is preliminar; no representa una observación de
-campo.*</sub>
+- **Segmento objetivo 1: Operarios de Campo**
 
-<a id="234-empathy-mapping"></a>
+<img src="resources/11-chapter-02/journey-map-1.png">
+
+- **Segmento objetivo 2: Supervisores**
+
+<img src="resources/11-chapter-02/journey-map-2.png">
 
 ### 2.3.4. Empathy Mapping
 
-| Área | Hallazgo provisional | Estado |
-|---|---|---|
-| Lo que una persona operaria puede ver o hacer | Puede alternar ejecución física, instrucciones cambiantes y comunicación de excepciones. | **Hypothesis — Pending validation** |
-| Lo que una persona supervisora puede necesitar | Puede requerir contexto suficiente para priorizar revisiones o explicar una decisión. | **Hypothesis — Pending validation** |
-| Lo que una organización cliente puede esperar | Puede solicitar claridad ante un reclamo, pero el formato y nivel de detalle son desconocidos. | **Hypothesis — Pending validation** |
-| Lo que puede generar fricción | Registrar información, interpretar condiciones, obtener aceptación o conciliar versiones podría resultar más costoso que el problema que resuelve. | **Hypothesis — Pending validation** |
+Los siguientes Empathy Maps fueron elaborados a partir de las observaciones extraídas de las entrevistas y organizan, para cada User Persona, lo que el usuario dice, piensa, hace y siente en su contexto actual. Este artefacto permite profundizar en sus pains, gains, preocupaciones y motivaciones, facilitando una comprensión más humana del problema y orientando mejor las decisiones posteriores de diseño.
 
-<a id="235-big-picture-eventstorming"></a>
+- **Segmento objetivo 1: Operarios de Campo**
+
+<img src="resources/11-chapter-02/Operarios%20de%20Campo.png">
+
+- **Segmento objetivo 2: Supervisores**
+
+<img src="resources/11-chapter-02/Supervisores.png">
+
+
 
 ### 2.3.5. Big Picture EventStorming
 
@@ -348,8 +369,6 @@ QR, NFC, GPS, foto, sincronización, API, base de datos y notificaciones no son
 eventos de dominio en este inventario. Podrán evaluarse posteriormente como
 posibles mecanismos o restricciones técnicas.
 
-<a id="236-ubiquitous-language"></a>
-
 ### 2.3.6. Ubiquitous Language
 
 | Término candidato | Definición de trabajo | Estado |
@@ -362,8 +381,6 @@ posibles mecanismos o restricciones técnicas.
 | Non-compliance | Resultado de evaluación que indica que una obligación no alcanzó un criterio aplicable. | **Candidate — Pending validation** |
 | Corrective Action | Acción acordada para responder a una no conformidad o reclamo. | **Candidate — Pending validation** |
 | Compliance Report | Comunicación consolidada sobre el estado de cumplimiento para un destinatario y periodo. | **Candidate — Pending validation** |
-
-<a id="24-requirements-specification"></a>
 
 ## 2.4. Requirements specification
 
@@ -384,23 +401,13 @@ Las decisiones sobre fotografía, ubicación, código, sensor, uso sin conexión
 alerta o integración externa se registrarán como requisitos solo si la
 investigación, una regla contractual o una restricción académica las sustenta.
 
-<a id="241-user-stories"></a>
-
 ### 2.4.1. User Stories
-
-<a id="242-impact-mapping"></a>
 
 ### 2.4.2. Impact Mapping
 
-<a id="243-product-backlog"></a>
-
 ### 2.4.3. Product Backlog
 
-<a id="25-strategic-level-domain-driven-design"></a>
-
 ## 2.5. Strategic-Level Domain-Driven Design
-
-<a id="251-eventstorming"></a>
 
 ### 2.5.1. EventStorming
 
