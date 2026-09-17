@@ -1,5 +1,6 @@
-![][../resources/10-chapter-01/UPCLogo.png]  
-Universidad Peruana de Ciencias Aplicadas  
+![Logo de la UPC](../resources/10-chapter-01/UPCLogo.png)
+
+Universidad Peruana de Ciencias Aplicadas
 Carrera de Ingeniería de Software
 
 **1ACC0238**  
