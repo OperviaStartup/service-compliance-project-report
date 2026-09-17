@@ -20,10 +20,11 @@ Proyecto
 | Código | Apellidos y Nombres |
 | :---- | :---- |
 | U202414054 | Arias Tasayco, Jean Pool Alexander |
-| U20------- | Ayasta Martel, Zayd Jaffar |
-| U20------- | Aguirre Eneque, Joan Elías |
-| U20------- | Huaman Cuba, Johan Giovani  |
-| U20------- | Navarro Correa, César Augusto  |
+| U202410837 | Ayasta Martel, Zayd Jaffar |
+| U20241A322 | Blancas Chávez, Carlos Franco |
+| U20231B781 | Flores Eusebio, Angel Thyago |
+| U202218645 | Montes Maza, Augusto Sebastian |
+| U20231C524 | Sánchez Espinoza, Mathias Enrique |
 
 **Período 202620**  
 **Julio 2026**
