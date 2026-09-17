@@ -21,7 +21,7 @@ La comparación se realiza desde la perspectiva definida para Service Compliance
 
 #### Competitive Analysis Landscape
 
-| Aspecto | Service Compliance | eGenya | OrangeQC | ServiceChannel |
+| Aspecto | Service Compliance | eGenya ![eGenya logo](resources/11-chapter-02/egenya.png) | OrangeQC ![OrangeQC logo](resources/11-chapter-02/OrangeQC.png) | ServiceChannel ![ServiceChannel logo](resources/11-chapter-02/ServiceChannel.png) |
 |---|---|---|---|---|
 | **Tipo de competidor** | Startup académica / propuesta propia. | Directo o cercano: gestión de servicios no operacionales y Facility Management con contratistas y equipos propios. | Indirecto especializado: control de calidad, inspecciones y validación de servicios de limpieza. | Indirecto empresarial: Facility Management, proveedores, work orders y cumplimiento en múltiples sedes. |
 | **Overview** | Producto orientado a empresas prestadoras de limpieza tercerizada. Busca conservar una cadena trazable desde las condiciones del servicio y el plan operativo hasta la obligación, ejecución, evidencia, evaluación de cumplimiento, desviación y acción correctiva. | Plataforma chilena para gestionar servicios generales y Facility Management. Comunica trazabilidad de servicios ejecutados por prestadores o equipos propios, control por zonas, tareas preventivas y visibilidad operativa. | Plataforma de control de calidad e inspecciones para servicios de limpieza y facilities. Permite formularios configurables, inspecciones, checklists, tickets, acciones correctivas, reportes y operación móvil. | Plataforma empresarial de Facility Management que centraliza órdenes de trabajo, proveedores, mantenimiento, documentación, auditorías, analítica y operaciones de campo. |
@@ -29,7 +29,7 @@ La comparación se realiza desde la perspectiva definida para Service Compliance
 | **Mercado objetivo** | Empresas prestadoras de servicios de limpieza tercerizada, inicialmente con operaciones en Lima Metropolitana. Usuarios: supervisores/coordinadores y operarios. | Organizaciones y áreas de servicios generales, Facility Management y operaciones que controlan servicios propios o tercerizados. | Building Service Contractors, instalaciones educativas, salud, municipios, aeropuertos, property/facility managers y equipos de control de calidad. | Operadores multi-sede y equipos de facilities en retail, restaurantes, supermercados, hoteles, educación, salud y otros sectores; también proveedores externos. |
 | **Estrategia de marketing** | Validación mediante pilotos con prestadoras, comunicación centrada en reducción de reconstrucción manual, trazabilidad del cumplimiento y simplicidad de uso para campo. | Demostraciones, casos y comunicación enfocada en dejar de operar “a ciegas”, control remoto, datos y cumplimiento de servicios. | Prueba gratuita, demostraciones, contenido especializado y casos orientados a control de calidad, limpieza y auditorías. | Demostraciones, casos empresariales y una propuesta de plataforma integral para optimizar facilities y redes de proveedores. |
 | **Productos y servicios** | Dos experiencias móviles: app nativa Android para operarios y app cross-platform para supervisores; REST API; trazabilidad de Service Plan/obligaciones, ejecución, evidencia configurable, compliance, acciones correctivas y reporting. | Registro y seguimiento de actividades, puntos QR, control preventivo/correctivo, monitoreo por zonas, reportes y trazabilidad de prestadores y equipos. | Inspecciones móviles online/offline, checklists, GPS/timestamps, fotografías, tickets, acciones correctivas, programación y reportes. También posee validación de servicio mediante checklists/QR. | Work orders, proveedor móvil, check-in/check-out, fotos y documentación, firmas, auditorías, mantenimiento, proveedores, cumplimiento, analítica y aprobaciones. |
-| **Precios y costos** | **Hipótesis pendiente de validación.** No se fija aún un precio final. Debe definirse la unidad de cobro —por sede, usuarios, obligaciones o plan— y la disposición de pago mediante investigación comercial. | La página pública orienta la contratación a contacto comercial y demostración; no se utiliza una tarifa pública estándar en este análisis. | Publica Starter de **US$250/mes** para 2 inspectores, Standard de **US$500/mes** para 10 inspectores y plan Custom; también ofrece un módulo adicional de Service Validation. | La contratación pública revisada se orienta a consulta/demostración y alcance del servicio; no se utiliza una tarifa estándar en este análisis. |
+| **Precios y costos** | Se ofrecen dos planes desde S/300 por la supervision de 10 personales de limpieza y S/900 por mas de 10 personales de limpieza | La página pública orienta la contratación a contacto comercial y demostración; no se utiliza una tarifa pública estándar en este análisis. | Publica Starter de **US$250/mes** para 2 inspectores, Standard de **US$500/mes** para 10 inspectores y plan Custom; también ofrece un módulo adicional de Service Validation. | La contratación pública revisada se orienta a consulta/demostración y alcance del servicio; no se utiliza una tarifa estándar en este análisis. |
 | **Canales de distribución** | Aplicaciones móviles, Landing Page y pilotos directos con empresas prestadoras. | Plataforma web y uso móvil/QR por equipos de terreno; contacto comercial. | Apps iOS/Android, web, prueba gratuita y demostraciones. | Plataforma web, ServiceChannel Mobile y Provider App; venta empresarial y demos. |
 | **Fortalezas** | Especialización en trazabilidad de cumplimiento y preservación de la relación entre Service Plan, obligación, ejecución, evidencia y Compliance Result. Alcance pequeño y orientado a un flujo concreto. | Cercanía regional, propuesta en español y fuerte relación con servicios tercerizados, trazabilidad y control de prestadores. | Especialización reconocible en limpieza, inspecciones, offline, evidencia, tickets y acciones correctivas. | Madurez funcional, red de proveedores, operación multi-sede y documentación de trabajo en campo. |
 | **Debilidades** | Producto sin clientes, precio, product-market fit ni reglas definitivas de evidencia. La ventaja competitiva todavía debe demostrarse frente a soluciones que ya cubren ejecución e inspección. | Su alcance cubre varios servicios y no evidencia en la información pública revisada una especialización explícita en traducir condiciones/planes de servicio a un historial de Compliance Result. | Su centro de gravedad es inspección y control de calidad; no necesariamente el ciclo completo desde condiciones del servicio y planificación hasta evaluación contractual. | Amplia cobertura y complejidad empresarial que puede exceder las necesidades de una prestadora de limpieza que busca un flujo de cumplimiento más acotado. |
@@ -45,20 +45,24 @@ La comparación se realiza desde la perspectiva definida para Service Compliance
 A partir del Landscape y del alcance del Capítulo I, Opervia plantea las siguientes estrategias preliminares:
 
 1. **Especialización en compliance operativo, no en cantidad de módulos.** La solución prioriza explicar el estado de cumplimiento de un servicio por encima de competir como suite general de Facility Management.
+
    - Táctica: modelar explícitamente **Service Conditions → Service Plan → Service Obligation → Execution → Compliance Result**.
    - Táctica: conservar el estado original de una desviación o incumplimiento aun cuando exista una acción correctiva posterior.
    - Táctica: mantener fuera del MVP nómina, contabilidad, RR. HH., procurement, activos y administración genérica de proyectos.
 
 2. **Evidencia configurable en lugar de un mecanismo universal.** OrangeQC, eGenya y ServiceChannel muestran que QR, GPS y fotografías son tecnologías comunes; por ello Service Compliance no debe depender de una única prueba.
+
    - Táctica: cada Obligation Definition especifica su **Evidence Requirement** cuando corresponda.
    - Táctica: permitir foto, checklist, firma, observación u otros mecanismos según el Service Plan, sin exigir siempre todos los tipos.
    - Táctica: tratar QR/NFC/GPS como alternativas de implementación, no como la propuesta de valor.
 
 3. **Experiencias móviles diferenciadas por contexto de uso.** El operario necesita baja fricción y continuidad en campo; el supervisor necesita visibilidad, revisión y seguimiento.
+
    - Táctica: aplicación Android nativa para operarios, con almacenamiento local y acceso a cámara cuando la obligación lo requiera.
    - Táctica: aplicación cross-platform para supervisores/coordinadores, enfocada en planificación operativa, revisión, compliance y reporting.
 
 4. **Adopción por pilotos y medición de outcomes.** El precio y la viabilidad no se fijan por intuición.
+
    - Táctica: ejecutar pilotos de alcance reducido con una empresa prestadora.
    - Táctica: medir tiempo de reconstrucción, completitud de registros, detección de desviaciones y fricción del registro de campo.
    - Táctica: validar la unidad de cobro y disposición de pago antes de cerrar pricing.
@@ -800,547 +804,672 @@ El orden prioriza valor de negocio y reducción de riesgo. Authentication no se 
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
-El diseño estratégico parte del dominio y de los requisitos anteriores. Se evita considerar Authentication, QR, GPS, API o una base de datos como el centro del modelo de negocio. La ventaja candidata de Opervia se concentra en **Compliance Management**: determinar y explicar el estado de cumplimiento sin perder la relación con lo planificado, lo ejecutado y las acciones posteriores.
+<a id="251-eventstorming"></a>
 
 ### 2.5.1. EventStorming
 
-El EventStorming estratégico toma como entrada el Big Picture EventStorming As-Is y el To-Be Scenario Mapping. Su objetivo es detallar Commands, Policies, Aggregates y Domain Events necesarios para identificar límites naturales entre responsabilidades.
+Con el objetivo de comprender a profundidad el dominio de la aplicación Service Compliance, se llevó a cabo una sesión de EventStorming de aproximadamente 2 horas. Esta sesión permitió identificar los eventos clave dentro del sistema, así como actores, comandos, agregados y posibles hotspots (dudas o riesgos del dominio). El enfoque se centró en capturar la mayor cantidad de conocimiento del dominio desde una perspectiva colaborativa, permitiendo así una primera aproximación al modelo general del negocio.
 
+La herramienta utilizada para la sesión fue Miro, que facilitó la colaboración en tiempo real y la organización visual de los eventos. La sesión se dividió en las siguientes etapas:
 
-| Actor | Command | Aggregate / objeto de decisión | Domain Event | Policy / regla relevante |
-|---|---|---|---|---|
-| Supervisor | Create Service Plan | Service Plan | Service Plan Created | El plan inicia Draft. |
-| Supervisor | Add Obligation Definition | Service Plan | Obligation Definition Added | Debe existir sitio, schedule y criterio. |
-| Supervisor | Activate Service Plan | Service Plan | Service Plan Activated | Un plan activo debe ser operativo y versionado. |
-| Sistema/planificación | Schedule Service Obligation | Obligation Definition | Service Obligation Scheduled | Se instancia conforme a Schedule Rule. |
-| Supervisor | Assign Service Obligation | Assignment | Service Obligation Assigned | El operario debe pertenecer al alcance autorizado. |
-| Operario | Start Execution | Service Execution | Execution Started | Solo puede iniciar una obligación asignada. |
-| Operario | Attach Evidence | Service Execution | Evidence Attached | Solo se exige Evidence indicada por el requisito. |
-| Operario | Report Exception | Service Execution | Exception Reported | Exception no equivale automáticamente a Non-compliance. |
-| Operario | Submit Execution | Service Execution | Execution Submitted | Debe existir un resultado explícito. |
-| Supervisor / Policy | Evaluate Compliance | Compliance Case | Compliance Evaluated | Se aplican criterios vigentes del Service Plan. |
-| Supervisor / Policy | Determine Compliance Result | Compliance Case | Compliance Result Recorded | Resultado ∈ compliant / exception accepted / deviation / non-compliant. |
-| Supervisor | Register Client Observation | Compliance Case | Client Observation Registered | No borra el resultado previo. |
-| Supervisor | Assign Corrective Action | Compliance Case | Corrective Action Assigned | Solo cuando la decisión lo requiere. |
-| Operario | Complete Corrective Action | Compliance Case | Corrective Action Completed | Debe conservarse historial. |
-| Supervisor | Close Compliance Case | Compliance Case | Compliance Case Closed | Cierre no reescribe el Non-compliance original. |
-| Supervisor | Generate Compliance Report | Compliance Report | Compliance Report Generated | Incluye pendientes como pendientes. |
+- **Unstructured Exploration** (exploración sin estructura)
+- **Timelines** (flujo del negocio)
+- **Pain Points** (puntos de fricción)
+
+Se identificaron eventos relacionados con el ciclo de vida completo de una obligación de servicio, desde el registro del contrato hasta la generación del reporte de cumplimiento, incluyendo actividades complementarias como la captura de evidencia en campo, la detección de incumplimientos y la gestión de incidencias.
+
+**Step 1: Unstructured Exploration**
+
+Lluvia de ideas con eventos importantes dentro del dominio de Service Compliance, organizados por área funcional para facilitar su posterior análisis: Cuenta/Sesión, Contrato/Obligación, Ejecución/Evidencia, Cumplimiento/SLA, Incidencia/Acción Correctiva, y Reportes/Notificaciones.
+
+<img src="resources/10-chapter-01/step1.png">
+
+**Step 2: Timelines**
+
+Organización de los eventos identificados en el Step 1 en flujos funcionales secuenciales, incluyendo escenarios alternativos como el registro de evidencia sin conexión y la bifurcación entre obligaciones cumplidas a tiempo y obligaciones vencidas que derivan en incidencias.
+
+<img src="resources/10-chapter-01/step2.png">
+
+**Step 3: Pain Points**
+
+Identificación de puntos conflictivos o dolorosos en la experiencia de los usuarios (operarios y supervisores), incluyendo problemas de conectividad al capturar evidencia, ambigüedad en la interpretación del plazo del SLA, y riesgos de duplicidad de registros al sincronizar ejecuciones offline.
+
+<img src="resources/10-chapter-01/step3.png">
 
 #### 2.5.1.1. Candidate Context Discovery
 
-Para la sesión de Candidate Context Discovery se proponen las técnicas **start-with-value** y **look-for-pivotal-events**. Los pivotal events que sugieren cambios de responsabilidad son: `Service Plan Activated`, `Service Obligation Assigned`, `Execution Submitted`, `Compliance Result Recorded` y `Compliance Report Generated`.
-
-##### Candidate Bounded Contexts
-
-| Candidate Bounded Context | Clasificación estratégica | Responsabilidad principal | Eventos de entrada/salida relevantes |
-|---|---|---|---|
-| **Identity & Access** | Generic | Identidad, empresa, rol y autorización. | User Authenticated, Account Deactivated. |
-| **Service Planning** | Supporting | Service Plan, Service Conditions, sites, Obligation Definitions, Evidence Requirements y reglas de planificación. | Service Plan Activated, Obligation Definition Published. |
-| **Field Operations** | Supporting | Service Obligations operativas, asignación, Execution, Evidence y Exception; continuidad offline a nivel de aplicación. | Service Obligation Assigned, Execution Submitted, Exception Reported. |
-| **Compliance Management** | **Core Domain** | Compliance Evaluation, Compliance Result, Deviation, Non-compliance, Client Observation y Corrective Action con historial inmutable. | Execution Submitted → Compliance Result Recorded / Non-compliance Confirmed / Compliance Case Closed. |
-| **Reporting & Insights** | Supporting | Proyecciones, indicadores y Compliance Reports para periodos/sitios/servicios. | Consume eventos de Planning/Compliance; produce Compliance Report Generated. |
-
-**Justificación del Core Domain.** Field Operations es importante pero existen competidores maduros que ya resuelven work orders, inspecciones y captura de evidencia. La diferenciación candidata de Service Compliance se encuentra en **cómo el producto conserva y explica el Compliance Result a partir del Service Plan, Execution, Evidence y acciones posteriores**, por lo que Compliance Management se considera el Core Domain.
-
-##### Decisiones de boundary
-
-- **Evidence Requirement** pertenece a Service Planning porque define qué respaldo se espera.
-- **Evidence capturada** pertenece a Field Operations porque forma parte del registro de una Execution.
-- **Interpretar si la Evidence y Execution satisfacen el criterio** pertenece a Compliance Management.
-- **Offline synchronization** es una capability técnica de las aplicaciones/infraestructura, no un dominio independiente.
-- **Authentication** es Generic; no se considera Core Domain.
-- **Reporting** consume proyecciones propias y no debe consultar directamente tablas internas de otros contextos.
+Sobre el timeline del EventStorming general se realizó una segunda sesión para delimitar los Candidate Bounded Contexts de la solución, aplicando las técnicas de *start-with-value* y *look-for-pivotal-events* sobre los eventos identificados. El detalle de los contextos definidos y sus flujos de interacción se presenta en el siguiente apartado.
 
 #### 2.5.1.2. Domain Message Flows Modeling
 
-Los Domain Stories deben representar colaboración entre actores y objetos del negocio, no entre Mobile App, API y Database.
+Como resultado de la delimitación se definieron cinco Candidate Bounded Contexts, los cuales reciben el flujo de mensajes de dominio requerido para operar:
 
-##### Domain Story DS-01 — Preparar un servicio
+**Authentication:**
 
-1. **Supervisor/coordinador** interpreta condiciones operativas aprobadas del **Service Contract**.
-2. El supervisor registra/actualiza el **Service Plan**.
-3. El supervisor añade **Obligation Definitions** y sus **Evidence Requirements**.
-4. El **Service Plan** queda activo y disponible para generar/planificar **Service Obligations**.
-5. **Field Operations** recibe la información necesaria para coordinar las obligaciones del periodo.
+Gestiona la información y operaciones relacionadas con el registro, inicio de sesión y perfil de los usuarios del sistema (operarios y supervisores).
 
-##### Domain Story DS-02 — Ejecutar una obligación
+<img src="resources/10-chapter-01/Authentication.png">
 
-1. **Supervisor** asigna una **Service Obligation** a un **Operario**.
-2. El operario consulta la obligación y realiza la actividad.
-3. El operario registra una **Execution**.
-4. Cuando corresponde, añade **Evidence** o informa una **Exception**.
-5. La Execution queda disponible para **Compliance Evaluation**.
+**Contract & Obligation Management:**
 
-##### Domain Story DS-03 — Evaluar y corregir
+Gestiona la información y operaciones relacionadas con los contratos de servicio y las obligaciones operativas derivadas de ellos, incluyendo su registro y asignación a los operarios de campo.
 
-1. **Supervisor** revisa Service Obligation, Execution, Evidence y Exception.
-2. **Compliance Management** aplica los criterios vigentes y registra el **Compliance Result**.
-3. Si existe Non-compliance que requiere corrección, el supervisor asigna una **Corrective Action**.
-4. **Operario** atiende la Corrective Action.
-5. **Supervisor** verifica el resultado y cierra el **Compliance Case** sin eliminar la evaluación original.
+<img src="resources/10-chapter-01/contract.png">
 
-##### Domain Story DS-04 — Responder una observación y reportar
+**Field Execution & Evidence:**
 
-1. **Organización cliente** comunica una **Client Observation** al supervisor.
-2. **Supervisor** consulta el **Compliance Case** y su historial.
-3. Si corresponde, registra una nueva evaluación o Corrective Action sin sobrescribir decisiones anteriores.
-4. **Reporting & Insights** consolida resultados del periodo.
-5. **Supervisor** genera o comparte un **Compliance Report**.
+Gestiona la ejecución de obligaciones en campo y la captura de evidencia asociada (foto, código QR, ubicación), incluyendo el soporte de registro sin conexión y su posterior sincronización. Constituye el core domain de la solución.
+
+<img src="resources/10-chapter-01/fieldExecution.png">
+
+**Incident & Corrective Action:**
+
+Gestiona la evaluación del cumplimiento de SLA, la detección de incumplimientos, y el ciclo de vida de las incidencias generadas junto con sus acciones correctivas asignadas por el supervisor.
+
+<img src="resources/10-chapter-01/incidentCorrective.png">
+
+**Compliance Reporting:**
+
+Gestiona la consolidación de información proveniente de los demás contextos para la generación de reportes de cumplimiento e indicadores, así como el envío de notificaciones automáticas de vencimientos y cambios de estado.
+
+<img src="resources/10-chapter-01/CompilanceReporting.png">
+
+Con el fin de visualizar cómo colaboran los Bounded Contexts identificados para resolver los casos de uso principales del negocio, se aplicó la técnica de Domain Storytelling. A continuación, se presentan los flujos de interacción:
+
+**Authentication:**
+
+Representa el flujo de registro e inicio de sesión del usuario en el sistema.
+
+<img src="resources/10-chapter-01/FlujoAutenticacion.png">
+
+**Field Execution & Evidence:**
+
+Representa el flujo mediante el cual un operario consulta su obligación asignada, ejecuta el servicio y registra la evidencia correspondiente, incluyendo el escenario de registro sin conexión.
+
+<img src="resources/10-chapter-01/FlujoEjecucionObligacion.png">
+
+**Incident & Corrective Action:**
+
+Representa el flujo mediante el cual el sistema evalúa automáticamente el cumplimiento del SLA, genera una incidencia ante un incumplimiento, y el supervisor revisa y asigna una acción correctiva.
+
+<img src="resources/10-chapter-01/DeteccionIncumplimiento.png">
+
+**Compliance Reporting:**
+
+Representa el flujo mediante el cual el supervisor solicita un reporte de cumplimiento, el cual es generado consolidando información proveniente de los contextos de Field Execution & Evidence e Incident & Corrective Action.
+
+<img src="resources/10-chapter-01/GeneracionReporte.png">
+
+**Flujo General:**
+
+Representa la interacción y el flujo de información entre los diferentes Bounded Contexts del sistema, evidenciando cómo Authentication habilita el acceso, Contract & Obligation Management origina las obligaciones, Field Execution & Evidence registra la ejecución, Incident & Corrective Action gestiona las desviaciones y Compliance Reporting consolida la información.
+
+<img src="resources/10-chapter-01/FlujoGeneral.png">
 
 #### 2.5.1.3. Bounded Context Canvases
 
-Los canvases se especifican siguiendo: Context Overview Definition → Business Rules & Ubiquitous Language → Capability Analysis → Capability Layering → Dependencies Capture → Design Critique.
+Para cada uno de los Bounded Contexts candidatos identificados, se elaboró un Bounded Context Canvas siguiendo un proceso iterativo de Context Overview Definition, Business Rules Distillation & Ubiquitous Language Definition, según las prácticas de Domain-Driven Design. A continuación, se presentan los canvases elaborados:
 
-##### Canvas — Identity & Access
+**Authentication:**
 
-| Paso | Contenido |
-|---|---|
-| **Context Overview** | Gestiona cuentas, pertenencia a empresa prestadora, roles y autorización. |
-| **Business Rules / Language** | User Account, Role, Provider Company, Account Status. Una cuenta inactiva no accede. |
-| **Capabilities** | Login, token/session, role authorization, account lifecycle. |
-| **Layering** | Generic subdomain. No contiene reglas de compliance. |
-| **Dependencies** | Expone identidad/claims a los demás contextos mediante interfaz estable. |
-| **Design Critique** | Se mantiene separado porque identidad cambia por razones técnicas/seguridad distintas al dominio de servicio. |
+Gestiona la identificación, verificación y autorización de operarios y supervisores dentro del sistema.
 
-##### Canvas — Service Planning
+<img src="resources/10-chapter-01/bc1.png">
 
-| Paso | Contenido |
-|---|---|
-| **Context Overview** | Convierte condiciones operativas aprobadas en un Service Plan versionado con Obligation Definitions. |
-| **Business Rules / Language** | Service Plan, Service Condition, Service Site, Obligation Definition, Schedule Rule, Evidence Requirement, Acceptance Criterion. |
-| **Capabilities** | Crear/versionar plan, definir sitios, obligaciones, frecuencia/ventana, evidencia requerida y activar plan. |
-| **Layering** | Supporting subdomain. |
-| **Dependencies** | Usa identidad; publica definiciones/plan activo a Field Operations y reglas relevantes a Compliance. |
-| **Design Critique** | Se evita “interpretar automáticamente contratos”. El plan es una decisión humana/operativa explícita. |
+**Contract & Obligation Management:**
 
-##### Canvas — Field Operations
+Gestiona el registro de contratos de servicio y la traducción de sus condiciones en obligaciones operativas.
 
-| Paso | Contenido |
-|---|---|
-| **Context Overview** | Coordina obligaciones operativas y registra lo ocurrido en campo. |
-| **Business Rules / Language** | Service Obligation, Assignment, Execution, Evidence, Exception. |
-| **Capabilities** | Asignar, consultar trabajo, iniciar/registrar ejecución, adjuntar evidencia, reportar excepción, enviar Execution. |
-| **Layering** | Supporting subdomain con fuerte interacción móvil. |
-| **Dependencies** | Consume plan/obligaciones de Service Planning; publica Execution Submitted y Exception Reported a Compliance. |
-| **Design Critique** | Offline y cámara se resuelven en aplicación/infraestructura; no se modelan como objetos del dominio. |
+<img src="resources/10-chapter-01/bc2.png">
 
-##### Canvas — Compliance Management
+**Field Execution & Evidence:**
 
-| Paso | Contenido |
-|---|---|
-| **Context Overview** | Determina y explica el cumplimiento de una ejecución y conserva su historial. |
-| **Business Rules / Language** | Compliance Evaluation, Compliance Result, Deviation, Non-compliance, Client Observation, Corrective Action, Compliance Case. |
-| **Capabilities** | Evaluar, registrar resultado, aceptar excepción, confirmar Non-compliance, registrar observación, asignar/seguir correctiva, cerrar caso. |
-| **Layering** | **Core Domain**. |
-| **Dependencies** | Consume criterios de Service Planning y Execution/Evidence de Field Operations; publica resultados a Reporting. |
-| **Design Critique** | Mantener separado evita mezclar sync/captura de campo con las reglas que constituyen la ventaja competitiva. El resultado original nunca se sobrescribe por una corrección. |
+Core domain de la solución. Gestiona la ejecución de obligaciones en campo y la captura de evidencia, incluyendo soporte offline.
 
-##### Canvas — Reporting & Insights
+<img src="resources/10-chapter-01/bc3.png">
 
-| Paso | Contenido |
-|---|---|
-| **Context Overview** | Construye proyecciones e informes de cumplimiento por servicio, sitio y periodo. |
-| **Business Rules / Language** | Compliance Report, Report Period, Report Metric, Reporting Projection. |
-| **Capabilities** | Consolidar proyecciones, calcular indicadores, generar/publicar reportes, filtrar por sitio/periodo. |
-| **Layering** | Supporting subdomain / read-heavy. |
-| **Dependencies** | Consume eventos publicados por Planning, Field Operations y Compliance. |
-| **Design Critique** | Se separa del Core porque su ritmo de cambio y modelo de lectura difieren de las reglas de evaluación. |
+**Incident & Corrective Action:**
+
+Gestiona la evaluación de SLA, detección de incumplimientos y el ciclo de vida de incidencias y acciones correctivas.
+
+<img src="resources/10-chapter-01/bc4.png">
+
+**Compliance Reporting:**
+
+Consolida información de los demás contextos para la generación de reportes de cumplimiento y notificaciones.
+
+<img src="resources/10-chapter-01/bc5.png">
+
+<a id="252-context-mapping"></a>
 
 ### 2.5.2. Context Mapping
 
-#### Proceso y alternativas consideradas
+#### 2.5.2.1. Context Mapping Process
 
-1. **Separar Evidence como Bounded Context independiente.** Rechazado para el MVP: el requirement pertenece a Planning, la captura a Field Operations y la interpretación a Compliance; un contexto de Evidence aislado generaría dependencias excesivamente conversacionales.
-2. **Fusionar Field Operations y Compliance Management.** Rechazado: mezclaría problemas de asignación/sincronización con las reglas diferenciales de compliance y dificultaría aislar el Core Domain.
-3. **Fusionar Reporting con Compliance.** Rechazado: reporting es principalmente lectura/proyección y puede evolucionar sin modificar las reglas de evaluación.
-4. **Usar Shared Kernel entre contextos.** Rechazado inicialmente: aumenta acoplamiento. Se prefieren IDs, contratos de integración y Published Language.
-5. **Desplegar cada contexto como microservicio.** Rechazado para el MVP académico: la complejidad operativa no aporta valor suficiente. Se adopta **Modular Monolith** con límites lógicos estrictos.
+A partir de los Bounded Context Canvases elaborados, el equipo desarrolló un Context Map para visualizar las relaciones estructurales entre los contextos identificados, aplicando los patrones de relación descritos por Newman (2015): Customer/Supplier, Partnership, Shared Kernel, Conformist, Anti-Corruption Layer y Open Host Service.
 
-#### Relaciones seleccionadas
+Durante el proceso se discutieron alternativas de diseño, entre ellas: mover la evaluación de SLA desde Field Execution & Evidence hacia Incident & Corrective Action (descartado por generar dependencias circulares), consolidar Authentication y Contract & Obligation Management (descartado para mantener separación de intereses) e implementar una anti-corruption layer entre los contextos (descartado en favor de una arquitectura más simple en la fase inicial).
 
-| Upstream | Downstream | Relación | Integración prevista |
-|---|---|---|---|
-| **Identity & Access** | Planning / Field / Compliance / Reporting | Open Host Service + Published Language; downstreams conforman a claims/roles mínimos. | Autenticación/claims mediante interfaz estable. OHS es un patrón, no un contexto adicional. |
-| **Service Planning** | **Field Operations** | Customer/Supplier | Publica Service Plan/Obligation Definition necesarios para operación; Field Operations influye en datos mínimos requeridos. |
-| **Service Planning** | **Compliance Management** | Customer/Supplier + Published Language | Provee criterios/versiones de obligación relevantes para evaluación. |
-| **Field Operations** | **Compliance Management** | Customer/Supplier | Publica Execution Submitted / Exception Reported; Compliance define qué datos necesita para evaluar. |
-| **Compliance Management** | **Reporting & Insights** | Customer/Supplier + Published Language | Publica Compliance Result, Non-compliance y Corrective Action status. |
-| **Service Planning** | **Reporting & Insights** | Published Language | Publica metadatos de servicio/sitio necesarios para proyecciones. |
+Como resultado de esta discusión, se estableció el siguiente Context Map:
+
+- **Authentication → Contract & Obligation Management** (Customer/Supplier): Contract & Obligation depende de la identidad y rol validados por Authentication.
+- **Authentication → Field Execution & Evidence** (Customer/Supplier): el operario debe estar autenticado antes de ejecutar una obligación.
+- **Contract & Obligation Management → Field Execution & Evidence** (Customer/Supplier): la obligación debe existir antes de poder ser ejecutada.
+- **Field Execution & Evidence ↔ Incident & Corrective Action** (Partnership): ambos contextos evolucionan de forma coordinada, dado que un cambio en el registro de evidencia impacta directamente en la evaluación de cumplimiento.
+- **Field Execution & Evidence e Incident & Corrective Action → Open Host Service → Compliance Reporting**: Compliance Reporting consume información consolidada de ambos contextos mediante un lenguaje de integración neutral.
+
+<img src="resources/10-chapter-01/ContextMapping.png">
+
+<a id="253-software-architecture"></a>
 
 ### 2.5.3. Software Architecture
 
-La arquitectura se implementa inicialmente como **Modular Monolith** para mantener límites DDD sin introducir la complejidad operativa de microservicios. El backend usa ASP.NET Core REST API y PostgreSQL; los módulos del backend corresponden a los Bounded Contexts definidos. Se distinguen dos aplicaciones móviles porque el enunciado exige experiencia nativa y cross-platform y los segmentos tienen contextos de uso distintos.
-
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
-##### System Context — especificación
+Aplicando el C4 Model, el equipo elaboró la representación de la arquitectura de software de la solución, utilizando Structurizr como herramienta de Diagram-as-Code (Structurizr DSL).
 
-| Persona / sistema | Relación con Service Compliance |
-|---|---|
-| **Operario de limpieza** | Consulta obligaciones, registra Execution, Evidence y Exception; atiende Corrective Actions. |
-| **Supervisor/coordinador** | Gestiona Service Plan, coordina operación, revisa Execution, registra Compliance Result, correctivas y reportes. |
-| **Responsable de operaciones de la prestadora** | Stakeholder/comprador potencial; consulta resultados agregados cuando su rol lo permite. |
-| **Organización cliente** | Stakeholder externo; recibe explicaciones/reportes por los canales definidos, sin considerarse segmento objetivo inicial. |
-| **Firebase Cloud Messaging** | Servicio externo para notificaciones push. |
-| **Object Storage / Media Service** | Servicio externo para archivos de evidencia cuando corresponda. |
+##### Context Diagram
+
+El Context Diagram muestra el sistema Service Compliance como una caja central, rodeado de sus usuarios (Operario de campo y Supervisor) y los sistemas externos con los que interactúa (Servicio de Notificaciones).
+
+El Operario de campo utiliza el sistema para consultar sus obligaciones asignadas, ejecutar el servicio y registrar evidencia. El Supervisor lo utiliza para supervisar el cumplimiento, gestionar incidencias y consultar reportes de cumplimiento.
+
+<img src="resources/10-chapter-01/ContextDiagram1.png">
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 
-| Container | Tecnología propuesta | Responsabilidad |
-|---|---|---|
-| **Operator Native Android App** | Kotlin + Android SDK | Experiencia del operario: obligaciones, Execution, Evidence/Exception, cámara y almacenamiento local/offline. |
-| **Supervisor Cross-Platform App** | Flutter + Dart | Experiencia del supervisor: Service Planning, estado operativo, Compliance Management, correctivas y reporting. |
-| **Landing Page** | HTML5 + CSS3 + JavaScript | Presentar el modelo de negocio y captar contactos/pilotos. |
-| **Service Compliance API** | ASP.NET Core (.NET 10) + OpenAPI | Modular Monolith con Identity, Planning, Field Operations, Compliance y Reporting. |
-| **PostgreSQL Database** | PostgreSQL | Persistencia transaccional con separación lógica por schemas/contextos. |
-| **Firebase Cloud Messaging** | Servicio externo | Push notifications. |
-| **Evidence Object Storage** | Servicio externo compatible con object storage | Archivos de evidencia; API conserva metadatos/referencias. |
+**Container Diagram**
 
-**Comunicación principal.** Ambas apps consumen la REST API mediante HTTPS/JSON. La app nativa utiliza almacenamiento local para registros pendientes y sincroniza posteriormente. La API mantiene el modelo de negocio, persiste datos en PostgreSQL y utiliza servicios externos únicamente a través de adapters de Infrastructure.
+El Container Diagram muestra los elementos de alto nivel de la arquitectura de software de Service Compliance y cómo se distribuyen las responsabilidades entre ellos. La solución está compuesta por una Mobile App (frontend), una API REST (backend), una base de datos relacional y servicios externos de notificación.
+
+La Mobile App se comunica con la API REST mediante peticiones HTTPS/JSON, mientras que la API REST se comunica con dos servicios externos: un servicio de notificaciones para alertar sobre obligaciones vencidas y un servicio de ubicación para validar geolocalización en tiempo real.
+
+<img src="resources/10-chapter-01/ContextDiagram2.png">
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
-| Deployment Node | Artefacto / servicio |
-|---|---|
-| **Android physical device — Operario** | Operator Native Android App (Kotlin), Room/SQLite local, cámara del dispositivo. |
-| **Android/iOS physical device — Supervisor** | Supervisor Cross-Platform App (Flutter/Dart). |
-| **Static Web Hosting** | Landing Page. |
-| **Cloud Application Host** | ASP.NET Core REST API. |
-| **Managed PostgreSQL** | Base de datos de Service Compliance. |
-| **Firebase infrastructure** | FCM. |
-| **Object Storage provider** | Archivos multimedia de evidencia. |
+**Deployment Diagram**
 
-El despliegue final debe demostrar las aplicaciones en dispositivos físicos. El almacenamiento local y la cámara satisfacen necesidades de campo y, además, corresponden a restricciones explícitas del curso.
+El Deployment Diagram muestra la distribución física de los componentes del sistema Service Compliance sobre la infraestructura de hardware. La Mobile App se ejecuta en el dispositivo móvil del operario y del supervisor, la API REST se ejecuta en un servidor en la nube, y la base de datos se ejecuta en una instancia administrada en la nube.
+
+<img src="resources/10-chapter-01/ContextDiagram3.png">
 
 <a id="26-tactical-level-domain-driven-design"></a>
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
-El diseño táctico implementa los cinco Bounded Contexts como módulos del backend, evitando compartir directamente entidades de dominio. La base de datos puede ser una única instancia PostgreSQL en el MVP, pero se propone separación lógica por schemas (`identity`, `planning`, `field_ops`, `compliance`, `reporting`). Los contextos intercambian identificadores y eventos de integración, no referencias ORM entre agregados de contextos distintos.
+En esta sección se explica y presenta la propuesta para la perspectiva táctica del diseño de la solución para cada uno de los cinco Bounded Contexts identificados. Para cada contexto se documentan las clases de las capas de Domain, Interface, Application e Infrastructure a manera de diccionario (nombre, propósito, atributos, métodos y relaciones), junto con los diagramas de componentes (C4 Model) y los diagramas de código de nivel de detalle: Class Diagram del Domain Layer y Database Design Diagram.
 
-### 2.6.1. Bounded Context: Identity & Access
+<a id="261-bounded-context-authentication"></a>
+
+### 2.6.1. Bounded Context: Authentication
+
+Este Bounded Context gestiona la información y operaciones relacionadas con el registro, inicio de sesión y perfil de los usuarios del sistema (operarios y supervisores). Garantiza que el acceso a cada contexto del sistema sea realizado por un usuario válido y con el rol correspondiente.
 
 #### 2.6.1.1. Domain Layer
 
-| Clase | Categoría | Propósito | Miembros principales |
-|---|---|---|---|
-| `UserAccount` | Aggregate Root | Representa una cuenta perteneciente a una empresa prestadora. | `UserId`, `ProviderCompanyId`, `Email`, `Role`, `Status`; `Activate()`, `Deactivate()`, `ChangeRole()` |
-| `Role` | Value Object / Enum | Rol funcional autorizado. | `OPERATOR`, `SUPERVISOR`, `OPERATIONS_MANAGER` |
-| `AccountStatus` | Enum | Estado de acceso. | `ACTIVE`, `INACTIVE`, `SUSPENDED` |
-| `AccessPolicy` | Domain Service | Evalúa reglas de rol/empresa que no corresponden a un único método de entidad. | `CanManagePlan()`, `CanExecute()`, `CanEvaluateCompliance()` |
-| `IUserAccountRepository` | Repository interface | Persistencia abstracta de cuentas. | `FindById()`, `FindByEmail()`, `Save()` |
+El Domain Layer representa el core del contexto Authentication mediante la entidad `User` y el rol asociado, encapsulando las reglas de negocio de identificación y verificación de credenciales, así como las reglas de negocio de creación de cuentas. A continuación, se detalla el diccionario de clases del dominio:
+
+| Clase | Categoría | Propósito | Atributos y métodos principales | Relaciones |
+|---|---|---|---|---|
+| `User` | Entity | Representa a un usuario registrado del sistema (operario o supervisor) que puede autenticarse. | Atributos: `userId: Long`, `fullName: String`, `email: String`, `phoneNumber: String`, `role: Role`, `status: AccountStatus`. Métodos: `getName(): String`, `getEmail(): String`, `hasRole(r: Role): Boolean`, `isActive(): Boolean`. | 1..1 con `Account`; 1..* con `Role` (via `Account`). |
+| `Account` | Aggregate Root | Agrega la entidad `User` con sus credenciales y estado de cuenta, garantizando la integridad del acceso. | Atributos: `accountId: Long`, `username: String`, `passwordHash: String`, `createdAt: DateTime`, `status: AccountStatus`. Métodos: `authenticate(password: String): Boolean`, `updatePassword(newHash: String): void`, `suspend(): void`, `activate(): void`. | Root del agregado; contiene 1 `User`, 1..* `Credential`. |
+| `Role` | Value Object | Define el perfil de acceso del usuario en el sistema. | Atributos: `code: RoleCode` (`OPERATOR`, `SUPERVISOR`). Métodos: `isOperator(): Boolean`, `isSupervisor(): Boolean`. | Usado por `User`. |
+| `Credential` | Value Object | Encapsula las credenciales de acceso de la cuenta. | Atributos: `username: String`, `passwordHash: String`. Métodos: `isValidPassword(candidate: String, hasher: IPasswordHasher): Boolean`. | Pertenecen al agregado `Account`. |
+| `AccountStatus` | Enumeración | Estado del ciclo de vida de la cuenta. | Valores: `ACTIVE`, `SUSPENDED`, `INACTIVE`. | Usado por `Account`. |
+| `AuthenticationService` | Domain Service | Orquesta la validación de credenciales y la creación segura de sesiones. | Métodos: `login(username: String, password: String): Session`, `logout(sessionId: String): void`. | Depende de `IAccountRepository` y `ISessionRepository`. |
+| `UserAccountFactory` | Factory | Crea instancias válidas del agregado `Account` a partir de datos de registro. | Métodos: `createAccount(userData, role): Account`, `validateDuplicatedEmail(email): void`. | Crea `Account` y `User`. |
+| `IAccountRepository` | Repository (interface) | Abstracción de persistencia de cuentas. | Métodos: `findByUsername(username): Account`, `findByEmail(email): User`, `save(account): void`. | Implementado en Infrastructure Layer. |
+| `ISessionRepository` | Repository (interface) | Abstracción de persistencia de sesiones. | Métodos: `create(session): void`, `invalidate(sessionId): void`. | Implementado en Infrastructure Layer. |
 
 #### 2.6.1.2. Interface Layer
 
-| Clase | Tipo | Operaciones |
-|---|---|---|
-| `AuthController` | Controller | `POST /api/v1/auth/login`, `POST /api/v1/auth/refresh` |
-| `AccountController` | Controller | `GET /api/v1/accounts/me` |
+La Interface Layer expone los endpoints REST que permiten a los usuarios del sistema (operarios y supervisores) registrarse, iniciar sesión y consultar su perfil, así como consumir el estado de la sesión.
+
+| Clase | Tipo | Endpoints | Responsabilidad |
+|---|---|---|---|
+| `AuthController` | Controller | `POST /auth/register`, `POST /auth/login`, `POST /auth/logout` | Recibe las solicitudes de registro, inicio y cierre de sesión y las delega en los command handlers correspondientes. |
+| `UserProfileController` | Controller | `GET /auth/me`, `PUT /auth/me` | Permite consultar y actualizar el perfil del usuario autenticado. |
 
 #### 2.6.1.3. Application Layer
 
-| Clase | Tipo | Responsabilidad / eventos |
-|---|---|---|
-| `LoginCommandHandler` | Command Handler | Valida credenciales, emite sesión/token. |
-| `RefreshTokenCommandHandler` | Command Handler | Renueva sesión válida. |
-| `DeactivateAccountCommandHandler` | Command Handler | Cambia estado y publica `AccountDeactivated`. |
-| `AccountDeactivatedEventHandler` | Event Handler | Invalida sesiones asociadas. |
+La Application Layer maneja los flujos de proceso del contexto mediante Command Handlers y Event Handlers, aplicando las capabilities identificadas en el Bounded Context Canvas.
+
+| Clase | Tipo | Operaciones | Eventos publicados/suscritos |
+|---|---|---|---|
+| `RegisterUserCommandHandler` | Command Handler | Procesa `RegisterUserCommand` (datos del usuario, rol). | Publica `UserRegistered`. |
+| `LoginCommandHandler` | Command Handler | Procesa `LoginCommand` (username, password), delega en `AuthenticationService`. | Publica `LoginSucceeded` / `LoginFailed`. |
+| `LogoutCommandHandler` | Command Handler | Procesa `LogoutCommand` (sessionId). | Publica `SessionClosed`. |
+| `UserRegisteredEventHandler` | Event Handler | Reacciona a `UserRegistered` para enviar notificación de bienvenida vía el servicio de notificaciones. | Suscribe `UserRegistered`. |
+| `LoginSucceededEventHandler` | Event Handler | Reacciona a `LoginSucceeded` para auditar el acceso del usuario. | Suscribe `LoginSucceeded`. |
 
 #### 2.6.1.4. Infrastructure Layer
 
-| Clase | Responsabilidad | Implementación propuesta |
+La Infrastructure Layer implementa los repositorios definidos en el Domain Layer y el acceso a servicios externos.
+
+| Clase | Responsabilidad | Tecnología / Servicio externo |
 |---|---|---|
-| `UserAccountRepository` | Implementa repositorio. | EF Core + PostgreSQL schema `identity`. |
-| `PasswordHasher` | Hash/verify de credenciales. | ASP.NET Core PasswordHasher o equivalente. |
-| `JwtTokenService` | Emisión/validación de tokens. | JWT. |
+| `AccountRepository` | Implementa `IAccountRepository` para persistir cuentas en la base de datos relacional. | Entity Framework Core + PostgreSQL. |
+| `SessionRepository` | Implementa `ISessionRepository` para gestionar las sesiones activas. | EF Core + PostgreSQL. |
+| `PasswordHasher` | Implementa `IPasswordHasher` para generar y validar hashes de contraseñas. | BCrypt / PBKDF2. |
+| `JwtTokenGenerator` | Genera y valida tokens JWT de sesión. | `System.IdentityModel.Tokens.Jwt`. |
+| `NotificationClient` | Envía notificaciones (bienvenida, alertas) mediante el servicio externo de notificaciones. | API REST externa de notificaciones. |
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-Componentes: `AuthController`, `AccountController`, `IdentityApplication`, `AccessPolicy`, `UserAccountRepository`, `JwtTokenService`.
+El siguiente diagrama de componentes (C4 Model) muestra la descomposición del container Mobile App y API REST para el Bounded Context Authentication, identificando los bloques estructurales del contexto y sus interacciones:
+
+| Component | Container | Responsabilidad | Detalles de implementación |
+|---|---|---|---|
+| `LoginScreen` | Mobile App | Interfaz de inicio de sesión del usuario (operario/supervisor). | Vue 3 + TypeScript. |
+| `RegisterScreen` | Mobile App | Interfaz de registro de nueva cuenta. | Vue 3 + TypeScript. |
+| `AuthController` | API REST | Recibe peticiones HTTP de autenticación. | .NET 10 / ASP.NET Core Web API. |
+| `AuthenticationApplicationService` | API REST | Orquesta los flujos de registro e inicio de sesión. | C# / .NET 10. |
+| `AccountRepository` | API REST | Persistencia de cuentas y sesiones. | EF Core + PostgreSQL. |
+| `PasswordHasher` / `JwtTokenGenerator` | API REST | Seguridad de credenciales y emisión de tokens. | BCrypt + JWT. |
+
+<img src="resources/11-chapter-02/diagrama-01.png">
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+El siguiente diagrama de clases UML detalla las clases del Domain Layer del Bounded Context Authentication, incluyendo miembros (atributos y métodos con su scope), relaciones, dirección y multiplicidad:
+
+<img src="resources/11-chapter-02/diagrama-02.png">
+
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 
-| Tabla | Campos principales | Constraints |
-|---|---|---|
-| `identity.user_accounts` | `user_id`, `provider_company_id`, `email`, `password_hash`, `role`, `status`, `created_at` | PK `user_id`, UQ `email`. |
-| `identity.refresh_tokens` | `token_id`, `user_id`, `token_hash`, `expires_at`, `revoked_at` | FK lógico a `user_accounts`, UQ `token_hash`. |
+La siguiente tabla y el diagrama de base de datos muestran los objetos de persistencia del Bounded Context Authentication sobre una base de datos relacional:
 
-### 2.6.2. Bounded Context: Service Planning
+| Tabla | Columnas | Constraints |
+|---|---|---|
+| `Users` | `user_id` (PK), `full_name`, `email` (UQ), `phone_number`, `role`, `status` | PK: `user_id`. |
+| `Accounts` | `account_id` (PK), `user_id` (FK), `username` (UQ), `password_hash`, `created_at`, `status` | PK: `account_id`; FK: `user_id` → `Users(user_id)`. |
+| `Sessions` | `session_id` (PK), `account_id` (FK), `token`, `created_at`, `expires_at`, `is_active` | PK: `session_id`; FK: `account_id` → `Accounts(account_id)`. |
+
+<img src="resources/11-chapter-02/diagrama-03.png">
+
+<div style="page-break-before: always;"></div>
+
+<a id="262-bounded-context-contract--obligation-management"></a>
+
+### 2.6.2. Bounded Context: Contract & Obligation Management
+
+Este Bounded Context gestiona la información y operaciones relacionadas con los contratos de servicio y las obligaciones operativas derivadas de ellos, incluyendo su registro y asignación a los operarios de campo.
 
 #### 2.6.2.1. Domain Layer
 
-| Clase | Categoría | Propósito | Miembros principales |
-|---|---|---|---|
-| `ServicePlan` | Aggregate Root | Representa la interpretación operativa versionada del servicio. | `PlanId`, `ProviderCompanyId`, `ClientReference`, `Version`, `Status`; `AddCondition()`, `AddObligationDefinition()`, `Activate()`, `CreateRevision()` |
-| `ServiceCondition` | Entity | Condición relevante que sirve de contexto al plan. | `ConditionId`, `Description`, `SourceReference` |
-| `ServiceSite` | Entity | Instalación donde se presta el servicio. | `SiteId`, `Name`, `Address`, `ClientReference` |
-| `ObligationDefinition` | Entity | Describe actividad, sitio, schedule, criterio y evidencia esperada. | `DefinitionId`, `Activity`, `SiteId`, `ScheduleRule`, `AcceptanceCriterion`, `EvidenceRequirements` |
-| `ScheduleRule` | Value Object | Frecuencia/ventana operacional. | `Frequency`, `Days`, `WindowStart`, `WindowEnd` |
-| `AcceptanceCriterion` | Value Object | Criterio con el cual se evaluará la obligación. | `Description`, `CriterionType` |
-| `EvidenceRequirement` | Value Object | Tipo de respaldo requerido cuando corresponda. | `Type`, `Required`, `Instructions` |
-| `ServicePlanStatus` | Enum | Ciclo de vida del plan. | `DRAFT`, `ACTIVE`, `SUPERSEDED`, `CLOSED` |
-| `ServicePlanPolicy` | Domain Service | Valida activación/versionado. | `CanActivate(plan)`, `RequiresRevision(change)` |
-| `IServicePlanRepository` | Repository interface | Persistencia del agregado. | `FindById()`, `Save()`, `FindActiveByService()` |
+El Domain Layer representa el core del contexto mediante los agregados `ServiceContract` y `ServiceObligation`, encapsulando las reglas de negocio de registro de contratos, derivación de obligaciones a partir de las condiciones contractuales y la asignación de operarios. A continuación, se detalla el diccionario de clases del dominio:
+
+| Clase | Categoría | Propósito | Atributos y métodos principales | Relaciones |
+|---|---|---|---|---|
+| `ServiceContract` | Aggregate Root | Representa el contrato de servicio con un cliente, origen de las obligaciones operativas. | Atributos: `contractId: Long`, `clientName: String`, `startDate: DateTime`, `endDate: DateTime`, `slaMinutes: Integer`, `status: ContractStatus`. Métodos: `activate(): void`, `suspend(): void`, `terminate(): void`, `hasObligations(): Boolean`. | 1..* con `ServiceObligation`. |
+| `ServiceObligation` | Aggregate Root | Representa una obligación operativa recurrente derivada del contrato y asignada a un operario. | Atributos: `obligationId: Long`, `contractId: Long`, `siteName: String`, `address: Address`, `frequency: Frequency`, `timeWindow: TimeWindow`, `assignedOperator: Long`, `status: ObligationStatus`. Métodos: `assignOperator(operatorId: Long): void`, `reschedule(window: TimeWindow): void`, `markReady(): void`. | 1..* pertenecen a 1 `ServiceContract`; 1..1 con `Address`, `Frequency`, `TimeWindow`. |
+| `Address` | Value Object | Ubicación del sitio donde se ejecuta la obligación. | Atributos: `street: String`, `city: String`, `country: String`(`PER`), `reference: String`. Métodos: `fullAddress(): String`. | Usado por `ServiceObligation`. |
+| `Frequency` | Value Object | Periodicidad de ejecución de la obligación. | Atributos: `code: FrequencyCode` (`DAILY`, `WEEKLY`), `days: Set<DayOfWeek>`. Métodos: `isDueOn(date: DateTime): Boolean`. | Usado por `ServiceObligation`. |
+| `TimeWindow` | Value Object | Ventana horaria permitida para ejecutar la obligación. | Atributos: `start: Time`, `end: Time`. Métodos: `isWithin(time: DateTime): Boolean`. | Usado por `ServiceObligation`. |
+| `ContractStatus` | Enumeración | Estado del ciclo de vida del contrato. | Valores: `DRAFT`, `ACTIVE`, `SUSPENDED`, `TERMINATED`. | Usado por `ServiceContract`. |
+| `ObligationStatus` | Enumeración | Estado del ciclo de vida de la obligación. | Valores: `PENDING`, `READY`, `OVERDUE`. | Usado por `ServiceObligation`. |
+| `ObligationDerivator` | Domain Service | Deriva las obligaciones operativas a partir de las condiciones del contrato (sitio, frecuencia, ventana SLA). | Métodos: `deriveObligations(contract: ServiceContract): List<ServiceObligation>`. | Depende de `IObligationRepository`. |
+| `ObligationFactory` | Factory | Crea instancias válidas de `ServiceObligation` garantizando unicidad por contrato y frecuencia. | Métodos: `create(contractId, site, frequency, window): ServiceObligation`, `validateDuplicated(): void`. | Crea `ServiceObligation`. |
+| `IContractRepository` | Repository (interface) | Abstracción de persistencia de contratos. | Métodos: `findById(id): ServiceContract`, `save(contract): void`, `findActive(): List<ServiceContract>`. | Implementado en Infrastructure Layer. |
+| `IObligationRepository` | Repository (interface) | Abstracción de persistencia de obligaciones. | Métodos: `findById(id): ServiceObligation`, `save(obligation): void`, `findByContract(contractId): List<ServiceObligation>`, `findDueOn(date): List<ServiceObligation>`. | Implementado en Infrastructure Layer. |
 
 #### 2.6.2.2. Interface Layer
 
-| Clase | Tipo | Operaciones |
-|---|---|---|
-| `ServicePlanController` | Controller | `POST /plans`, `GET /plans/{id}`, `POST /plans/{id}/activate`, `POST /plans/{id}/revisions` |
-| `ObligationDefinitionController` | Controller | `POST /plans/{id}/obligations`, `PUT /plans/{id}/obligations/{definitionId}` |
+La Interface Layer expone los endpoints REST para registrar contratos, consultar obligaciones y asignar operarios, tanto para usuarios supervisor como para el operario móvil.
+
+| Clase | Tipo | Endpoints | Responsabilidad |
+|---|---|---|---|
+| `ContractController` | Controller | `POST /contracts`, `GET /contracts/{id}`, `PUT /contracts/{id}` | Gestiona el registro y ciclo de vida comercial de los contratos. |
+| `ObligationController` | Controller | `GET /obligations`, `GET /obligations/{id}`, `POST /obligations/{id}/assign` | Consulta obligaciones y realiza la asignación de operarios. |
 
 #### 2.6.2.3. Application Layer
 
-| Clase | Tipo | Responsabilidad / eventos |
-|---|---|---|
-| `CreateServicePlanCommandHandler` | Command Handler | Crea plan Draft; publica `ServicePlanCreated`. |
-| `AddObligationDefinitionCommandHandler` | Command Handler | Añade definición válida. |
-| `ActivateServicePlanCommandHandler` | Command Handler | Valida y activa; publica `ServicePlanActivated` y definiciones necesarias. |
-| `CreateServicePlanRevisionCommandHandler` | Command Handler | Crea nueva versión sin reescribir la activa históricamente. |
-| `ServicePlanActivatedEventHandler` | Event Handler | Publica integración para Field Operations/Compliance. |
+La Application Layer maneja los flujos de negocio del contexto mediante Command Handlers y Event Handlers, aplicando las capabilities del Bounded Context Canvas.
+
+| Clase | Tipo | Operaciones | Eventos publicados/suscritos |
+|---|---|---|---|
+| `RegisterContractCommandHandler` | Command Handler | Procesa `RegisterContractCommand` (cliente, fechas, SLA). | Publica `ContractRegistered`. |
+| `ActivateContractCommandHandler` | Command Handler | Activa el contrato y delega la derivación de obligaciones. | Publica `ContractActivated`. |
+| `DeriveObligationsCommandHandler` | Command Handler | Ejecuta `ObligationDerivator` para generar las obligaciones del contrato. | Publica `ObligationsDerived`. |
+| `AssignObligationCommandHandler` | Command Handler | Asigna la obligación a un operario de campo. | Publica `ObligationAssigned`. |
+| `ContractActivatedEventHandler` | Event Handler | Reacciona a `ContractActivated` disparando la derivación de obligaciones. | Suscribe `ContractActivated`. |
+| `ObligationAssignedEventHandler` | Event Handler | Reacciona a `ObligationAssigned` para notificar al operario móvil. | Suscribe `ObligationAssigned`. |
 
 #### 2.6.2.4. Infrastructure Layer
 
-| Clase | Responsabilidad | Implementación |
+La Infrastructure Layer implementa los repositorios del dominio y el acceso a servicios externos del contexto.
+
+| Clase | Responsabilidad | Tecnología / Servicio externo |
 |---|---|---|
-| `ServicePlanRepository` | Persistencia del agregado. | EF Core + PostgreSQL schema `planning`. |
-| `PlanningIntegrationPublisher` | Publica contracts/events internos del modular monolith. | In-process dispatcher / integration events. |
+| `ContractRepository` | Implementa `IContractRepository` para persistir contratos. | EF Core + PostgreSQL. |
+| `ObligationRepository` | Implementa `IObligationRepository` para persistir obligaciones. | EF Core + PostgreSQL. |
+| `ObligationDueJob` | Proceso programado que detecta obligaciones que superan su ventana SLA y las marca como `OVERDUE`. | Background Service (.NET 10) / Quartz. |
+| `NotificationClient` | Notifica al operario la asignación de una obligación. | API REST externa de notificaciones. |
 
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-Componentes: `ServicePlanController`, `ObligationDefinitionController`, `PlanningApplication`, `ServicePlanPolicy`, `ServicePlanRepository`, `PlanningIntegrationPublisher`.
+El siguiente diagrama de componentes (C4 Model) muestra la descomposición de los containers de la solución para el Bounded Context Contract & Obligation Management:
+
+| Component | Container | Responsabilidad | Detalles de implementación |
+|---|---|---|---|
+| `ContractListScreen` | Mobile App (Supervisor) | Interfaz de registro y consulta de contratos. | Vue 3 + TypeScript. |
+| `ContractController` | API REST | Recibe peticiones HTTP de contratos. | .NET 10 / ASP.NET Core Web API. |
+| `ObligationController` | API REST | Recibe peticiones HTTP de obligaciones. | .NET 10 / ASP.NET Core Web API. |
+| `ContractApplicationService` | API REST | Orquesta registro, activación y derivación de obligaciones. | C# / .NET 10. |
+| `ContractRepository` / `ObligationRepository` | API REST | Persistencia de contratos y obligaciones. | EF Core + PostgreSQL. |
+| `ObligationDueJob` | API REST | Detecta obligaciones vencidas según SLA. | Background Service / Quartz. |
+
+<img src="resources/11-chapter-02/diagrama-04.png">
 
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
+El siguiente diagrama de clases UML detalla las clases del Domain Layer del Bounded Context Contract & Obligation Management, incluyendo miembros, relaciones, dirección y multiplicidad:
+
+<img src="resources/11-chapter-02/diagrama-05.png">
+
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-| Tabla | Campos principales | Constraints |
-|---|---|---|
-| `planning.service_plans` | `plan_id`, `provider_company_id`, `client_reference`, `version`, `status`, `valid_from`, `valid_to` | PK; UQ servicio+versión. |
-| `planning.service_conditions` | `condition_id`, `plan_id`, `description`, `source_reference` | FK dentro del schema Planning. |
-| `planning.service_sites` | `site_id`, `plan_id`, `name`, `address`, `client_reference` | FK `plan_id`. |
-| `planning.obligation_definitions` | `definition_id`, `plan_id`, `site_id`, `activity`, `frequency`, `window_start`, `window_end`, `acceptance_criterion` | FK plan/site. |
-| `planning.evidence_requirements` | `requirement_id`, `definition_id`, `type`, `required`, `instructions` | FK definition. |
+La siguiente tabla y el diagrama de base de datos muestran los objetos de persistencia del Bounded Context Contract & Obligation Management sobre una base de datos relacional:
 
-### 2.6.3. Bounded Context: Field Operations
+| Tabla | Columnas | Constraints |
+|---|---|---|
+| `ServiceContracts` | `contract_id` (PK), `client_name`, `start_date`, `end_date`, `sla_minutes`, `status` | PK: `contract_id`. |
+| `ServiceObligations` | `obligation_id` (PK), `contract_id` (FK), `site_name`, `street`, `city`, `country`, `reference`, `frequency`, `time_window_start`, `time_window_end`, `assigned_operator_id`, `status` | PK: `obligation_id`; FK: `contract_id` → `ServiceContracts(contract_id)`. |
+
+<img src="resources/11-chapter-02/diagrama-06.png">
+
+<div style="page-break-before: always;"></div>
+
+<a id="263-bounded-context-field-execution--evidence"></a>
+
+### 2.6.3. Bounded Context: Field Execution & Evidence
+
+Este Bounded Context gestiona la ejecución de obligaciones en campo y la captura de evidencia asociada (foto, código QR, ubicación), incluyendo el soporte de registro sin conexión y su posterior sincronización. Constituye el **core domain** de la solución.
 
 #### 2.6.3.1. Domain Layer
 
-| Clase | Categoría | Propósito | Miembros principales |
-|---|---|---|---|
-| `ServiceExecution` | Aggregate Root | Representa la atención de una Service Obligation por un operario. | `ExecutionId`, `ObligationId`, `OperatorId`, `Status`, `StartedAt`, `SubmittedAt`; `Start()`, `AttachEvidence()`, `ReportException()`, `Submit()` |
-| `ObligationSnapshot` | Value Object | Copia mínima/versionada de la obligación necesaria para ejecutar sin acoplar el agregado a Planning. | `ObligationId`, `DefinitionVersion`, `Site`, `Window`, `EvidenceRequirements` |
-| `Evidence` | Entity | Respaldo asociado a la ejecución. | `EvidenceId`, `Type`, `Reference`, `CapturedAt`, `Metadata` |
-| `ExecutionException` | Entity | Impedimento/contexto reportado por el operario. | `ExceptionId`, `ReasonCode`, `Description`, `ReportedAt` |
-| `ExecutionStatus` | Enum | Estado de la ejecución. | `ASSIGNED`, `IN_PROGRESS`, `SUBMITTED`, `CANCELLED` |
-| `EvidenceType` | Enum/extensible | Tipos iniciales de evidencia. | `PHOTO`, `CHECKLIST`, `SIGNATURE`, `OTHER` |
-| `ExecutionSubmissionPolicy` | Domain Service | Valida que exista resultado y requisitos mínimos antes de submit. | `CanSubmit(execution, snapshot)` |
-| `IExecutionRepository` | Repository interface | Persistencia del agregado. | `FindById()`, `FindAssignedTo()`, `Save()` |
+El Domain Layer representa el core de la solución mediante el agregado `ObligationExecution`, que agrupa la evidencia capturada durante la ejecución y coordina las reglas de negocio de cierre de ejecución (validación de evidencia mínima, geolocalización y registro offline).
 
-> **Nota de diseño:** QR, GPS o NFC no son obligatorios ni forman parte fija de `EvidenceType`. Pueden incorporarse como mecanismos concretos si un Evidence Requirement validado los necesita. La conectividad tampoco se almacena como “verdad de negocio”; la cola offline pertenece a infraestructura de la app.
+| Clase | Categoría | Propósito | Atributos y métodos principales | Relaciones |
+|---|---|---|---|---|
+| `ObligationExecution` | Aggregate Root | Representa la ejecución de una obligación por parte de un operario, agrupando la evidencia capturada. | Atributos: `executionId: Long`, `obligationId: Long`, `operatorId: Long`, `startedAt: DateTime`, `completedAt: DateTime`, `status: ExecutionStatus`, `isOffline: Boolean`. Métodos: `start(): void`, `registerEvidence(e: Evidence): void`, `complete(): void`, `markOffline(): void`, `isComplete(): Boolean`. | 1..* con `Evidence`. |
+| `Evidence` | Entity | Representa una pieza de evidencia de la ejecución (foto, código QR o ubicación). | Atributos: `evidenceId: Long`, `executionId: Long`, `type: EvidenceType`, `url: String`, `capturedAt: DateTime`, `location: GeoLocation`. Métodos: `isValid(): Boolean`, `type(): EvidenceType`. | Pertenecen a 1 `ObligationExecution`. |
+| `EvidenceType` | Enumeración | Tipo de evidencia capturada. | Valores: `PHOTO`, `QR_CODE`, `LOCATION`. | Usado por `Evidence`. |
+| `ExecutionStatus` | Enumeración | Estado del ciclo de vida de la ejecución. | Valores: `PENDING`, `IN_PROGRESS`, `COMPLETED`, `SYNCED`. | Usado por `ObligationExecution`. |
+| `GeoLocation` | Value Object | Coordenadas de la ubicación donde se registró la evidencia. | Atributos: `latitude: Double`, `longitude: Double`, `accuracy: Double`. Métodos: `isNear(expected: GeoLocation, radiusM: Double): Boolean`. | Usado por `Evidence`. |
+| `OfflineBatch` | Value Object | Identifica el lote de registros capturados sin conexión para su sincronización. | Atributos: `batchId: UUID`, `createdAt: DateTime`, `pendingCount: Integer`. Métodos: `add(execution: ObligationExecution): void`. | Agrupa `ObligationExecution`. |
+| `ExecutionRegistrar` | Domain Service | Orquesta el inicio, el registro de evidencia y el cierre de la ejecución, validando la evidencia mínima requerida. | Métodos: `start(obligationId, operator): ObligationExecution`, `complete(execution): void`, `validateEvidence(execution): Boolean`. | Depende de `IExecutionRepository` e `IEvidenceRepository`. |
+| `EvidenceValidator` | Domain Service | Valida la calidad y requisitos de la evidencia capturada (presencia obligatoria de foto, QR y ubicación). | Métodos: `validate(evidence: Evidence): ValidationResult`. | Depende de `Evidence`. |
+| `IExecutionRepository` | Repository (interface) | Abstracción de persistencia de ejecuciones. | Métodos: `findById(id): ObligationExecution`, `save(execution): void`, `findByOperator(operatorId): List<ObligationExecution>`, `findPendingSync(): List<ObligationExecution>`. | Implementado en Infrastructure Layer. |
+| `IEvidenceRepository` | Repository (interface) | Abstracción de persistencia de evidencia. | Métodos: `save(evidence): void`, `findByExecution(executionId): List<Evidence>`. | Implementado en Infrastructure Layer. |
 
 #### 2.6.3.2. Interface Layer
 
-| Clase | Tipo | Operaciones |
-|---|---|---|
-| `ExecutionController` | Controller | `GET /executions/me`, `POST /executions/{id}/start`, `POST /executions/{id}/submit` |
-| `EvidenceController` | Controller | `POST /executions/{id}/evidence` |
-| `ExceptionController` | Controller | `POST /executions/{id}/exceptions` |
-| `SyncController` | Controller | `POST /sync/executions` con idempotency key. |
+La Interface Layer expone los endpoints rest para que el operario móvil ejecute obligaciones y registre evidencia, así como el ingreso del sincronizador de registros offline.
+
+| Clase | Tipo | Endpoints | Responsabilidad |
+|---|---|---|---|
+| `ExecutionController` | Controller | `POST /executions`, `POST /executions/{id}/complete`, `GET /executions/operator/{operatorId}` | Gestiona el inicio y cierre de ejecuciones en campo. |
+| `EvidenceController` | Controller | `POST /executions/{id}/evidences`, `GET /executions/{id}/evidences` | Registra y consulta la evidencia capturada. |
+| `SyncController` | Controller | `POST /sync/offline-batches`, `GET /sync/status` | Recibe los lotes de registros capturados sin conexión para su sincronización. |
 
 #### 2.6.3.3. Application Layer
 
-| Clase | Tipo | Responsabilidad / eventos |
-|---|---|---|
-| `AssignServiceObligationCommandHandler` | Command Handler | Crea/actualiza asignación y publica `ServiceObligationAssigned`. |
-| `StartExecutionCommandHandler` | Command Handler | Inicia ejecución; publica `ExecutionStarted`. |
-| `AttachEvidenceCommandHandler` | Command Handler | Registra metadata/referencia; publica `EvidenceAttached`. |
-| `ReportExceptionCommandHandler` | Command Handler | Añade excepción; publica `ExceptionReported`. |
-| `SubmitExecutionCommandHandler` | Command Handler | Aplica policy y publica `ExecutionSubmitted`. |
-| `SyncExecutionCommandHandler` | Command Handler | Procesa requests idempotentes originados offline. |
+La Application Layer maneja los flujos de negocio del contexto (inicio, captura, cierre y sincronización) mediante Command Handlers y Event Handlers, aplicando las capabilities del núcleo de la solución.
+
+| Clase | Tipo | Operaciones | Eventos publicados/suscritos |
+|---|---|---|---|
+| `StartExecutionCommandHandler` | Command Handler | Procesa `StartExecutionCommand` (obligación, operario) y delega en `ExecutionRegistrar`. | Publica `ExecutionStarted`. |
+| `RegisterEvidenceCommandHandler` | Command Handler | Procesa `RegisterEvidenceCommand` (tipo, url, ubicación) y valida la evidencia. | Publica `EvidenceRegistered`. |
+| `CompleteExecutionCommandHandler` | Command Handler | Procesa `CompleteExecutionCommand` validando la evidencia mínima y cerrando la ejecución. | Publica `ExecutionCompleted`. |
+| `SyncOfflineBatchCommandHandler` | Command Handler | Procesa `SyncOfflineBatchCommand` para sincronizar ejecuciones registradas sin conexión. | Publica `OfflineBatchSynced`. |
+| `ExecutionStartedEventHandler` | Event Handler | Reacciona a `ExecutionStarted` para notificar el inicio de la ejecución. | Suscribe `ExecutionStarted`. |
+| `ExecutionCompletedEventHandler` | Event Handler | Reacciona a `ExecutionCompleted` para publicar el evento de dominio hacia el contexto Incident & Corrective Action (evaluación SLA) y Compliance Reporting (consolidación). | Suscribe `ExecutionCompleted`; publica integración. |
 
 #### 2.6.3.4. Infrastructure Layer
 
-| Clase | Responsabilidad | Implementación propuesta |
+La Infrastructure Layer implementa los repositorios del dominio, el almacenamiento de archivos de evidencia y el acceso a recursos del dispositivo móvil y servicios externos.
+
+| Clase | Responsabilidad | Tecnología / Servicio externo |
 |---|---|---|
-| `ExecutionRepository` | Persistencia backend. | EF Core + PostgreSQL schema `field_ops`. |
-| `EvidenceStorageClient` | Almacena/recupera archivos. | Adapter a object storage externo. |
-| `RoomExecutionQueue` | Persistencia local en app nativa. | Room/SQLite. |
-| `ExecutionSyncCoordinator` | Reintentos/sync de registros locales. | Kotlin + tecnología a decidir tras SP-01. |
-| `CameraEvidenceAdapter` | Acceso a cámara cuando el requirement exige foto. | Android Camera/CameraX. |
-| `ConnectivityMonitor` | Detecta disponibilidad de red para scheduling de sync. | Android connectivity APIs. |
+| `ExecutionRepository` | Implementa `IExecutionRepository` para persistir ejecuciones. | EF Core + PostgreSQL. |
+| `EvidenceRepository` | Implementa `IEvidenceRepository` para persistir evidencia. | EF Core + PostgreSQL. |
+| `LocalExecutionStore` | Almacena las ejecuciones y evidencia capturadas sin conexión en el dispositivo. | SQLite local (dispositivo móvil). |
+| `MediaStorageService` | Almacena las imágenes (fotos) de evidencia. | Bucket de almacenamiento (S3). |
+| `QrCodeReader` | Acceso al componente de lectura de códigos QR en la cámara. | Librería nativa (ZXing / CameraX). |
+| `GeolocationService` | Acceso al GPS del dispositivo para registrar la ubicación. | APIs de ubicación del dispositivo. |
 
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-**Operator Native Android App:** `AssignedWork`, `ExecutionRecorder`, `EvidenceCapture`, `LocalQueue`, `SyncCoordinator`, `ApiClient`.
+El siguiente diagrama de componentes (C4 Model) muestra la descomposición de los containers de la solución para el Bounded Context Field Execution & Evidence (core domain):
 
-**API:** `ExecutionController`, `EvidenceController`, `ExceptionController`, `FieldOperationsApplication`, `ExecutionRepository`, `EvidenceStorageClient`.
+| Component | Container | Responsabilidad | Detalles de implementación |
+|---|---|---|---|
+| `ExecutionScreen` | Mobile App (Operario) | Interfaz de consulta, inicio y cierre de ejecución de la obligación. | Vue 3 + TypeScript. |
+| `EvidenceCaptureScreen` | Mobile App (Operario) | Captura de foto, lectura de QR y geolocalización. | Vue 3 + TypeScript + librerías nativas. |
+| `LocalExecutionStore` | Mobile App (Operario) | Persistencia offline de ejecuciones y evidencia. | SQLite local. |
+| `ExecutionController` / `EvidenceController` / `SyncController` | API REST | Reciben las peticiones de ejecución, evidencia y sincronización. | .NET 10 / ASP.NET Core Web API. |
+| `ExecutionApplicationService` | API REST | Orquesta inicio, registro de evidencia, cierre y sincronización. | C# / .NET 10. |
+| `ExecutionRepository` / `EvidenceRepository` | API REST | Persistencia de ejecuciones y evidencia. | EF Core + PostgreSQL. |
+| `MediaStorageService` | API REST | Almacena las fotos de evidencia. | Amazon S3. |
+
+<img src="resources/11-chapter-02/diagrama-07.png">
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
+El siguiente diagrama de clases UML detalla las clases del Domain Layer del Bounded Context Field Execution & Evidence, incluyendo miembros, relaciones, dirección y multiplicidad:
+
+<img src="resources/11-chapter-02/diagrama-08.png">
+
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 
-| Tabla | Campos principales | Constraints |
+La siguiente tabla y el diagrama de base de datos muestran los objetos de persistencia del Bounded Context Field Execution & Evidence sobre una base de datos relacional:
+
+| Tabla | Columnas | Constraints |
 |---|---|---|
-| `field_ops.executions` | `execution_id`, `obligation_id`, `operator_id`, `status`, `started_at`, `submitted_at`, `obligation_version` | PK, UQ/idempotency según integración. |
-| `field_ops.evidence` | `evidence_id`, `execution_id`, `type`, `reference`, `captured_at`, `metadata_json` | FK execution. |
-| `field_ops.execution_exceptions` | `exception_id`, `execution_id`, `reason_code`, `description`, `reported_at` | FK execution. |
-| `field_ops.assignments` | `assignment_id`, `obligation_id`, `operator_id`, `assigned_at`, `status` | UQ obligación activa. |
+| `ObligationExecutions` | `execution_id` (PK), `obligation_id` (FK), `operator_id`, `started_at`, `completed_at`, `status`, `is_offline` | PK: `execution_id`; FK: `obligation_id` → `ServiceObligations(obligation_id)`. |
+| `Evidences` | `evidence_id` (PK), `execution_id` (FK), `type`, `url`, `captured_at`, `latitude`, `longitude`, `accuracy` | PK: `evidence_id`; FK: `execution_id` → `ObligationExecutions(execution_id)`. |
 
-**Almacenamiento local Android**
+<img src="resources/11-chapter-02/diagrama-09.png">
 
-| Tabla local | Propósito |
-|---|---|
-| `pending_execution_commands` | Comandos creados sin conexión pendientes de sync. |
-| `cached_assigned_obligations` | Copia local del trabajo asignado necesario para el turno. |
-| `pending_evidence_files` | Referencias locales de archivos pendientes de upload. |
+<div style="page-break-before: always;"></div>
 
-### 2.6.4. Bounded Context: Compliance Management
+<a id="264-bounded-context-incident--corrective-action"></a>
+
+### 2.6.4. Bounded Context: Incident & Corrective Action
+
+Este Bounded Context gestiona la evaluación del cumplimiento de SLA, la detección de incumplimientos y el ciclo de vida de las incidencias generadas junto con sus acciones correctivas asignadas por el supervisor.
 
 #### 2.6.4.1. Domain Layer
 
-| Clase | Categoría | Propósito | Miembros principales |
-|---|---|---|---|
-| `ComplianceCase` | Aggregate Root | Mantiene evaluación, resultado, observaciones y correctivas de una Execution. | `CaseId`, `ExecutionId`, `ObligationId`, `Status`, `Evaluations`, `Deviations`, `CorrectiveActions`, `Observations`; `RecordEvaluation()`, `ConfirmNonCompliance()`, `RegisterObservation()`, `AssignCorrectiveAction()`, `Close()` |
-| `ComplianceEvaluation` | Entity | Registro de una evaluación realizada con reglas/versiones concretas. | `EvaluationId`, `CriteriaVersion`, `EvaluatedBy`, `EvaluatedAt`, `Result` |
-| `ComplianceResult` | Value Object | Resultado de evaluación. | `Type`, `Reason`, `RuleReferences` |
-| `ComplianceResultType` | Enum | Tipos de resultado. | `COMPLIANT`, `EXCEPTION_ACCEPTED`, `DEVIATION`, `NON_COMPLIANT` |
-| `Deviation` | Entity | Diferencia identificada antes o sin necesidad de confirmar Non-compliance. | `DeviationId`, `Description`, `Severity` |
-| `CorrectiveAction` | Entity | Acción posterior a una decisión que requiere corrección. | `ActionId`, `AssignedTo`, `DueAt`, `Status`, `CompletedAt` |
-| `ClientObservation` | Entity | Observación posterior formulada por cliente. | `ObservationId`, `Description`, `ReceivedAt`, `SourceReference` |
-| `ComplianceCriteriaSnapshot` | Value Object | Criterios versionados provenientes de Planning. | `ObligationDefinitionId`, `Version`, `AcceptanceCriterion`, `EvidenceRequirements` |
-| `ComplianceEvaluator` | Domain Service | Aplica criterios sobre Execution/Evidence/Exception. | `Evaluate(caseInput, criteria)` |
-| `IComplianceCaseRepository` | Repository interface | Persistencia. | `FindByExecution()`, `FindById()`, `Save()` |
+El Domain Layer representa el core del contexto mediante el agregado `Incident`, que agrupa las acciones correctivas asociadas y encapsula las reglas de negocio de evaluación de SLA, apertura, resolución y cierre de incidencias.
 
-**Regla crítica.** Una Corrective Action completada **no cambia retroactivamente** un `NON_COMPLIANT` a `COMPLIANT`. Si procede una reevaluación, se añade una nueva `ComplianceEvaluation` conservando las anteriores.
+| Clase | Categoría | Propósito | Atributos y métodos principales | Relaciones |
+|---|---|---|---|---|
+| `Incident` | Aggregate Root | Representa una incidencia generada ante un incumplimiento de la obligación, con su ciclo de vida completo. | Atributos: `incidentId: Long`, `obligationId: Long`, `type: IncidentType`, `severity: Severity`, `description: String`, `openedAt: DateTime`, `status: IncidentStatus`. Métodos: `open(): void`, `assignAction(action: CorrectiveAction): void`, `resolve(): void`, `close(): void`. | 1..* con `CorrectiveAction`. |
+| `CorrectiveAction` | Entity | Representa la acción correctiva asignada al operario por el supervisor para subsanar la incidencia. | Atributos: `actionId: Long`, `incidentId: Long`, `description: String`, `assignedOperatorId: Long`, `dueDate: DateTime`, `status: ActionStatus`. Métodos: `assign(operatorId: Long): void`, `complete(): void`. | Pertenecen a 1 `Incident`. |
+| `ComplianceResult` | Value Object | Resultado de la evaluación SLA sobre la ejecución de una obligación. | Atributos: `executionId: Long`, `isCompliant: Boolean`, `deviationMinutes: Integer`, `evaluatedAt: DateTime`. Métodos: `isCompliant(): Boolean`. | Resultado del `SlaEvaluator`. |
+| `IncidentType` | Enumeración | Tipo de incidencia detectada. | Valores: `SLA_BREACH`, `EVIDENCE_MISSING`, `GEO_MISMATCH`. | Usado por `Incident`. |
+| `Severity` | Enumeración | Nivel de severidad de la incidencia. | Valores: `LOW`, `MEDIUM`, `HIGH`. | Usado por `Incident`. |
+| `IncidentStatus` | Enumeración | Estado del ciclo de vida de la incidencia. | Valores: `OPEN`, `ACTION_ASSIGNED`, `RESOLVED`, `CLOSED`. | Usado por `Incident`. |
+| `ActionStatus` | Enumeración | Estado de la acción correctiva. | Valores: `PENDING`, `IN_PROGRESS`, `COMPLETED`. | Usado por `CorrectiveAction`. |
+| `SlaEvaluator` | Domain Service | Evalúa si una ejecución cumplió la ventana SLA del contrato. | Métodos: `evaluate(execution, contract): ComplianceResult`. | Depende de `IExecutionDataProvider`. |
+| `IncidentFactory` | Factory | Crea instancias válidas de `Incident` a partir de un `ComplianceResult` incumplido. | Métodos: `createFromNonCompliance(result: ComplianceResult): Incident`. | Crea `Incident`. |
+| `IIncidentRepository` | Repository (interface) | Abstracción de persistencia de incidencias. | Métodos: `findById(id): Incident`, `save(incident): void`, `findOpen(): List<Incident>`. | Implementado en Infrastructure Layer. |
+| `ICorrectiveActionRepository` | Repository (interface) | Abstracción de persistencia de acciones correctivas. | Métodos: `save(action): void`, `findByIncident(incidentId): List<CorrectiveAction>`. | Implementado en Infrastructure Layer. |
 
 #### 2.6.4.2. Interface Layer
 
-| Clase | Tipo | Operaciones |
-|---|---|---|
-| `ComplianceController` | Controller | `GET /compliance/cases/{id}`, `POST /compliance/cases/{id}/evaluate`, `GET /compliance/cases` |
-| `CorrectiveActionController` | Controller | `POST /compliance/cases/{id}/actions`, `POST /actions/{id}/complete`, `POST /actions/{id}/verify` |
-| `ClientObservationController` | Controller | `POST /compliance/cases/{id}/observations` |
+La Interface Layer expone los endpoints rest para que el supervisor consulte, asigne y resuelva incidencias y acciones correctivas, así como el ingreso de la evaluación automática de SLA.
+
+| Clase | Tipo | Endpoints | Responsabilidad |
+|---|---|---|---|
+| `IncidentController` | Controller | `GET /incidents`, `GET /incidents/{id}`, `POST /incidents/{id}/resolve` | Consulta y gestiona el ciclo de vida de las incidencias. |
+| `CorrectiveActionController` | Controller | `POST /incidents/{id}/actions`, `PUT /actions/{id}/complete` | Asigna y finaliza las acciones correctivas. |
+| `SlaEvaluationConsumer` | Consumer | Consume el evento `ExecutionCompleted` para disparar la evaluación SLA. | Suscriptor del bus de eventos de integración. |
 
 #### 2.6.4.3. Application Layer
 
-| Clase | Tipo | Responsabilidad / eventos |
-|---|---|---|
-| `EvaluateComplianceCommandHandler` | Command Handler | Construye input y ejecuta `ComplianceEvaluator`; publica `ComplianceResultRecorded`. |
-| `RegisterClientObservationCommandHandler` | Command Handler | Añade observación; publica `ClientObservationRegistered`. |
-| `AssignCorrectiveActionCommandHandler` | Command Handler | Añade acción; publica `CorrectiveActionAssigned`. |
-| `CompleteCorrectiveActionCommandHandler` | Command Handler | Marca atención; publica `CorrectiveActionCompleted`. |
-| `CloseComplianceCaseCommandHandler` | Command Handler | Cierra bajo reglas válidas; publica `ComplianceCaseClosed`. |
-| `ExecutionSubmittedEventHandler` | Event Handler | Crea/prepara Compliance Case sin asumir automáticamente resultado. |
-| `ComplianceResultRecordedEventHandler` | Event Handler | Publica integración hacia Reporting y notificación cuando corresponde. |
+La Application Layer maneja los flujos de negocio del contexto (evaluación, apertura, asignación y resolución) mediante Command Handlers y Event Handlers.
+
+| Clase | Tipo | Operaciones | Eventos publicados/suscritos |
+|---|---|---|---|
+| `EvaluateSlaCommandHandler` | Command Handler | Procesa `EvaluateSlaCommand` (ejecución, contrato) y delega en `SlaEvaluator`. | Publica `SlaEvaluated`. |
+| `RegisterIncidentCommandHandler` | Command Handler | Procesa `RegisterIncidentCommand` con el resultado de incumplimiento y crea el `Incident` mediante `IncidentFactory`. | Publica `IncidentOpened`. |
+| `AssignCorrectiveActionCommandHandler` | Command Handler | Procesa `AssignCorrectiveActionCommand` (incidencia, operario, tarea). | Publica `CorrectiveActionAssigned`. |
+| `ResolveIncidentCommandHandler` | Command Handler | Procesa `ResolveIncidentCommand` al completarse la acción correctiva. | Publica `IncidentResolved`. |
+| `CloseIncidentCommandHandler` | Command Handler | Procesa `CloseIncidentCommand` para el cierre definitivo de la incidencia. | Publica `IncidentClosed`. |
+| `ExecutionCompletedEventHandler` | Event Handler | Reacciona al evento `ExecutionCompleted` del contexto Field Execution & Evidence y dispara la evaluación SLA. | Suscribe `ExecutionCompleted`; publica `EvaluateSlaCommand`. |
+| `SlaEvaluatedEventHandler` | Event Handler | Reacciona a `SlaEvaluated`; si el resultado es no conforme, dispara el registro de la incidencia. | Suscribe `SlaEvaluated`. |
+| `IncidentResolvedEventHandler` | Event Handler | Reacciona a `IncidentResolved` para notificar al supervisor. | Suscribe `IncidentResolved`. |
 
 #### 2.6.4.4. Infrastructure Layer
 
-| Clase | Responsabilidad | Implementación |
+La Infrastructure Layer implementa los repositorios del dominio, la lectura de datos de ejecución para la evaluación SLA y el acceso al servicio externo de notificaciones.
+
+| Clase | Responsabilidad | Tecnología / Servicio externo |
 |---|---|---|
-| `ComplianceCaseRepository` | Persistencia del agregado. | EF Core + PostgreSQL schema `compliance`. |
-| `PlanningCriteriaReader` | Adapter para obtener snapshot/version del criterio publicado por Planning. | Contrato de integración interno. |
-| `ExecutionReader` | Adapter para leer snapshot de Execution/Evidence publicada por Field Operations. | Contrato de integración interno. |
-| `FcmNotificationGateway` | Notifica situaciones configuradas. | Firebase Cloud Messaging. |
+| `IncidentRepository` | Implementa `IIncidentRepository` para persistir incidencias. | EF Core + PostgreSQL. |
+| `CorrectiveActionRepository` | Implementa `ICorrectiveActionRepository` para persistir acciones correctivas. | EF Core + PostgreSQL. |
+| `ExecutionDataProvider` | Implementa `IExecutionDataProvider` obteniendo datos de ejecución del contexto Field Execution & Evidence para la evaluación SLA. | Lectura sobre la base de datos del contexto / API. |
+| `EventBus` | Consume y publica los eventos de integración del contexto. | RabbitMQ / MassTransit. |
+| `NotificationClient` | Notifica al supervisor la apertura y resolución de incidencias. | API REST externa de notificaciones. |
 
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-**Supervisor Cross-Platform App:** `ComplianceCases`, `ComplianceReview`, `CorrectiveActions`, `ApiClient`.
+El siguiente diagrama de componentes (C4 Model) muestra la descomposición de los containers de la solución para el Bounded Context Incident & Corrective Action:
 
-**API:** `ComplianceController`, `CorrectiveActionController`, `ComplianceApplication`, `ComplianceEvaluator`, `ComplianceCaseRepository`, `FcmNotificationGateway`.
+| Component | Container | Responsabilidad | Detalles de implementación |
+|---|---|---|---|
+| `IncidentsScreen` | Mobile App (Supervisor) | Interfaz de consulta de incidencias y acciones correctivas. | Vue 3 + TypeScript. |
+| `IncidentController` / `CorrectiveActionController` | API REST | Reciben las peticiones de incidencias y acciones correctivas. | .NET 10 / ASP.NET Core Web API. |
+| `IncidentApplicationService` | API REST | Orquesta evaluación, apertura, asignación y resolución. | C# / .NET 10. |
+| `SlaEvaluator` | API REST | Evalúa el cumplimiento SLA de la ejecución. | C# / .NET 10. |
+| `IncidentRepository` / `CorrectiveActionRepository` | API REST | Persistencia de incidencias y acciones. | EF Core + PostgreSQL. |
+| `EventBus` | API REST | Consume `ExecutionCompleted` y publica eventos de negocio. | RabbitMQ / MassTransit. |
+
+<img src="resources/11-chapter-02/diagrama-10.png">
 
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
+El siguiente diagrama de clases UML detalla las clases del Domain Layer del Bounded Context Incident & Corrective Action, incluyendo miembros, relaciones, dirección y multiplicidad:
+
+<img src="resources/11-chapter-02/diagrama-11.png">
+
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
-| Tabla | Campos principales | Constraints |
-|---|---|---|
-| `compliance.compliance_cases` | `case_id`, `execution_id`, `obligation_id`, `status`, `opened_at`, `closed_at` | PK; UQ execution si solo existe un caso principal. |
-| `compliance.evaluations` | `evaluation_id`, `case_id`, `criteria_version`, `result_type`, `reason`, `evaluated_by`, `evaluated_at` | FK case; append-oriented. |
-| `compliance.deviations` | `deviation_id`, `case_id`, `description`, `severity`, `created_at` | FK case. |
-| `compliance.corrective_actions` | `action_id`, `case_id`, `assigned_to`, `description`, `due_at`, `status`, `completed_at` | FK case. |
-| `compliance.client_observations` | `observation_id`, `case_id`, `description`, `source_reference`, `received_at` | FK case. |
+La siguiente tabla y el diagrama de base de datos muestran los objetos de persistencia del Bounded Context Incident & Corrective Action sobre una base de datos relacional:
 
-### 2.6.5. Bounded Context: Reporting & Insights
+| Tabla | Columnas | Constraints |
+|---|---|---|
+| `Incidents` | `incident_id` (PK), `obligation_id` (FK), `type`, `severity`, `description`, `opened_at`, `status` | PK: `incident_id`; FK: `obligation_id` → `ServiceObligations(obligation_id)`. |
+| `CorrectiveActions` | `action_id` (PK), `incident_id` (FK), `description`, `assigned_operator_id`, `due_date`, `status` | PK: `action_id`; FK: `incident_id` → `Incidents(incident_id)`. |
+| `SlaEvaluations` | `evaluation_id` (PK), `execution_id` (FK), `is_compliant`, `deviation_minutes`, `evaluated_at` | PK: `evaluation_id`; FK: `execution_id` → `ObligationExecutions(execution_id)`. |
+
+<img src="resources/11-chapter-02/diagrama-12.png">
+
+<div style="page-break-before: always;"></div>
+
+<a id="265-bounded-context-compliance-reporting"></a>
+
+### 2.6.5. Bounded Context: Compliance Reporting
+
+Este Bounded Context consolida información proveniente de los demás contextos para la generación de reportes de cumplimiento e indicadores, así como el envío de notificaciones automáticas de vencimientos y cambios de estado.
 
 #### 2.6.5.1. Domain Layer
 
-| Clase | Categoría | Propósito | Miembros principales |
-|---|---|---|---|
-| `ComplianceReport` | Aggregate Root | Representa un reporte generado para un alcance y periodo. | `ReportId`, `ServiceReference`, `SiteId?`, `Period`, `GeneratedAt`, `Status`, `Indicators`; `Generate()`, `Publish()` |
-| `ReportPeriod` | Value Object | Intervalo temporal válido. | `StartDate`, `EndDate` |
-| `ReportIndicator` | Entity / Value | Indicador consolidado. | `Name`, `Value`, `Unit`, `Definition` |
-| `ReportStatus` | Enum | Estado del reporte. | `GENERATING`, `READY`, `PUBLISHED` |
-| `ReportingProjection` | Read Model | Proyección local derivada de eventos de otros contexts. | Estado por obligación/sitio/periodo. |
-| `ReportAssembler` | Domain/Application Service | Convierte proyección en Compliance Report. | `Build(scope, period)` |
-| `IComplianceReportRepository` | Repository interface | Persistencia de reportes. | `Save()`, `FindById()`, `FindByPeriod()` |
+El Domain Layer representa el core del contexto mediante el agregado `ComplianceReport`, que agrupa los indicadores de cumplimiento calculados a partir de la información consolidada de ejecuciones e incidencias.
+
+| Clase | Categoría | Propósito | Atributos y métodos principales | Relaciones |
+|---|---|---|---|---|
+| `ComplianceReport` | Aggregate Root | Representa un reporte de cumplimiento correspondiente a un contrato en un período determinado. | Atributos: `reportId: Long`, `contractId: Long`, `period: ReportPeriod`, `generatedAt: DateTime`, `status: ReportStatus`, `overallRate: Double`. Métodos: `generate(): void`, `addIndicator(i: ReportIndicator): void`, `markAsSent(): void`. | 1..* con `ReportIndicator`. |
+| `ReportIndicator` | Entity | Representa un indicador calculado del reporte (ej. tasa de cumplimiento, incidencias abiertas). | Atributos: `indicatorId: Long`, `reportId: Long`, `name: String`, `value: Double`, `unit: String`. Métodos: `value(): Double`. | Pertenecen a 1 `ComplianceReport`. |
+| `ReportPeriod` | Value Object | Período de cobertura del reporte. | Atributos: `startDate: DateTime`, `endDate: DateTime`. Métodos: `contains(date: DateTime): Boolean`. | Usado por `ComplianceReport`. |
+| `ReportStatus` | Enumeración | Estado del ciclo de vida del reporte. | Valores: `GENERATING`, `READY`, `SENT`. | Usado por `ComplianceReport`. |
+| `ReportConsolidator` | Domain Service | Consolida la información de ejecuciones e incidencias y calcula los indicadores del reporte. | Métodos: `consolidate(contractId, period): CompositionRoot`, `computeOverallRate(data): Double`. | Depende de la data consolidada de los contextos de ejecución e incidencias. |
+| `ReportFactory` | Factory | Crea instancias válidas de `ComplianceReport` para un contrato y período. | Métodos: `create(contractId, period): ComplianceReport`, `validateNoDuplicate(period): void`. | Crea `ComplianceReport`. |
+| `IComplianceReportRepository` | Repository (interface) | Abstracción de persistencia de reportes. | Métodos: `findById(id): ComplianceReport`, `save(report): void`, `findByContractAndPeriod(contractId, period): ComplianceReport`. | Implementado en Infrastructure Layer. |
+| `IReportIndicatorRepository` | Repository (interface) | Abstracción de persistencia de indicadores. | Métodos: `save(indicator): void`, `findByReport(reportId): List<ReportIndicator>`. | Implementado en Infrastructure Layer. |
 
 #### 2.6.5.2. Interface Layer
 
-| Clase | Tipo | Operaciones |
-|---|---|---|
-| `ReportController` | Controller | `POST /reports`, `GET /reports/{id}`, `GET /reports` |
-| `DashboardController` | Controller | `GET /reporting/summary`, `GET /reporting/trends` |
+La Interface Layer expone los endpoints rest para que el supervisor consulte reportes e indicadores, así como el ingreso de datos consolidados de los demás contextos.
+
+| Clase | Tipo | Endpoints | Responsabilidad |
+|---|---|---|---|
+| `ReportController` | Controller | `POST /reports`, `GET /reports/{id}`, `GET /reports/contract/{contractId}` | Genera y consulta reportes de cumplimiento. |
+| `DashboardController` | Controller | `GET /dashboard/summary`, `GET /dashboard/trends` | Expone los indicadores de cumplimiento para el tablero del supervisor. |
+| `ExecutionDataConsumer` | Consumer | Consume eventos de ejecuciones e incidencias para actualizar el repositorio de consolidación. | Suscriptor del bus de eventos de integración. |
 
 #### 2.6.5.3. Application Layer
 
-| Clase | Tipo | Responsabilidad / eventos |
-|---|---|---|
-| `GenerateComplianceReportCommandHandler` | Command Handler | Genera reporte desde proyección local; publica `ComplianceReportGenerated`. |
-| `PublishComplianceReportCommandHandler` | Command Handler | Marca/publica reporte. |
-| `PlanningEventProjectionHandler` | Event Handler | Actualiza metadatos de servicio/sitio. |
-| `ExecutionEventProjectionHandler` | Event Handler | Actualiza estado de ejecución. |
-| `ComplianceEventProjectionHandler` | Event Handler | Actualiza resultados y correctivas. |
+La Application Layer maneja los flujos de negocio del contexto (generación, consolidación, publicación y notificaciones) mediante Command Handlers y Event Handlers.
+
+| Clase | Tipo | Operaciones | Eventos publicados/suscritos |
+|---|---|---|---|
+| `GenerateReportCommandHandler` | Command Handler | Procesa `GenerateReportCommand` (contrato, período) y delega en `ReportConsolidator`. | Publica `ReportGenerated`. |
+| `PublishReportCommandHandler` | Command Handler | Procesa `PublishReportCommand` para publicar el reporte al supervisor. | Publica `ReportPublished`. |
+| `ScheduleNotificationCommandHandler` | Command Handler | Procesa `ScheduleNotificationCommand` para alertas de vencimientos (obligaciones due) y cambios de estado. | Publica `NotificationScheduled`. |
+| `ExecutionCompletedEventHandler` | Event Handler | Reacciona a `ExecutionCompleted` y actualiza la información de consolidación del contexto. | Suscribe `ExecutionCompleted`. |
+| `IncidentClosedEventHandler` | Event Handler | Reacciona a `IncidentClosed` y actualiza los indicadores de cumplimiento. | Suscribe `IncidentClosed`. |
+| `ReportGeneratedEventHandler` | Event Handler | Reacciona a `ReportGenerated` para notificar al supervisor la disponibilidad del reporte. | Suscribe `ReportGenerated`. |
 
 #### 2.6.5.4. Infrastructure Layer
 
-| Clase | Responsabilidad | Implementación |
+La Infrastructure Layer implementa los repositorios del dominio, el almacenamiento de datos consolidados y el acceso al servicio externo de notificaciones.
+
+| Clase | Responsabilidad | Tecnología / Servicio externo |
 |---|---|---|
-| `ComplianceReportRepository` | Persistencia del agregado. | EF Core + PostgreSQL schema `reporting`. |
-| `ReportingProjectionRepository` | Persistencia/read model. | PostgreSQL optimizado para lectura. |
-| `ReportExporter` | Exporta representación compartible cuando se implemente. | PDF/CSV library según alcance. |
+| `ComplianceReportRepository` | Implementa `IComplianceReportRepository` para persistir reportes. | EF Core + PostgreSQL. |
+| `ReportIndicatorRepository` | Implementa `IReportIndicatorRepository` para persistir indicadores. | EF Core + PostgreSQL. |
+| `ConsolidatedDataStore` | Almacena la información consolidada de ejecuciones e incidencias para el cálculo de indicadores. | Vistas materializadas / tablas de consolidación. |
+| `EventBus` | Consume los eventos de integración de los demás contextos. | RabbitMQ / MassTransit. |
+| `NotificationClient` | Envía notificaciones de reportes disponibles y alertas de vencimiento. | API REST externa de notificaciones. |
 
 #### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-**Supervisor Cross-Platform App:** `OperationalSummary`, `Reports`, `Trends`, `ApiClient`.
+El siguiente diagrama de componentes (C4 Model) muestra la descomposición de los containers de la solución para el Bounded Context Compliance Reporting:
 
-**API:** `ReportController`, `DashboardController`, `ReportingApplication`, `ReportAssembler`, `ReportingProjectionRepository`, `ComplianceReportRepository`.
+| Component | Container | Responsabilidad | Detalles de implementación |
+|---|---|---|---|
+| `DashboardScreen` | Mobile App (Supervisor) | Interfaz de indicadores y reportes de cumplimiento. | Vue 3 + TypeScript. |
+| `ReportController` / `DashboardController` | API REST | Reciben las peticiones de reportes e indicadores. | .NET 10 / ASP.NET Core Web API. |
+| `ReportApplicationService` | API REST | Orquesta generación, consolidación y publicación de reportes. | C# / .NET 10. |
+| `ReportConsolidator` | API REST | Consolida datos de ejecuciones e incidencias y calcula indicadores. | C# / .NET 10. |
+| `ComplianceReportRepository` | API REST | Persistencia de reportes e indicadores. | EF Core + PostgreSQL. |
+| `EventBus` | API REST | Consume eventos de los demás contextos. | RabbitMQ / MassTransit. |
+
+<img src="resources/11-chapter-02/diagrama-13.png">
 
 #### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
+El siguiente diagrama de clases UML detalla las clases del Domain Layer del Bounded Context Compliance Reporting, incluyendo miembros, relaciones, dirección y multiplicidad:
+
+<img src="resources/11-chapter-02/diagrama-14.png">
+
 ##### 2.6.5.6.2. Bounded Context Database Design Diagram
 
-| Tabla | Campos principales | Constraints |
-|---|---|---|
-| `reporting.compliance_reports` | `report_id`, `service_reference`, `site_id`, `period_start`, `period_end`, `generated_at`, `status` | PK; valid period. |
-| `reporting.report_indicators` | `indicator_id`, `report_id`, `name`, `value`, `unit`, `definition` | FK report. |
-| `reporting.reporting_projection` | `projection_id`, `service_reference`, `site_id`, `obligation_id`, `execution_status`, `compliance_result`, `period_key`, `updated_at` | Índices por service/site/period. |
+La siguiente tabla y el diagrama de base de datos muestran los objetos de persistencia del Bounded Context Compliance Reporting sobre una base de datos relacional:
 
+| Tabla               | Columnas                                                                                                     | Constraints                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| `ComplianceReports` | `report_id` (PK), `contract_id` (FK), `period_start`, `period_end`, `generated_at`, `status`, `overall_rate` | PK: `report_id`; FK: `contract_id` → `ServiceContracts(contract_id)`.    |
+| `ReportIndicators`  | `indicator_id` (PK), `report_id` (FK), `name`, `value`, `unit`                                               | PK: `indicator_id`; FK: `report_id` → `ComplianceReports(report_id)`.    |
+| `Notifications`     | `notification_id` (PK), `report_id` (FK), `recipient_id`, `type`, `sent_at`, `status`                        | PK: `notification_id`; FK: `report_id` → `ComplianceReports(report_id)`. |
 
-## Referencias del capítulo
+<img src="resources/11-chapter-02/diagrama-15.png">
 
-eGenya. (s. f.). *Gestión de servicios no operacionales con IA*. https://egenya.cl/
+<div style="page-break-before: always;"></div>
 
-OrangeQC. (s. f.). *Janitorial inspection software with all the features you need*. https://www.orangeqc.com/features/
-
-OrangeQC. (s. f.). *OrangeQC Pricing and Free Trial*. https://www.orangeqc.com/pricing/
-
-OrangeQC. (s. f.). *Service checklists & employee visit tracking app*. https://www.orangeqc.com/features/service-checklists-employee-visit-tracking-app/
-
-ServiceChannel. (s. f.). *ServiceChannel Provider App*. https://servicechannel.com/products/provider-app/
-
-ServiceChannel. (s. f.). *Work Orders*. https://servicechannel.com/products/work-orders/
-
-ServiceChannel. (s. f.). *ServiceChannel Mobile*. https://servicechannel.com/products/servicechannel-mobile/
+<a id="capitulo-iii-solution-uiux-design"></a>
