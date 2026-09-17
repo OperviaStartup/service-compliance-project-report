@@ -1086,15 +1086,15 @@ El siguiente diagrama de clases UML detalla las clases del Domain Layer del Boun
 
 La siguiente tabla y el diagrama de base de datos muestran los objetos de persistencia del Bounded Context Compliance Reporting sobre una base de datos relacional:
 
-| Tabla | Columnas | Constraints |
-|---|---|---|
-| `ComplianceReports` | `report_id` (PK), `contract_id` (FK), `period_start`, `period_end`, `generated_at`, `status`, `overall_rate` | PK: `report_id`; FK: `contract_id` → `ServiceContracts(contract_id)`. |
-| `ReportIndicators` | `indicator_id` (PK), `report_id` (FK), `name`, `value`, `unit` | PK: `indicator_id`; FK: `report_id` → `ComplianceReports(report_id)`. |
-| `Notifications` | `notification_id` (PK), `report_id` (FK), `recipient_id`, `type`, `sent_at`, `status` | PK: `notification_id`; FK: `report_id` → `ComplianceReports(report_id)`. |
+| Tabla               | Columnas                                                                                                     | Constraints                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| `ComplianceReports` | `report_id` (PK), `contract_id` (FK), `period_start`, `period_end`, `generated_at`, `status`, `overall_rate` | PK: `report_id`; FK: `contract_id` → `ServiceContracts(contract_id)`.    |
+| `ReportIndicators`  | `indicator_id` (PK), `report_id` (FK), `name`, `value`, `unit`                                               | PK: `indicator_id`; FK: `report_id` → `ComplianceReports(report_id)`.    |
+| `Notifications`     | `notification_id` (PK), `report_id` (FK), `recipient_id`, `type`, `sent_at`, `status`                        | PK: `notification_id`; FK: `report_id` → `ComplianceReports(report_id)`. |
 
 <img src="resources/11-chapter-02/diagrama-15.png">
 
 <div style="page-break-before: always;"></div>
 
-<a id="capitulo-iii-solution-uiux-design"></a>
+	<a id="capitulo-iii-solution-uiux-design"></a>
 

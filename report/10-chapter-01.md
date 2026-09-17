@@ -1,4 +1,4 @@
-<a id="capitulo-i-presentacion"></a>
+	<a id="capitulo-i-presentacion"></a>
 
 # Capítulo I: Presentación
 
@@ -322,5 +322,3 @@ Ministerio de Trabajo y Promoción del Empleo. (2023a, 17 de febrero). *Empresas
 Ministerio de Trabajo y Promoción del Empleo. (2023b). *Demanda de ocupaciones en Lima Metropolitana 2023: Encuesta de Demanda Ocupacional*. https://cdn.www.gob.pe/uploads/document/file/4921861/Informe%20EDO%20al%202023%20_%20Lima%20Metro.pdf
 
 Ministerio de Trabajo y Promoción del Empleo. (2024). *Informe trimestral del mercado laboral: primer trimestre de 2024*. https://cdn.www.gob.pe/uploads/document/file/6653196/5783668-ite-2024-t1.pdf
-
-<!-- HUMAN-PENDING: antes de exportar el PDF final, aplicar formato APA 7 completo a esta bibliografía (incluida sangría francesa) y confirmar que cada enlace siga accesible. -->
