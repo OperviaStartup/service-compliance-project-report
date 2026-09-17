@@ -161,15 +161,15 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 - **Entrevista #2**
 
-<img src="resources/11-chapter-02/Entrevista2.png">
+![Evidencia de la entrevista](ULR_DE_LA_IMAGEN)
 
 | **Campo**           | **Detalle**              |
 | :------------------ | :----------------------- |
-| **Entrevistador**   | Jean Arias               |
-| **Entrevistado**    | Andy Ascayall            |
-| **Edad**            | 20 años                  |
-| **Ubicación**       | San Martin de Porres     |
-| **Tiempo Duración** | 7:58 minutos             |
+| **Entrevistador**   |                          |
+| **Entrevistado**    |                          |
+| **Edad**            |                          |
+| **Ubicación**       |                          |
+| **Tiempo Duración** |                          |
 | **Enlace**          | [Enlace de la grabación] |
 
 **Resumen:**
