@@ -1,6 +1,6 @@
  <a id="capitulo-ii-requirements-development-and-software-solution-design"></a>
 
-# Capítulo II: Requirements Development and Software Solution Design
+# Capítulo II: Requirements Development and Software Solution Design.
 
 Este capítulo transforma la investigación del dominio en requisitos y decisiones de diseño de software para **Service Compliance**. La secuencia utilizada es: análisis competitivo → entrevistas → Needfinding → especificación de requisitos → diseño estratégico con Domain-Driven Design → diseño táctico. El objetivo es mantener trazabilidad entre el problema planteado en el Capítulo I, la evidencia recolectada y las decisiones posteriores, evitando convertir hipótesis de producto en requisitos sin sustento.
 
@@ -14,7 +14,7 @@ La comparación se realiza desde la perspectiva definida para Service Compliance
 
 <a id="211-analisis-competitivo"></a>
 
-### 2.1.1. Análisis competitivo
+### 2.1.1. Análisis competitivo.
 
 **Objetivo del análisis.** Determinar hasta qué punto productos existentes ya resuelven la trazabilidad del servicio y qué espacio de diferenciación puede defender Opervia sin basarse únicamente en funcionalidades genéricas como fotografías, QR, GPS, checklists o dashboards.
 
@@ -273,7 +273,7 @@ Se mantiene un User Persona por cada segmento objetivo. Las fichas deben refleja
 
 <img src="resources/11-chapter-02/user-persona-2.png">
 
-### 2.3.2. User Task Matrix
+### 2.3.2. User Task Matrix.
 
 La matriz incluye tareas que los segmentos realizan **independientemente de Service Compliance**. No se incluyen como tareas “escanear QR”, “usar GPS”, “sincronizar” o “abrir dashboard”, porque esas serían decisiones de solución.
 
@@ -294,7 +294,7 @@ La matriz incluye tareas que los segmentos realizan **independientemente de Serv
 
 **Lectura de la matriz.** Ambos segmentos coinciden en la necesidad de compartir una referencia sobre qué actividad se espera y qué ocurrió. El operario concentra frecuencia e importancia en ejecución y comunicación del resultado; el supervisor concentra importancia en coordinación, verificación, reconstrucción del estado y atención de desviaciones. Esto justifica experiencias móviles diferentes sin convertir al operario en responsable de interpretar reglas contractuales.
 
-### 2.3.3. User Journey Mapping
+### 2.3.3. User Journey Mapping.
 
 Los Journey Maps representan el proceso **As-Is**, es decir, la situación actual antes de Service Compliance.
 
@@ -331,7 +331,7 @@ La rúbrica exige también As-Is Scenario Mapping. La siguiente especificación 
 | Corrección | Coordina solución y vuelve a verificar. | Mensajes, llamadas, ronda física. | El historial original y la corrección pueden quedar separados. |
 | Reporte | Consolida información del periodo. | Excel, fotos, informes. | Trabajo manual y dificultad para comparar sedes/periodos. |
 
-### 2.3.4. Empathy Mapping
+### 2.3.4. Empathy Mapping.
 
 Los Empathy Maps deben construirse a partir de los User Personas y entrevistas, registrando qué ve, oye, dice, hace, piensa y siente cada arquetipo, junto con pains y gains.
 
