@@ -214,20 +214,20 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 - **Entrevista #2**
 
-![Evidencia de la entrevista](ULR_DE_LA_IMAGEN)
+<img src="resources/10-chapter-01/Entrevista3.png">
 
 | **Campo** | **Detalle** |
 | :---- | :------ |
-| **Entrevistador** | [Tu nombre / Nombre del miembro del equipo] |
-| **Entrevistado** | [Nombre del operario/Supervisor] |
-|  **Edad**| [XX] años |
-| **Ubicación** | [Distrito y/o sede de trabajo] |
-| **Tiempo Duración** | [XX] minutos |
-| **Enlace** | [Enlace de la grabación] |
+| **Entrevistador** | Arias Tasayco, Jean Pool Alexander |
+| **Entrevistado** | Andy |
+| **Edad** | 20 años |
+| **Ubicación** | San Martín de Porres (reside) / conjunto empresarial en Lima (sede de trabajo) |
+| **Tiempo Duración** | 3:21 minutos |
+| **Enlace** | https://youtu.be/naAdZEitKRU |
 
 **Resumen:**
 
-> *Escribe aquí un resumen conciso de los hallazgos más importantes. Enfócate en sus dolores principales (pain points), cómo manejan actualmente las evidencias, problemas de conectividad o cualquier descubrimiento que valide o refute las hipótesis (Lean UX Assumptions) de Service Compliance.*
+Andy tiene 20 años, trabaja como supervisor de limpieza en una empresa de servicios tercerizados y lleva 7 años en el rubro (empezó como operario de limpieza), con aproximadamente 4 años como supervisor y 2 años en su sede actual. Su estilo de trabajo es organizado, responsable y observador; su principal fortaleza es detectar rápido cuándo algo no está funcionando (falta de personal, zonas no atendidas o reclamos que deben resolverse antes de escalar). Su día comienza a las 7 am marcando asistencia, revisando el reporte de novedades del turno anterior, verificando la asistencia del personal y cubriendo puestos vacantes con personal volante; luego realiza rondas de inspección en oficinas y áreas comunes, atiende incidencias con el cliente y cierra el día actualizando sus reportes. Sus principales frustraciones son la alta rotación y el ausentismo no avisado del personal, que lo obligan a reorganizar rutas y cartas de trabajo a última hora, y que el cliente reporte incidencias en zonas que ya habían sido verificadas y dadas por aprobadas. La validación de terminación es completamente manual: los operarios avisan verbalmente o dejan una carta firmada que él debe validar recorriendo físicamente zona por zona y archivando los papeles a mano. Las evidencias se envían únicamente por WhatsApp, proceso tedioso porque se mezclan los chats personales con los del trabajo y las imágenes se acumulan sin orden, dificultando buscar evidencias pasadas cuando existe un reclamo formal. Esta entrevista verifica directamente varias Lean UX Assumptions del Capítulo I: valida **UA-01** y **FA-04** (necesita conocer el estado operativo de cada zona en tiempo real y reducir la consolidación manual), **BO-03** (identificar desviaciones antes de que el cliente las reporte, en zonas ya aprobadas), **BO-04 y BO-01** (reducir el trabajo manual de consolidación y el esfuerzo para reconstruir el estado de cumplimiento, pues hoy archiva papeles y busca evidencias en WhatsApp) y **FA-02** (un registro vinculado a la obligación y su evidencia, en lugar de fotos sueltas en un chat); su "herramienta mágica" espontánea fue un panel de control inteligente y automatizado que muestre en tiempo real al cliente y a su jefe el estado operativo de cada zona mediante validaciones rápidas, eliminando llamadas constantes y solicitudes de fotos, lo que confirma el modelo de Service Compliance sin que se le haya sugerido previamente.
 
 - **Entrevista #3**
 
