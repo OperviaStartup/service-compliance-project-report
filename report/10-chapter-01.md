@@ -8,7 +8,7 @@
 
 <a id="111-descripcion-de-la-startup"></a>
 
-### 1.1.1. Descripción de la Startup
+### 1.1.1. Descripción de la Startup.
 
 **Opervia** es una startup académica orientada al diseño de soluciones digitales para la gestión y trazabilidad del cumplimiento de servicios tercerizados. El proyecto toma como dominio inicial los **servicios de limpieza tercerizada B2B en el Perú**, donde una empresa prestadora ejecuta actividades en instalaciones de una organización cliente y debe coordinar personas, condiciones del servicio, planificación operativa, supervisión y resultados.
 
@@ -34,7 +34,7 @@ En la primera iteración del modelo de negocio, la **empresa prestadora del serv
 
 <a id="112-perfiles-de-integrantes-del-equipo"></a>
 
-### 1.1.2. Perfiles de integrantes del equipo
+### 1.1.2. Perfiles de integrantes del equipo.
 
 El equipo de Opervia reúne conocimientos de análisis de requisitos, desarrollo de software, modelado de dominio, arquitectura e integración de aplicaciones. La composición del equipo se presenta a continuación.
 
@@ -54,7 +54,7 @@ El equipo de Opervia reúne conocimientos de análisis de requisitos, desarrollo
 
 <a id="121-antecedentes-y-problematica"></a>
 
-### 1.2.1. Antecedentes y problemática
+### 1.2.1. Antecedentes y problemática.
 
 La prestación de servicios de limpieza en edificios forma parte de las actividades de servicios administrativos y de apoyo. El INEI define la clase CIIU 8121 como la limpieza general de oficinas, fábricas, comercios, instituciones y otros establecimientos. Esta actividad puede desarrollarse dentro de múltiples tipos de instalaciones y bajo contratos de servicio entre organizaciones (INEI, s. f.).
 
