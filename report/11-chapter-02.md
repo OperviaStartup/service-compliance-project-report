@@ -174,7 +174,7 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 **Resumen:**
 
-> *Escribe aquí un resumen conciso de los hallazgos más importantes. Enfócate en sus dolores principales (pain points), cómo manejan actualmente las evidencias, problemas de conectividad o cualquier descubrimiento que valide o refute las hipótesis (Lean UX Assumptions) de Service Compliance.*
+Juan Antonio Sánchez Cuadrado tiene un año y medio de experiencia en servicios de limpieza. Sus principales dificultades son la falta de claridad sobre las prioridades, los cambios de tareas comunicados por WhatsApp o verbalmente y la ausencia de un responsable claramente asignado cuando falta un compañero, lo que genera retrasos y pérdida de tiempo. Actualmente, las evidencias se registran de manera selectiva: para áreas importantes u observadas, toma fotografías y las envía a un grupo de WhatsApp. Estas imágenes se mezclan con las de otros trabajadores, pueden perder la referencia del lugar y no siempre reflejan la hora real de ejecución. Ante daños o espacios ocupados, registra la situación mediante una fotografía o avisa al supervisor para justificar la imposibilidad de realizar la tarea. También reporta problemas de conectividad en zonas cerradas, almacenes, sótanos y estacionamientos, donde los mensajes pueden quedar pendientes de envío. El entrevistado propone una herramienta sencilla que muestre sus tareas, permita marcarlas como realizadas, solicite evidencias solo cuando corresponda, registre rápidamente los motivos de una excepción y funcione sin conexión para sincronizar después. Estos hallazgos validan principalmente las hipótesis UA-01, UA-02, UA-04, FA-01, FA-02, FA-03 y FA-05 de Service Compliance.
 
 - **Entrevista #3**
 
