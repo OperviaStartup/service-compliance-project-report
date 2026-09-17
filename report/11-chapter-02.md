@@ -222,7 +222,7 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 | **Entrevistado** | Andy |
 | **Edad** | 20 años |
 | **Ubicación** | San Martín de Porres (reside) / conjunto empresarial en Lima (sede de trabajo) |
-| **Tiempo Duración** | 3:21 minutos |
+| **Tiempo Duración** | 8:21 minutos |
 | **Enlace** | https://youtu.be/naAdZEitKRU |
 
 **Resumen:**
