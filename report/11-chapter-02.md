@@ -165,12 +165,12 @@ Para entender mejor lo que nuestros usuarios necesitan y cómo interactúan con 
 
 | **Campo**           | **Detalle**              |
 | :------------------ | :----------------------- |
-| **Entrevistador**   |                          |
-| **Entrevistado**    |                          |
-| **Edad**            |                          |
-| **Ubicación**       |                          |
-| **Tiempo Duración** |                          |
-| **Enlace**          | [Enlace de la grabación] |
+| **Entrevistador**   | Angel Thyago Flores Eusebio |
+| **Entrevistado**    | Juan Antonio Sanchez Cuadrado |
+| **Edad**            | 21 años |
+| **Ubicación**       | Los Olivos (reside) / edificio de oficinas (sede de trabajo) |
+| **Tiempo Duración** | 13:37 minutos |
+| **Enlace**          | [Entrevista a Juan Sanchez Cuadrado](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231b781_upc_edu_pe/IQCjpy9muvkaT5sGZ22ewJkIAcbVqQm_IYAxXWDR5OwH2AA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NUm4gC)  |
 
 **Resumen:**
 
