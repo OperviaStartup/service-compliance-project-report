@@ -1,6 +1,12 @@
+<a id="capitulo-i-presentacion"></a>
+
 # Capítulo I: Presentación
 
+<a id="11-startup-profile"></a>
+
 ## 1.1. Startup Profile
+
+<a id="111-descripcion-de-la-startup"></a>
 
 ### 1.1.1. Descripción de la Startup
 
@@ -22,6 +28,8 @@ Service Compliance no se plantea como un gestor genérico de tareas. Su propuest
 
 **Propuesta de valor inicial.** Permitir a supervisores y operarios de servicios de limpieza trabajar sobre una misma referencia operativa, registrar lo ocurrido en campo y conservar una trazabilidad que facilite la supervisión, la atención de desviaciones y la explicación del cumplimiento.
 
+<a id="112-perfiles-de-integrantes-del-equipo"></a>
+
 ### 1.1.2. Perfiles de integrantes del equipo
 
 El equipo de Opervia reúne conocimientos de análisis de requisitos, desarrollo de software, modelado de dominio, arquitectura e integración de aplicaciones. La composición del equipo se presenta a continuación.
@@ -31,7 +39,11 @@ El equipo de Opervia reúne conocimientos de análisis de requisitos, desarrollo
 | 1 | Arias Tasayco, Jean Pool Alexander | U202414054 | Ingeniería de Software | ![Participante Jean](resources/10-chapter-01/jean.jpg) | Cuenta con conocimientos en desarrollo de software, programación, bases de datos, diseño de APIs REST y control de versiones con Git/GitHub. Aporta al proyecto en el análisis de requisitos, definición de la arquitectura de la solución, modelado del dominio, desarrollo del backend y aplicaciones móviles, así como en la integración y validación de las funcionalidades de Service Compliance. |
 
 
+<a id="12-solution-profile"></a>
+
 ## 1.2. Solution Profile
+
+<a id="121-antecedentes-y-problematica"></a>
 
 ### 1.2.1. Antecedentes y problemática
 
@@ -62,6 +74,8 @@ La problemática se analiza mediante la técnica **5W+2H** para delimitar el dom
 **Alcance inicial.** El proyecto se concentra en servicios de limpieza tercerizada B2B en Perú, con investigación y validación inicial en Lima Metropolitana. El core del producto comprende la trazabilidad desde la obligación hasta el resultado de cumplimiento.
 
 **Restricciones y delimitación.** No forman parte del alcance inicial la nómina, control general de recursos humanos, contabilidad, planificación financiera ni la administración genérica de proyectos. Tecnologías como QR, NFC, GPS, fotografías o notificaciones se consideran mecanismos candidatos de implementación y solo deben incorporarse cuando exista una necesidad funcional, una regla del servicio o un requisito académico que las justifique. La solución sí deberá cumplir las restricciones tecnológicas establecidas por el curso para las experiencias móviles.
+
+<a id="122-lean-ux-process"></a>
 
 ### 1.2.2. Lean UX Process
 
@@ -181,28 +195,21 @@ Se formula un Hypothesis Statement por cada **Feature Assumption**, siguiendo el
 
 El Lean UX Canvas sintetiza los elementos definidos previamente y establece qué debe aprender primero el equipo antes de consolidar las decisiones del producto.
 
-<table>
-<tr>
-<td><strong>1. Business Problem</strong><br><br>Las empresas proveedoras de limpieza tercerizada deben transformar compromisos de servicio en trabajo ejecutado en instalaciones del cliente. Cuando contrato, instrucciones, ejecución, evidencia y seguimiento quedan separados, explicar el estado de cumplimiento puede exigir reconstruir información desde múltiples fuentes.</td>
-<td><strong>2. Business Outcomes</strong><br><br>Reducir esfuerzo de reconstrucción y consolidación; aumentar obligaciones con ejecución y evidencia trazables; detectar desviaciones antes de reclamos tardíos; reducir trabajo manual de reporting.</td>
-</tr>
-<tr>
-<td><strong>3. Users / Customer Segments</strong><br><br><strong>Segmento 1:</strong> supervisores y coordinadores de servicios de limpieza tercerizada.<br><strong>Segmento 2:</strong> operarios de limpieza tercerizada.<br><br>Stakeholders relacionados: responsables de operaciones de la prestadora, responsables contractuales y responsables de facilities/servicios generales del cliente.</td>
-<td><strong>4. User Outcomes & Benefits</strong><br><br>Supervisores: detectar qué requiere atención, consultar historial y responder observaciones.<br>Operarios: entender qué hacer, registrar resultados con baja fricción y comunicar excepciones.<br>Prestadora: disponer de información consistente para explicar el servicio.</td>
-</tr>
-<tr>
-<td><strong>5. Solutions</strong><br><br>Obligaciones de servicio; registro móvil de ejecución; evidencia configurable; gestión de desviaciones y acciones correctivas; estado de cumplimiento; reporting trazable; almacenamiento local y sincronización cuando corresponda. QR, NFC, GPS y fotografías son mecanismos candidatos, no requisitos universales.</td>
-<td><strong>6. Hypotheses</strong><br><br>HS-01: obligaciones compartidas.<br>HS-02: ejecución y evidencia.<br>HS-03: desviaciones y acciones correctivas.<br>HS-04: cumplimiento y reporting.<br>HS-05: continuidad ante conectividad limitada.</td>
-</tr>
-<tr>
-<td><strong>7. Most important thing to learn first</strong><br><br>Determinar si la falta de trazabilidad entre lo acordado y lo ejecutado constituye un problema prioritario para supervisores y operarios, qué información se considera suficiente para evaluar cumplimiento y qué actor decide o paga por una solución.</td>
-<td><strong>8. Least amount of work to learn it</strong><br><br>Entrevistar entre 3 y 5 representantes por segmento, analizar competidores, revisar ejemplos anonimizados de contratos/registros cuando sea posible y contrastar un prototipo de baja fidelidad del flujo obligación → ejecución → evidencia → desviación.</td>
-</tr>
-</table>
+| **1. Business Problem** | **2. Business Outcomes** |
+|---|---|
+| Las empresas proveedoras de limpieza tercerizada deben transformar compromisos de servicio en trabajo ejecutado en instalaciones del cliente. Cuando contrato, instrucciones, ejecución, evidencia y seguimiento quedan separados, explicar el estado de cumplimiento puede exigir reconstruir información desde múltiples fuentes. | Reducir esfuerzo de reconstrucción y consolidación; aumentar obligaciones con ejecución y evidencia trazables; detectar desviaciones antes de reclamos tardíos; reducir trabajo manual de reporting. |
+| **3. Users / Customer Segments** | **4. User Outcomes & Benefits** |
+| **Segmento 1:** supervisores y coordinadores de servicios de limpieza tercerizada.<br>**Segmento 2:** operarios de limpieza tercerizada.<br><br>Stakeholders relacionados: responsables de operaciones de la prestadora, responsables contractuales y responsables de facilities/servicios generales del cliente. | Supervisores: detectar qué requiere atención, consultar historial y responder observaciones.<br>Operarios: entender qué hacer, registrar resultados con baja fricción y comunicar excepciones.<br>Prestadora: disponer de información consistente para explicar el servicio. |
+| **5. Solutions** | **6. Hypotheses** |
+| Obligaciones de servicio; registro móvil de ejecución; evidencia configurable; gestión de desviaciones y acciones correctivas; estado de cumplimiento; reporting trazable; almacenamiento local y sincronización cuando corresponda. QR, NFC, GPS y fotografías son mecanismos candidatos, no requisitos universales. | HS-01: obligaciones compartidas.<br>HS-02: ejecución y evidencia.<br>HS-03: desviaciones y acciones correctivas.<br>HS-04: cumplimiento y reporting.<br>HS-05: continuidad ante conectividad limitada. |
+| **7. Most important thing to learn first** | **8. Least amount of work to learn it** |
+| Determinar si la falta de trazabilidad entre lo acordado y lo ejecutado constituye un problema prioritario para supervisores y operarios, qué información se considera suficiente para evaluar cumplimiento y qué actor decide o paga por una solución. | Entrevistar entre 3 y 5 representantes por segmento, analizar competidores, revisar ejemplos anonimizados de contratos/registros cuando sea posible y contrastar un prototipo de baja fidelidad del flujo obligación → ejecución → evidencia → desviación. |
 
 <sub>*Figura 1. Lean UX Canvas de Service Compliance.*</sub>
 
 <!-- HUMAN-OPTIONAL: si el docente exige el template visual específico usado en clase, recrear estos mismos ocho bloques en la herramienta indicada y sustituir o complementar la tabla con una captura exportada. No cambiar el contenido sin revisar la trazabilidad con assumptions e hypotheses. -->
+
+<a id="13-segmentos-objetivo"></a>
 
 ## 1.3. Segmentos objetivo
 
