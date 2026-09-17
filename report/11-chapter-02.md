@@ -151,7 +151,7 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 |---|---|
 | **Entrevistador** | Carlos Franco Blancas Chávez |
 | **Entrevistado** | José Ramírez |
-| **Edad** | 32 años |
+| **Edad** | 22 años |
 | **Ubicación** | San Juan de Lurigancho / edificio de oficinas |
 | **Duración** | 12:50 minutos |
 | **Enlace** | https://youtu.be/BublVzjOtw0 |
@@ -178,21 +178,7 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 
 #### Segmento 2: Supervisores/coordinadores
 
-##### Entrevista #1 — Ivonne Beatriz Ibañez Torres
-
-<img src="resources/10-chapter-01/Entrevista2.png">
-
-| Campo | Detalle |
-|---|---|
-| **Entrevistador** | Carlos Franco Blancas Chávez |
-| **Entrevistado** | Ivonne Beatriz Ibañez Torres |
-| **Edad** | 36 años |
-| **Ubicación** | San Martín de Porres / supervisa 4 sedes |
-| **Duración** | 8:51 minutos |
-| **Enlace** | https://youtu.be/9wKQs6Vbq0o |
-| **Timing en video consolidado** | |
-
-**Resumen.** Ivonne tiene 8 años de experiencia en limpieza tercerizada y pasó de operaria a encargada de grupo y luego a supervisora. Coordina 4 sedes y aproximadamente 35 personas. Señala una alta dependencia de WhatsApp para conocer el estado de la operación y recopilar fotografías e informes. Describe casos en los que se entera de un problema a partir del reclamo del cliente y debe contactar a responsables para reconstruir qué ocurrió; en el caso relatado, necesitó aproximadamente 30–40 minutos para entender la situación. También estima entre 4 y 5 horas semanales para consolidar información recibida por WhatsApp y trasladarla a Excel, según la cantidad de incidentes. Usa principalmente celular durante su movilidad y laptop para Excel; entre sus herramientas menciona WhatsApp, Excel, Google Drive y Google Calendar. La entrevista aporta evidencia preliminar a BO-01, BO-03 y BO-04 y respalda la necesidad de investigar un estado operativo consolidado y una historia trazable de las obligaciones.
+##### Entrevista #1 :
 
 ##### Entrevista #2 — Andy
 
