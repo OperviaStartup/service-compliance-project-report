@@ -1,0 +1,73 @@
+@startuml
+' Big Picture EventStorming — As-Is (candidatos provisionales)
+' Service Compliance · Capítulo II — Sección 2.3.5
+' Convención: eventos del dominio en pasado, sin términos técnicos
+' (API, base de datos, sincronización, QR, GPS o notificaciones).
+
+title Big Picture EventStorming — As-Is\nService Compliance · candidatos a validar en sesión
+
+skinparam {
+  BackgroundColor #FFFFFF
+  DefaultFontSize 12
+  ArrowColor #555555
+  activityBorderColor #B8860B
+  activityBackgroundColor #FFF8DC
+  activityFontStyle bold
+  partitionBackgroundColor #F0F4FA
+  partitionBorderColor #7BAFD4
+  shadowing true
+}
+
+|Contrato|
+start
+:Service Contract was agreed;
+:Service Conditions were identified;
+
+|Planificación|
+:Service Plan was defined;
+:Service Obligation was scheduled;
+:Service Obligation was assigned;
+
+|Ejecución|
+:Service Obligation became due;
+:Execution was started;
+:Execution result was recorded;
+:Evidence was provided;
+
+|Revisión|
+:Exception was reported;
+:Execution was submitted for review;
+
+|Evaluación de cumplimiento|
+:Compliance was evaluated;
+:Compliance Result was determined;
+:Client Observation was received;
+:Non-compliance was confirmed;
+
+|Corrección y cierre|
+:Corrective Action was assigned;
+:Corrective Action was completed;
+:Compliance Case was closed;
+
+|Reporte|
+:Compliance Report was generated;
+stop
+
+legend right
+  == Big Picture As-Is ==
+  Eventos del negocio en pasado (candidatos).
+  La numeración (E1..E19) corresponde a la tabla
+  de la sección 2.3.5. Cada evento está asociado
+  a una pregunta de hotspot / pregunta pendiente.
+
+  Hot spots (pain points) a contrastar:
+  * Información distribuida y cambios de prioridad.
+  * "A tiempo" varía según el servicio.
+  * Evidencia sin contexto suficiente.
+  * Ambigüedad excepción/desviación/incumplimiento.
+  * Observaciones del cliente -> reconstruir el caso.
+  * Corrección sin historial común del problema.
+  * Consolidación manual para reportes.
+endlegend
+
+@enduml

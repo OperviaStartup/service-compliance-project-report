@@ -1,4 +1,4 @@
-<a id="capitulo-ii-requirements-development-and-software-solution-design"></a>
+ <a id="capitulo-ii-requirements-development-and-software-solution-design"></a>
 
 # Capítulo II: Requirements Development and Software Solution Design
 
@@ -161,17 +161,17 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 
 ##### Entrevista #2 — Juan Antonio Sánchez Cuadrado
 
-<img src="/report/resources/11-chapter-02/evidencia-entrevista-segmento1-juan.jpeg">
+<img src="report/resources/11-chapter-02/evidencia-entrevista-segmento1-juan.jpeg">
 
-| Campo | Detalle |
-|---|---|
-| **Entrevistador** | Angel Thyago Flores Eusebio |
-| **Entrevistado** | Juan Antonio Sánchez Cuadrado |
-| **Edad** | 21 años |
-| **Ubicación** | Los Olivos / edificio de oficinas |
-| **Duración** | 13:37 minutos |
-| **Enlace** | [Entrevista a Juan Sánchez Cuadrado](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231b781_upc_edu_pe/IQCjpy9muvkaT5sGZ22ewJkIAcbVqQm_IYAxXWDR5OwH2AA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NUm4gC) |
-| **Timing en video consolidado** | |
+| Campo                           | Detalle                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Entrevistador**               | Angel Thyago Flores Eusebio                                                                                                                                                                                                                                                                                                                                        |
+| **Entrevistado**                | Juan Antonio Sánchez Cuadrado                                                                                                                                                                                                                                                                                                                                      |
+| **Edad**                        | 21 años                                                                                                                                                                                                                                                                                                                                                            |
+| **Ubicación**                   | Los Olivos / edificio de oficinas                                                                                                                                                                                                                                                                                                                                  |
+| **Duración**                    | 13:37 minutos                                                                                                                                                                                                                                                                                                                                                      |
+| **Enlace**                      | [Entrevista a Juan Sánchez Cuadrado](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231b781_upc_edu_pe/IQCjpy9muvkaT5sGZ22ewJkIAcbVqQm_IYAxXWDR5OwH2AA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NUm4gC) |
+| **Timing en video consolidado** |                                                                                                                                                                                                                                                                                                                                                                    |
 
 **Resumen.** Juan Antonio Sánchez Cuadrado tiene un año y medio de experiencia en servicios de limpieza. Reporta falta de claridad sobre prioridades, cambios de tareas comunicados por WhatsApp o verbalmente y problemas de coordinación cuando falta un compañero. Las evidencias se registran de manera selectiva: para áreas importantes u observadas toma fotografías y las envía a un grupo de WhatsApp. Explica que las imágenes pueden mezclarse con las de otros trabajadores y perder contexto de lugar o momento. Cuando existe un impedimento —por ejemplo, espacio ocupado o daño ajeno al servicio— avisa al supervisor o registra la situación. También describe conectividad limitada en almacenes, sótanos y estacionamientos, donde mensajes pueden quedar pendientes. Como mejora propone una herramienta sencilla que muestre qué le corresponde hacer, permita registrar la finalización y solicite evidencia solo cuando corresponda. La entrevista aporta evidencia preliminar a UA-02, UA-04, FA-01, FA-02, FA-03 y FA-05.
 
@@ -383,6 +383,12 @@ La sesión colaborativa debe documentar al menos: exploración sin estructura, o
 - ambigüedad entre excepción, desviación e incumplimiento;
 - corrección realizada sin un historial común del problema original;
 - consolidación manual para reportes.
+
+#### Timeline propuesto para la sesión
+
+El ordenamiento en timeline se propone por fases del negocio (Contrato → Planificación → Ejecución → Revisión → Evaluación de cumplimiento → Corrección y cierre → Reporte). La numeración E1–E19 corresponde a los candidatos de la tabla anterior; los hot spots se contrastan durante la exploración.
+
+<img src="resources/11-chapter-02/big-picture-eventstorming.png">
 
 ### 2.3.6. Ubiquitous Language
 
@@ -770,6 +776,10 @@ El Impact Map conecta Business Goals SMART con los User Personas, los cambios de
 | BG-01 / BG-03 | Supervisor | Comunica el estado mediante reportes consistentes. | Reporting & Insights. | US-15, US-16 |
 
 ### 2.4.3. Product Backlog
+
+![](resources/11-chapter-02/BacklogTrello.png)
+
+*Enlace del Trello*: https://trello.com/invite/b/6aac04da3175e8ef74c2b934/ATTI9a99c2adb3c18edd32f308698b0a396930149107/services-complinces
 
 El orden prioriza valor de negocio y reducción de riesgo. Authentication no se coloca en primer lugar. Las historias de Landing Page se consideran desde Sprint 1, como exige el enunciado. Los Story Points son una **estimación inicial** y deben ser ratificados por el equipo en la herramienta de gestión.
 
