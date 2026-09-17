@@ -434,37 +434,11 @@ Identificación de puntos conflictivos o dolorosos en la experiencia de los usua
 
 #### 2.5.1.1. Candidate Context Discovery
 
-Con el objetivo de comprender a profundidad el dominio de la aplicación Service Compliance, se llevó a cabo una sesión de EventStorming de aproximadamente 2 horas. Esta sesión permitió identificar los eventos clave, procesos y pain points del dominio.
-
-La herramienta utilizada para la sesión fue Miro, que facilitó la colaboración en tiempo real y la organización visual de los eventos. La sesión se dividió en las siguientes etapas:
-
-- **Unstructured Exploration** (exploración sin estructura)
-- **Timelines** (flujo del negocio)
-- **Pain Points** (puntos de fricción)
-
-Se identificaron eventos relacionados con el ciclo de vida completo de una obligación de servicio, desde el registro del contrato hasta la generación del reporte de cumplimiento, incluyendo actividades de ejecución y verificación.
-
-**Step 1: Unstructured Exploration**
-
-Lluvia de ideas con eventos importantes dentro del dominio de Service Compliance, organizados por área funcional para facilitar su posterior análisis: Cuenta/Sesión, Contrato/Obligación, Ejecución, Evidencia, Incumplimiento e Incidencia.
-
-<img src="resources/10-chapter-01/step1.png">
-
-**Step 2: Timelines**
-
-Organización de los eventos identificados en el Step 1 en flujos funcionales secuenciales, incluyendo escenarios alternativos como el registro de evidencia sin conexión y la bifurcación entre obligaciones regulares y obligaciones de emergencia.
-
-<img src="resources/10-chapter-01/step2.png">
-
-**Step 3: Pain Points**
-
-Identificación de puntos conflictivos o dolorosos en la experiencia de los usuarios (operarios y supervisores), incluyendo problemas de conectividad al capturar evidencia, ambigüedad en la interpretación de obligaciones y retraso en la consolidación de reportes.
-
-<img src="resources/10-chapter-01/step3.png">
+Sobre el timeline del EventStorming general se realizó una segunda sesión para delimitar los Candidate Bounded Contexts de la solución, aplicando las técnicas de *start-with-value* y *look-for-pivotal-events* sobre los eventos identificados. El detalle de los contextos definidos y sus flujos de interacción se presenta en el siguiente apartado.
 
 #### 2.5.1.2. Domain Message Flows Modeling
 
-A partir del EventStorming general, se realizó una segunda sesión enfocada en identificar los Candidate Bounded Contexts, aplicando las técnicas de start-with-value y look-for-pivotal-events sobre los eventos identificados. Se definieron cinco Candidate Bounded Contexts:
+Como resultado de la delimitación se definieron cinco Candidate Bounded Contexts, los cuales reciben el flujo de mensajes de dominio requerido para operar:
 
 **Authentication:**
 
@@ -613,8 +587,6 @@ La Mobile App se comunica con la API REST mediante peticiones HTTPS/JSON, mientr
 **Deployment Diagram**
 
 El Deployment Diagram muestra la distribución física de los componentes del sistema Service Compliance sobre la infraestructura de hardware. La Mobile App se ejecuta en el dispositivo móvil del operario y del supervisor, la API REST se ejecuta en un servidor en la nube, y la base de datos se ejecuta en una instancia administrada en la nube.
-
-<img src="resources/10-chapter-01/ContextDiagram3.png">
 
 <img src="resources/10-chapter-01/ContextDiagram3.png">
 
@@ -1096,5 +1068,5 @@ La siguiente tabla y el diagrama de base de datos muestran los objetos de persis
 
 <div style="page-break-before: always;"></div>
 
-	<a id="capitulo-iii-solution-uiux-design"></a>
+<a id="capitulo-iii-solution-uiux-design"></a>
 

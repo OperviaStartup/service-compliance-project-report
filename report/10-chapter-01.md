@@ -1,4 +1,4 @@
-	<a id="capitulo-i-presentacion"></a>
+<a id="capitulo-i-presentacion"></a>
 
 # Capítulo I: Presentación
 
@@ -157,7 +157,7 @@ Los valores objetivo de estos indicadores se establecerán después de obtener u
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-Se formula un Hypothesis Statement por cada **Feature Assumption**, siguiendo el template indicado para el proyecto:
+Se formula un Hypothesis Statement por cada **Feature Assumption**, aplicando el siguiente formato:
 
 > **We believe we will achieve [business outcome] if [these personas] attain [this benefit/user outcome] with [this feature or solution].**
 
@@ -211,8 +211,6 @@ El Lean UX Canvas sintetiza los elementos definidos previamente y establece qué
 | Determinar si la falta de trazabilidad entre lo acordado y lo ejecutado constituye un problema prioritario para supervisores y operarios, qué información se considera suficiente para evaluar cumplimiento y qué actor decide o paga por una solución. | Entrevistar entre 3 y 5 representantes por segmento, analizar competidores, revisar ejemplos anonimizados de contratos/registros cuando sea posible y contrastar un prototipo de baja fidelidad del flujo obligación → ejecución → evidencia → desviación. |
 
 <sub>*Figura 1. Lean UX Canvas de Service Compliance.*</sub>
-
-<!-- HUMAN-OPTIONAL: si el docente exige el template visual específico usado en clase, recrear estos mismos ocho bloques en la herramienta indicada y sustituir o complementar la tabla con una captura exportada. No cambiar el contenido sin revisar la trazabilidad con assumptions e hypotheses. -->
 
 <a id="13-segmentos-objetivo"></a>
 
