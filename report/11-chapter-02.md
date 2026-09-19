@@ -161,7 +161,7 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 
 ##### Entrevista #2 — Rodrigo Andres Gonzales Portugal
 
-<img src="report/resources/11-chapter-02/evidencia-entrevista1-rodrigo-gonzales.jpeg">
+<img src="/report/resources/11-chapter-02/evidencia-entrevista1-rodrigo-gonzales.png">
 
 | Campo                           | Detalle                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
