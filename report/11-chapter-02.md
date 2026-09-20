@@ -317,7 +317,7 @@ Se mantiene un User Persona por cada segmento objetivo. Las fichas deben refleja
 
 - **Segmento 2: Supervisores/coordinadores**
 
-<img src="resources/11-chapter-02/user-persona-2.png">
+<img src="resources/11-chapter-02/Supervisor1.png">
 
 ### 2.3.2. User Task Matrix.
 
