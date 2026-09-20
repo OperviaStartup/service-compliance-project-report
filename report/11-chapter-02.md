@@ -220,6 +220,8 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 
 **Resumen.** Andy trabaja como supervisor de limpieza tercerizada. Describe una jornada centrada en asistencia, revisión de novedades, cobertura de ausencias, rondas de inspección, atención de incidencias y actualización de reportes. Sus principales fricciones se relacionan con rotación o ausentismo repentino, reorganización de rutas y la dificultad de reconstruir evidencia histórica cuando el cliente formula una observación. Parte de la validación de actividades se realiza mediante comunicación verbal, formatos firmados y fotografías por WhatsApp, lo que obliga a revisar físicamente zonas y buscar posteriormente información dispersa. La entrevista aporta evidencia preliminar a UA-01, UA-03, BO-01, BO-03, BO-04, FA-02 y FA-04.
 
+##### Entrevista #3
+
 
 ### 2.2.3. Análisis de entrevistas
 
