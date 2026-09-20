@@ -180,6 +180,21 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 
 ##### Entrevista #1 :
 
+<img src="resources/11-chapter-02/Entrevista3.png">
+
+| **Campo** | **Detalle** |
+| :---- | :------ |
+| **Entrevistador** | Carlos Franco Blancas Chávez |
+| **Entrevistado** | Leonardo Delgado |
+| **Edad** | 22 años |
+| **Ubicación** | Chiclayo / supervisa una residencial |
+| **Tiempo Duración** | 8:24 minutos |
+| **Enlace** | https://www.youtube.com/watch?v=b1oQmie0bdE |
+
+**Resumen:**
+ Leonardo es supervisor del área de limpieza de una residencial, cargo al que llegó tras iniciar como operario y escalar por tiempo y confianza (sin una carrera específica requerida; estudió administración y marketing). A diferencia de los demás entrevistados, no depende principalmente de WhatsApp sino de un **cuaderno físico** para gestionar y delegar tareas a sus 5 empleados directos (rotando con 3 más entre turnos de mañana y noche), lo que representa un pain point aún más marcado: la asignación es completamente manual, requiere contacto uno por uno (incluso presencial si no responde llamadas), y para verificar si una tarea se completó debe ir físicamente a chequear al final del turno. Cuando ocurre un incumplimiento, la queja del cliente le llega tarde y de forma indirecta (primero al empleado, luego a él "una o dos horas después"), lo que reconoce como frustrante por el tiempo perdido. La evidencia se recopila con fotos que él mismo toma al verificar las tareas, organizadas manualmente. Armar reportes de cumplimiento le toma "unas cuantas horas" en un día completo, y confirma explícitamente que generar un reporte rápido de incidencias del mes pasado "no estaría a nuestro alcance por el momento". Usa solo cuaderno, celular (llamadas/WhatsApp) y cámara ni siquiera ha implementado Excel todavía, aunque menciona que lo ha estado considerando. Este caso es el más extremo de los tres en cuanto a ausencia de digitalización, y refuerza con fuerza las Feature Assumptions FA-01 (visibilidad de obligaciones) y FA-04 (alertas para el supervisor), ya que aquí ni siquiera existe un sistema digital básico que reemplazar la oportunidad de mejora es aún mayor que en los otros casos.
+
+
 ##### Entrevista #2 — Andy
 
 <img src="resources/10-chapter-01/Entrevista3.png">
