@@ -222,7 +222,7 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 
 ##### Entrevista #3 
 
-<img src="resources/10-chapter-01/Entrevista2_3.png">
+<img src="resources/11-chapter-02/Entrevista2_3.png">
 
 | Campo | Detalle |
 |---|---|
