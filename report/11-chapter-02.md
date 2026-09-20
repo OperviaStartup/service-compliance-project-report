@@ -350,7 +350,7 @@ Los Journey Maps representan el proceso **As-Is**, es decir, la situación actua
 
 - **Supervisor/coordinador**
 
-<img src="resources/11-chapter-02/Supervisor2.png">
+<img src="resources/11-chapter-02/Supervisor3.png">
 
 #### 2.3.3.1. As-Is Scenario Mapping
 
@@ -387,7 +387,7 @@ Los Empathy Maps deben construirse a partir de los User Personas y entrevistas, 
 
 - **Supervisores/coordinadores**
 
-<img src="resources/11-chapter-02/Supervisores.png">
+<img src="resources/11-chapter-02/Supervisor2.png">
 
 ### 2.3.5. Big Picture EventStorming
 
