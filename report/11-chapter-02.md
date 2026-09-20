@@ -244,47 +244,62 @@ La entrevista aporta evidencia preliminar a UA-01, UA-03, UA-05, UO-01, UO-02, U
 
 ### 2.2.3. Análisis de entrevistas
 
-El análisis siguiente corresponde a la **muestra exploratoria actualmente documentada de 2 participantes por segmento**. Los porcentajes describen únicamente esa muestra y deben recalcularse después de completar la tercera entrevista mínima de cada segmento. No deben interpretarse como estimaciones de toda la población de trabajadores o supervisores de limpieza.
+El análisis corresponde a las tres entrevistas documentadas para cada segmento. Los porcentajes describen únicamente la muestra exploratoria disponible y no deben interpretarse como estimaciones de toda la población de trabajadores o supervisores de limpieza.
 
-#### Segmento 1: Operarios — análisis preliminar (n = 2)
-
-| Característica observada | Tipo | Frecuencia actual | Evidencia |
-|---|---|---:|---|
-| Utiliza WhatsApp para coordinación o evidencia del trabajo. | Objetiva / operativa | 2/2 (100 % de la muestra parcial) | José, Juan Antonio |
-| Ha experimentado cambios o falta de claridad en asignaciones/prioridades. | Objetiva / operativa | 2/2 (100 %) | José, Juan Antonio |
-| Reporta al menos una zona con conectividad reducida o problemática. | Objetiva / tecnológica | 2/2 (100 %) | José: sótano; Juan: almacenes/sótanos/estacionamientos |
-| Usa fotografía como evidencia en al menos algunos casos. | Objetiva / operativa | 2/2 (100 %) | José, Juan Antonio |
-| Considera útil una referencia centralizada de actividades/estado. | Subjetiva / expectativa | 2/2 (100 %) | José, Juan Antonio |
-| Considera que WhatsApp es necesariamente “tedioso”. | Subjetiva / frustración | 0/2 como patrón uniforme | José indicó estar habituado; Juan sí identificó pérdida de contexto |
-
-**Interpretación.** La evidencia preliminar respalda que el problema no debe formularse simplemente como “WhatsApp es malo”. Para algunos operarios, WhatsApp resulta familiar y suficientemente sencillo. La oportunidad aparece cuando la información necesita conservar relación con una obligación, una zona, un momento, una excepción o una revisión posterior. La conectividad también aparece como riesgo real, pero con intensidad distinta según la instalación, por lo que FA-05 se mantiene como feature assumption respaldada de forma inicial, no como requisito universal.
-
-#### Segmento 2: Supervisores/coordinadores — análisis preliminar (n = 2)
+#### Segmento 1: Operarios - análisis preliminar (n = 3)
 
 | Característica observada | Tipo | Frecuencia actual | Evidencia |
 |---|---|---:|---|
-| Consolida información de forma manual desde mensajería, hojas de cálculo, papel u observación directa. | Objetiva / operativa | 2/2 (100 % de la muestra parcial) | Ivonne, Andy |
-| Usa WhatsApp como parte relevante de la operación. | Objetiva / tecnológica | 2/2 (100 %) | Ivonne, Andy |
-| Ha debido reconstruir información ante una observación o reclamo del cliente. | Objetiva / operativa | 2/2 (100 %) | Ivonne, Andy |
-| Expresa necesidad de mayor visibilidad del estado operativo. | Subjetiva / expectativa | 2/2 (100 %) | Ivonne, Andy |
-| Gestiona problemas de personal/ausentismo además del compliance. | Objetiva / operativa | 2/2, con distinta intensidad | Ivonne, Andy |
-| El supervisor es necesariamente el comprador del software. | Hipótesis comercial | **No validado** | Ninguna entrevista demuestra por sí sola autoridad de compra |
+| Utiliza mensajería móvil para coordinar actividades o comunicar resultados. | Objetiva / tecnológica | 3/3 (100 % de la muestra) | José, Rodrigo y Juan |
+| Ha experimentado cambios operativos, falta de personal o falta de insumos que afectan el cumplimiento. | Objetiva / operativa | 3/3 (100 %) | José, Rodrigo y Juan |
+| Ha identificado alguna zona o periodo con conectividad reducida o problemática. | Objetiva / tecnológica | 3/3 (100 %) | José: sótano; Rodrigo: problemas previos de conectividad; Juan: zonas subterráneas |
+| Utiliza fotografías como evidencia en al menos algunas actividades. | Objetiva / operativa | 3/3 (100 %) | José, Rodrigo y Juan |
+| Considera útil contar con una referencia centralizada de actividades, estados o evidencias. | Subjetiva / expectativa | 3/3 (100 %) | José, Rodrigo y Juan |
+| Considera que la mensajería actual es necesariamente inadecuada o tediosa. | Subjetiva / frustración | No existe un patrón uniforme | José está habituado al canal; Juan identifica problemas de comunicación y Rodrigo utiliza mensajes o llamadas sin señalarlo como su principal dificultad |
 
-**Interpretación.** La información recolectada aporta evidencia preliminar a BO-01 y BO-04: reconstruir el estado del servicio y consolidar evidencia puede demandar trabajo manual. También respalda BO-03, dado que ambos supervisores describen escenarios donde la observación del cliente puede revelar o reabrir un problema. Sin embargo, las entrevistas muestran que el supervisor enfrenta también asignación, ausentismo y cobertura de zonas; Service Compliance no debe expandirse automáticamente hacia RR. HH., sino mantener esas tareas visibles como contexto para evitar que el flujo de compliance ignore la operación real.
+**Interpretación.** La evidencia preliminar indica que el problema no debe formularse simplemente como “WhatsApp es malo”. La mensajería resulta familiar y funcional para algunos operarios, pero la información puede perder contexto cuando se necesita relacionarla con una actividad específica, una zona, un horario, una excepción o una revisión posterior.
+
+Los tres operarios mencionan, con distinta intensidad, problemas relacionados con cambios operativos, falta de personal, falta de insumos o comunicación incompleta. También se identifican dificultades de conectividad en determinados espacios o momentos. Por ello, FA-05 se mantiene como una necesidad contextual que debe validarse según cada instalación y no como un requisito universal para todos los servicios.
+
+#### Segmento 2: Supervisores/coordinadores - análisis preliminar (n = 3)
+
+| Característica observada | Tipo | Frecuencia actual | Evidencia |
+|---|---|---:|---|
+| Consolida información manualmente a partir de mensajería, hojas de cálculo, papel u observación directa. | Objetiva / operativa | 3/3 (100 % de la muestra) | Leonardo, Andy y Valeria |
+| Utiliza WhatsApp u otros canales de mensajería como parte relevante de la operación. | Objetiva / tecnológica | 3/3 (100 %) | Leonardo, Andy y Valeria |
+| Ha tenido que reconstruir información ante una observación o reclamo del cliente. | Objetiva / operativa | 3/3 (100 %) | Leonardo, Andy y Valeria |
+| Expresa la necesidad de contar con mayor visibilidad sobre el estado operativo. | Subjetiva / expectativa | 3/3 (100 %) | Leonardo, Andy y Valeria |
+| Gestiona ausencias, cobertura de personal o cambios operativos además del control del servicio. | Objetiva / operativa | 3/3 (100 %) | Leonardo, Andy y Valeria |
+| Mantiene evidencias dispersas o no vinculadas directamente con la obligación original. | Objetiva / operativa | 3/3 (100 %) | Leonardo, Andy y Valeria |
+| El supervisor es necesariamente el comprador o decisor del software. | Hipótesis comercial | No validado | Las entrevistas no demuestran autoridad de compra |
+
+**Interpretación.** Las entrevistas muestran que la supervisión combina coordinación de personal, revisión de actividades, inspección física, comunicación con operarios y atención de observaciones del cliente. En los casos de Leonardo y Andy, la información se gestiona principalmente mediante cuadernos, llamadas, WhatsApp, fotografías y formatos. Valeria incorpora además hojas de cálculo y carpetas digitales para consolidar la información.
+
+El patrón común es la dispersión de la información. Cuando el cliente formula una observación, el supervisor debe revisar mensajes, fotografías, formatos, registros manuales y, en algunos casos, visitar nuevamente la sede. Esto respalda preliminarmente la existencia de un esfuerzo significativo para reconstruir el estado del servicio y consolidar reportes.
+
+La evidencia también muestra que el supervisor no solo gestiona cumplimiento. La cobertura de ausencias, la reorganización de turnos y la asignación de personal ocupan una parte importante de su trabajo. Por ello, Service Compliance debe reconocer este contexto operativo sin expandir automáticamente su alcance hacia un sistema de recursos humanos o control de personal.
 
 #### Trazabilidad preliminar de investigación con Lean UX
 
 | Assumption / Outcome | Evidencia actual | Estado preliminar |
 |---|---|---|
-| **BO-01** Reducir esfuerzo de reconstrucción. | Ivonne reporta 30–40 min para reconstruir un caso; Andy describe búsqueda manual de papeles/fotos. | Apoyado preliminarmente. |
-| **BO-03** Detectar desviaciones antes de reclamos tardíos. | Ivonne y Andy describen observaciones del cliente como disparadores relevantes. | Apoyado preliminarmente. |
-| **BO-04** Reducir consolidación manual. | Ivonne reporta 4–5 h semanales; Andy usa registros físicos y WhatsApp. | Apoyado preliminarmente. |
-| **FA-01** Obligaciones estructuradas. | Operarios describen zonas/prioridades y cambios comunicados por canales informales. | Apoyado preliminarmente. |
-| **FA-02** Registro móvil vinculado a obligación/evidencia. | Todos utilizan móvil; fotos y mensajes pierden contexto. | Apoyado preliminarmente. |
-| **FA-03** Excepciones y correctivas con historial. | Se reportan impedimentos, reclamos y escalamiento, pero falta profundizar en cierre/correctivas. | Parcial; requiere más evidencia. |
-| **FA-04** Estado de cumplimiento y reporting. | Supervisores describen consolidación y falta de visibilidad. | Apoyado preliminarmente. |
-| **FA-05** Almacenamiento local/sync. | Ambos operarios reportan algún problema de conectividad, con severidad distinta. | Apoyado de forma contextual, no universal. |
-| **BA-02** Buyer distinto del usuario. | No se entrevistó aún al decisor de compra. | Pendiente de validación comercial. |
+| **UA-01** El supervisor necesita conocer qué obligaciones están pendientes, realizadas, observadas o vencidas. | Los supervisores describen la necesidad de revisar actividades, zonas, incidencias y observaciones del cliente. | Apoyado preliminarmente. |
+| **UA-03** Los supervisores combinan observación directa, comunicación con el personal y registros operativos. | Se identifican rondas físicas, llamadas, WhatsApp, cuadernos, fotografías, formatos y hojas de cálculo. | Apoyado preliminarmente. |
+| **UA-05** Supervisor y operario necesitan compartir una referencia operativa común. | Los cambios de zona, prioridades e instrucciones se comunican por diferentes canales y pueden perder contexto. | Apoyado preliminarmente. |
+| **UO-01** Los supervisores quieren identificar rápidamente qué requiere atención. | Las ausencias, incidencias, actividades pendientes y observaciones del cliente requieren priorización constante. | Apoyado preliminarmente. |
+| **UO-02** Los supervisores quieren consultar el historial de una obligación ante una observación o reclamo. | Los entrevistados describen la necesidad de buscar información en mensajes, formatos, fotografías y registros manuales. | Apoyado preliminarmente. |
+| **UO-05** Los supervisores necesitan información consistente para explicar qué ocurrió y cómo se respondió. | La evidencia actual se encuentra separada y no siempre permite reconstruir el caso rápidamente. | Apoyado preliminarmente. |
+| **BO-01** Reducir el esfuerzo necesario para reconstruir y explicar el estado de cumplimiento. | Leonardo y Andy describen búsquedas manuales; Valeria estima entre 30 y 45 minutos de consolidación diaria y entre 2 y 4 horas para reconstruir reclamos importantes. | Apoyado preliminarmente; requiere medición adicional. |
+| **BO-03** Detectar desviaciones antes de que sean descubiertas únicamente por el cliente. | Las observaciones del cliente aparecen como una fuente relevante para detectar o reabrir problemas. | Apoyado preliminarmente. |
+| **BO-04** Reducir el trabajo manual de consolidación y reporting. | Los supervisores utilizan registros físicos, mensajería, fotografías, hojas de cálculo y observación directa. | Apoyado preliminarmente. |
+| **FA-01** Un Service Plan con obligaciones estructuradas ayudará a compartir una referencia operativa. | Las actividades, zonas, prioridades y criterios se comunican desde diferentes fuentes y no siempre existe un documento actualizado. | Apoyado preliminarmente. |
+| **FA-02** Vincular la ejecución móvil con la obligación y la evidencia reducirá la pérdida de contexto. | Las fotografías, mensajes y formatos no siempre están relacionados directamente con la actividad correspondiente. | Apoyado preliminarmente. |
+| **FA-03** Registrar excepciones, desviaciones y acciones correctivas conservando el historial permitirá explicar qué ocurrió. | Se identifican incidencias y correcciones, pero la relación entre el problema original y su cierre no siempre queda documentada. | Parcialmente apoyado; requiere mayor evidencia. |
+| **FA-04** Una vista de cumplimiento y reportes trazables reducirá la consolidación manual. | Los supervisores necesitan revisar diferentes fuentes para conocer el estado del servicio y preparar reportes. | Apoyado preliminarmente. |
+| **FA-05** El almacenamiento local y la sincronización posterior reducirán la pérdida de registros ante conectividad limitada. | Los operarios y Valeria mencionan problemas de conectividad en determinadas zonas o momentos. | Apoyado de forma contextual, no universal. |
+| **BA-02** El comprador o decisor de Service Compliance puede ser distinto del usuario operativo. | Ninguna entrevista identifica con certeza quién aprueba o paga por un software de este tipo. | Pendiente de validación comercial. |
+
+
 
 <a id="23-needfinding"></a>
 
