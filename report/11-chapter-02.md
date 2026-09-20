@@ -220,8 +220,27 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 
 **Resumen.** Andy trabaja como supervisor de limpieza tercerizada. Describe una jornada centrada en asistencia, revisión de novedades, cobertura de ausencias, rondas de inspección, atención de incidencias y actualización de reportes. Sus principales fricciones se relacionan con rotación o ausentismo repentino, reorganización de rutas y la dificultad de reconstruir evidencia histórica cuando el cliente formula una observación. Parte de la validación de actividades se realiza mediante comunicación verbal, formatos firmados y fotografías por WhatsApp, lo que obliga a revisar físicamente zonas y buscar posteriormente información dispersa. La entrevista aporta evidencia preliminar a UA-01, UA-03, BO-01, BO-03, BO-04, FA-02 y FA-04.
 
-##### Entrevista #3
+##### Entrevista #3 
 
+<img src="resources/10-chapter-01/Entrevista2_3.png">
+
+| Campo | Detalle |
+|---|---|
+| **Entrevistador** | Montes Maza, Augusto |
+| **Entrevistada** | Valeria Alejandra Mendoza Salazar |
+| **Edad** | 30 años |
+| **Ubicación** | Los Olivos, Lima |
+| **Cargo** | Supervisora de operaciones de limpieza tercerizada |
+| **Duración** | 13:25 minutos |
+| **Enlace** | .|
+
+**Resumen.** Valeria trabaja como supervisora de operaciones de limpieza tercerizada y cuenta con aproximadamente siete años de experiencia en el rubro, de los cuales tres corresponden a labores de supervisión. Actualmente supervisa cuatro sedes y alrededor de 28 operarios distribuidos en turnos de mañana, tarde y noche.
+
+Describe una jornada centrada en la revisión de mensajes e incidencias, el control de asistencia, la coordinación de reemplazos, la revisión de cronogramas, las visitas a las sedes, la inspección de zonas críticas, la comunicación con los operarios y la atención de observaciones del cliente. Las instrucciones que reciben los operarios provienen del contrato, la propuesta comercial, el plan de trabajo, los cronogramas y las indicaciones adicionales del cliente, que con frecuencia son comunicadas mediante WhatsApp o llamadas telefónicas.
+
+Sus principales fricciones se relacionan con la dispersión de la información entre contratos, cronogramas, hojas de cálculo, fotografías, formatos físicos y mensajes de WhatsApp. También señala que las desviaciones pueden perderse entre las conversaciones y que el registro de la corrección no siempre queda relacionado con el problema original. La consolidación diaria puede tomar entre 30 y 45 minutos, mientras que la reconstrucción de un caso ante un reclamo importante puede requerir entre dos y cuatro horas.
+
+La entrevista aporta evidencia preliminar a UA-01, UA-03, UA-05, UO-01, UO-02, UO-05, BO-01, BO-03, BO-04, FA-01, FA-02, FA-03, FA-04 y FA-05. Estos hallazgos deben contrastarse con entrevistas adicionales antes de considerarse conclusiones definitivas.
 
 ### 2.2.3. Análisis de entrevistas
 
