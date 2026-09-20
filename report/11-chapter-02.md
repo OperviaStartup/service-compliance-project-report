@@ -232,7 +232,7 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 | **Ubicación** | Los Olivos, Lima |
 | **Cargo** | Supervisora de operaciones de limpieza tercerizada |
 | **Duración** | 13:25 minutos |
-| **Enlace** | https://drive.google.com/file/d/1NfQs8ygMVes285mARnUiXa7OP3Ow06-5/view?usp=sharing |
+| **Enlace** | https://youtu.be/9xKiAJFK5xY |
 
 **Resumen.** Valeria trabaja como supervisora de operaciones de limpieza tercerizada y cuenta con aproximadamente siete años de experiencia en el rubro, de los cuales tres corresponden a labores de supervisión. Actualmente supervisa cuatro sedes y alrededor de 28 operarios distribuidos en turnos de mañana, tarde y noche.
 
