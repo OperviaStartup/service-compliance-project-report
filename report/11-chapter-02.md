@@ -2,22 +2,17 @@
 
 # Capítulo II: Requirements Development and Software Solution Design.
 
-Este capítulo transforma la investigación del dominio en requisitos y decisiones de diseño de software para **Service Compliance**. La secuencia utilizada es: análisis competitivo → entrevistas → Needfinding → especificación de requisitos → diseño estratégico con Domain-Driven Design → diseño táctico. El objetivo es mantener trazabilidad entre el problema planteado en el Capítulo I, la evidencia recolectada y las decisiones posteriores, evitando convertir hipótesis de producto en requisitos sin sustento.
+Este capítulo desarrolla la propuesta de Service Compliance a partir del análisis competitivo y de la investigación realizada con los dos segmentos objetivo: operarios de limpieza tercerizada y supervisores/coordinadores. Los hallazgos se sintetizan mediante artefactos de Needfinding, se convierten en requisitos del producto y sirven como base para el diseño estratégico y táctico de la solución.
 
 <a id="21-competidores"></a>
 
 ## 2.1. Competidores
 
-Se analizaron tres productos digitales relacionados con el control de servicios en instalaciones, la ejecución en campo y la verificación del trabajo: **eGenya**, **OrangeQC** y **ServiceChannel**. La selección combina un competidor regional cercano al control de servicios tercerizados y dos soluciones internacionales con capacidades de inspección, órdenes de trabajo, evidencias y gestión de proveedores.
-
-La comparación se realiza desde la perspectiva definida para Service Compliance en el Capítulo I: en esta primera iteración, la **empresa prestadora de limpieza** es el cliente organizacional y comprador potencial; los **supervisores/coordinadores** y **operarios** de la prestadora son los segmentos de usuario; la organización que recibe el servicio es un stakeholder que puede formular observaciones o recibir explicaciones y reportes.
-
-<a id="211-analisis-competitivo"></a>
+Para analizar el espacio competitivo se seleccionaron tres productos digitales relacionados con la supervisión de servicios en instalaciones, las inspecciones de limpieza, el trabajo de campo y la gestión de proveedores: eGenya, OrangeQC y ServiceChannel. La selección permite comparar a Service Compliance con una alternativa regional de Facility Management, una solución especializada en control de calidad de limpieza y una plataforma empresarial de gestión de facilities.<a id="211-analisis-competitivo"></a>
 
 ### 2.1.1. Análisis competitivo.
 
-**Objetivo del análisis.** Determinar hasta qué punto productos existentes ya resuelven la trazabilidad del servicio y qué espacio de diferenciación puede defender Opervia sin basarse únicamente en funcionalidades genéricas como fotografías, QR, GPS, checklists o dashboards.
-
+El análisis busca identificar qué necesidades ya son atendidas por productos existentes y dónde puede diferenciarse Opervia. La comparación evita considerar como ventaja exclusiva mecanismos comunes de la industria, (como fotografías, QR, GPS, checklists u operación offline) y se concentra en la trazabilidad del cumplimiento.
 
 #### Competitive Analysis Landscape
 
@@ -36,50 +31,37 @@ La comparación se realiza desde la perspectiva definida para Service Compliance
 | **Oportunidades** | Especialización vertical, adaptación al contexto peruano, configuración de evidencia por obligación, menor fricción operativa y reporting explicable al cliente. | Expansión regional y digitalización de servicios no operacionales. | Mayor demanda de evidencia, auditoría y transparencia de calidad. | Digitalización de Facility Management, optimización de proveedores y operaciones multi-sede. |
 | **Amenazas** | Competidores maduros ya ofrecen fotos, GPS, QR, offline, tickets y reportes; WhatsApp/Excel pueden seguir siendo “suficientes”; la evidencia válida puede variar por contrato; el buyer puede no ser quien inicialmente se supone. | Competidores globales y verticales especializados. | Plataformas de Facility Management más amplias y soluciones regionales en español. | Soluciones verticales más simples y económicas; costo y complejidad de adopción. |
 
-**Conclusión del Landscape.** La oportunidad de Opervia no se sostiene en afirmar que funcionalidades como QR, fotografías, GPS u operación offline sean innovadoras: los competidores revisados ya ofrecen varias de ellas. La diferenciación candidata se concentra en la **trazabilidad de cumplimiento**: conservar una cadena explicable entre condiciones del servicio, Service Plan, Service Obligation, Execution, Evidence Requirement, Compliance Evaluation, Compliance Result y Corrective Action. Esta diferenciación debe validarse comercialmente y con usuarios antes de considerarse una ventaja comprobada.
+El Landscape muestra que Service Compliance no puede diferenciarse únicamente por capturar fotos, utilizar QR/GPS o funcionar sin conexión. Su propuesta se concentra en conservar una cadena de trazabilidad entre Service Plan, Service Obligation, Execution, Evidence, Compliance Evaluation, Compliance Result, Corrective Action, de modo que el estado original de un cumplimiento o incumplimiento permanezca visible incluso después de una corrección.
+
+La hipótesis de precio base cercana a S/300 mensuales responde a un ejercicio inicial de value-based pricing: el precio debe representar una fracción del valor recuperado por la empresa prestadora mediante menor tiempo de consolidación, menor reconstrucción manual y mejor aprovechamiento operativo. El monto no se presenta como una tarifa de mercado validada, sino como punto de partida del modelo comercial.
 
 <a id="212-estrategias-y-tacticas-frente-a-competidores"></a>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-A partir del Landscape y del alcance del Capítulo I, Opervia plantea las siguientes estrategias preliminares:
+A partir del análisis competitivo, Opervia define cuatro líneas de acción.
 
-1. **Especialización en compliance operativo, no en cantidad de módulos.** La solución prioriza explicar el estado de cumplimiento de un servicio por encima de competir como suite general de Facility Management.
+Especialización en cumplimiento operativo. Service Compliance no busca competir como una suite completa de Facility Management. El producto concentra su alcance en la relación entre lo planificado, lo ejecutado y la evaluación posterior.
 
-   - Táctica: modelar explícitamente **Service Conditions → Service Plan → Service Obligation → Execution → Compliance Result**.
-   - Táctica: conservar el estado original de una desviación o incumplimiento aun cuando exista una acción correctiva posterior.
-   - Táctica: mantener fuera del MVP nómina, contabilidad, RR. HH., procurement, activos y administración genérica de proyectos.
+Evidencia configurable. Cada obligación puede requerir un tipo de evidencia diferente. Fotografías, ubicación, checklist, firma, QR o NFC son mecanismos posibles, pero ninguno se exige de forma universal.
 
-2. **Evidencia configurable en lugar de un mecanismo universal.** OrangeQC, eGenya y ServiceChannel muestran que QR, GPS y fotografías son tecnologías comunes; por ello Service Compliance no debe depender de una única prueba.
+Experiencias móviles diferenciadas. El operario necesita baja fricción y continuidad durante el trabajo de campo; el supervisor necesita planificación, revisión, seguimiento y reporting. Por ello la solución separa una experiencia Android nativa para operarios de una experiencia cross-platform para supervisores.
 
-   - Táctica: cada Obligation Definition especifica su **Evidence Requirement** cuando corresponda.
-   - Táctica: permitir foto, checklist, firma, observación u otros mecanismos según el Service Plan, sin exigir siempre todos los tipos.
-   - Táctica: tratar QR/NFC/GPS como alternativas de implementación, no como la propuesta de valor.
-
-3. **Experiencias móviles diferenciadas por contexto de uso.** El operario necesita baja fricción y continuidad en campo; el supervisor necesita visibilidad, revisión y seguimiento.
-
-   - Táctica: aplicación Android nativa para operarios, con almacenamiento local y acceso a cámara cuando la obligación lo requiera.
-   - Táctica: aplicación cross-platform para supervisores/coordinadores, enfocada en planificación operativa, revisión, compliance y reporting.
-
-4. **Adopción por pilotos y medición de outcomes.** El precio y la viabilidad no se fijan por intuición.
-
-   - Táctica: ejecutar pilotos de alcance reducido con una empresa prestadora.
-   - Táctica: medir tiempo de reconstrucción, completitud de registros, detección de desviaciones y fricción del registro de campo.
-   - Táctica: validar la unidad de cobro y disposición de pago antes de cerrar pricing.
+Adopción orientada a resultados. La propuesta comercial se apoya en medir reducción del esfuerzo de reconstrucción, completitud de registros, tiempo de consolidación y tratamiento de desviaciones, en lugar de competir solamente por cantidad de funcionalidades.
 
 <a id="22-entrevistas"></a>
 
 ## 2.2. Entrevistas
 
-La investigación con usuarios se dirige a los dos segmentos definidos en el Capítulo I: **operarios de limpieza tercerizada** y **supervisores/coordinadores de servicios de limpieza tercerizada**. Las entrevistas buscan comprender el proceso actual, las características objetivas y subjetivas necesarias para construir los User Personas y, especialmente, identificar evidencia que confirme o refute los assumptions de Lean UX.
+La investigación se realizó con representantes de los dos segmentos objetivo. Las entrevistas se enfocaron en el proceso actual de trabajo: asignación de actividades, ejecución, evidencia, excepciones, supervisión, observaciones del cliente, reconstrucción de casos y herramientas utilizadas.
 
 ### 2.2.1. Diseño de entrevistas
 
-Las preguntas se plantean de forma semiestructurada. Se privilegian experiencias recientes y comportamientos reales antes que opiniones sobre una solución propuesta. Las preguntas de perfil cubren los elementos requeridos para los arquetipos: edad, distrito, ocupación, biografía, objetivos, frustraciones, personalidad, habilidades, dispositivos, canales digitales, influencias y hábitos tecnológicos.
+Las entrevistas fueron semiestructuradas. Las preguntas principales buscaron experiencias recientes y comportamientos concretos; las preguntas complementarias recogieron información útil para la construcción de los User Personas.
 
 #### Segmento 1: Operarios de limpieza tercerizada
 
-**Objetivo.** Comprender cómo reciben y ejecutan instrucciones, cómo comunican resultados o excepciones, qué evidencia utilizan hoy, qué fricciones aparecen durante el turno y qué restricciones tecnológicas existen en campo.
+**Objetivo:** Comprender cómo reciben y ejecutan instrucciones, cómo comunican resultados o impedimentos, qué evidencia utilizan, qué fricciones aparecen durante el turno y qué restricciones tecnológicas existen en campo.
 
 **Preguntas principales**
 
@@ -98,17 +80,11 @@ Las preguntas se plantean de forma semiestructurada. Se privilegian experiencias
 - Cuando necesitas aprender algo nuevo, ¿a quién o qué medio recurres normalmente?
 - Si pudieras cambiar una sola cosa del proceso actual de coordinación o registro, ¿qué cambiarías y por qué?
 
-**Preguntas complementarias**
-
-- ¿Qué nivel educativo alcanzaste y qué tipo de capacitaciones has recibido en el trabajo?
-- ¿Con quién vives o tienes personas que dependan de ti? *(solo si el participante se siente cómodo respondiendo)*.
-- ¿Qué tres palabras usarías para describirte cuando trabajas?
-- ¿Qué marcas, aplicaciones o servicios digitales te resultan familiares o confiables?
-- ¿Qué te motiva en el trabajo y qué objetivos personales o profesionales tienes?
+**Preguntas complementarias:** nivel educativo, capacitaciones, composición familiar cuando el participante se sienta cómodo, autodescripción, aplicaciones o marcas digitales familiares, motivaciones y objetivos laborales.
 
 #### Segmento 2: Supervisores/coordinadores
 
-**Objetivo.** Comprender cómo se planifica y supervisa el servicio, cómo se controla el cumplimiento, cómo se gestionan evidencias y observaciones del cliente, qué información se consolida manualmente y cómo se atienden desviaciones.
+**Objetivo.** Comprender cómo se organiza y supervisa el servicio, cómo se decide qué debe ejecutarse, cómo se verifica el resultado, cómo se atienden observaciones del cliente y cuánto esfuerzo requiere consolidar o reconstruir información.
 
 **Preguntas principales**
 
@@ -128,18 +104,11 @@ Las preguntas se plantean de forma semiestructurada. Se privilegian experiencias
 - ¿Qué dispositivos, aplicaciones, hojas de cálculo o canales de mensajería utilizas habitualmente?
 - Si pudieras eliminar una sola fricción del proceso de supervisión actual, ¿cuál sería y por qué?
 
-**Preguntas complementarias**
+**Preguntas complementarias:** formación, habilidades relevantes, estilo de trabajo, herramientas digitales habituales, fuentes de aprendizaje, responsable de compra de software y condiciones que justificarían pagar por una herramienta.
 
-- ¿Cuál es tu formación y qué habilidades consideras más importantes para el cargo?
-- ¿Cómo describirías tu estilo de trabajo y tu personalidad?
-- ¿Qué herramientas o marcas digitales utilizas con frecuencia?
-- ¿Dónde aprendes nuevas prácticas o herramientas para tu trabajo?
-- ¿Quién decide comprar o implantar software para este proceso en tu empresa?
-- ¿Qué tendría que demostrar una nueva herramienta para justificar pagar por ella?
+### 2.2.2 Registro de entrevistas
 
-### 2.2.2. Registro de entrevistas
-
-El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación se conservan las entrevistas ya realizadas. Las entrevistas restantes deben añadirse con la misma estructura y posteriormente debe actualizarse el análisis estadístico.
+Se realizaron tres entrevistas por cada segmento. Los resúmenes siguientes recogen únicamente información reportada por los participantes y utilizada posteriormente en el análisis.
 
 #### Segmento 1: Operarios de limpieza tercerizada
 
@@ -156,7 +125,7 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 | **Duración** | 12:50 minutos |
 | **Enlace** | https://youtu.be/BublVzjOtw0 |
 
-**Resumen:** José Ramírez tiene 6 años trabajando en servicios de limpieza y actualmente se desempeña como jefe de operarios, participando en la coordinación de su equipo. Describe que la asignación de zonas y cambios operativos se comunica principalmente por WhatsApp, lo que puede provocar mensajes cruzados, duplicidad de asignaciones o zonas sin cubrir. La evidencia de ejecución también se maneja mediante mensajes y fotografías en WhatsApp; José está habituado a este mecanismo y no lo considera necesariamente tedioso, pero el contenido queda mezclado con otras conversaciones y no asociado estructuralmente a una obligación concreta. Ante situaciones fuera de su alcance, como daños en la infraestructura, existe escalamiento hacia responsables de seguridad o riesgos. La conectividad suele ser suficiente, aunque identifica menor señal en el sótano. Al plantearse cómo mejoraría el proceso, propuso centralizar tareas, estado y evidencia en una herramienta consultable. La entrevista aporta evidencia preliminar a FA-01, FA-02 y FA-05, pero también muestra que **WhatsApp puede resultar aceptable para el operario**, por lo que la solución deberá demostrar un beneficio superior a la fricción de adoptar otra herramienta.
+**Resumen:** José cuenta con seis años de experiencia en servicios de limpieza y actualmente combina labores operativas con coordinación de su equipo. La distribución de zonas y los cambios de trabajo se comunican principalmente por WhatsApp, lo que puede producir mensajes cruzados, duplicidad de asignaciones o zonas sin cubrir. Las fotografías de evidencia también se envían por este canal. Para José, WhatsApp es familiar y no representa por sí mismo una dificultad; el problema aparece cuando la información queda mezclada con otras conversaciones y luego debe relacionarse con una actividad concreta. La conectividad suele ser suficiente, aunque identifica menor señal en el sótano. Como mejora, plantea centralizar tareas, estado y evidencia en una herramienta consultable.
 
 ##### Entrevista #2 - Rodrigo Andres Gonzales Portugal
 
@@ -171,7 +140,7 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 | **Duración**                    | 9:49 minutos                                                                                                                                                                                                                                                                                                                                                      |
 | **Enlace**                      | https://www.youtube.com/watch?v=tzRZkpT3oaM |
 
-**Resumen:** Rodrigo Andrés González Portugal tiene un año y medio realizando actividades de limpieza en una tienda de peceras, donde también atiende clientes y entrega pedidos. La asignación de tareas es relativamente clara, ya que el jefe distribuye las actividades y recuerda periódicamente qué debe continuar; sin embargo, cuando falta personal debe combinar la limpieza con otras funciones, lo que dificulta completar las actividades. También identifica confusión al distinguir productos de limpieza y reactivos por su presentación y uso. Actualmente comunica la finalización mediante mensajes o llamadas, mientras que las fotografías son solicitadas por el jefe para determinadas actividades. El registro general se apoya en listas o cuadernos, que considera vulnerables a perderse o deteriorarse, por lo que propone un sistema digital donde su jefe pueda consultar las actividades cumplidas. La conectividad fue problemática antes de instalar un router, pero actualmente la señal es adecuada en la tienda; por ello, FA-05 no queda plenamente confirmada. La entrevista aporta evidencia preliminar a UA-01, UA-02, UA-04 y FA-02, y evidencia parcial a FA-03 y FA-04.
+**Resumen:** Rodrigo tiene un año y medio realizando actividades de limpieza en una tienda de peceras, donde también atiende clientes y entrega pedidos. La asignación es directa: el jefe distribuye actividades y recuerda lo que debe continuar. Cuando falta personal, debe combinar limpieza con otras funciones y algunas actividades se retrasan. La finalización se comunica mediante mensajes o llamadas; para determinadas tareas el jefe solicita fotografías. El registro general se apoya también en listas o cuadernos, que Rodrigo considera vulnerables a pérdida o deterioro. La conectividad fue problemática antes de instalar un router, pero actualmente es adecuada. Propone un registro digital que permita a su jefe consultar las actividades realizadas.
 
 ##### Entrevista #3 - Juan Barrios 
 
@@ -186,7 +155,9 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 | **Duración**                    | 13:31 minutos                                                                                                                                                                                                                                                                                                                                                      |
 | **Enlace**                      | https://youtu.be/y8LJu7hgHQg |
 
-**Resumen:** Juan Barrios, ex-operario de limpieza, organizaba sus labores diarias mediante indicaciones en pizarras físicas y un grupo de WhatsApp utilizando su teléfono personal. Identificó como principales problemas la pérdida de tiempo al tener que clasificar insumos desordenados al inicio de cada turno y la deficiente comunicación por chat, la cual derivó en penalizaciones por cambios de horario no notificados y tareas inconclusas cuando el supervisor no respondía a la falta de materiales. El control de su trabajo era estricto, ya que se le exigía enviar de dos a tres evidencias fotográficas por área cada hora. Aunque la conectividad general era buena, confirmó la pérdida total de señal en zonas subterráneas como los sótanos. Como propuesta de mejora, sugirió reemplazar WhatsApp por un sistema integral que gestione inventarios, asistencia y tareas, además de mencionar el uso recurrente de YouTube para aprender procedimientos de limpieza detallados.
+**Resumen:** Juan aporta experiencia previa como operario de limpieza. Durante ese trabajo recibía indicaciones mediante pizarras físicas y un grupo de WhatsApp desde su teléfono personal. Relata pérdidas de tiempo al organizar insumos al inicio del turno y problemas de comunicación ante cambios de horario o falta de materiales. Se le solicitaban varias fotografías por área como evidencia. La conectividad general era adecuada, salvo en espacios subterráneos. También menciona YouTube como recurso habitual para aprender procedimientos de limpieza.
+
+La muestra de este segmento combina experiencia operativa directa con situaciones laborales distintas: José incorpora funciones de coordinación, Rodrigo combina limpieza con otras tareas y Juan aporta experiencia previa. Por ello, los hallazgos se utilizan para caracterizar prácticas y fricciones descritas directamente por los participantes, sin generalizarlas al conjunto de trabajadores del sector.
 
 #### Segmento 2: Supervisores/coordinadores
 
@@ -203,7 +174,7 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 | **Tiempo Duración** | 8:24 minutos |
 | **Enlace** | https://www.youtube.com/watch?v=b1oQmie0bdE |
 
-**Resumen:** Leonardo es supervisor del área de limpieza de una residencial, cargo al que llegó tras iniciar como operario y escalar por tiempo y confianza (sin una carrera específica requerida; estudió administración y marketing). A diferencia de los demás entrevistados, no depende principalmente de WhatsApp sino de un **cuaderno físico** para gestionar y delegar tareas a sus 5 empleados directos (rotando con 3 más entre turnos de mañana y noche), lo que representa un pain point aún más marcado: la asignación es completamente manual, requiere contacto uno por uno (incluso presencial si no responde llamadas), y para verificar si una tarea se completó debe ir físicamente a chequear al final del turno. Cuando ocurre un incumplimiento, la queja del cliente le llega tarde y de forma indirecta (primero al empleado, luego a él "una o dos horas después"), lo que reconoce como frustrante por el tiempo perdido. La evidencia se recopila con fotos que él mismo toma al verificar las tareas, organizadas manualmente. Armar reportes de cumplimiento le toma "unas cuantas horas" en un día completo, y confirma explícitamente que generar un reporte rápido de incidencias del mes pasado "no estaría a nuestro alcance por el momento". Usa solo cuaderno, celular (llamadas/WhatsApp) y cámara ni siquiera ha implementado Excel todavía, aunque menciona que lo ha estado considerando. Este caso es el más extremo de los tres en cuanto a ausencia de digitalización, y refuerza con fuerza las Feature Assumptions FA-01 (visibilidad de obligaciones) y FA-04 (alertas para el supervisor), ya que aquí ni siquiera existe un sistema digital básico que reemplazar la oportunidad de mejora es aún mayor que en los otros casos.
+**Resumen:** Leonardo supervisa el área de limpieza de una residencial y llegó al cargo después de iniciar como operario. Organiza el trabajo de cinco empleados directos, con personal adicional en otros turnos. Su principal registro es un cuaderno físico; las asignaciones se realizan de forma manual y, cuando un trabajador no responde, puede ser necesario buscarlo presencialmente. La verificación también requiere recorridos físicos. Las quejas del cliente pueden llegar con retraso y las fotografías son organizadas manualmente. Preparar reportes le ocupa varias horas y reconstruir incidencias anteriores resulta difícil con las herramientas actuales.
 
 ##### Entrevista #2 - Andy
 
@@ -218,7 +189,7 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 | **Duración** | 8:21 minutos |
 | **Enlace** | https://youtu.be/naAdZEitKRU |
 
-**Resumen.** Andy trabaja como supervisor de limpieza tercerizada. Describe una jornada centrada en asistencia, revisión de novedades, cobertura de ausencias, rondas de inspección, atención de incidencias y actualización de reportes. Sus principales fricciones se relacionan con rotación o ausentismo repentino, reorganización de rutas y la dificultad de reconstruir evidencia histórica cuando el cliente formula una observación. Parte de la validación de actividades se realiza mediante comunicación verbal, formatos firmados y fotografías por WhatsApp, lo que obliga a revisar físicamente zonas y buscar posteriormente información dispersa. La entrevista aporta evidencia preliminar a UA-01, UA-03, BO-01, BO-03, BO-04, FA-02 y FA-04.
+**Resumen.** Andy trabaja como supervisor de limpieza tercerizada. Su jornada comprende control de asistencia, revisión de novedades, cobertura de ausencias, rondas de inspección, atención de incidencias y actualización de reportes. Sus principales fricciones aparecen ante ausencias imprevistas, reorganización de rutas y reconstrucción de evidencia cuando el cliente formula una observación. La validación utiliza comunicación verbal, formatos firmados y fotografías enviadas por WhatsApp, lo que obliga a revisar físicamente zonas y buscar posteriormente información dispersa.
 
 ##### Entrevista #3 
 
@@ -234,17 +205,11 @@ El enunciado requiere **3 a 5 entrevistas por cada segmento**. A continuación s
 | **Duración** | 13:25 minutos |
 | **Enlace** | https://youtu.be/9xKiAJFK5xY |
 
-**Resumen.** Valeria trabaja como supervisora de operaciones de limpieza tercerizada y cuenta con aproximadamente siete años de experiencia en el rubro, de los cuales tres corresponden a labores de supervisión. Actualmente supervisa cuatro sedes y alrededor de 28 operarios distribuidos en turnos de mañana, tarde y noche.
-
-Describe una jornada centrada en la revisión de mensajes e incidencias, el control de asistencia, la coordinación de reemplazos, la revisión de cronogramas, las visitas a las sedes, la inspección de zonas críticas, la comunicación con los operarios y la atención de observaciones del cliente. Las instrucciones que reciben los operarios provienen del contrato, la propuesta comercial, el plan de trabajo, los cronogramas y las indicaciones adicionales del cliente, que con frecuencia son comunicadas mediante WhatsApp o llamadas telefónicas.
-
-Sus principales fricciones se relacionan con la dispersión de la información entre contratos, cronogramas, hojas de cálculo, fotografías, formatos físicos y mensajes de WhatsApp. También señala que las desviaciones pueden perderse entre las conversaciones y que el registro de la corrección no siempre queda relacionado con el problema original. La consolidación diaria puede tomar entre 30 y 45 minutos, mientras que la reconstrucción de un caso ante un reclamo importante puede requerir entre dos y cuatro horas.
-
-La entrevista aporta evidencia preliminar a UA-01, UA-03, UA-05, UO-01, UO-02, UO-05, BO-01, BO-03, BO-04, FA-01, FA-02, FA-03, FA-04 y FA-05. Estos hallazgos deben contrastarse con entrevistas adicionales antes de considerarse conclusiones definitivas.
+**Resumen.** Valeria cuenta con aproximadamente siete años de experiencia en el rubro y tres en supervisión. Supervisa cuatro sedes y alrededor de 28 operarios distribuidos en diferentes turnos. Su jornada incluye revisión de incidencias, control de asistencia, coordinación de reemplazos, cronogramas, visitas a sede, inspección de zonas críticas y atención de observaciones del cliente. Las instrucciones provienen del contrato, propuesta comercial, plan de trabajo, cronogramas e indicaciones adicionales comunicadas por WhatsApp o llamadas. La información queda distribuida entre documentos, hojas de cálculo, fotografías, formatos físicos y mensajería. Estima entre 30 y 45 minutos de consolidación diaria y entre dos y cuatro horas para reconstruir un reclamo importante. También señala que las correcciones no siempre quedan vinculadas con el problema original.
 
 ### 2.2.3. Análisis de entrevistas
 
-El análisis corresponde a las tres entrevistas documentadas para cada segmento. Los porcentajes describen únicamente la muestra exploratoria disponible y no deben interpretarse como estimaciones de toda la población de trabajadores o supervisores de limpieza.
+Los porcentajes siguientes describen únicamente a la muestra entrevistada.
 
 #### Segmento 1: Operarios - análisis preliminar (n = 3)
 
@@ -255,11 +220,9 @@ El análisis corresponde a las tres entrevistas documentadas para cada segmento.
 | Ha identificado alguna zona o periodo con conectividad reducida o problemática. | Objetiva / tecnológica | 3/3 (100 %) | José: sótano; Rodrigo: problemas previos de conectividad; Juan: zonas subterráneas |
 | Utiliza fotografías como evidencia en al menos algunas actividades. | Objetiva / operativa | 3/3 (100 %) | José, Rodrigo y Juan |
 | Considera útil contar con una referencia centralizada de actividades, estados o evidencias. | Subjetiva / expectativa | 3/3 (100 %) | José, Rodrigo y Juan |
-| Considera que la mensajería actual es necesariamente inadecuada o tediosa. | Subjetiva / frustración | No existe un patrón uniforme | José está habituado al canal; Juan identifica problemas de comunicación y Rodrigo utiliza mensajes o llamadas sin señalarlo como su principal dificultad |
+| Considera que la mensajería actual es necesariamente inadecuada o tediosa. | Subjetiva / frustración | Sin patrón común | José está habituado al canal; Juan identifica problemas de comunicación y Rodrigo utiliza mensajes o llamadas sin señalarlo como su principal dificultad |
 
-**Interpretación.** La evidencia preliminar indica que el problema no debe formularse simplemente como “WhatsApp es malo”. La mensajería resulta familiar y funcional para algunos operarios, pero la información puede perder contexto cuando se necesita relacionarla con una actividad específica, una zona, un horario, una excepción o una revisión posterior.
-
-Los tres operarios mencionan, con distinta intensidad, problemas relacionados con cambios operativos, falta de personal, falta de insumos o comunicación incompleta. También se identifican dificultades de conectividad en determinados espacios o momentos. Por ello, FA-05 se mantiene como una necesidad contextual que debe validarse según cada instalación y no como un requisito universal para todos los servicios.
+En los tres casos la mensajería sirve como herramienta cotidiana, pero no conserva por sí sola una relación estructurada entre una actividad, el resultado comunicado y la evidencia. Los impedimentos observados tampoco son exclusivamente tecnológicos: ausencias, falta de materiales, cambios de horario o zonas inaccesibles forman parte del contexto de ejecución. Esto refuerza la necesidad de registrar qué ocurrió y no limitar el modelo a “completado/no completado”.
 
 #### Segmento 2: Supervisores/coordinadores - análisis preliminar (n = 3)
 
@@ -271,13 +234,11 @@ Los tres operarios mencionan, con distinta intensidad, problemas relacionados co
 | Expresa la necesidad de contar con mayor visibilidad sobre el estado operativo. | Subjetiva / expectativa | 3/3 (100 %) | Leonardo, Andy y Valeria |
 | Gestiona ausencias, cobertura de personal o cambios operativos además del control del servicio. | Objetiva / operativa | 3/3 (100 %) | Leonardo, Andy y Valeria |
 | Mantiene evidencias dispersas o no vinculadas directamente con la obligación original. | Objetiva / operativa | 3/3 (100 %) | Leonardo, Andy y Valeria |
-| El supervisor es necesariamente el comprador o decisor del software. | Hipótesis comercial | No validado | Las entrevistas no demuestran autoridad de compra |
+| Expresa necesidad de mayor visibilidad del estado operativo. | Subjetiva / expectativa | No validado | 3/3 (100%) |
 
-**Interpretación.** Las entrevistas muestran que la supervisión combina coordinación de personal, revisión de actividades, inspección física, comunicación con operarios y atención de observaciones del cliente. En los casos de Leonardo y Andy, la información se gestiona principalmente mediante cuadernos, llamadas, WhatsApp, fotografías y formatos. Valeria incorpora además hojas de cálculo y carpetas digitales para consolidar la información.
+La supervisión combina coordinación de personal, inspección, evidencias, incidencias y atención de observaciones. El patrón más relevante es la dispersión de información: un caso puede requerir revisar conversaciones, archivos, formatos o volver a consultar a participantes. La gestión de ausencias aparece de forma recurrente, pero no se incorpora como módulo de recursos humanos; se considera únicamente cuando altera la asignación o ejecución de una obligación.
 
-El patrón común es la dispersión de la información. Cuando el cliente formula una observación, el supervisor debe revisar mensajes, fotografías, formatos, registros manuales y, en algunos casos, visitar nuevamente la sede. Esto respalda preliminarmente la existencia de un esfuerzo significativo para reconstruir el estado del servicio y consolidar reportes.
-
-La evidencia también muestra que el supervisor no solo gestiona cumplimiento. La cobertura de ausencias, la reorganización de turnos y la asignación de personal ocupan una parte importante de su trabajo. Por ello, Service Compliance debe reconocer este contexto operativo sin expandir automáticamente su alcance hacia un sistema de recursos humanos o control de personal.
+Las variables de personalidad, influencias, marcas y hábitos que no fueron recogidas de manera comparable en los seis resúmenes no se convierten en porcentajes ni se atribuyen a los arquetipos sin respaldo.
 
 #### Trazabilidad preliminar de investigación con Lean UX
 
@@ -299,13 +260,11 @@ La evidencia también muestra que el supervisor no solo gestiona cumplimiento. L
 | **FA-05** El almacenamiento local y la sincronización posterior reducirán la pérdida de registros ante conectividad limitada. | Los operarios y Valeria mencionan problemas de conectividad en determinadas zonas o momentos. | Apoyado de forma contextual, no universal. |
 | **BA-02** El comprador o decisor de Service Compliance puede ser distinto del usuario operativo. | Ninguna entrevista identifica con certeza quién aprueba o paga por un software de este tipo. | Pendiente de validación comercial. |
 
-
-
 <a id="23-needfinding"></a>
 
 ## 2.3. Needfinding
 
-Los artefactos de Needfinding sintetizan el proceso actual de los dos segmentos. Deben conservar trazabilidad con las entrevistas y evitar introducir funcionalidades que no se hayan derivado de necesidades o restricciones del proyecto.
+Los artefactos de Needfinding sintetizan los patrones identificados en las entrevistas y representan la situación actual antes de Service Compliance.
 
 ### 2.3.1. User Personas
 
@@ -321,7 +280,7 @@ Se mantiene un User Persona por cada segmento objetivo. Las fichas deben refleja
 
 ### 2.3.2. User Task Matrix.
 
-La matriz incluye tareas que los segmentos realizan **independientemente de Service Compliance**. No se incluyen como tareas “escanear QR”, “usar GPS”, “sincronizar” o “abrir dashboard”, porque esas serían decisiones de solución.
+La matriz recoge tareas que existen independientemente de Service Compliance.
 
 | Tarea actual | Operario — Frecuencia | Operario — Importancia | Supervisor — Frecuencia | Supervisor — Importancia |
 |---|---|---|---|---|
@@ -338,7 +297,7 @@ La matriz incluye tareas que los segmentos realizan **independientemente de Serv
 | Dar seguimiento a desviaciones hasta su atención. | Baja | Media | Media/Alta | Alta |
 | Consolidar el estado del servicio y elaborar reportes. | Baja | Baja | Media | Alta |
 
-**Lectura de la matriz.** Ambos segmentos coinciden en la necesidad de compartir una referencia sobre qué actividad se espera y qué ocurrió. El operario concentra frecuencia e importancia en ejecución y comunicación del resultado; el supervisor concentra importancia en coordinación, verificación, reconstrucción del estado y atención de desviaciones. Esto justifica experiencias móviles diferentes sin convertir al operario en responsable de interpretar reglas contractuales.
+El operario concentra su actividad en ejecución y comunicación del resultado. El supervisor concentra la coordinación, verificación, reconstrucción del estado y atención de desviaciones. La coincidencia entre ambos está en la necesidad de compartir una referencia sobre qué debía hacerse y qué ocurrió.
 
 ### 2.3.3. User Journey Mapping.
 
@@ -353,8 +312,6 @@ Los Journey Maps representan el proceso **As-Is**, es decir, la situación actua
 <img src="resources/11-chapter-02/Supervisor3.png">
 
 #### 2.3.3.1. As-Is Scenario Mapping
-
-La rúbrica exige también As-Is Scenario Mapping. La siguiente especificación resume los escenarios actuales y puede trasladarse a la herramienta indicada por el curso.
 
 ##### As-Is — Operario
 
@@ -391,9 +348,7 @@ Los Empathy Maps deben construirse a partir de los User Personas y entrevistas, 
 
 ### 2.3.5. Big Picture EventStorming
 
-El Big Picture EventStorming debe representar el **dominio del negocio actual**, no la interfaz ni la arquitectura de Service Compliance. Por ello los eventos se expresan en pasado y se excluyen términos como API, base de datos, sincronización, QR o GPS como si fueran eventos de dominio.
-
-La sesión colaborativa debe documentar al menos: exploración sin estructura, ordenamiento en timeline, identificación de pain points/hotspots y consolidación de eventos significativos.
+El Big Picture EventStorming representa el proceso de negocio actual sin introducir pantallas, APIs ni mecanismos técnicos como si fueran eventos de dominio. El artefacto se organiza en cuatro momentos de trabajo.
 
 #### Eventos de dominio propuestos para la sesión
 
@@ -432,7 +387,7 @@ La sesión colaborativa debe documentar al menos: exploración sin estructura, o
 
 #### Timeline propuesto para la sesión
 
-El ordenamiento en timeline se propone por fases del negocio (Contrato → Planificación → Ejecución → Revisión → Evaluación de cumplimiento → Corrección y cierre → Reporte). La numeración E1–E19 corresponde a los candidatos de la tabla anterior; los hot spots se contrastan durante la exploración.
+El ordenamiento en timeline se propone por fases del negocio (Contrato, Planificación, Ejecución, Revisión, Evaluación de cumplimiento, Corrección y cierre, Reporte). La numeración E1–E19 corresponde a los candidatos de la tabla anterior; los hot spots se contrastan durante la exploración.
 
 <img src="resources/11-chapter-02/big-picture-eventstorming.png">
 
@@ -466,7 +421,7 @@ El glosario utiliza términos del negocio en inglés y evita términos de ingeni
 
 ## 2.4. Requirements Specification
 
-Los requisitos se derivan de Lean UX, entrevistas y Needfinding, junto con restricciones académicas explícitas del curso. Se distinguen las necesidades del dominio de decisiones tecnológicas obligatorias: el curso exige experiencia móvil nativa y cross-platform, almacenamiento local, acceso a un recurso interno del dispositivo, RESTful API propia y un servicio externo de terceros.
+Los requisitos reflejan las necesidades identificadas en Needfinding y el alcance de Service Compliance. El producto contempla una aplicación Android nativa para el operario, una aplicación cross-platform para supervisores, una REST API propia, almacenamiento local para continuidad en campo y servicios externos cuando aportan una capacidad específica.
 
 ### To-Be Scenario Mapping
 
@@ -804,7 +759,7 @@ Los requisitos se derivan de Lean UX, entrevistas y Needfinding, junto con restr
 
 ### 2.4.2. Impact Mapping
 
-El Impact Map conecta Business Goals SMART con los User Personas, los cambios de comportamiento esperados, Deliverables y User Stories.
+Se establecen tres Business Goals para relacionar resultados de negocio, comportamientos de los User Personas y entregables del producto.
 
 #### Business Goals propuestos
 
@@ -827,7 +782,7 @@ El Impact Map conecta Business Goals SMART con los User Personas, los cambios de
 
 *Enlace del Trello*: https://trello.com/invite/b/6aac04da3175e8ef74c2b934/ATTI9a99c2adb3c18edd32f308698b0a396930149107/services-complinces
 
-El orden prioriza valor de negocio y reducción de riesgo. Authentication no se coloca en primer lugar. Las historias de Landing Page se consideran desde Sprint 1, como exige el enunciado. Los Story Points son una **estimación inicial** y deben ser ratificados por el equipo en la herramienta de gestión.
+El backlog prioriza el flujo central del producto y mantiene Authentication como capacidad habilitadora sin convertirla en la primera historia de valor. Las historias del Landing Page se incluyen desde Sprint 1.
 
 | Orden | Story ID | Título | Story Points | Sprint propuesto |
 |---:|---|---|---:|---:|
@@ -864,7 +819,7 @@ El orden prioriza valor de negocio y reducción de riesgo. Authentication no se 
 
 ### 2.5.1. EventStorming
 
-Con el objetivo de comprender a profundidad el dominio de la aplicación Service Compliance, se llevó a cabo una sesión de EventStorming de aproximadamente 2 horas. Esta sesión permitió identificar los eventos clave dentro del sistema, así como actores, comandos, agregados y posibles hotspots (dudas o riesgos del dominio). El enfoque se centró en capturar la mayor cantidad de conocimiento del dominio desde una perspectiva colaborativa, permitiendo así una primera aproximación al modelo general del negocio.
+El EventStorming estratégico representa el proceso objetivo del producto y utiliza eventos de negocio, no pantallas ni componentes técnicos.
 
 La herramienta utilizada para la sesión fue Miro, que facilitó la colaboración en tiempo real y la organización visual de los eventos. La sesión se dividió en las siguientes etapas:
 

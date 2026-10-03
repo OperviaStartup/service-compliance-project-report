@@ -4,31 +4,28 @@
 
 ### Repositorio del Project Report
 
-El informe del proyecto Service Compliance, desarrollado por el equipo Opervia, se mantiene en el siguiente repositorio de GitHub:
+El informe de Service Compliance, desarrollado por el equipo Opervia, se mantiene en el siguiente repositorio de GitHub:
 
-Repositorio:
+**Repositorio:**  
 https://github.com/OperviaStartup/service-compliance-project-report
 
-Durante la elaboración de la entrega AV1, el equipo distribuyó las actividades del informe de acuerdo con las secciones y artefactos requeridos. Los integrantes trabajaron sobre el mismo repositorio, registrando sus aportes mediante commits y realizando revisiones conjuntas para mantener coherencia entre la definición del problema, la investigación de usuarios, los requisitos y el diseño de la solución.
+Durante la elaboración de AV1, el equipo distribuyó el trabajo entre la definición y revisión del Capítulo I, investigación con usuarios, Needfinding, Requirements Specification y artefactos de diseño de software del Capítulo II. Los aportes fueron integrados progresivamente en el repositorio mediante commits y, en determinados trabajos de reconstrucción documental, mediante ramas y Pull Requests hacia `main`.
 
-La colaboración registrada en GitHub permite observar la participación de los integrantes en la construcción y actualización del Project Report. Las contribuciones realizadas corresponden a actividades de investigación, redacción, elaboración de artefactos, diagramación y revisión del contenido de la entrega.
+### Evidencia de colaboración — AV1
 
-### Evidencias de colaboración — AV1
-
-Contribuciones al repositorio
 <img src="../resources/front-matter/commits-general.png" alt="Contribuciones de los integrantes al Project Report">
 
-Figura 1. Analíticos de contribución del repositorio del Project Report durante la elaboración de AV1.
+*Figura 1. Analíticos de contribución del repositorio del Project Report durante AV1.*
 
-La figura muestra la distribución de commits realizados por los integrantes que han registrado contribuciones en el repositorio durante el periodo correspondiente a la entrega.
+Al cierre de la elaboración de AV1, el historial del repositorio registra contribuciones de los seis integrantes del equipo.
 
-### Distribución de la colaboración por integrante
+| Integrante | Usuario de GitHub | Principales aportes en AV1 |
+|---|---|---|
+| Arias Tasayco, Jean Pool Alexander | `Jean-AT` | Capítulo I, revisión e integración del informe, EventStorming y preparación del documento final. |
+| Ayasta Martel, Zayd Jaffar | `ZaydAyasta` | Requirements Specification, revisión del Capítulo I y Capitulo II, front matter, tabla de contenidos y documentación general del repositorio. |
+| Blancas Chávez, Carlos Franco | `CarlosBlancas969` | Strategic-Level Domain-Driven Design y artefactos relacionados del Capítulo II. |
+| Flores Eusebio, Angel Thyago | `angelfdevs` | Análisis competitivo, entrevistas y actualización de evidencias y contenido del Capítulo II. |
+| Montes Maza, Augusto Sebastian | `asmmaza` | User Personas, Journey Mapping, Empathy Mapping y otros artefactos de Needfinding. |
+| Sánchez Espinoza, Mathias Enrique | `Nounz27` | Diseño y actualización de entrevistas, análisis asociado y recursos del Capítulo II. |
 
-| Integrante                         | Principales actividades realizadas                                                                                                      |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Arias Tasayco, Jean Pool Alexander | Estructuración y revisión general del informe, desarrollo del Capítulo I y apoyo en la integración de artefactos de diseño de software. |
-| Blancas Chávez, Carlos Franco      | Desarrollo y revisión de los artefactos relacionados con Strategic-Level Domain-Driven Design.                                          |
-| Flores Eusebio, Angel Thyago       | Investigación de competidores, análisis competitivo y definición de estrategias frente a competidores.                                  |
-| Sánchez Espinoza, Mathias Enrique  | Diseño y documentación del proceso de entrevistas dirigido a los segmentos objetivo.                                                    |
-| Montes Maza, Augusto Sebastian     | Elaboración y revisión de artefactos de Needfinding.                                                                                    |
-| Ayasta Martel, Zayd Jaffar         | Elaboración de Requirements Specification, incluyendo User Stories, Impact Mapping y Product Backlog.                                   |
+La evidencia mostrada corresponde al historial de commits del repositorio y es consistente con las modificaciones relevantes resumidas en el Registro de Versiones del Informe.
