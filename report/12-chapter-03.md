@@ -76,6 +76,57 @@ La jerarquía tipográfica de Service Compliance se organiza en varios niveles, 
 
 - **Botones:** IBM Plex Sans Semibold, 14–16 sp. Destaca acciones disponibles, como “Ver detalle” o “Registrar atención”.
 
+### Paleta de colores
+
+- Azul primario (#0875EE)
+  - Fondo de botones principales; texto de botones secundarios; interruptores activos.
+ 
+- Azul marino (#07133F)
+  - Títulos de pantalla y títulos de sección.
+ 
+- Gris de texto (#616B78)
+  - Texto descriptivo y contenido general.
+ 
+- Azul claro de estado (#E5F1FB)
+  - Fondo de la etiqueta En curso.
+ 
+- Azul medio de estado (#26709E)
+  - Texto de la etiqueta En curso.
+
+- Gris claro de estado (#E8EEF5)
+  - Fondo de la etiqueta Asignada.
+ 
+- Gris oscuro de estado (#475569)
+  - Texto de la etiqueta Asignada y color del estado Pendiente de evaluación en el reporte rápido.
+
+- Verde agua claro de estado (#CCFBF1)
+  - Fondo de la etiqueta Enviado.
+ 
+- Verde azulado de estado (#0F766E)
+  - Texto de la etiqueta Enviado y color del estado Cumple en el reporte rápido.
+
+- Amarillo claro de estado (#FEF3C7)
+  - Fondo de la etiqueta Exceptuada.
+
+- Marrón de estado (#92400E)
+  - Texto de la etiqueta Exceptuada y color de Excepción aceptada en el reporte rápido.
+ 
+- Rojo claro de estado (#FEE2E2)
+  - Fondo de una etiqueta de estado de error o incumplimiento.
+ 
+- Rojo de estado (#B91C1C)
+  - Texto de esa etiqueta y color del estado Incumplimiento en el reporte rápido.
+
+- Blanco (#FFFFFF)
+  - Fondo de las cards.
+
+- Rosa muy claro de error (#FFF1F2)
+  - Fondo del campo de credenciales cuando el login presenta un error.
+ 
+- Rojo de error (#BA1A1A)
+  - Borde del campo de credenciales con error.
+ 
+
 
 ### Voz y tono
 
