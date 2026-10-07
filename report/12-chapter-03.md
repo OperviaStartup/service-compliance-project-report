@@ -179,7 +179,7 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 * **Wireframe 07: Captura de Evidencia - Cámara Overlay (`Opervia Skeleton - Camera Overlay`)**
 
     <img src="resources/12-chapter-03/wireframe-07-camera-overlay.png">
-  ![Wireframe Camera Overlay](resources/12-chapter-03/wireframe-07-camera-overlay.png)
+
   * **Propósito:** Captura de fotografías con estampación en tiempo real de metadatos de validación (US-06).
   * **Componentes:** Retícula de encuadre, overlay visual con coordenadas GPS (Lat/Long), nivel de precisión en metros y timestamp UTC.
 
