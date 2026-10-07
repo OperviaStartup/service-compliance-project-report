@@ -132,17 +132,18 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 ##### Módulo 1: Autenticación y Registro de Usuarios
 
 * **Wireframe 01: Inicio de Sesión (`Opervia Skeleton - Login`)**
-  ![Wireframe Login](resources/12-chapter-02/imagenes/wireframe-01-login.png)
+* 
+  ![Wireframe Login](resources/12-chapter-02/wireframe-01-login.png)
   * **Propósito:** Autenticación segura del personal operativo y supervisores mediante credenciales corporativas.
   * **Componentes:** Formulario de ingreso (usuario/correo, contraseña), botón "Iniciar Sesión" y recuperación de contraseña.
 
 * **Wireframe 02: Verificación OTP / 2FA (`Opervia Skeleton - OTP Verification`)**
-  ![Wireframe OTP](resources/12-chapter-02/imagenes/wireframe-02-otp.png)
+  ![Wireframe OTP](resources/12-chapter-02/wireframe-02-otp.png)
   * **Propósito:** Doble factor de autenticación para garantizar la seguridad en dispositivos de campo.
   * **Componentes:** Input numérico de 6 dígitos, temporizador de reenvío de código y botón de confirmación.
 
 * **Wireframe 03: Registro de Cuenta / Perfil (`Opervia Skeleton - Account Registration`)**
-  ![Wireframe Registration](resources/12-chapter-02/imagenes/wireframe-03-registration.png)
+  ![Wireframe Registration](resources/12-chapter-02/wireframe-03-registration.png)
   * **Propósito:** Configuración inicial del perfil de usuario, rol asignado y área/cuadrilla operativa.
 
 ---
@@ -150,37 +151,37 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 ##### Módulo 2: Ejecución de Trabajos, Evidencias y Sincronización (Operario)
 
 * **Wireframe 04: Panel Diario / Dispatch Móvil (`Opervia Skeleton - Field Dispatch`)**
-  ![Wireframe Dispatch](resources/12-chapter-02/imagenes/wireframe-04-dispatch.png)
+  ![Wireframe Dispatch](resources/12-chapter-02/wireframe-04-dispatch.png)
   * **Propósito:** Vista principal del operario con el listado de obligaciones y órdenes de trabajo asignadas para el día.
   * **Componentes:** Barra de búsqueda, filtro por estado (Pendiente, En Curso, Completado), tarjetas de órdenes con horarios/prioridad y barra de navegación inferior.
 
 * **Wireframe 05: Detalle de Orden de Trabajo (`Opervia Skeleton - Work Order Detail - Overview`)**
-  ![Wireframe Work Order Detail](resources/12-chapter-02/imagenes/wireframe-05-work-order-detail.png)
+  ![Wireframe Work Order Detail](resources/12-chapter-02/wireframe-05-work-order-detail.png)
   * **Propósito:** Visualización de especificaciones técnicas, ubicación y requerimientos antes de iniciar la tarea.
   * **Componentes:** Datos del sitio/cliente, temporizador de actividad, lista de chequeo (checklist) interactivas y botón principal "Iniciar Actividad".
 
 * **Wireframe 06: Ejecución y Checklist (`Opervia Skeleton - Work Order Detail - Execution`)**
-  ![Wireframe Execution Checklist](resources/12-chapter-02/imagenes/wireframe-06-execution.png)
+  ![Wireframe Execution Checklist](resources/12-chapter-02/wireframe-06-execution.png)
   * **Propósito:** Seguimiento en tiempo real del progreso del mantenimiento u obligación legal.
   * **Componentes:** Checkbox de tareas completadas, campo de observaciones rápidas y botón para adjuntar evidencias.
 
 * **Wireframe 07: Captura de Evidencia - Cámara Overlay (`Opervia Skeleton - Camera Overlay`)**
-  ![Wireframe Camera Overlay](resources/12-chapter-02/imagenes/wireframe-07-camera-overlay.png)
+  ![Wireframe Camera Overlay](resources/12-chapter-02/wireframe-07-camera-overlay.png)
   * **Propósito:** Captura de fotografías con estampación en tiempo real de metadatos de validación (US-06).
   * **Componentes:** Retícula de encuadre, overlay visual con coordenadas GPS (Lat/Long), nivel de precisión en metros y timestamp UTC.
 
 * **Wireframe 08: Galería de Evidencias y Firma Digital (`Opervia Skeleton - Evidence Preview & Sign`)**
-  ![Wireframe Evidence Sign](resources/12-chapter-02/imagenes/wireframe-08-evidence-sign.png)
+  ![Wireframe Evidence Sign](resources/12-chapter-02/wireframe-08-evidence-sign.png)
   * **Propósito:** Revisión de fotografías adjuntas y captura de firma manuscrita de conformidad del cliente/supervisor.
   * **Componentes:** Carrusel de fotos capturadas, selector de categoría (Antes/Después/Documento), lienzo de firma manuscrita y botón "Finalizar Tarea".
 
 * **Wireframe 09: Confirmación de Envío / Éxito (`Opervia Skeleton - Task Completion Success`)**
-  ![Wireframe Task Success](resources/12-chapter-02/imagenes/wireframe-09-success.png)
+  ![Wireframe Task Success](resources/12-chapter-02/wireframe-09-success.png)
   * **Propósito:** Confirmar al operario que la tarea se registró correctamente en la plataforma.
   * **Componentes:** Modal de éxito con Checkmark, resumen del tiempo invertido y botón de retorno al dispatch.
 
 * **Wireframe 10: Resumen de Historial Diario (`Opervia Skeleton - Daily Summary Log`)**
-  ![Wireframe Daily Log](resources/12-chapter-02/imagenes/wireframe-10-daily-log.png)
+  ![Wireframe Daily Log](resources/12-chapter-02/wireframe-10-daily-log.png)
   * **Propósito:** Consulta de actividades completadas e historial de intervenciones durante la jornada.
 
 ---
@@ -188,36 +189,36 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 ##### Módulo 3: Supervisión, Control en Sitio y Auditoría (Supervisor)
 
 * **Wireframe 11: Dashboard de Supervisión (`Opervia Skeleton - Supervision & Field Control`)**
-  ![Wireframe Supervision](resources/12-chapter-02/imagenes/wireframe-11-supervision.png)
+  ![Wireframe Supervision](resources/12-chapter-02/wireframe-11-supervision.png)
   * **Propósito:** Monitoreo del estado general de las cuadrillas y cumplimiento de obligaciones en mapa/lista.
   * **Componentes:** Métricas KPI rápidas (Avance %, Tareas Retrasadas, Alertas), mapa con pines de ubicación y selector de fecha.
 
 * **Wireframe 12: Mapa de Control de Nodos (`Opervia Skeleton - Node Control Map`)**
-  ![Wireframe Node Map](resources/12-chapter-02/imagenes/wireframe-12-node-map.png)
+  ![Wireframe Node Map](resources/12-chapter-02/wireframe-12-node-map.png)
   * **Propósito:** Geolocalización en tiempo real de los técnicos y sitios de trabajo.
   * **Componentes:** Visor interactivo de mapa, filtros por zona geográfica y lista lateral de operarios activos.
 
 * **Wireframe 13: Detalle de Control de Nodo (`Opervia Skeleton - Node Control Detail`)**
-  ![Wireframe Node Detail](resources/12-chapter-02/imagenes/wireframe-13-node-detail.png)
+  ![Wireframe Node Detail](resources/12-chapter-02/wireframe-13-node-detail.png)
   * **Propósito:** Inspección técnica profunda del estado de cumplimiento de una estación o sede específica.
   * **Componentes:** Historial de mantenimiento del sitio, responsable asignado y estado de alertas críticas.
 
 * **Wireframe 14: Gestión de Incidentes (`Opervia Skeleton - Incident Resolution`)**
-  ![Wireframe Incident Resolution](resources/12-chapter-02/imagenes/wireframe-14-incident.png)
+  ![Wireframe Incident Resolution](resources/12-chapter-02/wireframe-14-incident.png)
   * **Propósito:** Registro y atención inmediata de bloqueos o fallas imprevistas informadas desde el campo.
   * **Componentes:** Nivel de severidad (Alta/Media/Baja), fotos del problema, asignación de responsable y botón "Resolver Incidente".
 
 * **Wireframe 15: Métricas de Rendimiento (`Opervia Skeleton - Performance Metrics`)**
-  ![Wireframe Performance Metrics](resources/12-chapter-02/imagenes/wireframe-15-metrics.png)
+  ![Wireframe Performance Metrics](resources/12-chapter-02/wireframe-15-metrics.png)
   * **Propósito:** Evaluación del desempeño técnico por operario o cuadrilla.
   * **Componentes:** Gráficos de barras/dona con porcentaje de cumplimiento, tiempos promedio de atención y calificación de calidad.
 
 * **Wireframe 16: Control de Asistencia y Bitácora (`Opervia Skeleton - Attendance & Shift Log`)**
-  ![Wireframe Attendance](resources/12-chapter-02/imagenes/wireframe-16-attendance.png)
+  ![Wireframe Attendance](resources/12-chapter-02/wireframe-16-attendance.png)
   * **Propósito:** Control del marcaje de entrada/salida y cumplimiento de turnos del equipo de trabajo.
 
 * **Wireframe 17: Reasignación Manual (`Opervia Skeleton - Manual Dispatch Override`)**
-  ![Wireframe Dispatch Override](resources/12-chapter-02/imagenes/wireframe-17-override.png)
+  ![Wireframe Dispatch Override](resources/12-chapter-02/wireframe-17-override.png)
   * **Propósito:** Permitir al supervisor reasignar órdenes de trabajo en caso de imprevistos o ausencias.
 
 ---
@@ -225,27 +226,27 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 ##### Módulo 4: Análisis, Reportes y Sincronización Offline
 
 * **Wireframe 18: Centro de Analítica Móvil (`Opervia Skeleton - Analytics Center`)**
-  ![Wireframe Analytics](resources/12-chapter-02/imagenes/wireframe-18-analytics.png)
+  ![Wireframe Analytics](resources/12-chapter-02/wireframe-18-analytics.png)
   * **Propósito:** Visualización ejecutiva de indicadores clave de cumplimiento normativo y SLA.
 
 * **Wireframe 19: Gráficos de Tendencia (`Opervia Skeleton - Trend Analysis Chart`)**
-  ![Wireframe Trend Analysis](resources/12-chapter-02/imagenes/wireframe-19-trend.png)
+  ![Wireframe Trend Analysis](resources/12-chapter-02/wireframe-19-trend.png)
   * **Propósito:** Evaluación del histórico de fallas y cumplimiento a lo largo del tiempo.
 
 * **Wireframe 20: Detalle de Alertas Críticas (`Opervia Skeleton - Alert Center`)**
-  ![Wireframe Alert Center](resources/12-chapter-02/imagenes/wireframe-20-alerts.png)
+  ![Wireframe Alert Center](resources/12-chapter-02/wireframe-20-alerts.png)
   * **Propósito:** Centro de notificaciones para eventos que requieren atención inmediata o riesgo de sanción.
 
 * **Wireframe 21: Ajustes y Configuración (`Opervia Skeleton - App Settings`)**
-  ![Wireframe Settings](resources/12-chapter-02/imagenes/wireframe-21-settings.png)
+  ![Wireframe Settings](resources/12-chapter-02/wireframe-21-settings.png)
   * **Propósito:** Gestión de parámetros de la aplicación, almacenamiento local y descargas de mapas.
 
 * **Wireframe 22: Perfil de Usuario (`Opervia Skeleton - User Profile`)**
-  ![Wireframe Profile](resources/12-chapter-02/imagenes/wireframe-22-profile.png)
+  ![Wireframe Profile](resources/12-chapter-02/wireframe-22-profile.png)
   * **Propósito:** Información del técnico, credenciales activas y certificado digital de operario.
 
 * **Wireframe 23: Centro de Sincronización Offline (`Opervia Skeleton - Offline Sync Center`) [US-08]**
-  ![Wireframe Offline Sync](resources/12-chapter-02/imagenes/wireframe-23-sync.png)
+  ![Wireframe Offline Sync](resources/12-chapter-02/wireframe-23-sync.png)
   * **Propósito:** Panel de control para la gestión de cola de datos locales cuando no hay cobertura de red.
   * **Componentes:**
     * Indicador de estado de conexión ("Modo Offline Activo").
