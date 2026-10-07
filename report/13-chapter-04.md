@@ -25,7 +25,6 @@ Este capítulo documenta el TB1 – Stage Review y el Sprint 1 de Service Compli
 
 Repositorio backend: https://github.com/OperviaStartup/serviceComplianceAPI
 
-<!-- Evidencia requerida: captura de Java 17, IDE, Docker, PostgreSQL y estructura de repositorios. -->
 ![Entorno de desarrollo](resources/13-chapter-04/01-development-environment.png)
 
 *Figura 4.1. Entorno de desarrollo.*
@@ -165,37 +164,59 @@ US-18 y US-19 quedan a cargo del responsable del Landing Page.
 
 <a id="4214-development-evidence-for-sprint-review"></a>
 
-| Evidencia | Contenido | Ruta esperada |
-|---|---|---|
-| E1 | Paquetes DDD | resources/13-chapter-04/08-ddd-source-tree.png |
-| E2 | Autenticación | resources/13-chapter-04/09-authentication-implementation.png |
-| E3 | Roles | resources/13-chapter-04/10-role-authorization.png |
-| E4 | Obligación | resources/13-chapter-04/11-obligation-implementation.png |
-| E5 | Ejecución/evidencia | resources/13-chapter-04/12-execution-evidence-implementation.png |
-| E6 | Flyway/PostgreSQL | resources/13-chapter-04/13-postgresql-flyway.png |
-| E7 | Docker/Render | resources/13-chapter-04/14-docker-render-configuration.png |
+| Evidencia | Contenido |
+|---|---|
+| E1 | Paquetes DDD |
+| E2 | Autenticación |
+| E3 | Roles |
+| E4 | Obligación |
+| E5 | Ejecución/evidencia |
+| E6 | Flyway/PostgreSQL |
+| E7 | Docker/Render |
 
-<!-- Insertar en las rutas anteriores las capturas reales. -->
+E1 : Paquetes DDD
+
+![Paquetes DDD](resources/13-chapter-04/08-ddd-source-tree.png)
+
+E2 : Autenticación
+
+![Autenticación](resources/13-chapter-04/09-authentication-implementation.png)
+
+E3 : Roles
+
+![Roles](resources/13-chapter-04/10-role-authorization.png)
+
+E4 : Obligación
+
+![Obligación](resources/13-chapter-04/11-obligation-implementation.png)
+
+E5 : Ejecución/evidencia
+
+![Ejecución/evidencia](resources/13-chapter-04/12-execution-evidence-implementation.png)
+
+E6 : Flyway/PostgreSQL
+
+![Flyway/PostgreSQL](resources/13-chapter-04/13-postgresql-flyway.png)
+
+E7 : Docker/Render
+
+![Docker/Render](resources/13-chapter-04/14-docker-render-configuration.png)
 
 #### 4.2.1.5. Testing Suite Evidence for Sprint Review
 
 <a id="4215-testing-suite-evidence-for-sprint-review"></a>
 
-| Prueba | Resultado esperado | Ruta esperada |
+| Prueba | Resultado esperado |
 |---|---|---|
-| Registro de operador | 201 Created | resources/13-chapter-04/15-test-register.png |
-| Login operador/supervisor | 200 OK y JWT | resources/13-chapter-04/16-test-login.png |
-| Crear obligación como supervisor | 201 Created | resources/13-chapter-04/17-test-create-obligation.png |
-| Crear obligación como operador | 403 Forbidden | resources/13-chapter-04/18-test-role-forbidden.png |
-| Consultar obligaciones | 200 OK | resources/13-chapter-04/19-test-assigned-obligations.png |
-| Crear ejecución | 201 Created | resources/13-chapter-04/20-test-create-execution.png |
-| Registrar evidencia | 201 Created | resources/13-chapter-04/21-test-create-evidence.png |
-| Request inválido | 400 con errores | resources/13-chapter-04/22-test-validation-error.png |
-| Token ausente/inválido | 401 Unauthorized | resources/13-chapter-04/23-test-unauthorized.png |
-
-![Resultados de pruebas](resources/13-chapter-04/24-test-suite-results.png)
-
-*Figura 4.8. Suite automatizada.*
+| Registro de operador | 201 Created |
+| Login operador/supervisor | 200 OK y JWT |
+| Crear obligación como supervisor | 201 Created |
+| Crear obligación como operador | 403 Forbidden |
+| Consultar obligaciones | 200 OK |
+| Crear ejecución | 201 Created |
+| Registrar evidencia | 201 Created |
+| Request inválido | 400 con errores |
+| Token ausente/inválido | 401 Unauthorized |
 
 #### 4.2.1.6. Execution Evidence for Sprint Review
 
@@ -247,26 +268,21 @@ Swagger: /swagger-ui.html. OpenAPI: /api-docs.
 
 *Figura 4.10. Swagger con Bearer JWT.*
 
-![Errores Swagger](resources/13-chapter-04/27-swagger-error-responses.png)
-
-*Figura 4.11. Errores manejables documentados.*
-
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
 <a id="4218-software-deployment-evidence-for-sprint-review"></a>
 
 | Verificación | URL esperada |
 |---|---|
-| Health check | https://<service-name>.onrender.com/health |
-| Swagger | https://<service-name>.onrender.com/swagger-ui.html |
-| OpenAPI | https://<service-name>.onrender.com/api-docs |
+| Health check | https://service-compliance-api.onrender.com/health |
+| Swagger | https://service-compliance-api.onrender.com/swagger-ui.html |
+| OpenAPI | https://service-compliance-api.onrender.com/api-docs |
 
-<!-- Reemplazar <service-name> por el nombre real de Render. -->
-![Servicio Live en Render](resources/13-chapter-04/28-render-service-live.png)
+![Servicio Live en Render](resources/13-chapter-04/14-docker-render-configuration.png)
 
 *Figura 4.12. Backend desplegado.*
 
-![Health y Swagger públicos](resources/13-chapter-04/29-public-health-swagger.png)
+![Health y Swagger públicos](resources/13-chapter-04/14-docker-render-configuration.png)
 
 *Figura 4.13. Health check y Swagger públicos.*
 
@@ -287,40 +303,6 @@ Swagger: /swagger-ui.html. OpenAPI: /api-docs.
 
 *Figura 4.14. Colaboración del equipo.*
 
-## 4.3. Validation Interviews
-
-<a id="43-validation-interviews"></a>
-
-La validación debe comprobar el flujo para supervisores/coordinadores y operarios de limpieza tercerizada. No se deben presentar como terminadas funcionalidades posteriores.
-
-### 4.3.1. Diseño de entrevistas
-
-<a id="431-diseno-de-entrevistas"></a>
-
-**Objetivo:** validar autenticación, consulta de obligaciones, registro de ejecución y evidencia.
-
-| Perfil | Tarea | Pregunta |
-|---|---|---|
-| Supervisor | Revisar obligación/ejecución | ¿La información permite comprender lo ocurrido? |
-| Operario | Login y consulta | ¿Puedes identificar qué realizar, dónde y cuándo? |
-| Operario | Ejecución/evidencia | ¿El flujo refleja tu trabajo y es comprensible? |
-
-![Guion de entrevista](resources/13-chapter-04/31-validation-interview-script.png)
-
-*Figura 4.15. Guion de validación.*
-
-### 4.3.2. Registro de entrevistas
-
-<a id="432-registro-de-entrevistas"></a>
-
-Completar con datos reales, sin inventar participantes ni respuestas.
-
-| Participante | Perfil | Fecha | Hallazgo | Evidencia |
-|---|---|---|---|---|
-| Nombre real | Supervisor/coordinador | dd/mm/aaaa | Hallazgo | resources/13-chapter-04/32-interview-supervisor.png |
-| Nombre real | Operario | dd/mm/aaaa | Hallazgo | resources/13-chapter-04/33-interview-operator.png |
-| Nombre real | Operario | dd/mm/aaaa | Hallazgo | resources/13-chapter-04/34-interview-execution.png |
-
 ### 4.3.3. Evaluaciones según heurísticas
 
 <a id="433-evaluaciones-segun-heuristicas"></a>
@@ -334,10 +316,6 @@ Completar con datos reales, sin inventar participantes ni respuestas.
 | Prevención | Valida campos antes de enviar | Completar | Completar |
 | Recuperación | Mensajes indican cómo corregir | Completar | Completar |
 | Documentación | Swagger explica endpoints y errores | Completar | Completar |
-
-![Evaluación heurística](resources/13-chapter-04/35-heuristic-evaluation.png)
-
-*Figura 4.16. Evaluación heurística.*
 
 ## Cierre del Sprint 1
 
