@@ -103,6 +103,8 @@ Repositorio local: `https://github.com/OperviaStartup/service-compliance-landing
 
 #### 4.2.1.1. Estructura y organización
 
+<a id="42111-estructura-y-organizacion"></a>
+
 El archivo `index.html` está organizado mediante comentarios de sección, encabezado principal, navegación, contenido principal y pie de página. El contenido principal se divide en nueve secciones funcionales:
 
 | Sección | Propósito | Backlog |
@@ -125,6 +127,8 @@ La comprobación estructural confirmó nueve secciones abiertas y nueve cerradas
 
 #### 4.2.1.2. Responsive Web Design
 
+<a id="42112-responsive-web-design"></a>
+
 La Landing Page utiliza clases responsive para adaptar grillas, espaciado, tipografía, navegación, cards, CTAs y mockups. Las vistas de referencia para TB1 son desktop de 1440 px y mobile de 390 px.
 
 ![Landing Page desktop](resources/13-chapter-04/37-landing-desktop.png)
@@ -137,6 +141,8 @@ La Landing Page utiliza clases responsive para adaptar grillas, espaciado, tipog
 
 #### 4.2.1.3. Internationalization and Accessibility
 
+<a id="42113-internationalization-and-accessibility"></a>
+
 La interfaz inicia en español mediante `lang="es"` y cuenta con el selector `languageToggle` para cambiar entre español e inglés. El script traduce los nodos de texto visibles mediante un diccionario que cubre navegación, mockups, diagnóstico, workflow, beneficios, precios, CTA y pie de página. El idioma seleccionado se conserva en `localStorage` con la clave `opervia-language`.
 
 La accesibilidad estructural implementada incluye `aria-label` en header, navegación, footer y selector de idioma; botón de idioma con `type="button"`; estructura semántica con `header`, `nav`, `main`, `section` y `footer`; y soporte para `prefers-reduced-motion`.
@@ -146,6 +152,8 @@ La accesibilidad estructural implementada incluye `aria-label` en header, navega
 *Figura 4.20. Internacionalización español/inglés.*
 
 #### 4.2.1.4. SEO, navegación y despliegue
+
+<a id="42114-seo-navegacion-y-despliegue"></a>
 
 La página incluye título descriptivo, meta description, navegación por anclas internas y enlaces hacia Producto, Cómo funciona, Beneficios, Precios, Nosotros y Demo. No se detectaron referencias relativas a assets locales; la página es autocontenida y utiliza dependencias externas declaradas.
 
@@ -157,6 +165,12 @@ El archivo `.github/workflows/pages.yml` automatiza el despliegue a GitHub Pages
 
 <!-- Reemplazar con la URL pública real después de verificar GitHub Pages. -->
 **URL pública:** `https://operviastartup.github.io/service-compliance-landingpage/`
+
+#### 4.2.1.5. Términos y condiciones
+
+<a id="42115-terminos-y-condiciones"></a>
+
+<!-- Responsable del Landing Page: completar con los enlaces reales a Términos del Servicio y Política de Privacidad, tanto en el footer como en el flujo de registro de la aplicación móvil. -->
 
 ### 4.2.2. Sprint 1 — Backend foundation and core operational flow
 
@@ -365,6 +379,42 @@ Swagger: /swagger-ui.html. OpenAPI: /api-docs.
 ![Colaboración Sprint 1](resources/13-chapter-04/30-sprint-collaboration.png)
 
 *Figura 4.14. Colaboración del equipo.*
+
+## 4.3. Validation Interviews
+
+<a id="43-validation-interviews"></a>
+
+La validación del Sprint 1 comprueba que el flujo de autenticación, consulta de obligaciones, registro de ejecución y evidencia es comprensible para supervisores/coordinadores y operarios de limpieza tercerizada.
+
+### 4.3.1. Diseño de entrevistas
+
+<a id="431-diseno-de-entrevistas"></a>
+
+**Objetivo:** validar la comprensión y utilidad del flujo implementado en la Landing Page, las pantallas core móviles y el backend REST.
+
+| Perfil | Tarea | Pregunta principal |
+|---|---|---|
+| Supervisor/coordinador | Revisar obligación y ejecución | ¿La información permite comprender qué se planificó y qué ocurrió? |
+| Operario | Iniciar sesión y consultar obligaciones | ¿Puedes identificar qué realizar, dónde y cuándo? |
+| Operario | Registrar ejecución y evidencia | ¿El flujo refleja tu trabajo y es comprensible? |
+
+![Guion de entrevista de validación](resources/13-chapter-04/31-validation-interview-script.png)
+
+*Figura 4.15. Guion de entrevista de validación del Sprint 1.*
+
+### 4.3.2. Registro de entrevistas
+
+<a id="432-registro-de-entrevistas"></a>
+
+Completar esta tabla únicamente con datos reales de las entrevistas realizadas. La rúbrica exige registrar información del participante, evidencia en video y el análisis de sus apreciaciones.
+
+| Participante | Perfil | Fecha | Funcionalidad observada | Hallazgo | Evidencia/video |
+|---|---|---|---|---|---|
+| Nombre real | Supervisor/coordinador | dd/mm/aaaa | Landing Page y revisión de obligación | Hallazgo | resources/13-chapter-04/32-interview-supervisor.png / URL OneDrive |
+| Nombre real | Operario | dd/mm/aaaa | Login y consulta de obligaciones | Hallazgo | resources/13-chapter-04/33-interview-operator.png / URL OneDrive |
+| Nombre real | Operario | dd/mm/aaaa | Ejecución y evidencia | Hallazgo | resources/13-chapter-04/34-interview-execution.png / URL OneDrive |
+
+<!-- Completar nombres, edad, distrito, URL del video, timing y duración. Ocultar datos personales innecesarios. -->
 
 ### 4.3.3. Evaluaciones según heurísticas
 
