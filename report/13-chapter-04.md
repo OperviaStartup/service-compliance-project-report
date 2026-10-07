@@ -99,7 +99,7 @@ Render ejecuta un Web Service Docker conectado a PostgreSQL. El Dockerfile compi
 
 La Landing Page de Opervia / Service Compliance se implementó como un sitio estático autocontenido en un único archivo HTML. Su objetivo es comunicar la propuesta de valor, explicar el flujo de cumplimiento y orientar al visitante hacia la solicitud de una demostración. La implementación conserva el lenguaje visual definido por el equipo y adapta la experiencia para escritorio y móvil.
 
-Repositorio local: `C:\Users\JariasT\IdeaProjects\service-compliance-landing`.
+Repositorio local: `https://github.com/OperviaStartup/service-compliance-landingpage`.
 
 #### 4.2.1.1. Estructura y organización
 
@@ -145,10 +145,6 @@ La accesibilidad estructural implementada incluye `aria-label` en header, navega
 
 *Figura 4.20. Internacionalización español/inglés.*
 
-![Accesibilidad de la Landing Page](resources/13-chapter-04/40-landing-accessibility.png)
-
-*Figura 4.21. Estructura semántica y atributos accesibles.*
-
 #### 4.2.1.4. SEO, navegación y despliegue
 
 La página incluye título descriptivo, meta description, navegación por anclas internas y enlaces hacia Producto, Cómo funciona, Beneficios, Precios, Nosotros y Demo. No se detectaron referencias relativas a assets locales; la página es autocontenida y utiliza dependencias externas declaradas.
@@ -160,15 +156,7 @@ El archivo `.github/workflows/pages.yml` automatiza el despliegue a GitHub Pages
 *Figura 4.22. Workflow de despliegue de la Landing Page.*
 
 <!-- Reemplazar con la URL pública real después de verificar GitHub Pages. -->
-**URL pública:** `<completar URL de GitHub Pages>`
-
-![Landing Page publicada](resources/13-chapter-04/42-landing-publicada.png)
-
-*Figura 4.23. Landing Page publicada en GitHub Pages.*
-
-#### 4.2.1.5. Términos y condiciones
-
-<!-- RESPONSABLE DEL LANDING PAGE: completar con la ubicación real de Términos del Servicio, Política de Privacidad y evidencia de sus enlaces en el footer. La rúbrica exige estos documentos en Landing Page y aplicación móvil durante el registro. -->
+**URL pública:** `https://operviastartup.github.io/service-compliance-landingpage/`
 
 ### 4.2.2. Sprint 1 — Backend foundation and core operational flow
 
