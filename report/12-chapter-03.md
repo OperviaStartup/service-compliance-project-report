@@ -1,36 +1,40 @@
-Capítulo III: Solution UI/UX Design
+# Capítulo III: Solution UI/UX Design
 
 <a id="31-product-design"></a>
 
-3.1. Product design
+## 3.1. Product design
 
 <a id="311-style-guidelines"></a>
 
-3.1.1. Style Guidelines
+### 3.1.1. Style Guidelines
 
 <a id="3111-general-style-guidelines"></a>
 
-3.1.1.1. General Style Guidelines
+#### 3.1.1.1. General Style Guidelines
+
+La propuesta visual utiliza un fondo geométrico en tonos celestes, superficies blancas para las cards y azul intenso para las acciones principales y los elementos seleccionados de navegación. Se mantiene un color en especifico para cada encabezado dentro de la aplicacion, lo que establece una jerarquía entre el nombre de la pantalla, sus secciones y los detalles de cada registro.
+Los estados se identifican mediante etiquetas textuales y colores de apoyo. El color acompaña el significado del estado; la etiqueta mantiene esa información visible por sí misma.
+La interfaz procura conservar una estructura recurrente: encabezado, contexto del caso, contenido agrupado y acción principal cuando corresponde. Las cards redondeadas y las separaciones constantes ayudan a mantener la continuidad entre pantallas. Estos lineamientos describen la propuesta visual del equipo para la aplicacion Service Compliance
 
 <a id="312-information-architecture"></a>
 
-3.1.2. Information Architecture
+### 3.1.2. Information Architecture
 
 <a id="3121-organization-systems"></a>
 
-3.1.2.1. Organization Systems
+#### 3.1.2.1. Organization Systems
 
 <a id="3122-labelling-systems"></a>
 
-3.1.2.2. Labelling Systems
+#### 3.1.2.2. Labelling Systems
 
 <a id="3123-seo-tags-and-meta-tags"></a>
 
-3.1.2.3. SEO Tags and Meta Tags
+#### 3.1.2.3. SEO Tags and Meta Tags
 
 <a id="3124-searching-systems"></a>
 
-3.1.2.4. Searching Systems
+####3.1.2.4. Searching Systems
 
 <a id="3125-navigation-systems"></a>
 
