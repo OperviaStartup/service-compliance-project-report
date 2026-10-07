@@ -171,7 +171,7 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 
 * **Wireframe 06: Ejecución y Checklist (`Opervia Skeleton - Work Order Detail - Execution`)**
 
-    <img src="resources/resources/12-chapter-03/wireframe-06-execution.png">
+    <img src="resources/12-chapter-03/wireframe-06-execution.png">
  
   * **Propósito:** Seguimiento en tiempo real del progreso del mantenimiento u obligación legal.
   * **Componentes:** Checkbox de tareas completadas, campo de observaciones rápidas y botón para adjuntar evidencias.
