@@ -111,7 +111,80 @@ El tono se adapta a cada situación sin perder esa identidad. En las instruccion
 
 <a id="3131-landing-page-wireframe"></a>
 
-3.1.3.1. Landing Page Wireframe
+#### 3.1.3.1. Landing Page Wireframe
+
+A continuación se detalla la especificación del esquema de baja fidelidad (wireframe / low-fidelity skeleton) correspondiente a la Landing Page de Opervia. La interfaz está estructurada modularmente para presentar la propuesta de valor en verificación y cumplimiento de operaciones en campo B2B.
+
+---
+
+##### 1. Header y Hero Section (`[01_SOLUCIÓN]`)
+<img src="resources/12-chapter-03/landing-page-01-hero.png">
+
+* **Propósito:** Captar la atención del cliente corporativo e incentivar el inicio de pruebas o solicitudes de demostración técnica.
+* **Componentes:**
+  * **Barra de Navegación (Header):** Logotipo de Opervia, enlaces a secciones (`Plataforma`, `Soluciones`, `Arquitectura`, `Precios`, `Docs`) y botones de acción (`Iniciar Sesión`, `Solicitar Demo`).
+  * **Hero Section:** Etiqueta `COMPLIANCE B2B // FIELD OPS VERIFICATION`, titular principal, subtítulo explicativo, campo de entrada para correo corporativo y botón principal `Solicitar Demo`.
+  * **Sellos de Estándares:** Badges de certificación verificados (`ISO 9001`, `SOC2 TYPE II`, `AES-256 GCM`).
+  * **Visor Interactivo:** Mockup dinámico que simula el dashboard web y la app móvil con la vista `[FOTO_EVIDENCIA]` y botón `VALIDAR PROTOCOLO`.
+  * **Métricas Clave (KPIs):**
+    * **`99.8%`**: SLA de cumplimiento en terreno.
+    * **`1.4M+`**: Tareas auditadas y timbradas.
+    * **`0`**: Multas por no conformidad regulatoria.
+
+---
+
+##### 2. Matriz Comparativa (`[02 // MATRIX_COMPARISON]`)
+<img src="resources/12-chapter-03/landing-page-02-matrix.png">
+
+* **Propósito:** Mostrar las diferencias clave entre el proceso tradicional en terreno y el motor de cumplimiento de Opervia.
+* **Componentes:**
+  * **Gestión Tradicional en Terreno (`Vulnerable`):** Puntos de control manuales marcados con error/inseguros.
+  * **Opervia Compliance Engine (`Estricto`):** Lista de verificación validada con sellos técnicos (`[GEO_TIMESTAMP]`, `[AI_PHOTO_OCR]`, `[ZERO_BREACH]`).
+
+---
+
+##### 3. Módulos de Trabajo (`[03 // WORKFLOW_MODULES]`)
+<img src="resources/12-chapter-03/landing-page-03-workflow.png">
+
+* **Propósito:** Explicar el flujo de la plataforma según el rol del usuario operativo.
+* **Componentes:**
+  * **Navegación por Pestañas:** Modos `[01] OPERARIO EN CAMPO`, `[02] SUPERVISOR TÉCNICO` y `[03] CLIENTE FINAL B2B`.
+  * **Visor de Telemetría:** Área de inspección de evidencia con marco de captura `[FRAME_CAPTURE // EVIDENCE_INSPECTION]`, indicador `TELEMETRY_LAT/LON` y puntuación de confianza `CONF_SCORE: 99.4%`.
+
+---
+
+##### 4. Pipeline de Protocolo (`[04 // PROTOCOL_PIPELINE]`)
+<img src="resources/12-chapter-03/landing-page-04-pipeline.png">
+
+* **Propósito:** Mostrar los 3 pasos secuenciales del ciclo de ejecución y certificación.
+* **Componentes:**
+  * **Paso 1 `[DISPATCH]`:** Configuración de procedimientos estándar (`SOP_CONFIG`) y plantillas normativas (`NOM-035 / OSHA / REG_TECH`).
+  * **Paso 2 `[FIELD_EXECUTION]`:** Lista de verificación interactiva (`CHECKLIST_APP`) con evidencia criptográfica e inmutable.
+  * **Paso 3 `[CERTIFICATION]`:** Generación automática de reportes (`AUTO_REPORT`) mediante API Webhook o exportación a PDF.
+
+---
+
+##### 5. Estimador de Impacto / Calculadora de ROI (`[05 // ESTIMADOR_DE_IMPACTO]`)
+<img src="resources/12-chapter-03/landing-page-05-roi.png">
+
+* **Propósito:** Permitir al cliente calcular el ahorro financiero estimado al implementar la plataforma.
+* **Componentes:**
+  * **Controles Deslizantes (Sliders):** Selección de `Nº de Operarios en Terreno` y `Horas/Semana en Reportes Manuales`.
+  * **Tarjeta de Ahorro Estimado:** Visualización del monto `USD/Año` (ej. `$76,104`), `Horas liberadas/mes` y `Periodo de retorno (Payback Period)`. Botón de acción `CALCULAR ROI PERSONALIZADO`.
+
+---
+
+##### 6. Planes y Licenciamiento (`[06 // LICENCIAMIENTO]`)
+<img src="resources/12-chapter-03/landing-page-06-pricing.png">
+
+* **Propósito:** Presentar la estructura de costos y planes de suscripción B2B.
+* **Componentes:**
+  * **Selector de Facturación:** Conmutador `Mensual / Anual` con distintivo de descuento (`-20% DESCUENTO`).
+  * **Tabla de Precios:**
+    * **Starter (`$29 / operario / mes`):** Hasta 15 operarios. Botón `SELECCIONAR STARTER`.
+    * **Professional (`$49 / operario / mes` - Recomendado):** Hasta 100 operarios. Botón `DESPLEGAR PRO`.
+    * **Enterprise (`CUSTOM`):** Ilimitado & On-Premise. Botón `CONTACTAR VENTAS`.
+  * **Sección Final de Despliegue (CTA & Footer):** Botones para `PROGRAMAR DEMO TÉCNICA` o `DESCARGAR ESPECIFICACIÓN TÉCNICA (PDF)`, y enlaces a documentación, API y políticas legales.
 
 <a id="3132-landing-page-mock-up"></a>
 
