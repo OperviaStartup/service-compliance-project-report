@@ -209,6 +209,7 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 ##### Módulo 3: Supervisión, Control en Sitio y Auditoría (Supervisor)
 
 * **Wireframe 11: Dashboard de Supervisión (`Opervia Skeleton - Supervision & Field Control`)**
+  
     <img src="resources/12-chapter-03/wireframe-11-supervision.png">
     
 
@@ -260,6 +261,7 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 ##### Módulo 4: Análisis, Reportes y Sincronización Offline
 
 * **Wireframe 18: Centro de Analítica Móvil (`Opervia Skeleton - Analytics Center`)**
+  
   <img src="resources/12-chapter-03/wireframe-18-analytics.png">
 
   * **Propósito:** Visualización ejecutiva de indicadores clave de cumplimiento normativo y SLA.
