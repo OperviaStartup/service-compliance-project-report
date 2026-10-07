@@ -10,3 +10,5 @@
 | 0.4 | 17/09/2026 | Equipo Opervia | Integración de entrevistas, evidencias, artefactos de Needfinding y revisión general del contenido de AV1. |
 | 0.5 | 20/09/2026 | Equipo Opervia | Correcciones del Capítulo I y II, actualización de entrevistas y artefactos UX, front matter, tabla de contenidos y documentación del repositorio. |
 | 1.0 | 22/09/2026 | Equipo Opervia | Consolidación y revisión final del informe correspondiente a la entrega AV1. |
+| 1.1 | 07/10/2026 | Equipo Operavia | Incorporación de la implementación de la Landing Page en el Capítulo IV: organización de sus nueve secciones, diseño responsive para desktop y mobile, internacionalización español/inglés, accesibilidad semántica, SEO, navegación interna y workflow de despliegue a GitHub Pages. |
+| 1.2 | 07/10/2026 | Equipo Operavia | Incorporación de la implementación del backend en el Capítulo IV: arquitectura DDD, autenticación y autorización por roles, persistencia PostgreSQL, migraciones Flyway, endpoints REST, documentación OpenAPI/Swagger, pruebas automatizadas y E2E, configuración Docker y despliegue en Render. |
