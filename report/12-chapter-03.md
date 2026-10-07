@@ -18,7 +18,7 @@ La interfaz procura conservar una estructura recurrente: encabezado, contexto de
 
 <a id="312-information-architecture"></a>
 
-#### Branding
+### Branding
 
 **Nombre de la marca** 
 
@@ -52,13 +52,36 @@ Service Compliance se basa en valores que guían la manera en que la aplicación
 
 - **Transparencia:** Los estados, responsables y eventos se presentan con claridad. Esto facilita comprender qué ocurrió durante cada etapa.
 
-##### Tipografía
+### Tipografía
 
 Para las interfaces de Service Compliance se utiliza IBM Plex Sans como familia tipográfica principal. Su aplicación consistente en títulos, textos, etiquetas, botones y datos ayuda a mantener una identidad visual uniforme en las pantallas móviles.
 
 La jerarquía se establece mediante el tamaño y el peso de la fuente: los títulos de pantalla y sección destacan sobre el texto descriptivo; los botones y estados usan pesos bold o semibold para facilitar su identificación; y los datos secundarios conservan un peso regular. Se evita combinar familias tipográficas distintas y se priorizan tamaños legibles en pantallas pequeñas.
 
-##### Voz y tono
+<p align="center">
+  <img src="resources/12-chapter-03/font-ibm-plex-sans.png"
+       alt="Logotipo de Service Compliance"
+       width="400">
+</p>
+
+**Jerarquía Tipográfica**
+
+La jerarquía tipográfica de Service Compliance se organiza en varios niveles, cada uno con tamaños y pesos específicos:
+
+- **Título de pantalla:** IBM Plex Sans Bold, 22–24 sp. Se utiliza para el nombre principal de cada pantalla y permite identificar rápidamente dónde se encuentra el usuario.
+
+- **Título de sección:** IBM Plex Sans Bold, 18–20 sp. Organiza el contenido de una pantalla y ayuda a distinguir sus apartados.
+
+- **Texto principal:** IBM Plex Sans Regular, 14–16 sp. Se aplica a descripciones, instrucciones y datos centrales de obligaciones, ejecuciones y acciones correctivas.
+
+- **Botones:** IBM Plex Sans Semibold, 14–16 sp. Destaca acciones disponibles, como “Ver detalle” o “Registrar atención”.
+
+
+### Voz y tono
+
+La voz de Service Compliance es profesional, clara, respetuosa y objetiva. La comunicación utiliza palabras directas y consistentes para que supervisores y operarios comprendan las obligaciones, los estados de cada caso y las acciones disponibles. Las instrucciones priorizan verbos concretos y evitan tecnicismos innecesarios. En sus dimensiones, mantiene un registro serio y profesional, formal pero cercano, respetuoso y sereno.
+
+El tono se adapta a cada situación sin perder esa identidad. En las instrucciones cotidianas es directo y tranquilo; en las confirmaciones informa qué ocurrió y cuál es el siguiente paso. Ante una alerta, un error o una corrección devuelta, mantiene un tono neutral y orientado a la acción, sin culpabilizar al usuario ni exagerar la gravedad.
 
 ### 3.1.2. Information Architecture
 
