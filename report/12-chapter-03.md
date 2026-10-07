@@ -157,7 +157,7 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 
 * **Wireframe 04: Panel Diario / Dispatch Móvil (`Opervia Skeleton - Field Dispatch`)**
 
-  <img src="resources/resources/12-chapter-03/wireframe-04-dispatch.png">
+  <img src="resources/12-chapter-03/wireframe-04-dispatch.png">
 
   * **Propósito:** Vista principal del operario con el listado de obligaciones y órdenes de trabajo asignadas para el día.
   * **Componentes:** Barra de búsqueda, filtro por estado (Pendiente, En Curso, Completado), tarjetas de órdenes con horarios/prioridad y barra de navegación inferior.
@@ -185,7 +185,7 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 
 * **Wireframe 08: Galería de Evidencias y Firma Digital (`Opervia Skeleton - Evidence Preview & Sign`)**
 
-     <img src="resources/resources/12-chapter-03/wireframe-08-evidence-sign.png">
+     <img src="resources/12-chapter-03/wireframe-08-evidence-sign.png">
   
 
   * **Propósito:** Revisión de fotografías adjuntas y captura de firma manuscrita de conformidad del cliente/supervisor.
@@ -193,7 +193,7 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 
 * **Wireframe 09: Confirmación de Envío / Éxito (`Opervia Skeleton - Task Completion Success`)**
 
-    <img src="resources/resources/12-chapter-03/wireframe-09-success.png">
+    <img src="resources/12-chapter-03/wireframe-09-success.png">
 
   * **Propósito:** Confirmar al operario que la tarea se registró correctamente en la plataforma.
   * **Componentes:** Modal de éxito con Checkmark, resumen del tiempo invertido y botón de retorno al dispatch.
@@ -251,7 +251,7 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 
 * **Wireframe 17: Reasignación Manual (`Opervia Skeleton - Manual Dispatch Override`)**
 
-    <img src="resources/resources/12-chapter-03/wireframe-17-override.png">
+    <img src="resources/12-chapter-03/wireframe-17-override.png">
 
   * **Propósito:** Permitir al supervisor reasignar órdenes de trabajo en caso de imprevistos o ausencias.
 
