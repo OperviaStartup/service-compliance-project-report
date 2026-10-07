@@ -93,20 +93,95 @@ Render ejecuta un Web Service Docker conectado a PostgreSQL. El Dockerfile compi
 
 <a id="42-landing-page--mobile-application-implementation"></a>
 
-<!-- RESPONSABLE DEL LANDING PAGE: completar implementación, URL pública, responsive, i18n, a11y, términos y condiciones, y US-18/US-19. -->
+### 4.2.1. Landing Page Implementation
 
-### 4.2.1. Sprint 1 — Backend foundation and core operational flow
+<a id="421-landing-page-implementation"></a>
 
-<a id="421-sprint-1"></a>
+La Landing Page de Opervia / Service Compliance se implementó como un sitio estático autocontenido en un único archivo HTML. Su objetivo es comunicar la propuesta de valor, explicar el flujo de cumplimiento y orientar al visitante hacia la solicitud de una demostración. La implementación conserva el lenguaje visual definido por el equipo y adapta la experiencia para escritorio y móvil.
+
+Repositorio local: `C:\Users\JariasT\IdeaProjects\service-compliance-landing`.
+
+#### 4.2.1.1. Estructura y organización
+
+El archivo `index.html` está organizado mediante comentarios de sección, encabezado principal, navegación, contenido principal y pie de página. El contenido principal se divide en nueve secciones funcionales:
+
+| Sección | Propósito | Backlog |
+|---|---|---|
+| Hero | Presentar Opervia, Service Compliance y el CTA principal | US-18 |
+| Problem | Explicar la operación fragmentada y sus riesgos | US-18 |
+| Value Proposition | Mostrar el flujo de planificación a cumplimiento | US-18 |
+| How It Works | Explicar las fases del proceso operativo | US-18 |
+| Dual Experience | Diferenciar operario y supervisor | US-18 |
+| Traceability Case | Mostrar trazabilidad y desviaciones | US-18 |
+| Benefits | Resumir beneficios operativos y de auditoría | US-18 |
+| Pricing | Presentar planes de servicio | US-18 |
+| Final CTA | Orientar a solicitud de demo o contacto | US-19 |
+
+La comprobación estructural confirmó nueve secciones abiertas y nueve cerradas. El pie de página utiliza el ancla `nosotros`, referenciada por la navegación.
+
+![Estructura de la Landing Page](resources/13-chapter-04/36-landing-structure.png)
+
+*Figura 4.17. Organización estructural de la Landing Page.*
+
+#### 4.2.1.2. Responsive Web Design
+
+La Landing Page utiliza clases responsive para adaptar grillas, espaciado, tipografía, navegación, cards, CTAs y mockups. Las vistas de referencia para TB1 son desktop de 1440 px y mobile de 390 px.
+
+![Landing Page desktop](resources/13-chapter-04/37-landing-desktop.png)
+
+*Figura 4.18. Landing Page en vista desktop.*
+
+![Landing Page mobile](resources/13-chapter-04/38-landing-mobile.png)
+
+*Figura 4.19. Landing Page en vista mobile.*
+
+#### 4.2.1.3. Internationalization and Accessibility
+
+La interfaz inicia en español mediante `lang="es"` y cuenta con el selector `languageToggle` para cambiar entre español e inglés. El script traduce los nodos de texto visibles mediante un diccionario que cubre navegación, mockups, diagnóstico, workflow, beneficios, precios, CTA y pie de página. El idioma seleccionado se conserva en `localStorage` con la clave `opervia-language`.
+
+La accesibilidad estructural implementada incluye `aria-label` en header, navegación, footer y selector de idioma; botón de idioma con `type="button"`; estructura semántica con `header`, `nav`, `main`, `section` y `footer`; y soporte para `prefers-reduced-motion`.
+
+![Selector de idioma e i18n](resources/13-chapter-04/39-landing-i18n.png)
+
+*Figura 4.20. Internacionalización español/inglés.*
+
+![Accesibilidad de la Landing Page](resources/13-chapter-04/40-landing-accessibility.png)
+
+*Figura 4.21. Estructura semántica y atributos accesibles.*
+
+#### 4.2.1.4. SEO, navegación y despliegue
+
+La página incluye título descriptivo, meta description, navegación por anclas internas y enlaces hacia Producto, Cómo funciona, Beneficios, Precios, Nosotros y Demo. No se detectaron referencias relativas a assets locales; la página es autocontenida y utiliza dependencias externas declaradas.
+
+El archivo `.github/workflows/pages.yml` automatiza el despliegue a GitHub Pages en cada push a `main` y permite ejecución manual mediante `workflow_dispatch`. El workflow configura Pages, empaqueta la raíz y publica el artefacto estático.
+
+![Workflow de GitHub Pages](resources/13-chapter-04/41-github-pages-workflow.png)
+
+*Figura 4.22. Workflow de despliegue de la Landing Page.*
+
+<!-- Reemplazar con la URL pública real después de verificar GitHub Pages. -->
+**URL pública:** `<completar URL de GitHub Pages>`
+
+![Landing Page publicada](resources/13-chapter-04/42-landing-publicada.png)
+
+*Figura 4.23. Landing Page publicada en GitHub Pages.*
+
+#### 4.2.1.5. Términos y condiciones
+
+<!-- RESPONSABLE DEL LANDING PAGE: completar con la ubicación real de Términos del Servicio, Política de Privacidad y evidencia de sus enlaces en el footer. La rúbrica exige estos documentos en Landing Page y aplicación móvil durante el registro. -->
+
+### 4.2.2. Sprint 1 — Backend foundation and core operational flow
+
+<a id="422-sprint-1"></a>
 
 **Sprint Goal:** entregar una API REST segura y persistente para demostrar el flujo supervisor-operario.
 
 **Duración:** completar fechas reales del Sprint 1.
 **Criterio TB1:** backend desplegado aproximadamente al 70%, Swagger operativo, PostgreSQL conectado y pantallas core disponibles.
 
-#### 4.2.1.1. Sprint Planning 1
+#### 4.2.2.1. Sprint Planning 1
 
-<a id="4211-sprint-planning-1"></a>
+<a id="4221-sprint-planning-1"></a>
 
 US-17 se adelantó desde Sprint 2 por ser una capacidad habilitadora de seguridad.
 
@@ -123,9 +198,9 @@ US-17 se adelantó desde Sprint 2 por ser una capacidad habilitadora de segurida
 
 US-18 y US-19 quedan a cargo del responsable del Landing Page.
 
-#### 4.2.1.2. Aspect Leaders and Collaborators
+#### 4.2.2.2. Aspect Leaders and Collaborators
 
-<a id="4212-aspect-leaders-and-collaborators"></a>
+<a id="4222-aspect-leaders-and-collaborators"></a>
 
 | Integrante | Líder de aspecto | Responsabilidad Sprint 1 |
 |---|---|---|
@@ -140,9 +215,9 @@ US-18 y US-19 quedan a cargo del responsable del Landing Page.
 
 *Figura 4.7. Distribución de responsabilidades.*
 
-#### 4.2.1.3. Sprint Backlog 1
+#### 4.2.2.3. Sprint Backlog 1
 
-<a id="4213-sprint-backlog-1"></a>
+<a id="4223-sprint-backlog-1"></a>
 
 | ID | Tarea | Responsable | Colaboradores | Estado |
 |---|---|---|---|---|
@@ -158,11 +233,11 @@ US-18 y US-19 quedan a cargo del responsable del Landing Page.
 | S1-T10 | Unit, integration y E2E | Jean | Angel, Mathias | Completado |
 | S1-T11 | Pantallas core móviles | Augusto | Mathias, Jean | Completar evidencia |
 | S1-T12 | PoC de aprendizaje autónomo | Carlos | Jean, Augusto | Completar evidencia |
-| S1-T13 | Landing Page | <!-- Responsable --> | <!-- Equipo --> | <!-- Completar --> |
+| S1-T13 | Landing Page | Responsable del Landing Page | Equipo de diseño | Implementado; completar evidencias y URL |
 
-#### 4.2.1.4. Development Evidence for Sprint Review
+#### 4.2.2.4. Development Evidence for Sprint Review
 
-<a id="4214-development-evidence-for-sprint-review"></a>
+<a id="4224-development-evidence-for-sprint-review"></a>
 
 | Evidencia | Contenido |
 |---|---|
@@ -202,9 +277,9 @@ E7 : Docker/Render
 
 ![Docker/Render](resources/13-chapter-04/14-docker-render-configuration.png)
 
-#### 4.2.1.5. Testing Suite Evidence for Sprint Review
+#### 4.2.2.5. Testing Suite Evidence for Sprint Review
 
-<a id="4215-testing-suite-evidence-for-sprint-review"></a>
+<a id="4225-testing-suite-evidence-for-sprint-review"></a>
 
 | Prueba | Resultado esperado |
 |---|---|---|
@@ -218,9 +293,9 @@ E7 : Docker/Render
 | Request inválido | 400 con errores |
 | Token ausente/inválido | 401 Unauthorized |
 
-#### 4.2.1.6. Execution Evidence for Sprint Review
+#### 4.2.2.6. Execution Evidence for Sprint Review
 
-<a id="4216-execution-evidence-for-sprint-review"></a>
+<a id="4226-execution-evidence-for-sprint-review"></a>
 
 Flujo validado: el supervisor inicia sesión y crea una obligación; el operador inicia sesión, consulta sus obligaciones, registra una ejecución y adjunta evidencia; el sistema rechaza operaciones exclusivas del supervisor cuando las solicita el operador.
 
@@ -237,9 +312,9 @@ Flujo validado: el supervisor inicia sesión y crea una obligación; el operador
 
 *Figura 4.9. Flujo E2E del Sprint 1.*
 
-#### 4.2.1.7. Services Documentation Evidence for Sprint Review
+#### 4.2.2.7. Services Documentation Evidence for Sprint Review
 
-<a id="4217-services-documentation-evidence-for-sprint-review"></a>
+<a id="4227-services-documentation-evidence-for-sprint-review"></a>
 
 | Método | Endpoint | Rol |
 |---|---|---|
@@ -268,9 +343,9 @@ Swagger: /swagger-ui.html. OpenAPI: /api-docs.
 
 *Figura 4.10. Swagger con Bearer JWT.*
 
-#### 4.2.1.8. Software Deployment Evidence for Sprint Review
+#### 4.2.2.8. Software Deployment Evidence for Sprint Review
 
-<a id="4218-software-deployment-evidence-for-sprint-review"></a>
+<a id="4228-software-deployment-evidence-for-sprint-review"></a>
 
 | Verificación | URL esperada |
 |---|---|
@@ -286,9 +361,9 @@ Swagger: /swagger-ui.html. OpenAPI: /api-docs.
 
 *Figura 4.13. Health check y Swagger públicos.*
 
-#### 4.2.1.9. Team Collaboration Insights during Sprint
+#### 4.2.2.9. Team Collaboration Insights during Sprint
 
-<a id="4219-team-collaboration-insights-during-sprint"></a>
+<a id="4229-team-collaboration-insights-during-sprint"></a>
 
 | Integrante | Evidencia de colaboración |
 |---|---|
@@ -319,4 +394,4 @@ Swagger: /swagger-ui.html. OpenAPI: /api-docs.
 
 ## Cierre del Sprint 1
 
-Sprint 1 entrega autenticación, autorización, PostgreSQL, migraciones, obligaciones, ejecuciones, evidencias, pruebas, OpenAPI y Render. La sincronización offline, evaluación de cumplimiento, incidentes, acciones correctivas, reportes, notificaciones y almacenamiento multimedia quedan para siguientes sprints. El Landing Page debe ser completado por su responsable con sus evidencias.
+Sprint 1 entrega autenticación, autorización, PostgreSQL, migraciones, obligaciones, ejecuciones, evidencias, pruebas, OpenAPI, Render y una Landing Page estática desplegable. La sincronización offline, evaluación de cumplimiento, incidentes, acciones correctivas, reportes, notificaciones y almacenamiento multimedia quedan para siguientes sprints. Para cerrar la evidencia de la Landing Page todavía deben agregarse la URL pública, capturas de desktop/mobile, prueba del cambio de idioma y los enlaces de términos y privacidad.
