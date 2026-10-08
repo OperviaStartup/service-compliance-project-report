@@ -1,7 +1,6 @@
 # Capítulo IV: Product Implementation & Validation
 <a id="4-product-implementation--validation"></a>
 Este capítulo documenta el TB1 – Stage Review y el Sprint 1 de Service Compliance. El incremento comprende autenticación por roles, PostgreSQL, obligaciones, ejecuciones, evidencias, API REST, Swagger, pruebas y despliegue del backend. Incident & Corrective Action y Compliance Reporting permanecen como alcance posterior.
-
 ## 4.1. Software Configuration Management
 <a id="41-software-configuration-management"></a>
 ### 4.1.1. Software Development Environment Configuration
