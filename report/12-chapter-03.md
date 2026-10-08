@@ -150,17 +150,18 @@ El tono se adapta a cada situación sin perder esa identidad. En las instruccion
 
 <a id="3124-searching-systems"></a>
 
-####3.1.2.4. Searching Systems
+#### 3.1.2.4. Searching Systems
 
 <a id="3125-navigation-systems"></a>
 
-3.1.2.5. Navigation Systems
+#### 3.1.2.5. Navigation Systems
 
 <a id="313-landing-page-ui-design"></a>
 
-3.1.3. Landing Page UI Design
+### 3.1.3. Landing Page UI Design
 
 <a id="3131-landing-page-wireframe"></a>
+---
 
 #### 3.1.3.1. Landing Page Wireframe
 
@@ -239,11 +240,13 @@ A continuación se detalla la especificación del esquema de baja fidelidad (wir
 
 <a id="3132-landing-page-mock-up"></a>
 
-3.1.3.2. Landing Page Mock-up
+#### 3.1.3.2. Landing Page Mock-up
 
 <a id="314-mobile-applications-uxui-design"></a>
 
-3.1.4. Mobile Applications UX/UI Design
+### 3.1.4. Mobile Applications UX/UI Design
+
+---
 
 <a id="3141-mobile-applications-wireframes"></a>
 
@@ -426,19 +429,19 @@ A continuación se detalla la especificación completa de esquemas de baja fidel
 
 <a id="3142-mobile-applications-wireflow-diagrams"></a>
 
-3.1.4.2. Mobile Applications Wireflow Diagrams
+#### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
 <a id="3143-mobile-applications-mock-ups"></a>
 
-3.1.4.3. Mobile Applications Mock-ups
+#### 3.1.4.3. Mobile Applications Mock-ups
 
 <a id="3144-mobile-applications-user-flow-diagrams"></a>
 
-3.1.4.4. Mobile Applications User Flow Diagrams
+#### 3.1.4.4. Mobile Applications User Flow Diagrams
 
 <a id="3145-mobile-applications-prototyping"></a>
 
-3.1.4.5. Mobile Applications Prototyping
+#### 3.1.4.5. Mobile Applications Prototyping
 
 <div style="page-break-before: always;"></div>
 
