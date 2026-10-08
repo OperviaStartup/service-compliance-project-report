@@ -129,7 +129,7 @@ Se realizaron tres entrevistas por cada segmento. Los resúmenes siguientes reco
 
 ##### Entrevista #2 - Rodrigo Andres Gonzales Portugal
 
-<img src="/report/resources/11-chapter-02/evidencia-entrevista1-rodrigo-gonzales.png">
+<img src="report/resources/11-chapter-02/evidencia-entrevista1-rodrigo-gonzales.png">
 
 | Campo                           | Detalle                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

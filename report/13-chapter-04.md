@@ -1,27 +1,22 @@
 # Capítulo IV: Product Implementation & Validation
-
 <a id="4-product-implementation--validation"></a>
-
 Este capítulo documenta el TB1 – Stage Review y el Sprint 1 de Service Compliance. El incremento comprende autenticación por roles, PostgreSQL, obligaciones, ejecuciones, evidencias, API REST, Swagger, pruebas y despliegue del backend. Incident & Corrective Action y Compliance Reporting permanecen como alcance posterior.
 
 ## 4.1. Software Configuration Management
-
 <a id="41-software-configuration-management"></a>
-
 ### 4.1.1. Software Development Environment Configuration
-
 <a id="411-software-development-environment-configuration"></a>
 
-| Producto | Tecnología | Uso |
-|---|---|---|
-| Backend | Spring Boot 4.1.1, Java 17 | API REST |
-| Build | Gradle Wrapper | Compilación y JAR |
-| Persistencia | JPA/Hibernate, Flyway | PostgreSQL y migraciones |
-| Seguridad | Spring Security, JWT, BCrypt | Autenticación/autorización |
-| Documentación | OpenAPI, Swagger UI | Contrato y pruebas |
-| Despliegue | Docker, Render | Servicio público |
-| Control | GitHub, Conventional Commits | Colaboración |
-| Gestión | Trello | Backlog y Sprint 1 |
+| Producto      | Tecnología                   | Uso                        |
+| ------------- | ---------------------------- | -------------------------- |
+| Backend       | Spring Boot 4.1.1, Java 17   | API REST                   |
+| Build         | Gradle Wrapper               | Compilación y JAR          |
+| Persistencia  | JPA/Hibernate, Flyway        | PostgreSQL y migraciones   |
+| Seguridad     | Spring Security, JWT, BCrypt | Autenticación/autorización |
+| Documentación | OpenAPI, Swagger UI          | Contrato y pruebas         |
+| Despliegue    | Docker, Render               | Servicio público           |
+| Control       | GitHub, Conventional Commits | Colaboración               |
+| Gestión       | Trello                       | Backlog y Sprint 1         |
 
 Repositorio backend: https://github.com/OperviaStartup/serviceComplianceAPI
 
@@ -283,17 +278,17 @@ E7 : Docker/Render
 
 <a id="4225-testing-suite-evidence-for-sprint-review"></a>
 
-| Prueba | Resultado esperado |
-|---|---|---|
-| Registro de operador | 201 Created |
-| Login operador/supervisor | 200 OK y JWT |
-| Crear obligación como supervisor | 201 Created |
-| Crear obligación como operador | 403 Forbidden |
-| Consultar obligaciones | 200 OK |
-| Crear ejecución | 201 Created |
-| Registrar evidencia | 201 Created |
-| Request inválido | 400 con errores |
-| Token ausente/inválido | 401 Unauthorized |
+| Prueba                           | Resultado esperado |
+| -------------------------------- | ------------------ |
+| Registro de operador             | 201 Created        |
+| Login operador/supervisor        | 200 OK y JWT       |
+| Crear obligación como supervisor | 201 Created        |
+| Crear obligación como operador   | 403 Forbidden      |
+| Consultar obligaciones           | 200 OK             |
+| Crear ejecución                  | 201 Created        |
+| Registrar evidencia              | 201 Created        |
+| Request inválido                 | 400 con errores    |
+| Token ausente/inválido           | 401 Unauthorized   |
 
 #### 4.2.2.6. Execution Evidence for Sprint Review
 
@@ -385,50 +380,74 @@ Swagger: /swagger-ui.html. OpenAPI: /api-docs.
 <a id="43-validation-interviews"></a>
 
 La validación del Sprint 1 comprueba que el flujo de autenticación, consulta de obligaciones, registro de ejecución y evidencia es comprensible para supervisores/coordinadores y operarios de limpieza tercerizada.
-
 ### 4.3.1. Diseño de entrevistas
-
 <a id="431-diseno-de-entrevistas"></a>
-
 **Objetivo:** validar la comprensión y utilidad del flujo implementado en la Landing Page, las pantallas core móviles y el backend REST.
 
-| Perfil | Tarea | Pregunta principal |
-|---|---|---|
-| Supervisor/coordinador | Revisar obligación y ejecución | ¿La información permite comprender qué se planificó y qué ocurrió? |
-| Operario | Iniciar sesión y consultar obligaciones | ¿Puedes identificar qué realizar, dónde y cuándo? |
-| Operario | Registrar ejecución y evidencia | ¿El flujo refleja tu trabajo y es comprensible? |
-
-![Guion de entrevista de validación](resources/13-chapter-04/31-validation-interview-script.png)
-
-*Figura 4.15. Guion de entrevista de validación del Sprint 1.*
+| Perfil                 | Tarea                                   | Pregunta principal                                                 |
+| ---------------------- | --------------------------------------- | ------------------------------------------------------------------ |
+| Supervisor/coordinador | Revisar obligación y ejecución          | ¿La información permite comprender qué se planificó y qué ocurrió? |
+| Operario               | Iniciar sesión y consultar obligaciones | ¿Puedes identificar qué realizar, dónde y cuándo?                  |
+| Operario               | Registrar ejecución y evidencia         | ¿El flujo refleja tu trabajo y es comprensible?                    |
 
 ### 4.3.2. Registro de entrevistas
-
 <a id="432-registro-de-entrevistas"></a>
+La siguiente tabla consolida las entrevistas de validación con los participantes definidos para este Sprint. Los datos personales, los enlaces y las duraciones se toman del registro de entrevistas del capítulo 2. La fecha de realización no aparece en la fuente disponible y, por ese motivo, no se infiere ni se reemplaza por una fecha estimada. El tiempo de inicio indicado corresponde al inicio del video individual enlazado.
 
-Completar esta tabla únicamente con datos reales de las entrevistas realizadas. La rúbrica exige registrar información del participante, evidencia en video y el análisis de sus apreciaciones.
+| Participante                     | Perfil                 |    Edad | Distrito / ubicación                                | Funcionalidad observada               |
+| -------------------------------- | ---------------------- | ------: | --------------------------------------------------- | ------------------------------------- |
+| Andy Aschalla                    | Supervisor/coordinador | 20 años | San Martín de Porres / conjunto empresarial en Lima | Landing Page y revisión de obligación |
+| José Ramírez                     | Operario               | 22 años | San Juan de Lurigancho / edificio de oficinas       | Login y consulta de obligaciones      |
+| Rodrigo Andres Gonzales Portugal | Operario               | 21 años | Los Olivos / centro de labores en San Martín        | Ejecución y evidencia                 |
 
-| Participante | Perfil | Fecha | Funcionalidad observada | Hallazgo | Evidencia/video |
-|---|---|---|---|---|---|
-| Nombre real | Supervisor/coordinador | dd/mm/aaaa | Landing Page y revisión de obligación | Hallazgo | resources/13-chapter-04/32-interview-supervisor.png / URL OneDrive |
-| Nombre real | Operario | dd/mm/aaaa | Login y consulta de obligaciones | Hallazgo | resources/13-chapter-04/33-interview-operator.png / URL OneDrive |
-| Nombre real | Operario | dd/mm/aaaa | Ejecución y evidencia | Hallazgo | resources/13-chapter-04/34-interview-execution.png / URL OneDrive |
+#### Entrevista de Andy Aschalla
 
-<!-- Completar nombres, edad, distrito, URL del video, timing y duración. Ocultar datos personales innecesarios. -->
+![Evidencia de entrevista de Andy Aschalla](resources/10-chapter-01/Entrevista3.png)
+
+*Figura 4.16. Evidencia de video de la entrevista de Andy Aschalla.*
+
+Andy Aschalla trabaja como supervisor de limpieza tercerizada. Su jornada incluye el control de asistencia, la revisión de novedades, la cobertura de ausencias, las rondas de inspección, la atención de incidencias y la actualización de reportes. Durante la validación de la Landing Page y la revisión de una obligación, su experiencia permite contrastar si la información presentada resulta coherente con las tareas de supervisión. El principal valor esperado es que una obligación permita entender qué actividad debe controlarse y facilite relacionarla con las novedades y evidencias del servicio. Sus fricciones actuales se concentran en las ausencias imprevistas, la reorganización de rutas y la reconstrucción de evidencia cuando un cliente formula una observación. Actualmente combina comunicación verbal, formatos firmados y fotografías enviadas por WhatsApp, por lo que el flujo validado debe reducir la dispersión de información sin añadir pasos innecesarios.
+
+#### Entrevista de José Ramírez
+
+![Evidencia de entrevista de José Ramírez](resources/10-chapter-01/Entrevista1.png)
+
+*Figura 4.17. Evidencia de video de la entrevista de José Ramírez.*
+
+José Ramírez cuenta con seis años de experiencia en servicios de limpieza y combina labores operativas con coordinación de su equipo. En la validación del login y la consulta de obligaciones, el flujo se relaciona con su necesidad de recibir una referencia clara de las actividades asignadas. En su operación actual, las zonas y cambios de trabajo se comunican principalmente por WhatsApp, y las fotografías de evidencia se envían por el mismo canal. José está familiarizado con WhatsApp; la dificultad aparece cuando los mensajes se mezclan y luego deben relacionarse con una actividad concreta. Por ello, el hallazgo valida la utilidad de centralizar tarea, estado y evidencia. Como mejora específica, se identifica la posibilidad de permitir el acceso mediante el correo con dominio de la empresa, además del mecanismo de autenticación considerado en el Sprint 1. La conectividad suele ser suficiente, aunque reporta menor señal en el sótano.
+
+#### Entrevista de Rodrigo Andres Gonzales Portugal
+
+![Evidencia de entrevista de Rodrigo Andres Gonzales Portugal](resources/11-chapter-02/evidencia-entrevista1-rodrigo-gonzales.png)
+
+*Figura 4.18. Evidencia de video de la entrevista de Rodrigo Andres Gonzales Portugal.*
+
+Rodrigo Andres Gonzales Portugal tiene un año y medio de experiencia realizando actividades de limpieza en una tienda de peceras, donde también atiende clientes y entrega pedidos. En la validación del registro de ejecución y evidencia, el flujo se contrasta con un contexto en el que las actividades pueden combinarse con otras funciones y retrasarse cuando falta personal. Actualmente comunica la finalización mediante mensajes o llamadas y, para determinadas tareas, su jefe solicita fotografías. También utiliza listas o cuadernos, que considera vulnerables a pérdida o deterioro. El hallazgo respalda que la ejecución y su evidencia se presenten como un registro digital asociado a la obligación, de modo que el supervisor pueda consultar qué actividad fue realizada. Rodrigo considera el diseño intuitivo y adecuado para este propósito. La conectividad actualmente es adecuada después de la instalación de un router.
+
+#### Síntesis de hallazgos
+
+| Hallazgo de validación | Entrevistas relacionadas | Decisión para el Sprint 1 |
+|---|---|---|
+| La obligación debe mostrar una referencia operativa comprensible para supervisar lo planificado. | Andy Aschalla | Mantener la consulta de obligaciones y la revisión del flujo supervisor. |
+| La autenticación y la consulta deben ser directas y compatibles con hábitos existentes. | José Ramírez | Mantener el login y registrar como mejora futura el acceso con correo corporativo. |
+| La ejecución debe quedar asociada a una evidencia consultable por el supervisor. | Rodrigo Andres Gonzales Portugal | Mantener el registro de ejecución y evidencia como flujo central. |
+| La información no debería depender únicamente de mensajes, llamadas, cuadernos o formatos dispersos. | Andy Aschalla, José Ramírez y Rodrigo Andres Gonzales Portugal | Priorizar la trazabilidad entre obligación, ejecución y evidencia. |
 
 ### 4.3.3. Evaluaciones según heurísticas
 
 <a id="433-evaluaciones-segun-heuristicas"></a>
 
-| Heurística | Criterio | Resultado | Acción |
+| Heurística | Evidencia observada en las entrevistas | Resultado | Acción de seguimiento |
 |---|---|---|---|
-| Visibilidad del estado | Se reconoce login y registro exitoso | Completar | Completar |
-| Mundo real | Usa obligación, ejecución y evidencia | Completar | Completar |
-| Control | Puede volver sin perder datos confirmados | Completar | Completar |
-| Consistencia | Estados y mensajes son uniformes | Completar | Completar |
-| Prevención | Valida campos antes de enviar | Completar | Completar |
-| Recuperación | Mensajes indican cómo corregir | Completar | Completar |
-| Documentación | Swagger explica endpoints y errores | Completar | Completar |
+| Visibilidad del estado | Los tres participantes reconocen el propósito de login, obligación, ejecución y evidencia. | Validada | Mantener estados explícitos para obligación y ejecución. |
+| Correspondencia con el mundo real | Andy relaciona la obligación con la supervisión; José con la actividad asignada; Rodrigo con la ejecución y la fotografía. | Validada | Conservar el vocabulario operativo del capítulo 2. |
+| Control y libertad | No se reporta pérdida de datos confirmados durante las entrevistas disponibles. | Parcialmente validada | Probar explícitamente volver, cancelar y retomar una ejecución. |
+| Consistencia y estándares | El flujo se percibe intuitivo y adecuado; José propone complementar el acceso con correo corporativo. | Validada con mejora | Uniformizar etiquetas y evaluar el correo corporativo en un Sprint posterior. |
+| Prevención de errores | Las entrevistas evidencian riesgo de mensajes mezclados, registros dispersos y cuadernos deteriorados. | Parcialmente validada | Asociar cada evidencia a una obligación antes de confirmar. |
+| Recuperación ante errores | Las fuentes describen problemas operativos, pero no registran una prueba específica de recuperación dentro del prototipo. | Pendiente de prueba | Añadir mensajes accionables para campos inválidos, reintento y conectividad limitada. |
+| Documentación y ayuda | La validación se centró en el flujo de usuario; la documentación técnica se encuentra en Swagger. | Validada técnicamente / pendiente en usuario | Verificar que los mensajes de ayuda sean comprensibles para operarios. |
+
+En conjunto, la validación respalda el flujo principal del Sprint 1: autenticarse, consultar una obligación, registrar su ejecución y adjuntar evidencia. También revela dos líneas de mejora: acceso con correo corporativo y manejo explícito de conectividad o recuperación. Estas observaciones se incorporan como trabajo posterior y no se presentan como funcionalidades ya entregadas.
 
 ## Cierre del Sprint 1
 
