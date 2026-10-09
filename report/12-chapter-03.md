@@ -142,21 +142,74 @@ El tono se adapta a cada situación sin perder esa identidad. En las instruccion
 
 <a id="3122-labelling-systems"></a>
 
+La información de Service Compliance se organizará según las necesidades de sus usuarios y el propósito de cada experiencia. La Landing Page estará dirigida a visitantes que necesitan comprender el alcance del producto y decidir si desean solicitar una demostración o establecer contacto. La aplicación móvil estará orientada a las tareas de supervisores y operarios, cuyas responsabilidades requieren recorridos diferenciados.
+
+**Landing Page**: Se propone una organización jerárquica y progresiva. Primero se presentará la propuesta general y sus destinatarios; luego se explicarán el problema que aborda, sus beneficios y la forma en que contribuye a gestionar el cumplimiento de los servicios. La información comercial y las opciones de contacto se ubicarán después de que el visitante haya podido comprender el producto. Esta organización facilitará el paso desde el descubrimiento hasta la decisión de solicitar información, sin depender de una estructura definitiva de pantallas o secciones.
+
+**Aplicación móvil**: La información se organizará primero de acuerdo con el rol y luego según las tareas que debe realizar cada usuario. Para el operario, el contenido priorizará las obligaciones asignadas, sus instrucciones y el registro de la ejecución. Para el supervisor, se organizará alrededor de la consulta operativa, la revisión de ejecuciones, la evaluación del cumplimiento, la gestión de acciones correctivas y la consulta de alertas, historiales y reportes.
+
+La organización secuencial se aplicará a las tareas que requieren completar acciones relacionadas. El recorrido del operario comprenderá consultar una obligación, revisar sus indicaciones, registrar la ejecución y adjuntar la evidencia requerida o reportar un impedimento. En el flujo correctivo, consultará la corrección solicitada, registrará la atención realizada y la enviará a revisión. El supervisor revisará la ejecución, registrará el resultado y, si corresponde, asignará una acción correctiva y verificará su atención.
+
+La organización cronológica se utilizará en los historiales de casos y de acciones correctivas, para que los eventos puedan comprenderse según su orden de ocurrencia. En los reportes se organizarán los resultados mediante las dimensiones de periodo, sede, servicio y categoría de cumplimiento, lo que permitirá consultar y comparar la información correspondiente. La ordenación alfabética no será prioritaria para las obligaciones, pues su consulta depende principalmente de su estado y programación temporal.
+
 #### 3.1.2.2. Labelling Systems
 
 <a id="3123-seo-tags-and-meta-tags"></a>
+
+Las etiquetas de Service Compliance se definirán con términos breves, comprensibles y consistentes. Su propósito será ayudar a visitantes y usuarios a reconocer el contenido disponible, comprender los estados y anticipar el resultado de una acción. Los mismos conceptos conservarán una denominación estable en las distintas partes del producto.
+
+**Landing Page**: Las etiquetas se orientarán a comunicar contenidos y acciones con un lenguaje directo. Las opciones para solicitar una demostración o contactar a Opervia se formularán como acciones concretas, relacionadas con el objetivo de conversión. Las etiquetas deberán conservar su sentido en español e inglés y evitar términos técnicos que no sean necesarios para comprender la propuesta.
+
+**Aplicación móvil**: Las etiquetas se definirán de acuerdo con las tareas de cada rol. Los términos principales distinguirán conceptos como Plan de servicio, Obligación, Ejecución, Evidencia, Excepción, Resultado de cumplimiento, Acción correctiva, Observación del cliente, Caso de cumplimiento e Historial. Cuando se requiera relacionar una etiqueta con el modelo de dominio o las historias de usuario, se conservará la correspondencia entre el término en español y el concepto técnico asociado.
+
+Los estados de las obligaciones se expresarán mediante las categorías Asignada, En curso, Enviada, Exceptuada y Atrasada. Los resultados de evaluación utilizarán Cumple, Excepción aceptada, Desviación e Incumplimiento. En el seguimiento de las acciones correctivas se distinguirán los eventos de asignación, atención registrada, envío para revisión y verificación. Esta separación permitirá diferenciar el resultado original de la evaluación respecto de las acciones realizadas posteriormente.
+
+Las acciones utilizarán verbos que describan el propósito de la interacción, como consultar una obligación, registrar una ejecución, adjuntar evidencia, reportar un impedimento, evaluar el cumplimiento, asignar una acción correctiva, registrar su atención o consultar un historial. La denominación específica de los controles se establecerá durante el diseño de las interfaces, manteniendo esta relación entre etiqueta y propósito.
 
 #### 3.1.2.3. SEO Tags and Meta Tags
 
 <a id="3124-searching-systems"></a>
 
+La estrategia de metadatos se propone para la Landing Page y para la aplicación móvil Service Compliance. La Landing Page tendrá valores en español e inglés, de acuerdo con los idiomas previstos para esta experiencia. Los siguientes valores constituyen una propuesta para orientar su diseño y publicación.
+
+| Elemento SEO | Español | Ingles |
+|---|---|---|
+| Title | Service Compliance, Gestión de servicios tercerizados, Opervia | Service Compliance, Outsourced Service Management, Opervia |
+| Meta Description | Centraliza la planificación, ejecución, evidencia y seguimiento de servicios tercerizados en una solución móvil para supervisores y operarios de campo. | Centralize the planning, execution, evidence, and tracking of outsourced services in a mobile solution for supervisors and field operators.|
+| Meta Keywords | gestión de servicios tercerizados, cumplimiento de servicios, obligaciones operativas, evidencia de ejecución, supervisión de limpieza, trazabilidad de servicios | outsourced service management, service compliance, operational obligations, execution evidence, cleaning supervision, service traceability |
+| Meta Author |   Opervia | Opervia | 
+
+Para la aplicación móvil se proponen los elementos ASO en ambos idiomas. El título conservará el nombre del producto y el subtítulo, las palabras clave y la descripción comunicarán sus principales objetivos y usuarios.
+
+| Elemento ASO | Español | Ingles |
+|---|---|---|
+| App Title | Service Compliance | Service Compliance |
+| App Subtitle | Evidencia y control de servicios | Service tracking and evidence |
+| App Keywords | cumplimiento de servicios, servicios tercerizados, obligaciones, ejecución, evidencias, supervisión, limpieza, acciones correctivas, reportes | service compliance, outsourced services, obligations, field execution, evidence, supervision, cleaning, corrective actions, reports |
+| App Description | Organiza las obligaciones del servicio y registra su ejecución desde el móvil. Adjunta evidencias, informa impedimentos y permite a supervisores evaluar resultados, gestionar acciones correctivas y consultar el historial de cada caso. | Organize service obligations and record their execution from a mobile device. Attach evidence, report impediments, and enable supervisors to evaluate results, manage corrective actions, and review each case history. |
+
 #### 3.1.2.4. Searching Systems
 
 <a id="3125-navigation-systems"></a>
 
+**Landing Page**: La consulta de información se orientará mediante una estructura jerárquica que permita al visitante comprender la propuesta y localizar los contenidos necesarios para evaluar el producto. La búsqueda interna no se considera una función central de esta experiencia; las opciones de contacto permitirán continuar el recorrido de conversión.
+
+**Aplicación móvil**: La búsqueda de obligaciones y resultados se realizará mediante criterios vinculados con las tareas de cada rol. En la consulta del estado operativo, el supervisor podrá delimitar las obligaciones por sitio, periodo y estado. La información resultante se organizará para facilitar la identificación de aquellas obligaciones que requieren revisión.
+
 #### 3.1.2.5. Navigation Systems
 
 <a id="313-landing-page-ui-design"></a>
+
+**Landing Page**: La navegación se orientará a que el visitante comprenda gradualmente la propuesta de Service Compliance y pueda expresar su interés en una demostración o piloto. El recorrido facilitará el paso desde la consulta de información general hasta las acciones de contacto. La organización deberá permitir una consulta legible y navegable desde escritorio y dispositivos móviles.
+
+**Aplicación móvil**: La navegación será distinta para supervisores y operarios, de acuerdo con sus responsabilidades y las funciones autorizadas para cada rol. La autenticación permitirá relacionar cada experiencia con el perfil correspondiente.
+
+El recorrido del supervisor conectará la consulta de obligaciones con la revisión de la ejecución, la evidencia y las excepciones registradas. De este modo, podrá evaluar el cumplimiento y, si corresponde, asignar una acción correctiva. Después de que el operario registre la atención, el supervisor podrá revisar la respuesta y verificarla. La información del caso y sus eventos se conservarán para su consulta posterior. Los reportes y las alertas formarán parte de sus recorridos de seguimiento.
+
+El recorrido del operario partirá de la consulta de sus obligaciones. Desde allí podrá revisar las indicaciones, registrar la ejecución, adjuntar la evidencia requerida y reportar impedimentos cuando una actividad no pueda desarrollarse según lo previsto. Cuando reciba una acción correctiva, podrá consultar lo solicitado, registrar la atención y enviarla para revisión. También podrá consultar el historial de las atenciones y revisar la secuencia de eventos asociada.
+
+Para las situaciones de conectividad limitada, la navegación del registro de una ejecución deberá contemplar el guardado temporal y la sincronización posterior. Las rutas de cada rol priorizarán sus tareas principales y mantendrán una correspondencia clara entre la información consultada y las acciones disponibles.
+
 
 ### 3.1.3. Landing Page UI Design
 
