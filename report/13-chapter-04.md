@@ -1,9 +1,13 @@
 # Capítulo IV: Product Implementation & Validation
+
 <a id="4-product-implementation--validation"></a>
-Este capítulo documenta el TB1 – Stage Review y el Sprint 1 de Service Compliance. El incremento comprende autenticación por roles, PostgreSQL, obligaciones, ejecuciones, evidencias, API REST, Swagger, pruebas y despliegue del backend. Incident & Corrective Action y Compliance Reporting permanecen como alcance posterior.
+
 ## 4.1. Software Configuration Management
+
 <a id="41-software-configuration-management"></a>
+
 ### 4.1.1. Software Development Environment Configuration
+
 <a id="411-software-development-environment-configuration"></a>
 
 | Producto      | Tecnología                   | Uso                        |
@@ -189,8 +193,7 @@ US-17 se adelantó desde Sprint 2 por ser una capacidad habilitadora de segurida
 | Producto | US-05 | Registrar ejecución | 5 |
 | Producto | US-06 | Adjuntar evidencia | 3 |
 | Técnica | TS-01 | API REST documentada | 5 |
-| Investigación | SP-01 | Aprendizaje autónomo | 5 |
-| **Total** |  |  | **26** |
+| **Total** |  |  | **21** |
 
 US-18 y US-19 quedan a cargo del responsable del Landing Page.
 
@@ -228,7 +231,6 @@ US-18 y US-19 quedan a cargo del responsable del Landing Page.
 | S1-T09 | Swagger/OpenAPI | Jean | Zayd | Completado |
 | S1-T10 | Unit, integration y E2E | Jean | Angel, Mathias | Completado |
 | S1-T11 | Pantallas core móviles | Augusto | Mathias, Jean | Completar evidencia |
-| S1-T12 | PoC de aprendizaje autónomo | Carlos | Jean, Augusto | Completar evidencia |
 | S1-T13 | Landing Page | Responsable del Landing Page | Equipo de diseño | Implementado; completar evidencias y URL |
 
 #### 4.2.2.4. Development Evidence for Sprint Review

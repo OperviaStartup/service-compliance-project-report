@@ -4,6 +4,8 @@
 
 ## 3.1. Product design
 
+
+
 <a id="311-style-guidelines"></a>
 
 ### 3.1.1. Style Guidelines
@@ -78,61 +80,67 @@ La jerarquía tipográfica de Service Compliance se organiza en varios niveles, 
 
 ### Paleta de colores
 
-- Azul primario (#0875EE)
+- **Azul primario (#0875EE)**
   - Fondo de botones principales; texto de botones secundarios; interruptores activos.
  
-- Azul marino (#07133F)
+- **Azul marino (#07133F)**
   - Títulos de pantalla y títulos de sección.
  
-- Gris de texto (#616B78)
+- **Gris de texto (#616B78)**
   - Texto descriptivo y contenido general.
  
-- Azul claro de estado (#E5F1FB)
+- **Azul claro de estado (#E5F1FB)**
   - Fondo de la etiqueta En curso.
  
-- Azul medio de estado (#26709E)
+- **Azul medio de estado (#26709E)**
   - Texto de la etiqueta En curso.
 
-- Gris claro de estado (#E8EEF5)
+- **Gris claro de estado (#E8EEF5)**
   - Fondo de la etiqueta Asignada.
  
-- Gris oscuro de estado (#475569)
+- **Gris oscuro de estado (#475569)**
   - Texto de la etiqueta Asignada y color del estado Pendiente de evaluación en el reporte rápido.
 
-- Verde agua claro de estado (#CCFBF1)
+- **Verde agua claro de estado (#CCFBF1)**
   - Fondo de la etiqueta Enviado.
  
-- Verde azulado de estado (#0F766E)
+- **Verde azulado de estado (#0F766E)**
   - Texto de la etiqueta Enviado y color del estado Cumple en el reporte rápido.
 
-- Amarillo claro de estado (#FEF3C7)
+- **Amarillo claro de estado (#FEF3C7)**
   - Fondo de la etiqueta Exceptuada.
 
-- Marrón de estado (#92400E)
+- **Marrón de estado (#92400E)**
   - Texto de la etiqueta Exceptuada y color de Excepción aceptada en el reporte rápido.
  
-- Rojo claro de estado (#FEE2E2)
+- **Rojo claro de estado (#FEE2E2)**
   - Fondo de una etiqueta de estado de error o incumplimiento.
  
-- Rojo de estado (#B91C1C)
+- **Rojo de estado (#B91C1C)**
   - Texto de esa etiqueta y color del estado Incumplimiento en el reporte rápido.
 
-- Blanco (#FFFFFF)
+- **Blanco (#FFFFFF)**
   - Fondo de las cards.
 
-- Rosa muy claro de error (#FFF1F2)
+- **Rosa muy claro de error (#FFF1F2)**
   - Fondo del campo de credenciales cuando el login presenta un error.
  
-- Rojo de error (#BA1A1A)
+- **Rojo de error (#BA1A1A)**
   - Borde del campo de credenciales con error.
- 
 
+### Espaciado y componentes
 
-### Voz y tono
+Se establece como criterio una escala de espaciado regular basada en múltiplos de 4 y 8 unidades, tarjetas con separación visible entre obligaciones, acciones táctiles de tamaño suficiente y agrupación de información relacionada. Los estados vacíos, errores de validación y confirmaciones forman parte de los componentes reutilizables; no se diseñan como páginas autónomas cuando basta una variante del mismo componente.
+
+### Voz y tono  
 
 La voz de Service Compliance es profesional, clara, respetuosa y objetiva. La comunicación utiliza palabras directas y consistentes para que supervisores y operarios comprendan las obligaciones, los estados de cada caso y las acciones disponibles. Las instrucciones priorizan verbos concretos y evitan tecnicismos innecesarios. En sus dimensiones, mantiene un registro serio y profesional, formal pero cercano, respetuoso y sereno.
 
 El tono se adapta a cada situación sin perder esa identidad. En las instrucciones cotidianas es directo y tranquilo; en las confirmaciones informa qué ocurrió y cuál es el siguiente paso. Ante una alerta, un error o una corrección devuelta, mantiene un tono neutral y orientado a la acción, sin culpabilizar al usuario ni exagerar la gravedad.
+
+### Accesibilidad e internacionalización
+
+El modelo de interfaz contempla `en_US` como idioma predeterminado y `es_419` como alternativa, conforme al enunciado. Los componentes deben preservar contenido legible al aumentar el tamaño del texto, incorporar etiquetas accesibles para iconos y ofrecer foco/orden de lectura adecuados.
 
 ### 3.1.2. Information Architecture
 
@@ -210,17 +218,18 @@ El recorrido del operario partirá de la consulta de sus obligaciones. Desde all
 
 Para las situaciones de conectividad limitada, la navegación del registro de una ejecución deberá contemplar el guardado temporal y la sincronización posterior. Las rutas de cada rol priorizarán sus tareas principales y mantendrán una correspondencia clara entre la información consultada y las acciones disponibles.
 
+---
 
 ### 3.1.3. Landing Page UI Design
 
 <a id="3131-landing-page-wireframe"></a>
----
+
 
 #### 3.1.3.1. Landing Page Wireframe
 
 A continuación se detalla la especificación del esquema de baja fidelidad (wireframe / low-fidelity skeleton) correspondiente a la Landing Page de Opervia. La interfaz está estructurada modularmente para presentar la propuesta de valor en verificación y cumplimiento de operaciones en campo B2B.
 
----
+
 
 ##### 1. Header y Hero Section (`[01_SOLUCIÓN]`)
 <img src="resources/12-chapter-03/landing-page-01-hero.png">
@@ -295,11 +304,13 @@ A continuación se detalla la especificación del esquema de baja fidelidad (wir
 
 #### 3.1.3.2. Landing Page Mock-up
 
+Los mockups de alta fidelidad deberán conservar IBM Plex Sans, azul primario, espacios blancos y un CTA identificable, aplicando una composición más cercana a una solución de operación de servicios que a un software de telemetría o certificación.
+
+
+
 <a id="314-mobile-applications-uxui-design"></a>
 
 ### 3.1.4. Mobile Applications UX/UI Design
-
----
 
 <a id="3141-mobile-applications-wireframes"></a>
 
