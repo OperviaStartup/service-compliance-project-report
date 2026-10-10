@@ -393,15 +393,15 @@ La validación del Sprint 1 comprueba que el flujo de autenticación, consulta d
 <a id="432-registro-de-entrevistas"></a>
 La siguiente tabla consolida las entrevistas de validación con los participantes definidos para este Sprint. Los datos personales, los enlaces y las duraciones se toman del registro de entrevistas del capítulo 2. La fecha de realización no aparece en la fuente disponible y, por ese motivo, no se infiere ni se reemplaza por una fecha estimada. El tiempo de inicio indicado corresponde al inicio del video individual enlazado.
 
-| Participante                     | Perfil                 |    Edad | Distrito / ubicación                                | Funcionalidad observada               |
-| -------------------------------- | ---------------------- | ------: | --------------------------------------------------- | ------------------------------------- |
-| Andy Aschalla                    | Supervisor/coordinador | 20 años | San Martín de Porres / conjunto empresarial en Lima | Landing Page y revisión de obligación |
-| José Ramírez                     | Operario               | 22 años | San Juan de Lurigancho / edificio de oficinas       | Login y consulta de obligaciones      |
-| Rodrigo Andres Gonzales Portugal | Operario               | 21 años | Los Olivos / centro de labores en San Martín        | Ejecución y evidencia                 |
+| Participante                     | Perfil                 |    Edad | Distrito / ubicación                                | Funcionalidad observada               | Links                        |
+| -------------------------------- | ---------------------- | ------: | --------------------------------------------------- | ------------------------------------- | ---------------------------- |
+| Andy Aschalla                    | Supervisor/coordinador | 20 años | San Martín de Porres / conjunto empresarial en Lima | Landing Page y revisión de obligación | https://youtu.be/dpmmz5uPGgM |
+| José Ramírez                     | Operario               | 22 años | San Juan de Lurigancho / edificio de oficinas       | Login y consulta de obligaciones      | https://youtu.be/ZxyewRU2b-4 |
+| Rodrigo Andres Gonzales Portugal | Operario               | 21 años | Los Olivos / centro de labores en San Martín        | Ejecución y evidencia                 |                              |
 
 #### Entrevista de Andy Aschalla
 
-![Evidencia de entrevista de Andy Aschalla](resources/10-chapter-01/Entrevista3.png)
+![Evidencia de entrevista de Andy Aschalla](resources/13-chapter-04/42-validationInterviewAndy.png)
 
 *Figura 4.16. Evidencia de video de la entrevista de Andy Aschalla.*
 
@@ -409,7 +409,7 @@ Andy Aschalla trabaja como supervisor de limpieza tercerizada. Su jornada incluy
 
 #### Entrevista de José Ramírez
 
-![Evidencia de entrevista de José Ramírez](resources/10-chapter-01/Entrevista1.png)
+![Evidencia de entrevista de José Ramírez](resources/13-chapter-04/43-validationInterviewJose.png)
 
 *Figura 4.17. Evidencia de video de la entrevista de José Ramírez.*
 
@@ -425,12 +425,12 @@ Rodrigo Andres Gonzales Portugal tiene un año y medio de experiencia realizando
 
 #### Síntesis de hallazgos
 
-| Hallazgo de validación | Entrevistas relacionadas | Decisión para el Sprint 1 |
-|---|---|---|
-| La obligación debe mostrar una referencia operativa comprensible para supervisar lo planificado. | Andy Aschalla | Mantener la consulta de obligaciones y la revisión del flujo supervisor. |
-| La autenticación y la consulta deben ser directas y compatibles con hábitos existentes. | José Ramírez | Mantener el login y registrar como mejora futura el acceso con correo corporativo. |
-| La ejecución debe quedar asociada a una evidencia consultable por el supervisor. | Rodrigo Andres Gonzales Portugal | Mantener el registro de ejecución y evidencia como flujo central. |
-| La información no debería depender únicamente de mensajes, llamadas, cuadernos o formatos dispersos. | Andy Aschalla, José Ramírez y Rodrigo Andres Gonzales Portugal | Priorizar la trazabilidad entre obligación, ejecución y evidencia. |
+| Hallazgo de validación                                                                               | Entrevistas relacionadas                                       | Decisión para el Sprint 1                                                          |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| La obligación debe mostrar una referencia operativa comprensible para supervisar lo planificado.     | Andy Aschalla                                                  | Mantener la consulta de obligaciones y la revisión del flujo supervisor.           |
+| La autenticación y la consulta deben ser directas y compatibles con hábitos existentes.              | José Ramírez                                                   | Mantener el login y registrar como mejora futura el acceso con correo corporativo. |
+| La ejecución debe quedar asociada a una evidencia consultable por el supervisor.                     | Rodrigo Andres Gonzales Portugal                               | Mantener el registro de ejecución y evidencia como flujo central.                  |
+| La información no debería depender únicamente de mensajes, llamadas, cuadernos o formatos dispersos. | Andy Aschalla, José Ramírez y Rodrigo Andres Gonzales Portugal | Priorizar la trazabilidad entre obligación, ejecución y evidencia.                 |
 
 ### 4.3.3. Evaluaciones según heurísticas
 
