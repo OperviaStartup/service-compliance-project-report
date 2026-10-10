@@ -1,512 +1,320 @@
+<div style="page-break-before: always;"></div>
+
+<a id="capitulo-iii-solution-uiux-design"></a>
 # Capítulo III: Solution UI/UX Design
 
+Este capítulo presenta la propuesta de interacción de Service Compliance para la empresa prestadora de servicios de limpieza tercerizada. La solución distingue una aplicación Android nativa para operarios, una aplicación multiplataforma para supervisores y administradores de la empresa prestadora y un Landing Page público orientado a explicar el producto y explorar el prototipo del producto. No se propone una aplicación web operativa ni un portal para la organización cliente en esta etapa.
+
+El diseño responde a una distinción que atraviesa el Chapter II: registrar una Execution no equivale a determinar su Compliance Result. Del mismo modo, una Exception no constituye automáticamente un Non-compliance, y una Corrective Action registrada como atendida por el operario requiere verificación antes de cerrarse. Estas diferencias determinan etiquetas, permisos, navegación y secuencias de interacción.
+
+La propuesta visual y funcional se documenta separando los artefactos disponibles de aquellos cuya elaboración o revisión sigue pendiente. Los mockups exportados de Figma representan decisiones de interfaz; no constituyen evidencia de aplicaciones móviles implementadas.
+
 <a id="31-product-design"></a>
+## 3.1. Product Design
 
-## 3.1. Product design
+La experiencia se organiza alrededor de las preguntas específicas de cada rol. El operario necesita saber qué debe realizar, dónde, cuándo y qué información debe registrar. El supervisor necesita conocer qué obligaciones requieren atención, qué ocurrió durante su ejecución y qué decisión de cumplimiento corresponde. La definición y activación de planes corresponde al administrador organizacional autorizado. El administrador empresarial, propuesto como rol adicional para la gestión de las cuentas y la contratación B2B, debe operar dentro de un alcance organizacional separado del trabajo cotidiano de campo. Por último, el visitante del Landing Page necesita comprender la propuesta de valor y encontrar un acceso al prototipo público.
 
+| Producto | Usuarios | Responsabilidad central | Tecnología prevista / estado actual |
+|---|---|---|---|
+| Operator Mobile Application | Operarios | Consultar asignaciones, ejecutar obligaciones, adjuntar evidencia, reportar excepciones y atender correctivas | Kotlin, Android nativo |
+| Supervisor & Administration Mobile Application | Supervisores y administrador empresarial, con permisos separados | Supervisar/evaluar/reportar (supervisor); configurar planes/usuarios/alcance (administrador) | Flutter/Dart, Android e iOS |
+| Landing Page | Visitantes y compradores potenciales | Explicar el servicio y explorar el prototipo/demostración | HTML/CSS/JavaScript; existe un despliegue previo, cuyo diseño vigente está documentado con capturas de su publicación |
 
+El administrador no constituye un tercer segmento entrevistado. Sus operaciones se incorporan como un rol organizacional propuesto, condicionado a la aprobación de las historias de gestión de usuarios y cupos correspondientes en el Product Backlog.
 
 <a id="311-style-guidelines"></a>
-
 ### 3.1.1. Style Guidelines
 
 <a id="3111-general-style-guidelines"></a>
-
 #### 3.1.1.1. General Style Guidelines
 
-La propuesta visual utiliza un fondo geométrico en tonos celestes, superficies blancas para las cards y azul intenso para las acciones principales y los elementos seleccionados de navegación. Se mantiene un color en especifico para cada encabezado dentro de la aplicacion, lo que establece una jerarquía entre el nombre de la pantalla, sus secciones y los detalles de cada registro.
-Los estados se identifican mediante etiquetas textuales y colores de apoyo. El color acompaña el significado del estado; la etiqueta mantiene esa información visible por sí misma.
-La interfaz procura conservar una estructura recurrente: encabezado, contexto del caso, contenido agrupado y acción principal cuando corresponde. Las cards redondeadas y las separaciones constantes ayudan a mantener la continuidad entre pantallas. Estos lineamientos describen la propuesta visual del equipo para la aplicacion Service Compliance
+**Identidad.** Opervia es la startup que ofrece Service Compliance. El nombre del producto identifica una solución dedicada a explicar el cumplimiento de un servicio tercerizado mediante la relación entre planificación, ejecución, evidencia, evaluación y seguimiento. La identidad evita prometer certificación jurídica, aprobación automática del servicio o detección infalible de incumplimientos.
+
+**Marca gráfica.** El isotipo existente representa continuidad del proceso, hitos de registro y comprobación. Su uso debe respetar un área libre, contraste suficiente y una versión monocromática para fondos de contraste limitado. No se incorporan sellos ISO, SOC 2, menciones de clientes ni métricas de operación que no estén acreditadas.
+
+<p align="center"><img src="resources/12-chapter-03/logo-service-compliance.png" alt="Isotipo de Service Compliance" width="210"></p>
+
+*Figura 3.1. Identificador gráfico de Service Compliance utilizado como referencia de marca.*
+
+**Tipografía.** La familia definida es IBM Plex Sans. Se utiliza una jerarquía legible que separa título de vista, encabezados de secciones, contenidos operativos y metadatos. En móvil, los títulos se proponen entre 22 y 24 sp, los subtítulos entre 18 y 20 sp y los textos principales entre 14 y 16 sp, sujetos a escalamiento del sistema operativo y pruebas de legibilidad. Los códigos, periodos, fechas y estados no deben depender únicamente de cambios de peso tipográfico.
+
+<p align="center"><img src="resources/12-chapter-03/font-ibm-plex-sans.png" alt="Referencia tipográfica IBM Plex Sans" width="400"></p>
+
+*Figura 3.2. Familia tipográfica seleccionada para la identidad visual.*
+
+**Colores y significado.** La paleta existente emplea azul primario `#0875EE`, azul marino `#07133F`, gris de texto `#616B78` y superficies blancas `#FFFFFF`. Para estados se utilizan combinaciones de color y texto: gris para información pendiente o asignada, azul para ejecución en curso, verde azulado para finalizaciones o evaluaciones conformes y rojo para errores o incumplimientos. La etiqueta siempre debe explicar el significado, incluso si el color no es perceptible.
+
+No se utilizará el mismo color o etiqueta para confundir dimensiones distintas. Por ejemplo, «Enviada» corresponde al registro de ejecución; «Pendiente de evaluación» corresponde a la revisión; «Cumple» es un resultado de cumplimiento; «Pendiente de sincronización» indica un estado técnico local.
+
+**Espaciado y componentes.** Se establece como criterio una escala de espaciado regular basada en múltiplos de 4 y 8 unidades, tarjetas con separación visible entre obligaciones, acciones táctiles de tamaño suficiente y agrupación de información relacionada. Las cifras de espaciado deberán consolidarse como tokens en Figma antes de considerarse un Design System implementado. Los estados vacíos, errores de validación y confirmaciones forman parte de los componentes reutilizables; no se diseñan como páginas autónomas cuando basta una variante del mismo componente.
+
+**Voz y tono.** Se adopta comunicación seria, respetuosa y directa. Los mensajes explican qué ocurrió, si la información quedó guardada y qué acción corresponde. Se evitan acusaciones al operario y mensajes que confundan el registro de una actividad con su aprobación. Son preferibles «Ejecución enviada para revisión» y «Acción correctiva pendiente de verificación» a «Servicio certificado» o «Incumplimiento resuelto» antes de la decisión correspondiente.
+
+**Accesibilidad e internacionalización.** El modelo de interfaz contempla `en_US` como idioma predeterminado y `es_419` como alternativa, según la configuración definida. Los componentes deben preservar contenido legible al aumentar el tamaño del texto, incorporar etiquetas accesibles para iconos y ofrecer foco/orden de lectura adecuados. Una combinación de colores visualmente uniforme no acredita por sí sola accesibilidad. Estas son decisiones de diseño; la implementación y las pruebas en dispositivos móviles permanecen pendientes.
+
+<a id="3112-web-style-guidelines"></a>
+#### 3.1.1.2. Web Style Guidelines
+
+El Landing Page utiliza una estructura editorial clara en vez de una consola técnica de monitoreo. La prioridad es comunicar el problema, la propuesta de valor, el proceso que permite demostrar cumplimiento, los dos roles operativos y el acceso al prototipo del producto. Debe adaptarse a navegadores de escritorio y móvil, sin cambiar el contenido esencial entre tamaños de pantalla.
+
+El encabezado identifica la marca, presenta una navegación breve por secciones y mantiene una acción principal para explorar el prototipo. Los enlaces y botones deben expresar acciones verificables: «Cómo funciona», «Para quién es» y «Explorar el prototipo». No se prometen pruebas piloto en 48 horas, certificaciones de seguridad, resultados de ahorro ni integraciones que todavía no existan.
+
+Se requiere estructura semántica HTML, contraste suficiente, soporte de teclado, estados visibles de foco, textos alternativos y una experiencia responsiva. El selector de idiomas debe conservar etiquetas consistentes y no depender exclusivamente de banderas. La Landing Page es el único producto web incluido en el alcance inicial.
+
+<a id="3113-mobile-style-guidelines"></a>
+#### 3.1.1.3. Mobile Style Guidelines
+
+La navegación, disposición de acciones y densidad de información se adaptan a dos tipos de trabajo. En Android nativo, el operario encuentra primero su próxima obligación y puede registrar el resultado en pocos pasos. En Flutter, el supervisor prioriza obligaciones que requieren intervención, evaluaciones pendientes y casos; el administrador accede a funciones organizacionales mediante permisos separados.
+
+Las aplicaciones deben permitir identificar claramente el alcance activo (empresa, servicio, sede, fecha o zona) cuando sea relevante. Una captura de foto, lectura QR, firma manuscrita o geolocalización puntual debe responder a un Evidence Requirement concreto, no ejecutarse indiscriminadamente. El seguimiento continuo de ubicación no forma parte del alcance aprobado.
+
+La interacción sin conexión debe indicar cuándo se visualizan datos almacenados previamente y qué registros permanecen pendientes de sincronización. La interfaz no mostrará éxito remoto antes de contar con confirmación de la API.
 
 <a id="312-information-architecture"></a>
-
-### Branding
-
-**Nombre de la marca** 
-
-**Service Compliance** es el nombre de la aplicación móvil, orientada inicialmente a apoyar la gestión de servicios de limpieza tercerizados. La denominación refleja su propósito: relacionar las obligaciones del servicio con su ejecución, las evidencias registradas y la evaluación del cumplimiento.
-
-**Logotipo**
-
-El isotipo de Service Compliance combina un recorrido continuo, dos puntos que señalan hitos del proceso y una marca de verificación. En conjunto, estos elementos representan la trazabilidad de las obligaciones del servicio y su revisión, desde el seguimiento de las actividades hasta la confirmación del resultado de cumplimiento.
-
-<p align="center">
-  <img src="resources/12-chapter-03/logo-service-compliance.png"
-       alt="Logotipo de Service Compliance"
-       width="220">
-</p>
-
-**Eslogan** 
-
-El eslogan principal de Service Compliance es *Evidencia, trazabilidad y verificabilidad*. Este eslogan sintetiza el propósito de **Service Compliance**: vincular las obligaciones con su ejecución, conservar la evidencia asociada y mantener información que permita revisar los resultados de cumplimiento.
-
-**Valores de la marca**
-
-Service Compliance se basa en valores que guían la manera en que la aplicación organiza y presenta la información del servicio:
-
-- **Evidencia:** Cada registro se vincula con la obligación y el criterio correspondiente. Esto permite revisar el resultado con información contextualizada.
-  
-- **Trazabilidad:** El historial conserva la secuencia de ejecución, evaluación y acciones posteriores. Así puede consultarse la evolución de cada caso.
-  
-- **Verificabilidad:** Los resultados se revisan con base en criterios y evidencias registradas. Cada evaluación queda asociada con su responsable y fecha.
-
-- **Integridad:** Las decisiones anteriores permanecen en el historial del caso. Las acciones posteriores no reemplazan ni ocultan el resultado original.
-
-- **Transparencia:** Los estados, responsables y eventos se presentan con claridad. Esto facilita comprender qué ocurrió durante cada etapa.
-
-### Tipografía
-
-Para las interfaces de Service Compliance se utiliza IBM Plex Sans como familia tipográfica principal. Su aplicación consistente en títulos, textos, etiquetas, botones y datos ayuda a mantener una identidad visual uniforme en las pantallas móviles.
-
-La jerarquía se establece mediante el tamaño y el peso de la fuente: los títulos de pantalla y sección destacan sobre el texto descriptivo; los botones y estados usan pesos bold o semibold para facilitar su identificación; y los datos secundarios conservan un peso regular. Se evita combinar familias tipográficas distintas y se priorizan tamaños legibles en pantallas pequeñas.
-
-<p align="center">
-  <img src="resources/12-chapter-03/font-ibm-plex-sans.png"
-       alt="Logotipo de Service Compliance"
-       width="400">
-</p>
-
-**Jerarquía Tipográfica**
-
-La jerarquía tipográfica de Service Compliance se organiza en varios niveles, cada uno con tamaños y pesos específicos:
-
-- **Título de pantalla:** IBM Plex Sans Bold, 22–24 sp. Se utiliza para el nombre principal de cada pantalla y permite identificar rápidamente dónde se encuentra el usuario.
-
-- **Título de sección:** IBM Plex Sans Bold, 18–20 sp. Organiza el contenido de una pantalla y ayuda a distinguir sus apartados.
-
-- **Texto principal:** IBM Plex Sans Regular, 14–16 sp. Se aplica a descripciones, instrucciones y datos centrales de obligaciones, ejecuciones y acciones correctivas.
-
-- **Botones:** IBM Plex Sans Semibold, 14–16 sp. Destaca acciones disponibles, como “Ver detalle” o “Registrar atención”.
-
-### Paleta de colores
-
-- **Azul primario (#0875EE)**
-  - Fondo de botones principales; texto de botones secundarios; interruptores activos.
- 
-- **Azul marino (#07133F)**
-  - Títulos de pantalla y títulos de sección.
- 
-- **Gris de texto (#616B78)**
-  - Texto descriptivo y contenido general.
- 
-- **Azul claro de estado (#E5F1FB)**
-  - Fondo de la etiqueta En curso.
- 
-- **Azul medio de estado (#26709E)**
-  - Texto de la etiqueta En curso.
-
-- **Gris claro de estado (#E8EEF5)**
-  - Fondo de la etiqueta Asignada.
- 
-- **Gris oscuro de estado (#475569)**
-  - Texto de la etiqueta Asignada y color del estado Pendiente de evaluación en el reporte rápido.
-
-- **Verde agua claro de estado (#CCFBF1)**
-  - Fondo de la etiqueta Enviado.
- 
-- **Verde azulado de estado (#0F766E)**
-  - Texto de la etiqueta Enviado y color del estado Cumple en el reporte rápido.
-
-- **Amarillo claro de estado (#FEF3C7)**
-  - Fondo de la etiqueta Exceptuada.
-
-- **Marrón de estado (#92400E)**
-  - Texto de la etiqueta Exceptuada y color de Excepción aceptada en el reporte rápido.
- 
-- **Rojo claro de estado (#FEE2E2)**
-  - Fondo de una etiqueta de estado de error o incumplimiento.
- 
-- **Rojo de estado (#B91C1C)**
-  - Texto de esa etiqueta y color del estado Incumplimiento en el reporte rápido.
-
-- **Blanco (#FFFFFF)**
-  - Fondo de las cards.
-
-- **Rosa muy claro de error (#FFF1F2)**
-  - Fondo del campo de credenciales cuando el login presenta un error.
- 
-- **Rojo de error (#BA1A1A)**
-  - Borde del campo de credenciales con error.
-
-### Espaciado y componentes
-
-Se establece como criterio una escala de espaciado regular basada en múltiplos de 4 y 8 unidades, tarjetas con separación visible entre obligaciones, acciones táctiles de tamaño suficiente y agrupación de información relacionada. Los estados vacíos, errores de validación y confirmaciones forman parte de los componentes reutilizables; no se diseñan como páginas autónomas cuando basta una variante del mismo componente.
-
-### Voz y tono  
-
-La voz de Service Compliance es profesional, clara, respetuosa y objetiva. La comunicación utiliza palabras directas y consistentes para que supervisores y operarios comprendan las obligaciones, los estados de cada caso y las acciones disponibles. Las instrucciones priorizan verbos concretos y evitan tecnicismos innecesarios. En sus dimensiones, mantiene un registro serio y profesional, formal pero cercano, respetuoso y sereno.
-
-El tono se adapta a cada situación sin perder esa identidad. En las instrucciones cotidianas es directo y tranquilo; en las confirmaciones informa qué ocurrió y cuál es el siguiente paso. Ante una alerta, un error o una corrección devuelta, mantiene un tono neutral y orientado a la acción, sin culpabilizar al usuario ni exagerar la gravedad.
-
-### Accesibilidad e internacionalización
-
-El modelo de interfaz contempla `en_US` como idioma predeterminado y `es_419` como alternativa, conforme al enunciado. Los componentes deben preservar contenido legible al aumentar el tamaño del texto, incorporar etiquetas accesibles para iconos y ofrecer foco/orden de lectura adecuados.
-
 ### 3.1.2. Information Architecture
 
 <a id="3121-organization-systems"></a>
-
 #### 3.1.2.1. Organization Systems
 
+La organización de información combina audiencia, tarea, secuencia y tiempo. En el Landing Page se utiliza jerarquía informativa, iniciando por la necesidad del comprador y terminando en una acceso al prototipo. En las aplicaciones, el contenido se adapta a permisos y objetivos del usuario, sin mezclar el trabajo de un operario con decisiones de evaluación o administración de cuentas.
+
+| Experiencia | Organización principal | Uso concreto |
+|---|---|---|
+| Landing Page | Jerárquica y secuencial | Problema, propuesta de valor, funcionamiento, roles y prototipo |
+| Operario | Por trabajo y secuencia de ejecución | Obligaciones próximas o en curso; detalle, ejecución, evidencia o Exception y envío |
+| Supervisor | Por tarea, estado y servicio/sede | Resumen; obligaciones; revisión de ejecuciones; casos; reportes |
+| Administrador | Por organización y permisos | Usuarios, roles, cupos contratados y servicios autorizados, una vez aprobadas las historias correspondientes |
+| Historiales | Cronológica | Conservación de Execution, Compliance Result, observaciones y correctivas sin reemplazar eventos anteriores |
+
+La fecha y la ventana de ejecución son criterios de consulta para obligaciones. Las decisiones de cumplimiento se ordenan por estado de revisión, no por el estado técnico de sincronización. En los reportes, la jerarquía de filtros sigue empresa/servicio/sede/periodo, de acuerdo con el alcance permitido a cada usuario.
+
 <a id="3122-labelling-systems"></a>
-
-La información de Service Compliance se organizará según las necesidades de sus usuarios y el propósito de cada experiencia. La Landing Page estará dirigida a visitantes que necesitan comprender el alcance del producto y decidir si desean solicitar una demostración o establecer contacto. La aplicación móvil estará orientada a las tareas de supervisores y operarios, cuyas responsabilidades requieren recorridos diferenciados.
-
-**Landing Page**: Se propone una organización jerárquica y progresiva. Primero se presentará la propuesta general y sus destinatarios; luego se explicarán el problema que aborda, sus beneficios y la forma en que contribuye a gestionar el cumplimiento de los servicios. La información comercial y las opciones de contacto se ubicarán después de que el visitante haya podido comprender el producto. Esta organización facilitará el paso desde el descubrimiento hasta la decisión de solicitar información, sin depender de una estructura definitiva de pantallas o secciones.
-
-**Aplicación móvil**: La información se organizará primero de acuerdo con el rol y luego según las tareas que debe realizar cada usuario. Para el operario, el contenido priorizará las obligaciones asignadas, sus instrucciones y el registro de la ejecución. Para el supervisor, se organizará alrededor de la consulta operativa, la revisión de ejecuciones, la evaluación del cumplimiento, la gestión de acciones correctivas y la consulta de alertas, historiales y reportes.
-
-La organización secuencial se aplicará a las tareas que requieren completar acciones relacionadas. El recorrido del operario comprenderá consultar una obligación, revisar sus indicaciones, registrar la ejecución y adjuntar la evidencia requerida o reportar un impedimento. En el flujo correctivo, consultará la corrección solicitada, registrará la atención realizada y la enviará a revisión. El supervisor revisará la ejecución, registrará el resultado y, si corresponde, asignará una acción correctiva y verificará su atención.
-
-La organización cronológica se utilizará en los historiales de casos y de acciones correctivas, para que los eventos puedan comprenderse según su orden de ocurrencia. En los reportes se organizarán los resultados mediante las dimensiones de periodo, sede, servicio y categoría de cumplimiento, lo que permitirá consultar y comparar la información correspondiente. La ordenación alfabética no será prioritaria para las obligaciones, pues su consulta depende principalmente de su estado y programación temporal.
-
 #### 3.1.2.2. Labelling Systems
 
+Las etiquetas buscan ser breves y mantener equivalencia con el Ubiquitous Language de Chapter II. En el contenido dirigido al usuario, los términos en inglés del modelo de dominio se presentan mediante nombres comprensibles en el idioma seleccionado.
+
+| Concepto | Etiqueta `es_419` | Etiqueta `en_US` | Precisión semántica |
+|---|---|---|---|
+| Service Obligation | Obligación / Actividad asignada | Service obligation / Assigned task | Trabajo esperado dentro de una ventana; no resultado evaluado |
+| Execution | Ejecución | Execution | Trabajo realizado o intentado; no significa conformidad |
+| Evidence Requirement | Evidencia requerida | Required evidence | Depende de la obligación y puede ser inexistente |
+| Exception | Impedimento / Excepción reportada | Reported exception | Circunstancia por revisar; no incumplimiento automático |
+| Compliance Result | Resultado de cumplimiento | Compliance result | Decisión del supervisor |
+| Corrective Action | Acción correctiva | Corrective action | Atención por operario; verificación/cierre por supervisor |
+| Compliance Case | Historial del caso | Case history | Secuencia de evaluaciones y acciones posteriores |
+| SyncState | Pendiente de sincronización | Pending sync | Estado técnico del dispositivo, separado del negocio |
+
+La interfaz diferencia al menos cuatro dimensiones: estado de la obligación (asignada, en curso, vencida según reglas), estado de la ejecución (no registrada, en curso, enviada), estado de evaluación (pendiente o resultado registrado) y estado de transmisión (sin conexión, pendiente, sincronizado, error). No se reducirá esa información a un único atributo `status`.
+
 <a id="3123-seo-tags-and-meta-tags"></a>
-
-Las etiquetas de Service Compliance se definirán con términos breves, comprensibles y consistentes. Su propósito será ayudar a visitantes y usuarios a reconocer el contenido disponible, comprender los estados y anticipar el resultado de una acción. Los mismos conceptos conservarán una denominación estable en las distintas partes del producto.
-
-**Landing Page**: Las etiquetas se orientarán a comunicar contenidos y acciones con un lenguaje directo. Las opciones para solicitar una demostración o contactar a Opervia se formularán como acciones concretas, relacionadas con el objetivo de conversión. Las etiquetas deberán conservar su sentido en español e inglés y evitar términos técnicos que no sean necesarios para comprender la propuesta.
-
-**Aplicación móvil**: Las etiquetas se definirán de acuerdo con las tareas de cada rol. Los términos principales distinguirán conceptos como Plan de servicio, Obligación, Ejecución, Evidencia, Excepción, Resultado de cumplimiento, Acción correctiva, Observación del cliente, Caso de cumplimiento e Historial. Cuando se requiera relacionar una etiqueta con el modelo de dominio o las historias de usuario, se conservará la correspondencia entre el término en español y el concepto técnico asociado.
-
-Los estados de las obligaciones se expresarán mediante las categorías Asignada, En curso, Enviada, Exceptuada y Atrasada. Los resultados de evaluación utilizarán Cumple, Excepción aceptada, Desviación e Incumplimiento. En el seguimiento de las acciones correctivas se distinguirán los eventos de asignación, atención registrada, envío para revisión y verificación. Esta separación permitirá diferenciar el resultado original de la evaluación respecto de las acciones realizadas posteriormente.
-
-Las acciones utilizarán verbos que describan el propósito de la interacción, como consultar una obligación, registrar una ejecución, adjuntar evidencia, reportar un impedimento, evaluar el cumplimiento, asignar una acción correctiva, registrar su atención o consultar un historial. La denominación específica de los controles se establecerá durante el diseño de las interfaces, manteniendo esta relación entre etiqueta y propósito.
-
 #### 3.1.2.3. SEO Tags and Meta Tags
 
+Los metadatos del Landing Page describen la oferta sin atribuirle capacidades regulatorias o una base instalada inexistente. Los valores se proponen en inglés para la experiencia predeterminada y español latinoamericano para su alternativa traducida.
+
+| Elemento | Inglés `en_US` | Español `es_419` |
+|---|---|---|
+| Page Title | Service Compliance: Outsourced Service Traceability \| Opervia | Service Compliance: Trazabilidad de servicios tercerizados \| Opervia |
+| Description | Connect service obligations, field execution, evidence and compliance review in a traceable operational workflow. | Relaciona obligaciones del servicio, ejecución, evidencia y evaluación de cumplimiento en un historial trazable. |
+| Keywords | outsourced cleaning, service obligations, evidence, compliance, field operations | limpieza tercerizada, obligaciones, evidencias, cumplimiento, operaciones de campo |
+| Author | Opervia | Opervia |
+| Open Graph Title | Service Compliance by Opervia | Service Compliance de Opervia |
+
+Para la publicación móvil futura se proponen los siguientes elementos ASO, sin afirmar que ya existen fichas activas en tiendas:
+
+| Elemento | Operator Android | Supervisor Flutter |
+|---|---|---|
+| App Title | Service Compliance Operator | Service Compliance Supervisor |
+| Subtitle | Assigned work and evidence | Operational and compliance review |
+| Keywords | field work, cleaning, evidence, assigned tasks | supervision, compliance, corrective actions, reporting |
+| Description | Review assigned obligations, record execution and report exceptions. | Review operations, evaluate compliance and follow up on corrective actions. |
+
 <a id="3124-searching-systems"></a>
-
-La estrategia de metadatos se propone para la Landing Page y para la aplicación móvil Service Compliance. La Landing Page tendrá valores en español e inglés, de acuerdo con los idiomas previstos para esta experiencia. Los siguientes valores constituyen una propuesta para orientar su diseño y publicación.
-
-| Elemento SEO | Español | Ingles |
-|---|---|---|
-| Title | Service Compliance, Gestión de servicios tercerizados, Opervia | Service Compliance, Outsourced Service Management, Opervia |
-| Meta Description | Centraliza la planificación, ejecución, evidencia y seguimiento de servicios tercerizados en una solución móvil para supervisores y operarios de campo. | Centralize the planning, execution, evidence, and tracking of outsourced services in a mobile solution for supervisors and field operators.|
-| Meta Keywords | gestión de servicios tercerizados, cumplimiento de servicios, obligaciones operativas, evidencia de ejecución, supervisión de limpieza, trazabilidad de servicios | outsourced service management, service compliance, operational obligations, execution evidence, cleaning supervision, service traceability |
-| Meta Author |   Opervia | Opervia | 
-
-Para la aplicación móvil se proponen los elementos ASO en ambos idiomas. El título conservará el nombre del producto y el subtítulo, las palabras clave y la descripción comunicarán sus principales objetivos y usuarios.
-
-| Elemento ASO | Español | Ingles |
-|---|---|---|
-| App Title | Service Compliance | Service Compliance |
-| App Subtitle | Evidencia y control de servicios | Service tracking and evidence |
-| App Keywords | cumplimiento de servicios, servicios tercerizados, obligaciones, ejecución, evidencias, supervisión, limpieza, acciones correctivas, reportes | service compliance, outsourced services, obligations, field execution, evidence, supervision, cleaning, corrective actions, reports |
-| App Description | Organiza las obligaciones del servicio y registra su ejecución desde el móvil. Adjunta evidencias, informa impedimentos y permite a supervisores evaluar resultados, gestionar acciones correctivas y consultar el historial de cada caso. | Organize service obligations and record their execution from a mobile device. Attach evidence, report impediments, and enable supervisors to evaluate results, manage corrective actions, and review each case history. |
-
 #### 3.1.2.4. Searching Systems
 
+La Landing Page, por su volumen de contenido, no requiere una búsqueda interna. La navegación por secciones permite llegar a funcionamiento, destinatarios y acceso al prototipo.
+
+En Android, el operario consulta la lista de obligaciones de su periodo y puede distinguir las que están pendientes, en curso y registradas. No se propone un buscador global si el volumen de tareas no lo justifica. En la experiencia del supervisor se incluyen filtros por servicio, sede, periodo y estado de obligación/revisión. Para los casos y reportes se ofrece filtrado por resultado de cumplimiento, preservando los pendientes de evaluación como categoría distinta.
+
+Cuando una consulta no devuelve registros, se muestra un estado vacío explicativo. Cuando el dispositivo trabaja con información local desactualizada, la interfaz lo advierte para no presentar datos históricos como si estuvieran actualizados.
+
 <a id="3125-navigation-systems"></a>
-
-**Landing Page**: La consulta de información se orientará mediante una estructura jerárquica que permita al visitante comprender la propuesta y localizar los contenidos necesarios para evaluar el producto. La búsqueda interna no se considera una función central de esta experiencia; las opciones de contacto permitirán continuar el recorrido de conversión.
-
-**Aplicación móvil**: La búsqueda de obligaciones y resultados se realizará mediante criterios vinculados con las tareas de cada rol. En la consulta del estado operativo, el supervisor podrá delimitar las obligaciones por sitio, periodo y estado. La información resultante se organizará para facilitar la identificación de aquellas obligaciones que requieren revisión.
-
 #### 3.1.2.5. Navigation Systems
 
+Operario: Android nativo. La navegación aprobada se estructura en `Inicio | Trabajo | Historial | Perfil`. Las notificaciones se abren desde un acceso secundario; las acciones correctivas asignadas se presentan dentro del trabajo que requiere atención. La pantalla de inicio prioriza la próxima obligación y permite continuar una ejecución activa. «Historial» reúne ejecuciones previas y el resultado de la revisión cuando exista, no solo acciones correctivas.
+
+Supervisor: Flutter. La navegación aprobada es `Resumen | Actividades | Casos | Reportes`, con Perfil desde el avatar. «Actividades» organiza obligaciones y asignaciones; «Casos» reúne evaluaciones, Exceptions, Non-compliances, Corrective Actions y Client Observations. El listado de operarios es una consulta contextual desde Actividades, no una pestaña autónoma. Esta elección preserva la importancia de Compliance Management en la navegación principal.
+
+Administrador: Flutter. El administrador, como rol organizacional adicional, comparte tecnología con el supervisor pero no sus permisos ni necesariamente toda su navegación. Sus funciones incluyen configuración y activación de Service Plans (US-01 a US-03), así como gestión de usuarios y cupos (US-20).
+
+Landing Page. Header con marca y accesos a `How it works`, `Who it's for` y `Explore the prototype`. En móvil, la navegación se contrae sin ocultar el llamado a la acción. La acción «Explorar el prototipo» enlaza al archivo de Figma sin recoger datos de contacto ni simular una suscripción o contratación.
+
 <a id="313-landing-page-ui-design"></a>
-
-**Landing Page**: La navegación se orientará a que el visitante comprenda gradualmente la propuesta de Service Compliance y pueda expresar su interés en una demostración o piloto. El recorrido facilitará el paso desde la consulta de información general hasta las acciones de contacto. La organización deberá permitir una consulta legible y navegable desde escritorio y dispositivos móviles.
-
-**Aplicación móvil**: La navegación será distinta para supervisores y operarios, de acuerdo con sus responsabilidades y las funciones autorizadas para cada rol. La autenticación permitirá relacionar cada experiencia con el perfil correspondiente.
-
-El recorrido del supervisor conectará la consulta de obligaciones con la revisión de la ejecución, la evidencia y las excepciones registradas. De este modo, podrá evaluar el cumplimiento y, si corresponde, asignar una acción correctiva. Después de que el operario registre la atención, el supervisor podrá revisar la respuesta y verificarla. La información del caso y sus eventos se conservarán para su consulta posterior. Los reportes y las alertas formarán parte de sus recorridos de seguimiento.
-
-El recorrido del operario partirá de la consulta de sus obligaciones. Desde allí podrá revisar las indicaciones, registrar la ejecución, adjuntar la evidencia requerida y reportar impedimentos cuando una actividad no pueda desarrollarse según lo previsto. Cuando reciba una acción correctiva, podrá consultar lo solicitado, registrar la atención y enviarla para revisión. También podrá consultar el historial de las atenciones y revisar la secuencia de eventos asociada.
-
-Para las situaciones de conectividad limitada, la navegación del registro de una ejecución deberá contemplar el guardado temporal y la sincronización posterior. Las rutas de cada rol priorizarán sus tareas principales y mantendrán una correspondencia clara entre la información consultada y las acciones disponibles.
-
----
-
 ### 3.1.3. Landing Page UI Design
 
+El Landing Page actual está implementado y desplegado en [Service Compliance | Opervia](https://operviastartup.github.io/service-compliance-landingpage/). Comunica el alcance del producto, la trazabilidad de obligaciones y las experiencias de operario y supervisión. Los wireframes heredados del informe que incluyen certificaciones, compañías cliente, resultados de auditoría o tarifas sin condiciones verificables no se consideran la propuesta vigente.
+
 <a id="3131-landing-page-wireframe"></a>
-
-
 #### 3.1.3.1. Landing Page Wireframe
 
-A continuación se detalla la especificación del esquema de baja fidelidad (wireframe / low-fidelity skeleton) correspondiente a la Landing Page de Opervia. La interfaz está estructurada modularmente para presentar la propuesta de valor en verificación y cumplimiento de operaciones en campo B2B.
+El sitio se estructura en seis áreas de contenido, repetidas conceptualmente en desktop y mobile con una disposición adaptada al espacio de lectura.
 
+| Área | Función comunicativa | Contenido mínimo |
+|---|---|---|
+| Header / Hero | Identificar producto y destinatario | Logotipo, propuesta de valor para empresas prestadoras, CTA «Explorar el prototipo» |
+| Problema operativo | Mostrar el costo de la fragmentación | Información distribuida entre planificación, comunicación, fotos y reportes; sin cifras no medidas |
+| Cómo funciona | Explicar el proceso | Plan, obligación, ejecución y evidencia, evaluación y seguimiento |
+| Dos experiencias móviles | Distinguir responsabilidades | Operario registra; supervisor verifica y evalúa |
+| Beneficio de trazabilidad | Demostrar alcance | Caso ilustrativo, marcado como ejemplo, que conserva incumplimiento original y correctiva |
+| Explorar prototipo | Permitir ver las pantallas de producto | CTA que abre Figma con destino reconocible; no existe formulario ni contratación en línea |
 
+En desktop se utiliza una primera sección de dos columnas, con propuesta de valor y representación de las aplicaciones. En mobile web los elementos se apilan en orden de lectura, sin métricas decorativas ni menús técnicos. El equipo ha definido un modelo de suscripción B2B con plan base de S/300 mensuales y opción Custom. La Landing Page publicada en este hito no implementa checkout, registro comercial ni contratación en línea: su acción principal permite explorar el prototipo del producto en Figma.
 
-##### 1. Header y Hero Section (`[01_SOLUCIÓN]`)
-<img src="resources/12-chapter-03/landing-page-01-hero.png">
+<p align="center"><img src="resources/12-chapter-03/landing-page/landing-hero.png" alt="Captura de la sección principal de la landing page publicada de Service Compliance" width="800"></p>
 
-* **Propósito:** Captar la atención del cliente corporativo e incentivar el inicio de pruebas o solicitudes de demostración técnica.
-* **Componentes:**
-  * **Barra de Navegación (Header):** Logotipo de Opervia, enlaces a secciones (`Plataforma`, `Soluciones`, `Arquitectura`, `Precios`, `Docs`) y botones de acción (`Iniciar Sesión`, `Solicitar Demo`).
-  * **Hero Section:** Etiqueta `COMPLIANCE B2B // FIELD OPS VERIFICATION`, titular principal, subtítulo explicativo, campo de entrada para correo corporativo y botón principal `Solicitar Demo`.
-  * **Sellos de Estándares:** Badges de certificación verificados (`ISO 9001`, `SOC2 TYPE II`, `AES-256 GCM`).
-  * **Visor Interactivo:** Mockup dinámico que simula el dashboard web y la app móvil con la vista `[FOTO_EVIDENCIA]` y botón `VALIDAR PROTOCOLO`.
-  * **Métricas Clave (KPIs):**
-    * **`99.8%`**: SLA de cumplimiento en terreno.
-    * **`1.4M+`**: Tareas auditadas y timbradas.
-    * **`0`**: Multas por no conformidad regulatoria.
-
----
-
-##### 2. Matriz Comparativa (`[02 // MATRIX_COMPARISON]`)
-<img src="resources/12-chapter-03/landing-page-02-matrix.png">
-
-* **Propósito:** Mostrar las diferencias clave entre el proceso tradicional en terreno y el motor de cumplimiento de Opervia.
-* **Componentes:**
-  * **Gestión Tradicional en Terreno (`Vulnerable`):** Puntos de control manuales marcados con error/inseguros.
-  * **Opervia Compliance Engine (`Estricto`):** Lista de verificación validada con sellos técnicos (`[GEO_TIMESTAMP]`, `[AI_PHOTO_OCR]`, `[ZERO_BREACH]`).
-
----
-
-##### 3. Módulos de Trabajo (`[03 // WORKFLOW_MODULES]`)
-<img src="resources/12-chapter-03/landing-page-03-workflow.png">
-
-* **Propósito:** Explicar el flujo de la plataforma según el rol del usuario operativo.
-* **Componentes:**
-  * **Navegación por Pestañas:** Modos `[01] OPERARIO EN CAMPO`, `[02] SUPERVISOR TÉCNICO` y `[03] CLIENTE FINAL B2B`.
-  * **Visor de Telemetría:** Área de inspección de evidencia con marco de captura `[FRAME_CAPTURE // EVIDENCE_INSPECTION]`, indicador `TELEMETRY_LAT/LON` y puntuación de confianza `CONF_SCORE: 99.4%`.
-
----
-
-##### 4. Pipeline de Protocolo (`[04 // PROTOCOL_PIPELINE]`)
-<img src="resources/12-chapter-03/landing-page-04-pipeline.png">
-
-* **Propósito:** Mostrar los 3 pasos secuenciales del ciclo de ejecución y certificación.
-* **Componentes:**
-  * **Paso 1 `[DISPATCH]`:** Configuración de procedimientos estándar (`SOP_CONFIG`) y plantillas normativas (`NOM-035 / OSHA / REG_TECH`).
-  * **Paso 2 `[FIELD_EXECUTION]`:** Lista de verificación interactiva (`CHECKLIST_APP`) con evidencia criptográfica e inmutable.
-  * **Paso 3 `[CERTIFICATION]`:** Generación automática de reportes (`AUTO_REPORT`) mediante API Webhook o exportación a PDF.
-
----
-
-##### 5. Estimador de Impacto / Calculadora de ROI (`[05 // ESTIMADOR_DE_IMPACTO]`)
-<img src="resources/12-chapter-03/landing-page-05-roi.png">
-
-* **Propósito:** Permitir al cliente calcular el ahorro financiero estimado al implementar la plataforma.
-* **Componentes:**
-  * **Controles Deslizantes (Sliders):** Selección de `Nº de Operarios en Terreno` y `Horas/Semana en Reportes Manuales`.
-  * **Tarjeta de Ahorro Estimado:** Visualización del monto `USD/Año` (ej. `$76,104`), `Horas liberadas/mes` y `Periodo de retorno (Payback Period)`. Botón de acción `CALCULAR ROI PERSONALIZADO`.
-
----
-
-##### 6. Planes y Licenciamiento (`[06 // LICENCIAMIENTO]`)
-<img src="resources/12-chapter-03/landing-page-06-pricing.png">
-
-* **Propósito:** Presentar la estructura de costos y planes de suscripción B2B.
-* **Componentes:**
-  * **Selector de Facturación:** Conmutador `Mensual / Anual` con distintivo de descuento (`-20% DESCUENTO`).
-  * **Tabla de Precios:**
-    * **Starter (`$29 / operario / mes`):** Hasta 15 operarios. Botón `SELECCIONAR STARTER`.
-    * **Professional (`$49 / operario / mes` - Recomendado):** Hasta 100 operarios. Botón `DESPLEGAR PRO`.
-    * **Enterprise (`CUSTOM`):** Ilimitado & On-Premise. Botón `CONTACTAR VENTAS`.
-  * **Sección Final de Despliegue (CTA & Footer):** Botones para `PROGRAMAR DEMO TÉCNICA` o `DESCARGAR ESPECIFICACIÓN TÉCNICA (PDF)`, y enlaces a documentación, API y políticas legales.
+*Figura 3.3. Sección principal de la landing page publicada de Service Compliance.*
 
 <a id="3132-landing-page-mock-up"></a>
-
 #### 3.1.3.2. Landing Page Mock-up
 
-Los mockups de alta fidelidad deberán conservar IBM Plex Sans, azul primario, espacios blancos y un CTA identificable, aplicando una composición más cercana a una solución de operación de servicios que a un software de telemetría o certificación.
+La landing publicada conserva IBM Plex Sans, azul primario, espacios blancos y un CTA identificable. Su composición comunica el vínculo entre obligación, ejecución, evidencia y seguimiento, sin atribuir funcionamiento comercial a las pantallas de Figma. La evidencia visual del sitio corresponde a capturas de la página publicada, no a pantallas internas del prototipo.
 
+<p align="center"><img src="resources/12-chapter-03/landing-page/landing-product-flow.png" alt="Captura de la sección de producto de la landing page publicada de Service Compliance" width="800"></p>
 
+*Figura 3.4. Sección de producto de la landing page publicada, con ejecución, evidencia e historial de caso.*
 
 <a id="314-mobile-applications-uxui-design"></a>
-
 ### 3.1.4. Mobile Applications UX/UI Design
 
-<a id="3141-mobile-applications-wireframes"></a>
+El diseño móvil se organiza por flujos de usuario y no por una enumeración indiscriminada de vistas. Las pantallas de telemetría en vivo, mapas de técnicos, mantenimiento, certificación del operario, control de asistencia, panel web de despacho y métricas personales avanzadas del material anterior quedan fuera del alcance confirmado. Recuperación de contraseña y geolocalización puntual pueden aparecer como componentes necesarios de acceso o evidencia; MFA y tracking GPS continuo se reservan para un backlog posterior.
 
+<a id="3141-mobile-applications-wireframes"></a>
 #### 3.1.4.1. Mobile Applications Wireframes
 
-A continuación se detalla la especificación completa de esquemas de baja fidelidad (wireframes / low-fidelity skeletons) diseñados en Figma para la plataforma Opervia, cubriendo los flujos del Operario de Campo, Supervisor en Terreno y el Panel Web de Dispatch.
+El operario inicia sesión con una cuenta asignada y consulta su trabajo. Cada actividad muestra el sitio, la ventana de atención, el estado y la cantidad de evidencias vinculadas.
 
----
+<p align="center"><img src="resources/12-chapter-03/a/US%20-%2009%20-%20Consultar%20estado%20operativo%20-%201.png" alt="Listado de actividades operativas" width="245"> <img src="resources/12-chapter-03/a/US%20-%2009%20-%20Consultar%20estado%20operativo%20-%202.png" alt="Detalle de actividad operativa" width="245"> <img src="resources/12-chapter-03/a/US%20-%2010%20-%20Revisar%20Execution%20y%20Evidence.png" alt="Revisión de ejecución y evidencia" width="245"></p>
 
-##### Módulo 1: Autenticación y Registro de Usuarios
+*Figura 3.5. Pantallas del prototipo para consulta de actividades y revisión de evidencia.*
 
-* **Wireframe 01: Inicio de Sesión (`Opervia Skeleton - Login`)**
+El supervisor consulta actividades, revisa la ejecución y registra el resultado de cumplimiento. El historial del caso mantiene el resultado original y las acciones posteriores.
 
-  <img src="resources/12-chapter-03/wireframe-01-login.png">
-  
-  * **Propósito:** Autenticación segura del personal operativo y supervisores mediante credenciales corporativas.
-  * **Componentes:** Formulario de ingreso (usuario/correo, contraseña), botón "Iniciar Sesión" y recuperación de contraseña.
+<p align="center"><img src="resources/12-chapter-03/a/US-11%20%20Registrar%20Compliance%20Result.png" alt="Registro de resultado de cumplimiento" width="245"> <img src="resources/12-chapter-03/a/US%20-%2012%20-%20Gestionar%20Corrective%20Action.png" alt="Gestión de acción correctiva" width="245"> <img src="resources/12-chapter-03/a/US-14%20%E2%80%94%20Consultar%20historial%20del%20Compliance%20Case.png" alt="Historial de caso de cumplimiento" width="245"></p>
 
-* **Wireframe 02: Verificación OTP / 2FA (`Opervia Skeleton - OTP Verification`)**
-  
-    <img src="resources/12-chapter-03/wireframe-02-otp.png">
-    
-  * **Propósito:** Doble factor de autenticación para garantizar la seguridad en dispositivos de campo.
-  * **Componentes:** Input numérico de 6 dígitos, temporizador de reenvío de código y botón de confirmación.
-
-* **Wireframe 03: Registro de Cuenta / Perfil (`Opervia Skeleton - Account Registration`)**
- 
-   <img src="resources/12-chapter-03/wireframe-03-registration.png">
-   
-  * **Propósito:** Configuración inicial del perfil de usuario, rol asignado y área/cuadrilla operativa.
-
----
-
-##### Módulo 2: Ejecución de Trabajos, Evidencias y Sincronización (Operario)
-
-* **Wireframe 04: Panel Diario / Dispatch Móvil (`Opervia Skeleton - Field Dispatch`)**
-
-  <img src="resources/12-chapter-03/wireframe-04-dispatch.png">
-
-  * **Propósito:** Vista principal del operario con el listado de obligaciones y órdenes de trabajo asignadas para el día.
-  * **Componentes:** Barra de búsqueda, filtro por estado (Pendiente, En Curso, Completado), tarjetas de órdenes con horarios/prioridad y barra de navegación inferior.
-
-* **Wireframe 05: Detalle de Orden de Trabajo (`Opervia Skeleton - Work Order Detail - Overview`)**
-
-  <img src="resources/12-chapter-03/wireframe-05-work-order-detail.png">
-  
-  * **Propósito:** Visualización de especificaciones técnicas, ubicación y requerimientos antes de iniciar la tarea.
-  * **Componentes:** Datos del sitio/cliente, temporizador de actividad, lista de chequeo (checklist) interactivas y botón principal "Iniciar Actividad".
-
-* **Wireframe 06: Ejecución y Checklist (`Opervia Skeleton - Work Order Detail - Execution`)**
-
-    <img src="resources/12-chapter-03/wireframe-06-execution.png">
- 
-  * **Propósito:** Seguimiento en tiempo real del progreso del mantenimiento u obligación legal.
-  * **Componentes:** Checkbox de tareas completadas, campo de observaciones rápidas y botón para adjuntar evidencias.
-
-* **Wireframe 07: Captura de Evidencia - Cámara Overlay (`Opervia Skeleton - Camera Overlay`)**
-
-    <img src="resources/12-chapter-03/wireframe-07-camera-overlay.png">
-
-  * **Propósito:** Captura de fotografías con estampación en tiempo real de metadatos de validación (US-06).
-  * **Componentes:** Retícula de encuadre, overlay visual con coordenadas GPS (Lat/Long), nivel de precisión en metros y timestamp UTC.
-
-* **Wireframe 08: Galería de Evidencias y Firma Digital (`Opervia Skeleton - Evidence Preview & Sign`)**
-
-     <img src="resources/12-chapter-03/wireframe-08-evidence-sign.png">
-  
-
-  * **Propósito:** Revisión de fotografías adjuntas y captura de firma manuscrita de conformidad del cliente/supervisor.
-  * **Componentes:** Carrusel de fotos capturadas, selector de categoría (Antes/Después/Documento), lienzo de firma manuscrita y botón "Finalizar Tarea".
-
-* **Wireframe 09: Confirmación de Envío / Éxito (`Opervia Skeleton - Task Completion Success`)**
-
-    <img src="resources/12-chapter-03/wireframe-09-success.png">
-
-  * **Propósito:** Confirmar al operario que la tarea se registró correctamente en la plataforma.
-  * **Componentes:** Modal de éxito con Checkmark, resumen del tiempo invertido y botón de retorno al dispatch.
-
-* **Wireframe 10: Resumen de Historial Diario (`Opervia Skeleton - Daily Summary Log`)**
-
-    <img src="resources/12-chapter-03/wireframe-10-daily-log.png">
-
-  * **Propósito:** Consulta de actividades completadas e historial de intervenciones durante la jornada.
-
----
-
-##### Módulo 3: Supervisión, Control en Sitio y Auditoría (Supervisor)
-
-* **Wireframe 11: Dashboard de Supervisión (`Opervia Skeleton - Supervision & Field Control`)**
-  
-    <img src="resources/12-chapter-03/wireframe-11-supervision.png">
-    
-
-  * **Propósito:** Monitoreo del estado general de las cuadrillas y cumplimiento de obligaciones en mapa/lista.
-  * **Componentes:** Métricas KPI rápidas (Avance %, Tareas Retrasadas, Alertas), mapa con pines de ubicación y selector de fecha.
-
-* **Wireframe 12: Mapa de Control de Nodos (`Opervia Skeleton - Node Control Map`)**
-
-  <img src="resources/12-chapter-03/wireframe-12-node-map.png">
-    
-  * **Propósito:** Geolocalización en tiempo real de los técnicos y sitios de trabajo.
-  * **Componentes:** Visor interactivo de mapa, filtros por zona geográfica y lista lateral de operarios activos.
-
-* **Wireframe 13: Detalle de Control de Nodo (`Opervia Skeleton - Node Control Detail`)**
-
-    <img src="resources/12-chapter-03/wireframe-13-node-detail.png">
-    
-  * **Propósito:** Inspección técnica profunda del estado de cumplimiento de una estación o sede específica.
-  * **Componentes:** Historial de mantenimiento del sitio, responsable asignado y estado de alertas críticas.
-
-* **Wireframe 14: Gestión de Incidentes (`Opervia Skeleton - Incident Resolution`)**
-
-    <img src="resources/12-chapter-03/wireframe-14-incident.png">
-    
-  * **Propósito:** Registro y atención inmediata de bloqueos o fallas imprevistas informadas desde el campo.
-  * **Componentes:** Nivel de severidad (Alta/Media/Baja), fotos del problema, asignación de responsable y botón "Resolver Incidente".
-
-* **Wireframe 15: Métricas de Rendimiento (`Opervia Skeleton - Performance Metrics`)**
-
-    <img src="resources/12-chapter-03/wireframe-15-metrics.png">
-    
-  * **Propósito:** Evaluación del desempeño técnico por operario o cuadrilla.
-  * **Componentes:** Gráficos de barras/dona con porcentaje de cumplimiento, tiempos promedio de atención y calificación de calidad.
-
-* **Wireframe 16: Control de Asistencia y Bitácora (`Opervia Skeleton - Attendance & Shift Log`)**
-
-    <img src="resources/12-chapter-03/wireframe-16-attendance.png">
-    
-  * **Propósito:** Control del marcaje de entrada/salida y cumplimiento de turnos del equipo de trabajo.
-
-* **Wireframe 17: Reasignación Manual (`Opervia Skeleton - Manual Dispatch Override`)**
-
-    <img src="resources/12-chapter-03/wireframe-17-override.png">
-
-  * **Propósito:** Permitir al supervisor reasignar órdenes de trabajo en caso de imprevistos o ausencias.
-
----
-
-##### Módulo 4: Análisis, Reportes y Sincronización Offline
-
-* **Wireframe 18: Centro de Analítica Móvil (`Opervia Skeleton - Analytics Center`)**
-  
-  <img src="resources/12-chapter-03/wireframe-18-analytics.png">
-
-  * **Propósito:** Visualización ejecutiva de indicadores clave de cumplimiento normativo y SLA.
-
-* **Wireframe 19: Gráficos de Tendencia (`Opervia Skeleton - Trend Analysis Chart`)**
-
-  <img src="resources/12-chapter-03/wireframe-19-trend.png">
-  
-  * **Propósito:** Evaluación del histórico de fallas y cumplimiento a lo largo del tiempo.
-
-* **Wireframe 20: Detalle de Alertas Críticas (`Opervia Skeleton - Alert Center`)**
-
-    <img src="resources/12-chapter-03/wireframe-20-alerts.png">
-
-  * **Propósito:** Centro de notificaciones para eventos que requieren atención inmediata o riesgo de sanción.
-
-* **Wireframe 21: Ajustes y Configuración (`Opervia Skeleton - App Settings`)**
-
-    <img src="resources/12-chapter-03/wireframe-21-settings.png">
-
-  * **Propósito:** Gestión de parámetros de la aplicación, almacenamiento local y descargas de mapas.
-
-* **Wireframe 22: Perfil de Usuario (`Opervia Skeleton - User Profile`)**
-
-    <img src="resources/12-chapter-03/wireframe-22-profile.png">
-
-  * **Propósito:** Información del técnico, credenciales activas y certificado digital de operario.
-
-* **Wireframe 23: Centro de Sincronización Offline (`Opervia Skeleton - Offline Sync Center`) [US-08]**
-
-    <img src="resources/12-chapter-03/wireframe-23-sync.png">
-
-  * **Propósito:** Panel de control para la gestión de cola de datos locales cuando no hay cobertura de red.
-  * **Componentes:**
-    * Indicador de estado de conexión ("Modo Offline Activo").
-    * Lista de registros pendientes (`PENDING_SYNC`) con distintivos de estado (`Pendiente`, `Sincronizado`, `Error`).
-    * Botón de acción manual "Sincronizar Ahora" con política de reintentos e idempotencia (`X-Idempotency-Key`).
+*Figura 3.6. Pantallas del prototipo para evaluación, acción correctiva e historial del caso.*
 
 <a id="3142-mobile-applications-wireflow-diagrams"></a>
-
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
-<a id="3143-mobile-applications-mock-ups"></a>
+Los Wireflows deben mostrar una sucesión de wireframes o estados visuales, no solo flechas entre nombres de funcionalidades. Para cada User Goal se especifica la ruta esperada y las bifurcaciones que requieren estados de pantalla diferentes. Se usarán Lucidchart u Overflow para producir los artefactos formales definidos para el proyecto.
 
+| Goal | Actor | User Stories | Ruta principal a representar | Estado alternativo relevante |
+|---|---|---|---|---|
+| WG-01: entrar al espacio de trabajo autorizado | Operario / Supervisor | US-17 | Login, validación, destino por rol | Credenciales inválidas, cuenta deshabilitada, error de red |
+| WG-02: comprender y registrar el trabajo asignado | Operario | US-04/05/06 | Inicio, obligación, ejecución, evidencia, envío | Sin tareas, obligación reasignada, evidencia requerida faltante |
+| WG-03: documentar un impedimento | Operario | US-07/08 | Ejecución, Exception, envío a revisión | Sin conexión o evidencia inaccesible |
+| WG-04: evaluar una ejecución | Supervisor | US-09/10/11 | Actividades, ejecución, evidencia/criterios, Compliance Result | Información insuficiente o Exception aceptada |
+| WG-05: atender y verificar una acción correctiva | Operario / Supervisor | US-12/21 | Caso, asignación, atención, verificación, cierre | Atención devuelta; resultado original preservado |
+| WG-06: reconstruir un caso y generar reporte | Supervisor | US-13/14/15 | Casos, cronología, filtro, reporte | Sin resultados, evidencia no accesible |
+| WG-07: gestionar usuarios y cupos | Administrador | US-20 | Organización, usuarios, alta o invitación, confirmación | Cupo agotado, usuario fuera del alcance |
+
+El ejemplo WG-03 necesita mostrar una salida válida cuando no se dispone de una evidencia obligatoria: la aplicación conserva el requisito insatisfecho, vincula la Exception y envía la ejecución para revisión sin asignarle Compliance Result. El estado técnico `Pending Sync`, cuando corresponde, se presenta de forma independiente.
+
+
+<a id="3143-mobile-applications-mock-ups"></a>
 #### 3.1.4.3. Mobile Applications Mock-ups
 
-<a id="3144-mobile-applications-user-flow-diagrams"></a>
+El equipo elaboró mockups en Figma para dos experiencias móviles y estados compartidos. Se revisaron 57 exportaciones: seis de acceso, 33 del operario y 18 clasificadas como supervisor. El archivo fuente de diseño se encuentra en [Grupo 3: Service Compliance](https://www.figma.com/design/5aLeroV2VsHrYEImQNATTI/Grupo-3---Service-Compliance). Las capturas siguientes son artefactos de diseño, no pantallas de aplicaciones Kotlin o Flutter ya implementadas. El inventario completo de exportaciones se entrega junto con este capítulo.
 
+Los mockups se agrupan por objetivos de usuario para que sus variaciones representen estados de la misma interfaz y no se contabilicen como funcionalidades diferentes. Se priorizan las rutas del operario que ejecuta el servicio, del supervisor que evalúa y de la cuenta empresarial que administra acceso.
+
+##### Acceso compartido: US-17
+
+Se diseñaron la pantalla de inicio de sesión, el estado de autenticación, mensajes de red y credenciales incorrectas. La variante de validación de formato corresponde al formulario y no sustituye la verificación de credenciales por el servidor. La pantalla indica que las cuentas las gestiona la «Supervisión Opervia»; debe sustituirse por un texto coherente con el administrador de la empresa prestadora, responsable de aprovisionar cuentas según el alcance contratado.
+
+
+##### Operario: consultar la jornada y el trabajo asignado (US-04)
+
+La primera vista prioriza la obligación próxima, sus horarios y la existencia de evidencias requeridas. La pestaña «Trabajo» separa obligaciones en curso, pendientes y registradas; una vista alternativa muestra la ausencia de actividades pendientes. También existe una variante sin conexión que mantiene la última información guardada. Esta última no asegura que la asignación local sea la más reciente.
+
+
+##### Operario: detalles, disponibilidad y ejecución (US-04/US-05)
+
+Antes de iniciar la ejecución, el operario puede revisar zona, ventana, instrucciones y evidencias aplicables. Los mockups muestran una obligación con dos fotografías requeridas, otra sin evidencia obligatoria y respuestas de error para una obligación cancelada o ya no asignada. La interacción de ejecución presenta instrucciones y seguimiento de pasos. La lista de pasos de la pantalla no implica que cada paso sea un registro persistente; esa regla requiere aprobación explícita.
+
+
+##### Operario: captura y revisión de evidencia (US-06)
+
+El flujo incluye solicitud de permisos, cámara, revisión de la fotografía y validación de evidencia faltante antes del envío. El usuario puede cancelar o repetir una captura sin registrar un archivo vacío. El diseño incluye indicadores como «Nitidez: 98 % óptima», «Protocolo verificado» y etiquetas de auditoría que no tienen una tecnología ni regla verificadas en el alcance actual; deben eliminarse o identificarse claramente como datos meramente ilustrativos hasta contar con implementación y fundamento. La fotografía de ejemplo también debe corresponder a una actividad de limpieza realista, no a contenido ajeno a la obligación.
+
+
+##### Operario: reportar impedimento o Exception (US-07)
+
+La pantalla de Exception registra motivo y descripción, y puede incorporar evidencia contextual. El envío habilita una revisión posterior sin suponer que la excepción es aceptada. En la confirmación exportada se utiliza la expresión «Turno protegido» y se asegura que la incidencia no afecta el cumplimiento: esa afirmación debe cambiarse, porque únicamente el supervisor autorizado decide si corresponde una `Exception Accepted` o un `Non-compliance`.
+
+
+##### Operario: resultado registrado y sincronización (US-05/US-08)
+
+La confirmación debe distinguir tres situaciones: guardado local, envío confirmado por la API y evaluación pendiente del supervisor. En las capturas figuran variantes online/offline y un centro de sincronización con pendientes, reintento y error individual. La etiqueta «Actividad completada» en la vista sin conexión debe leerse como resultado declarado por el operario; no puede confundirse con cumplimiento aprobado o con envío exitoso al servidor.
+
+
+##### Operario: historial, perfil y notificaciones (US-22/US-23)
+
+El historial contempla registros anteriores, filtros por fecha y condición, observaciones y acceso al detalle del trabajo. Los filtros de sincronización no deben presentarse como estados de cumplimiento; `Conforme` solo puede mostrarse cuando existe evaluación registrada. El perfil incluye enlaces a soporte y términos; las notificaciones diferencian cambios de actividad, solicitud de correctiva y confirmación de registros enviados.
+
+
+##### Supervisor: localizar y revisar ejecuciones (US-09/US-10)
+
+Los filtros por sitio, periodo y estado permiten encontrar obligaciones en curso, enviadas, exceptuadas o atrasadas. La revisión de una Execution reúne lo declarado por el operario, la evidencia asociada y las Exceptions. «Enviado» expresa una transición operativa, no que el servicio ya esté conforme. La navegación visible en las capturas es la versión anterior de cinco destinos y debe alinearse con `Resumen | Actividades | Casos | Reportes`, con Perfil disponible desde el avatar.
+
+
+##### Supervisor: evaluar el cumplimiento (US-11)
+
+La propuesta visual permite seleccionar `Compliant`, `Exception Accepted` o `Non-compliance`. `Deviation` permanece como hallazgo intermedio y no constituye otro resultado definitivo. Antes de registrar un incumplimiento o aceptar una excepción debe mostrarse el fundamento y los criterios aplicables; el selector por sí solo no demuestra que se hayan verificado dichos criterios.
+
+
+##### Supervisor: caso y acción correctiva (US-12/US-14/US-21)
+
+El historial del Compliance Case presenta ejecución, evidencia, evaluación, asignación de correctiva, atención y verificación en una secuencia cronológica. La creación de una Corrective Action debe partir de un caso que requiera corrección, con instrucciones y responsable. La pantalla actual permite escoger manualmente un estado al crearla; debe reemplazarse por un estado inicial derivado de la operación, sin permitir cerrar la correctiva antes de verificar su atención.
+
+
+Las exportaciones `Supervisor 17.png` y `Supervisor 18.png` muestran registrar atención por parte del trabajador responsable. A pesar de su carpeta de origen, corresponden funcionalmente al operario, no al supervisor que verifica y cierra. El catálogo de figuras no debe usarlas para atribuir al supervisor acciones propias del operario.
+
+##### Supervisor: alertas y reportes (US-15/US-16)
+
+Las alertas se destinan a vencimientos, solicitudes de revisión y cambios importantes. El reporte filtra por periodo, sede y servicio. Su gráfica de muestra contiene inconsistencias entre las cantidades de la leyenda, las barras y los totales; deben corregirse con datos ilustrativos y matemáticamente coherentes, sin presentarlos como métricas reales de Opervia. Las preferencias avanzadas de alertas son un diseño adicional y no una función confirmada del alcance inicial.
+
+
+##### Cobertura y límites de los mockups exportados
+
+El nuevo lote completa visualmente la consulta, ejecución, evidencia, Exception, sincronización, historial y notificaciones del operario. Sin embargo, no aporta pantallas aprobadas para creación/activación de Service Plans, definición de Obligation Definitions, asignación de operario ni administración de usuarios y cupos. Tampoco incluye un Landing Page rediseñado. Esas funciones figuran en la especificación funcional o el alcance propuesto, pero sus mockups siguen pendientes. Un total de 57 imágenes no equivale a 57 pantallas finales ni a un prototipo interactivo comprobado: varias son estados o variantes de una misma vista.
+
+<a id="3144-mobile-applications-user-flow-diagrams"></a>
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
-<a id="3145-mobile-applications-prototyping"></a>
+Los User Flow Diagrams incorporan los mockups reales y representan decisiones, happy paths y unhappy paths. Deben construirse con el mismo conjunto WG-01…WG-07 documentado en Wireflows, evitando que una pantalla nueva introduzca capacidades sin User Story. El siguiente cuadro fija las bifurcaciones esenciales.
 
+| User Goal | Happy Path | Unhappy/alternative paths | Regla decisiva |
+|---|---|---|---|
+| WG-01 | Login válido, rol autorizado | Credenciales erróneas, cuenta inactiva, error de red, sesión vencida | El backend, no solo UI, autoriza operaciones |
+| WG-02 | Consultar obligación, iniciar, registrar resultado | Sin obligaciones; cambio de asignación; requisitos pendientes | Execution enviada ≠ Compliant |
+| WG-03 | Registrar Exception, adjuntar si corresponde, enviar | Requisito no satisfecho; offline; error de envío | Exception no se transforma automáticamente en Non-compliance |
+| WG-04 | Revisar, evaluar, registrar Compliance Result | Información insuficiente; discrepancia detectada | Solo supervisor determina resultado definitivo |
+| WG-05 | Asignar correctiva, atender, verificar, cerrar | Evidencia faltante; atención rechazada o reenviada | Cierre no elimina resultado original |
+| WG-06 | Consultar caso, filtrar, generar reporte | Sin resultados, periodo inválido, evidencia inaccesible | Pendiente de evaluación no es conforme ni incumplimiento |
+| WG-07 | Consultar cupos, invitar usuario, confirmar | Cupos agotados, permisos insuficientes | Administración organizacional separada de supervisión |
+
+Las bifurcaciones anteriores sirven como especificación de los recorridos en Lucidchart y Overflow.
+
+
+<a id="3145-mobile-applications-prototyping"></a>
 #### 3.1.4.5. Mobile Applications Prototyping
 
-<div style="page-break-before: always;"></div>
+La evaluación de prototipos debe permitir comprobar continuidad entre estados de pantalla y responsabilidad de cada rol. Para el operario, los recorridos prioritarios son consulta de obligación, registro de ejecución y Exception, atención correctiva y revisión del historial. Para el supervisor, los recorridos prioritarios son consulta de obligaciones, revisión/evaluación, asignación y verificación correctiva, reconstrucción de caso y reportes. En el administrador se evaluarán, después de aprobar los requisitos, alta de usuarios y control de cupos.
 
-<a id="capitulo-iv-product-implementation--validation"></a>
+El prototipo debe evidenciar: acciones reversibles, estados vacíos, errores de credenciales, confirmación de guardado, errores de conectividad y diferencias entre pendiente de envío, pendiente de revisión y resultado de cumplimiento. Un clic que solo navega entre imágenes sin respetar esas condiciones no demuestra el comportamiento del flujo.
+
+| Prototipo | Recorridos que debe demostrar | Evidencia disponible |
+|---|---|---|
+| Operator App (Figma) | WG-01, WG-02, WG-03 y parte operario de WG-05 | Mockups de inicio, trabajo, ejecución, evidencia, excepción, sincronización, historial y alertas |
+| Supervisor App (Figma) | WG-01, WG-04, WG-05 y WG-06 | Mockups de inicio, trabajo, ejecución, evidencia, excepción, sincronización, historial y alertas |
+| Administrator Experience | WG-07 | Gestión de cuentas, cupos y configuración organizacional |

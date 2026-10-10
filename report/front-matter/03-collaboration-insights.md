@@ -2,82 +2,30 @@
 
 ## Project Report Collaboration Insights
 
-### Repositorio del Project Report
+El Project Report de Service Compliance se mantiene en [GitHub](https://github.com/OperviaStartup/service-compliance-project-report). Este registro se basa en el historial de commits del repositorio actualizado al 09/10/2026 y describe aportes documentales verificables. El número de commits no representa por sí solo diseño, revisión o coordinación, por lo que se interpreta junto con los artefactos integrados.
 
-El informe de Service Compliance, desarrollado por el equipo Opervia, se mantiene en el siguiente repositorio de GitHub:
+<img src="../resources/front-matter/commits-general.png" alt="Analíticos de contribución del repositorio del Project Report">
 
-**Repositorio:**  
-https://github.com/OperviaStartup/service-compliance-project-report
+*Figura 1. Analíticos de contribución del repositorio del Project Report.*
 
-Durante la elaboración de AV1, el equipo distribuyó el trabajo entre la definición y revisión del Capítulo I, investigación con usuarios, Needfinding, Requirements Specification y artefactos de diseño de software del Capítulo II. Los aportes fueron integrados progresivamente en el repositorio mediante commits y, en determinados trabajos de reconstrucción documental, mediante ramas y Pull Requests hacia `main`.
-
-### Evidencia de colaboración — AV1
-
-<img src="../resources/front-matter/commits-general.png" alt="Contribuciones de los integrantes al Project Report">
-
-*Figura 1. Analíticos de contribución del repositorio del Project Report durante AV1.*
-
-Al cierre de la elaboración de AV1, el historial del repositorio registra contribuciones de los seis integrantes del equipo.
-
-| Integrante | Usuario de GitHub | Principales aportes en AV1 |
+| Integrante | Usuario de GitHub | Aportes documentados en el historial del Project Report |
 |---|---|---|
-| Arias Tasayco, Jean Pool Alexander | `Jean-AT` | Capítulo I, revisión e integración del informe, EventStorming y preparación del documento final. |
-| Ayasta Martel, Zayd Jaffar | `ZaydAyasta` | Requirements Specification, revisión del Capítulo I y Capitulo II, front matter, tabla de contenidos y documentación general del repositorio. |
-| Blancas Chávez, Carlos Franco | `CarlosBlancas969` | Strategic-Level Domain-Driven Design y artefactos relacionados del Capítulo II. |
-| Flores Eusebio, Angel Thyago | `angelfdevs` | Análisis competitivo, entrevistas y actualización de evidencias y contenido del Capítulo II. |
-| Montes Maza, Augusto Sebastian | `asmmaza` | User Personas, Journey Mapping, Empathy Mapping y otros artefactos de Needfinding. |
-| Sánchez Espinoza, Mathias Enrique | `Nounz27` | Diseño y actualización de entrevistas, análisis asociado y recursos del Capítulo II. |
+| Arias Tasayco, Jean Pool Alexander | `Jean-AT` | Estructura inicial del informe, integración de Chapter IV, recursos y evidencias de implementación, Landing Page, backend y actualizaciones del front matter. |
+| Ayasta Martel, Zayd Jaffar | `ZaydAyasta` | Integración de ramas y Pull Requests, reconstrucción y correcciones de Chapter II, revisión de Chapter I, control de versiones, tabla de contenidos, README y ajustes transversales del informe. |
+| Blancas Chávez, Carlos Franco | `CarlosBlancas969` | Actualizaciones de Chapter II y Chapter III, recursos de diseño e integración de contenidos de arquitectura y dominio. |
+| Flores Eusebio, Angel Thyago | `angelfdevs` | Análisis competitivo, entrevistas, evidencias de investigación, marca y tipografía de Chapter III. |
+| Montes Maza, Augusto Sebastian | `asmmaza` | User Personas, Journey Maps, Empathy Maps y actualizaciones de los capítulos de presentación e investigación. |
+| Sánchez Espinoza, Mathias Enrique | `Nounz27` | Diseño y síntesis de entrevistas, análisis asociado y actualización de detalles de implementación en Chapter IV. |
 
-La evidencia mostrada corresponde al historial de commits del repositorio y es consistente con las modificaciones relevantes resumidas en el Registro de Versiones del Informe.
+### Colaboración durante la implementación
 
-<div style="page-break-before: always;"></div>
+La entrega integra tres repositorios de la organización OperviaStartup: el Project Report, la [Landing Page](https://github.com/OperviaStartup/service-compliance-landingpage) y el [Web Service](https://github.com/OperviaStartup/serviceComplianceAPI). El Project Report concentra la narrativa, los recursos y la trazabilidad de la solución; los repositorios de producto conservan su propio historial técnico.
 
-### Evidencia de colaboración — TP (TB1)
+| Área de trabajo | Resultado integrado en el informe |
+|---|---|
+| Investigación y requisitos | Entrevistas, Needfinding, requisitos y decisiones de dominio de Chapter II. |
+| Experiencia de producto | Identidad visual, arquitectura de información, mockups y recorridos de Chapter III. |
+| Implementación | Landing Page, API REST, despliegue, documentación técnica y evidencias de Chapter IV. |
+| Integración documental | Control de versiones, navegación del informe, recursos, consistencia editorial y consolidación de entregables. |
 
-Para la entrega parcial correspondiente al **TB1 – Stage Review**, el equipo organizó la implementación en dos líneas de trabajo relacionadas: primero la Landing Page y luego el backend REST. La documentación, los artefactos y las evidencias se integraron posteriormente en el Project Report.
-
-La colaboración del equipo se evidencia mediante los repositorios públicos, el historial de commits, la organización del Sprint 1 y la distribución de responsabilidades entre producto, UX, arquitectura, backend, validación y documentación.
-
-#### Repositorios utilizados
-
-| Producto | Repositorio | Alcance de la entrega |
-|---|---|---|
-| Landing Page | https://github.com/OperviaStartup/service-compliance-landingpage | Sitio estático responsive, i18n, accesibilidad y despliegue mediante GitHub Pages. |
-| Web Service | https://github.com/OperviaStartup/serviceComplianceAPI | API REST, autenticación, PostgreSQL, DDD, Swagger, pruebas, Docker y Render. |
-| Project Report | https://github.com/OperviaStartup/service-compliance-project-report | Integración del informe, evidencias y trazabilidad documental. |
-
-#### Evidencia visual de colaboración
-
-<img src="../resources/front-matter/commits-general.png" alt="Analíticos de colaboración y commits correspondientes al TB1">
-
-*Figura 2. Analíticos de colaboración y commits del equipo durante la entrega parcial TB1.*
-
-#### Desarrollo de la Landing Page
-
-La primera línea de trabajo correspondió a la Landing Page de Opervia / Service Compliance. Se organizó el sitio estático conservando su lenguaje visual y se añadieron mejoras estructurales, accesibilidad semántica, meta description, navegación interna, internacionalización español-inglés y workflow de despliegue a GitHub Pages.
-La interpretación de esta evidencia es que el producto web avanzó desde una primera implementación visual hasta una versión organizada y publicable, manteniendo la separación entre contenido, navegación y despliegue estático.
-
-#### Desarrollo del backend REST
-
-Después de establecer la experiencia de presentación del producto, el equipo implementó el backend requerido para el flujo operativo del Sprint 1. Los aportes técnicos comprenden autenticación JWT, autorización por roles, persistencia PostgreSQL, migraciones Flyway, obligaciones, ejecuciones, evidencias, validaciones, errores manejables, OpenAPI/Swagger, pruebas automatizadas, pruebas E2E y configuración Docker/Render.
-
-La interpretación de estos commits es que el backend evolucionó incrementalmente desde la fundación DDD hasta un servicio desplegable. El historial muestra una secuencia coherente: estructura, funcionalidad, persistencia, seguridad, validación, documentación, pruebas y despliegue.
-
-#### Distribución de responsabilidades del equipo
-
-| Integrante | Responsabilidad en TP/TB1 | Evidencia que debe asociarse |
-|---|---|---|
-| Arias Tasayco, Jean Pool Alexander | Backend e integración: API REST, PostgreSQL, Docker, Render y pruebas E2E. | Commits del backend, resultados de pruebas y captura del despliegue. |
-| Ayasta Martel, Zayd Jaffar | Product Backlog, trazabilidad de historias, front matter y revisión de la entrega. | Tablero del Sprint, commits documentales y revisión del informe. |
-| Blancas Chávez, Carlos Franco | Arquitectura DDD, Bounded Contexts, diagramas y revisión técnica. | Diagramas, estructura de paquetes y revisión de arquitectura. |
-| Flores Eusebio, Angel Thyago | Validación de negocio y escenarios supervisor-operador. | Matriz de aceptación y evidencias de validación. |
-| Montes Maza, Augusto Sebastian | UX móvil, pantallas core y revisión de experiencia. | Capturas de pantallas y flujo móvil. |
-| Sánchez Espinoza, Mathias Enrique | Entrevistas, validación con usuarios y análisis heurístico. | Guion, registros y resultados de entrevistas. |
-
-La distribución se relaciona con el Sprint 1 documentado en el Capítulo IV. Cada integrante debe adjuntar la evidencia concreta de su participación, incluso cuando el aporte haya sido de revisión, validación, diseño o documentación y no únicamente de programación.
-
-#### Interpretación de la colaboración
-
-La colaboración del TP/TB1 se desarrolló de manera incremental. Primero se consolidó la Landing Page y su workflow de publicación; luego se implementó el backend REST y finalmente se integraron las evidencias en el informe. La participación combinó desarrollo, arquitectura, producto, UX, validación y documentación.
-
-Los analíticos y commits deben interpretarse junto con el reparto de responsabilidades: el volumen de commits no representa por sí solo toda la colaboración, porque la rúbrica también considera artefactos, revisiones, entrevistas, diseño, pruebas y participación en los productos de la solución. La evidencia final debe coincidir con el Registro de Versiones del Informe y con el Sprint Backlog.
+La colaboración se refleja en cambios incrementales y en la integración de material procedente de los diferentes frentes de trabajo. La responsabilidad de integrar, corregir y mantener la consistencia del Project Report está representada en el historial de `ZaydAyasta`, incluidos los merges y las correcciones transversales que conectan los capítulos y el front matter.

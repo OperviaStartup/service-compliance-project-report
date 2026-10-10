@@ -108,7 +108,7 @@ Integrantes
 </table>
 
 <p>
-Septiembre 2026
+Octubre 2026
 </p>
 
 </div>
